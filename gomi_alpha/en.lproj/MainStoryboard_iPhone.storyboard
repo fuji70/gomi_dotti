@@ -1131,7 +1131,7 @@
                             <constraint firstAttribute="bottom" secondItem="nug-MX-9qm" secondAttribute="bottom" constant="7" id="xoI-aA-2oj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="todayL.png" id="zpd-lG-ZM1" userLabel="Today's"/>
+                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="todayL.png" selectedImage="todayL.png" id="zpd-lG-ZM1" userLabel="Today's"/>
                     <navigationItem key="navigationItem" id="z6c-ce-xTd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wfs-CV-CQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
