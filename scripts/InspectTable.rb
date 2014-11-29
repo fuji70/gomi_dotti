@@ -21,7 +21,10 @@ def puts_exe(exe)
   system(exe) if !$test
 end
 
-puts_exe("nkf #{opt_nkf} #{ifile} > #{tfile}")
+# 文字正規化： 数字半角 utf-8-unix
+system("nkf #{opt_nkf} #{ifile} > #{tfile}") if !$test
+
+# CSV解析
 table = CSV.read(tfile)
 
 curBlk = 0
@@ -45,7 +48,7 @@ while (iline < nlines)
     curBlk = $1.to_i
     year = fy.to_i
     tbl[curBlk] = Hash.new
-  elsif /^(.)月$/ =~ line[0]
+  elsif /^([\d]+?)月$/ =~ line[0]
     preMon = curMon
     curMon = $1.to_i
     if curMon < preMon
@@ -74,12 +77,15 @@ end
 # p table
 puts
 
+
+# 結果表示：アイコン別
 puts "#icons,num"
 icons.keys.sort.each do |k|
   puts "#{k},#{icons[k]}"
 end
 puts
 
+# 結果表示：種類別
 puts "#types,num"
 types.keys.sort.each do |k|
   puts "#{k},#{types[k]}"
