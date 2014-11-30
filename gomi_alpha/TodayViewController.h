@@ -10,5 +10,6 @@
 
 @interface TodayViewController : UIViewController
 - (IBAction)doRefresh:(id)sender;
+- (IBAction)incIcon:(id)sender;
 
 @end

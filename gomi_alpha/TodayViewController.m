@@ -10,6 +10,7 @@
 
 @interface TodayViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
+@property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
 
 @end
 
@@ -49,5 +50,40 @@
 - (IBAction)doRefresh:(id)sender {
     NSDate* now = [NSDate date];
     [self refreshCurrent:now];
+    //_imgCurrent.image = [UIImage imageNamed:@"can.png"];
+}
+
+- (UIImage*)getImage:(NSString*)icons {
+    
+    NSDictionary * dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
+                             @"can.png"        ,@"カン",
+                             @"plastic.png"    ,@"プ・油・特",
+                             @"petbottole.png" ,@"ペット",
+                             @"shigen.png"     ,@"他資源",
+                             @"kanen.png"      ,@"可・ビン",
+                             @"funen.png"      , @"本・不・商",
+                         nil];
+    
+    NSString * imgName = [dbIcon objectForKey:icons];
+    NSLog(@"icons: %@  ->  imgName: %@", icons, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
+- (IBAction)incIcon:(id)sender {
+    NSArray* strIcons = [NSArray arrayWithObjects:
+                     @"カン",
+                     @"プ・油・特",
+                     @"ペット",
+                     @"他資源",
+                     @"可・ビン",
+                     @"本・不・商",
+                     nil];
+    int iconTypes = [strIcons count];
+    
+    int rnd = random() % iconTypes;
+    NSString* rndStr = [strIcons objectAtIndex:rnd];
+    NSLog(@"rndStr: %@", rndStr);
+    UIImage * rndImage = [self getImage:rndStr];
+    _imgCurrent.image = rndImage;
 }
 @end

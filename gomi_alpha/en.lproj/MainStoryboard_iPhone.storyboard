@@ -1155,6 +1155,15 @@
                                     <action selector="doRefresh:" destination="H8l-xF-acD" eventType="touchUpInside" id="vzv-UQ-JuF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2T-IE-VQC">
+                                <rect key="frame" x="248" y="480" width="56" height="30"/>
+                                <state key="normal" title="icon++">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incIcon:" destination="H8l-xF-acD" eventType="touchUpInside" id="N4a-gW-bgy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -1196,6 +1205,7 @@
                     <tabBarItem key="tabBarItem" title="今日のゴミ" image="todayL.png" selectedImage="todayL.png" id="zpd-lG-ZM1" userLabel="Today's"/>
                     <navigationItem key="navigationItem" id="z6c-ce-xTd"/>
                     <connections>
+                        <outlet property="imgCurrent" destination="TRt-hD-sJz" id="3fc-2B-7mL"/>
                         <outlet property="lblCurrent" destination="oZm-aF-OEb" id="CRi-xL-uBL"/>
                     </connections>
                 </viewController>
