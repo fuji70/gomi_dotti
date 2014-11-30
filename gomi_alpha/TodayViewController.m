@@ -9,6 +9,7 @@
 #import "TodayViewController.h"
 
 @interface TodayViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
 
 @end
 
@@ -34,7 +35,19 @@
 }
 */
 
+- (void)refreshCurrent:(NSDate*) date {
+    NSDate* curDate = date;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"MM月dd日(E)";
+    NSString *strCurDate = [dateFormatter stringFromDate:curDate];
+    
+    NSLog(@"Refresh to date= [%@]", strCurDate);
+    _lblCurrent.text = strCurDate;
+    
+}
+
 - (IBAction)doRefresh:(id)sender {
-    NSLog(@"Refresh today");
+    NSDate* now = [NSDate date];
+    [self refreshCurrent:now];
 }
 @end

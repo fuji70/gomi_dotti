@@ -1147,7 +1147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4om-Y3-bVN">
-                                <rect key="frame" x="248" y="90" width="62" height="30"/>
+                                <rect key="frame" x="248" y="448" width="62" height="30"/>
                                 <state key="normal" title="Refresh">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1195,6 +1195,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="今日のゴミ" image="todayL.png" selectedImage="todayL.png" id="zpd-lG-ZM1" userLabel="Today's"/>
                     <navigationItem key="navigationItem" id="z6c-ce-xTd"/>
+                    <connections>
+                        <outlet property="lblCurrent" destination="oZm-aF-OEb" id="CRi-xL-uBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wfs-CV-CQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
