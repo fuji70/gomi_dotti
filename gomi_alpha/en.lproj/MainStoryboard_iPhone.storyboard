@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -1014,7 +1014,7 @@
         <!--Today-->
         <scene sceneID="S6x-h9-CG1">
             <objects>
-                <viewController id="H8l-xF-acD" userLabel="Today" sceneMemberID="viewController">
+                <viewController id="H8l-xF-acD" userLabel="Today" customClass="TodayViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zr5-AX-MhG"/>
                         <viewControllerLayoutGuide type="bottom" id="rP5-vL-ias"/>
@@ -1024,7 +1024,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-hD-sJz">
-                                <rect key="frame" x="10" y="169" width="300" height="150"/>
+                                <rect key="frame" x="10" y="168" width="300" height="150"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="R79-G2-LZV"/>
@@ -1032,7 +1032,7 @@
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="bHd-Zn-7BL">
-                                <rect key="frame" x="60" y="324" width="200" height="100"/>
+                                <rect key="frame" x="60" y="323" width="200" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="YjJ-kS-iZT"/>
                                     <constraint firstAttribute="width" constant="200" id="cWU-7c-666"/>
@@ -1049,7 +1049,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="明日" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Sy-0r-pBX">
-                                <rect key="frame" x="0.0" y="354" width="60" height="40"/>
+                                <rect key="frame" x="0.0" y="353" width="60" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YH4-mg-ISy"/>
@@ -1060,7 +1060,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-Lm-yb1">
-                                <rect key="frame" x="110" y="429" width="100" height="50"/>
+                                <rect key="frame" x="110" y="428" width="100" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="mUo-yg-QJ0"/>
                                     <constraint firstAttribute="width" constant="100" id="oHI-SS-P7F"/>
@@ -1096,7 +1096,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yND-yR-Jvi">
-                                <rect key="frame" x="60" y="324" width="200" height="100"/>
+                                <rect key="frame" x="60" y="323" width="200" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="PXe-uR-26s"/>
@@ -1118,20 +1118,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今日のゴミ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="slM-d8-VL8">
-                                <rect key="frame" x="80" y="80" width="160" height="38"/>
+                                <rect key="frame" x="80" y="80" width="160" height="37.5"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="10月27日(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="oZm-aF-OEb">
-                                <rect key="frame" x="10" y="20" width="300" height="56"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="71F-pr-y0S"/>
-                                    <constraint firstAttribute="width" secondItem="oZm-aF-OEb" secondAttribute="height" multiplier="75:14" id="KUo-iy-iSR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1146,6 +1135,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="10月27日(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="oZm-aF-OEb">
+                                <rect key="frame" x="10" y="20" width="300" height="56"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="71F-pr-y0S"/>
+                                    <constraint firstAttribute="width" secondItem="oZm-aF-OEb" secondAttribute="height" multiplier="75:14" id="KUo-iy-iSR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4om-Y3-bVN">
+                                <rect key="frame" x="248" y="90" width="62" height="30"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRefresh:" destination="H8l-xF-acD" eventType="touchUpInside" id="vzv-UQ-JuF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
