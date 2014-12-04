@@ -9,15 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-<UIPickerViewDelegate,UIPickerViewDataSource> {
-    IBOutlet UIPickerView *pickerView;
-    IBOutlet UILabel *labelNunber;
-}
-
-- (IBAction) ChangeButtonPress;
-- (IBAction) ManualButtonPress;
-
-
 
 @end
 

@@ -9,8 +9,10 @@
 #import "TodayViewController.h"
 
 @interface TodayViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
+
 
 @end
 
@@ -19,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self doRefreshCurrent];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,10 +51,9 @@
     
 }
 
-- (IBAction)doRefresh:(id)sender {
+- (void)doRefreshCurrent {
     NSDate* now = [NSDate date];
     [self refreshCurrent:now];
-    //_imgCurrent.image = [UIImage imageNamed:@"can.png"];
 }
 
 - (UIImage*)getImage:(NSString*)icons {
@@ -69,7 +72,7 @@
     return [UIImage imageNamed:imgName];
 }
 
-- (IBAction)incIcon:(id)sender {
+- (void)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
                      @"カン",
                      @"プ・油・特",
@@ -78,7 +81,7 @@
                      @"可・ビン",
                      @"本・不・商",
                      nil];
-    int iconTypes = [strIcons count];
+    int iconTypes = (int)[strIcons count];
     
     int rnd = random() % iconTypes;
     NSString* rndStr = [strIcons objectAtIndex:rnd];
@@ -86,4 +89,9 @@
     UIImage * rndImage = [self getImage:rndStr];
     _imgCurrent.image = rndImage;
 }
+
+- (IBAction)pushButtonDebug:(id)sender {
+    [self rndIcon];
+}
+
 @end
