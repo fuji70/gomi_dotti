@@ -1293,16 +1293,6 @@
                                     <constraint firstAttribute="height" constant="30" id="aqe-IC-ToX"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f25-Pg-zC9">
-                                <rect key="frame" x="130" y="484" width="60" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="GUp-cX-8sY"/>
-                                    <constraint firstAttribute="width" constant="60" id="pK7-EU-iJT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="明後日" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zpp-cB-VwE">
                                 <rect key="frame" x="20" y="434" width="80" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -1321,6 +1311,16 @@
                                     <action selector="pushButtonDebug:" destination="ZfS-Qq-a3W" eventType="touchUpInside" id="dLE-HL-qL6"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f25-Pg-zC9">
+                                <rect key="frame" x="130" y="484" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GUp-cX-8sY"/>
+                                    <constraint firstAttribute="width" constant="60" id="pK7-EU-iJT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -1372,6 +1372,10 @@
                     <navigationItem key="navigationItem" id="JGN-FS-h1h"/>
                     <connections>
                         <outlet property="imgCurrent" destination="zkx-9V-hdd" id="Vsd-t4-fXd"/>
+                        <outlet property="imgNext1" destination="Tin-ey-V4f" id="cZb-KX-PWd"/>
+                        <outlet property="imgNext2" destination="aI4-XA-KOc" id="1vZ-Xt-A95"/>
+                        <outlet property="imgNext3" destination="5m2-xw-uaT" id="bUv-Qe-l23"/>
+                        <outlet property="lblBlknum" destination="vbo-8Q-GZz" id="AOv-SQ-P4l"/>
                         <outlet property="lblCurrent" destination="k7e-u8-FeY" id="Hr9-6v-TqL"/>
                     </connections>
                 </viewController>

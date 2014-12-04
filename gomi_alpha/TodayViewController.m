@@ -9,10 +9,12 @@
 #import "TodayViewController.h"
 
 @interface TodayViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
-
+@property (weak, nonatomic) IBOutlet UIImageView *imgNext1;
+@property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
+@property (weak, nonatomic) IBOutlet UIImageView *imgNext3;
 
 @end
 
@@ -72,7 +74,7 @@
     return [UIImage imageNamed:imgName];
 }
 
-- (void)rndIcon {
+- (UIImage *)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
                      @"カン",
                      @"プ・油・特",
@@ -87,11 +89,16 @@
     NSString* rndStr = [strIcons objectAtIndex:rnd];
     NSLog(@"rndStr: %@", rndStr);
     UIImage * rndImage = [self getImage:rndStr];
-    _imgCurrent.image = rndImage;
+    return rndImage;
 }
 
 - (IBAction)pushButtonDebug:(id)sender {
-    [self rndIcon];
+    _imgCurrent.image = [self rndIcon];
+    _imgNext1.image   = [self rndIcon];
+    _imgNext2.image   = [self rndIcon];
+    _imgNext3.image   = [self rndIcon];
+    int blkNum = (random() % 8) + 1;
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", blkNum];
 }
 
 @end
