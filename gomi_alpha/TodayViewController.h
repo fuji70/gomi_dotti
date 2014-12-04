@@ -1,14 +1,13 @@
 //
-//  ViewController.h
+//  TodayViewController.h
 //  gomi_alpha
 //
-//  Created by 岩崎正則 on 14/10/25.
+//  Created by Naoki on 2014/11/30.
 //  Copyright (c) 2014年 vidacomoda. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TodayViewController : UIViewController
 
 @end
-
