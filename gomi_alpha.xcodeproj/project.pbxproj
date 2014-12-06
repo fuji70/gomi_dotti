@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B079467B1A32DEF500C7B5E1 /* SettingViewController.m */; };
 		B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F769261A2AEB1900858A02 /* TodayViewController.m */; };
 		CA0F5FB019FE94B1006D1CA0 /* funen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */; };
 		CA0F5FB119FE94B1006D1CA0 /* kanen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAF19FE94B1006D1CA0 /* kanen-list.png */; };
@@ -61,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B079467A1A32DEF500C7B5E1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		B079467B1A32DEF500C7B5E1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		B0F769251A2AEB1900858A02 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		B0F769261A2AEB1900858A02 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funen-list.png"; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				CA794F4B19FB44EE00C96F85 /* AppDelegate.h */,
 				CA794F4C19FB44EE00C96F85 /* AppDelegate.m */,
 				CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */,
+				B079467A1A32DEF500C7B5E1 /* SettingViewController.h */,
+				B079467B1A32DEF500C7B5E1 /* SettingViewController.m */,
 				B0F769251A2AEB1900858A02 /* TodayViewController.h */,
 				B0F769261A2AEB1900858A02 /* TodayViewController.m */,
 				CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */,
@@ -346,6 +351,7 @@
 				CA794F4919FB44EE00C96F85 /* main.m in Sources */,
 				CA794F4D19FB44EE00C96F85 /* AppDelegate.m in Sources */,
 				CA794F5C19FB44EE00C96F85 /* ViewController.m in Sources */,
+				B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
