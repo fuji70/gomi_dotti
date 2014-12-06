@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -584,7 +584,9 @@
                             <constraint firstItem="MFt-WR-Q2P" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="x3h-19-SyC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今週のゴミ" image="week.png" selectedImage="week.png" id="uUC-Td-a1b"/>
+                    <tabBarItem key="tabBarItem" title="今週のゴミ" image="week.png" selectedImage="week.png" id="uUC-Td-a1b">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGO-m9-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -746,7 +748,9 @@
                             <constraint firstItem="Qrm-rt-QQx" firstAttribute="trailing" secondItem="rPx-X3-Iq8" secondAttribute="trailing" id="xRg-ww-qGU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今月のゴミ" image="month.png" selectedImage="month.png" id="S1Q-UH-V3E"/>
+                    <tabBarItem key="tabBarItem" title="今月のゴミ" image="month.png" selectedImage="month.png" id="S1Q-UH-V3E">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Na-go-4iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -764,86 +768,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-NK-bHs">
+                                <rect key="frame" x="5" y="414" width="310" height="103"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="JO3-sO-Xm1"/>
+                                    <constraint firstAttribute="width" constant="310" id="N56-ai-nOE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="petbottole.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
-                                <rect key="frame" x="9" y="62" width="150" height="75"/>
+                                <rect key="frame" x="9" y="58" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="pEM-tc-j77"/>
-                                    <constraint firstAttribute="height" constant="75" id="tef-nu-VY0"/>
+                                    <constraint firstAttribute="height" constant="70" id="tef-nu-VY0"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shigen.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
-                                <rect key="frame" x="9" y="142" width="150" height="75"/>
+                                <rect key="frame" x="9" y="132" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="brN-w9-4PL"/>
-                                    <constraint firstAttribute="height" constant="75" id="xEb-wu-GQ0"/>
+                                    <constraint firstAttribute="height" constant="70" id="xEb-wu-GQ0"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
-                                <rect key="frame" x="9" y="222" width="150" height="75"/>
+                                <rect key="frame" x="9" y="206" width="150" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="x3Z-xf-bEI"/>
+                                    <constraint firstAttribute="height" constant="70" id="x3Z-xf-bEI"/>
                                     <constraint firstAttribute="width" constant="150" id="xRt-3a-R6f"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
-                                <rect key="frame" x="164" y="222" width="150" height="75"/>
+                                <rect key="frame" x="164" y="206" width="150" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="PQi-LD-mDm"/>
+                                    <constraint firstAttribute="height" constant="70" id="PQi-LD-mDm"/>
                                     <constraint firstAttribute="width" constant="150" id="sta-Ue-z6T"/>
                                 </constraints>
                             </imageView>
-                            <searchBar contentMode="redraw" barStyle="black" text="フライパン" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-iH-fJK">
-                                <rect key="frame" x="10" y="347" width="300" height="40"/>
+                            <searchBar contentMode="redraw" ambiguous="YES" barStyle="black" text="フライパン" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-iH-fJK">
+                                <rect key="frame" x="10" y="313" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SWg-gI-OUt"/>
                                     <constraint firstAttribute="width" constant="300" id="ZdE-TT-QG5"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="品名検索" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zjs-Mg-bQQ">
-                                <rect key="frame" x="88" y="307" width="144" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="かん・なべ類" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="u64-Ev-5Ap">
+                                <rect key="frame" x="10" y="428" width="300" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="BTO-7Q-udo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="次の カン・なべ類" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-RB-h4o">
-                                <rect key="frame" x="10" y="392" width="300" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Cjb-Cl-gRR"/>
-                                    <constraint firstAttribute="width" constant="300" id="FPN-dp-uSl"/>
+                                    <constraint firstAttribute="height" constant="30" id="JKe-zM-SJU"/>
+                                    <constraint firstAttribute="width" constant="300" id="ftv-xc-zC3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="10/30(水) 自宅前" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-Ic-JFO">
-                                <rect key="frame" x="10" y="442" width="300" height="70"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="次の カン・なべ類" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kKC-CP-xJV">
+                                <rect key="frame" x="47" y="-43" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="W0u-Lc-Sgn"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZZ3-cN-DLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="10/30(水) 自宅前" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-Ic-JFO">
+                                <rect key="frame" x="10" y="463" width="300" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="6er-rf-LvK"/>
-                                    <constraint firstAttribute="height" constant="70" id="SNw-5M-aNz"/>
+                                    <constraint firstAttribute="height" constant="50" id="SNw-5M-aNz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
-                                <rect key="frame" x="164" y="142" width="150" height="75"/>
+                                <rect key="frame" x="164" y="132" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="9Qc-oy-6WC"/>
-                                    <constraint firstAttribute="height" constant="75" id="rMg-cB-FiT"/>
+                                    <constraint firstAttribute="height" constant="70" id="rMg-cB-FiT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="種類検索" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="imK-vP-Abn">
-                                <rect key="frame" x="16" y="20" width="200" height="40"/>
+                                <rect key="frame" x="16" y="20" width="200" height="36"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="OsP-ue-cwQ"/>
+                                    <constraint firstAttribute="height" constant="36" id="OsP-ue-cwQ"/>
                                     <constraint firstAttribute="width" constant="200" id="fLL-CV-w3D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
@@ -851,7 +866,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ブロック" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e9h-DF-eG6">
-                                <rect key="frame" x="234" y="30" width="70" height="30"/>
+                                <rect key="frame" x="234" y="26" width="70" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="W1i-R5-15z"/>
@@ -861,7 +876,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STK-6f-s35">
-                                <rect key="frame" x="218" y="30" width="26" height="30"/>
+                                <rect key="frame" x="218" y="26" width="26" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="Pf3-Cb-rYS"/>
@@ -871,24 +886,61 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
-                                <rect key="frame" x="164" y="62" width="150" height="75"/>
+                                <rect key="frame" x="164" y="58" width="150" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="8JL-t4-gqe"/>
+                                    <constraint firstAttribute="height" constant="70" id="8JL-t4-gqe"/>
                                     <constraint firstAttribute="width" constant="150" id="EE9-Rs-Ivw"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="大型ごみ/特別大型ごみ/剪定枝の収集の申し込みは、(株)藤沢市興業公社へ（0466-23-5301）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
+                                <rect key="frame" x="5" y="357" width="310" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="13D-m8-O3g"/>
+                                    <constraint firstAttribute="width" constant="310" id="fP8-k5-tqQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
+                                <rect key="frame" x="60" y="277" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="RNX-g7-HyU"/>
+                                    <constraint firstAttribute="width" constant="200" id="pzz-21-z8E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
+                                <state key="normal" title="品名検索">
+                                    <color key="titleColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AHG-fq-hZq" kind="push" id="zEx-2j-lgJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="次の" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-RB-h4o">
+                                <rect key="frame" x="10" y="428" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cjb-Cl-gRR"/>
+                                    <constraint firstAttribute="width" constant="300" id="FPN-dp-uSl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NIV-Yh-tzg" firstAttribute="top" secondItem="3DM-jt-r2p" secondAttribute="bottom" constant="5" id="4Fe-Qb-1Xf"/>
-                            <constraint firstItem="a5O-HO-GxO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LxF-Ic-JFO" secondAttribute="bottom" constant="2" id="7dF-LZ-Qpl"/>
-                            <constraint firstItem="3DM-jt-r2p" firstAttribute="top" secondItem="Pbr-Wx-dVt" secondAttribute="bottom" constant="5" id="Abr-FT-P2s"/>
-                            <constraint firstAttribute="centerX" secondItem="Zjs-Mg-bQQ" secondAttribute="centerX" id="BhC-F5-iEA"/>
-                            <constraint firstItem="tYr-HQ-86B" firstAttribute="top" secondItem="aZU-Os-XNi" secondAttribute="bottom" constant="5" id="CXs-vg-lg0"/>
+                            <constraint firstItem="BPi-JD-SP8" firstAttribute="top" secondItem="qzg-iH-fJK" secondAttribute="bottom" constant="4" id="1gn-da-8P2"/>
+                            <constraint firstAttribute="centerX" secondItem="BPi-JD-SP8" secondAttribute="centerX" id="3YJ-lI-Xzv"/>
+                            <constraint firstItem="NIV-Yh-tzg" firstAttribute="top" secondItem="3DM-jt-r2p" secondAttribute="bottom" constant="4" id="4Fe-Qb-1Xf"/>
+                            <constraint firstItem="a5O-HO-GxO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LxF-Ic-JFO" secondAttribute="bottom" constant="6" id="7dF-LZ-Qpl"/>
+                            <constraint firstItem="3DM-jt-r2p" firstAttribute="top" secondItem="Pbr-Wx-dVt" secondAttribute="bottom" constant="4" id="Abr-FT-P2s"/>
+                            <constraint firstItem="tYr-HQ-86B" firstAttribute="top" secondItem="aZU-Os-XNi" secondAttribute="bottom" constant="4" id="CXs-vg-lg0"/>
                             <constraint firstAttribute="centerX" secondItem="qzg-iH-fJK" secondAttribute="centerX" id="Dtn-NO-Zy8"/>
                             <constraint firstItem="e9h-DF-eG6" firstAttribute="leading" secondItem="STK-6f-s35" secondAttribute="trailing" constant="-10" id="Dzr-Ye-PX9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NIV-Yh-tzg" secondAttribute="trailing" constant="-10" id="EiS-Qk-JuW"/>
-                            <constraint firstItem="Zjs-Mg-bQQ" firstAttribute="top" secondItem="NIV-Yh-tzg" secondAttribute="bottom" constant="10" id="ILr-1O-A0i"/>
+                            <constraint firstAttribute="centerX" secondItem="SK9-NK-bHs" secondAttribute="centerX" id="K0X-e1-53z"/>
                             <constraint firstItem="aZU-Os-XNi" firstAttribute="top" secondItem="imK-vP-Abn" secondAttribute="bottom" constant="2" id="MDH-o6-xQf"/>
                             <constraint firstItem="tYr-HQ-86B" firstAttribute="leading" secondItem="WCe-ys-v6q" secondAttribute="leading" id="OWs-qQ-O4r"/>
                             <constraint firstItem="imK-vP-Abn" firstAttribute="leading" secondItem="3Er-xN-W7g" secondAttribute="leadingMargin" id="Plv-RJ-8Hg"/>
@@ -896,21 +948,26 @@
                             <constraint firstAttribute="trailingMargin" secondItem="e9h-DF-eG6" secondAttribute="trailing" id="T00-cm-kBI"/>
                             <constraint firstItem="Pbr-Wx-dVt" firstAttribute="top" secondItem="imK-vP-Abn" secondAttribute="bottom" constant="2" id="Uzf-oM-PIo"/>
                             <constraint firstItem="3DM-jt-r2p" firstAttribute="leading" secondItem="tYr-HQ-86B" secondAttribute="trailing" constant="5" id="V96-FM-CoR"/>
+                            <constraint firstItem="a5O-HO-GxO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SK9-NK-bHs" secondAttribute="bottom" constant="2" id="VN4-fj-c8m"/>
                             <constraint firstItem="tYr-HQ-86B" firstAttribute="leading" secondItem="aZU-Os-XNi" secondAttribute="leading" id="WbT-P9-E7h"/>
                             <constraint firstAttribute="centerX" secondItem="kg2-RB-h4o" secondAttribute="centerX" id="XHg-5c-t6Y"/>
-                            <constraint firstItem="e9h-DF-eG6" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="10" id="ZGJ-G2-Tgl"/>
+                            <constraint firstAttribute="centerX" secondItem="u64-Ev-5Ap" secondAttribute="centerX" id="Ync-WY-rgh"/>
+                            <constraint firstItem="e9h-DF-eG6" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="6" id="ZGJ-G2-Tgl"/>
+                            <constraint firstItem="qzg-iH-fJK" firstAttribute="top" secondItem="zby-2W-xRp" secondAttribute="bottom" id="b48-qB-j1i"/>
+                            <constraint firstAttribute="centerX" secondItem="zby-2W-xRp" secondAttribute="centerX" id="dkC-G2-645"/>
                             <constraint firstItem="imK-vP-Abn" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" id="eIx-w7-sHj"/>
-                            <constraint firstItem="Zjs-Mg-bQQ" firstAttribute="top" secondItem="WCe-ys-v6q" secondAttribute="bottom" constant="10" id="fnU-Mf-wca"/>
-                            <constraint firstItem="WCe-ys-v6q" firstAttribute="top" secondItem="tYr-HQ-86B" secondAttribute="bottom" constant="5" id="gGE-k0-eGc"/>
-                            <constraint firstItem="Zjs-Mg-bQQ" firstAttribute="bottom" secondItem="qzg-iH-fJK" secondAttribute="top" id="gVS-VM-HCV"/>
+                            <constraint firstItem="WCe-ys-v6q" firstAttribute="top" secondItem="tYr-HQ-86B" secondAttribute="bottom" constant="4" id="gGE-k0-eGc"/>
+                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="u64-Ev-5Ap" secondAttribute="bottom" constant="5" id="hgU-1f-hyh"/>
                             <constraint firstAttribute="centerX" secondItem="LxF-Ic-JFO" secondAttribute="centerX" id="kPp-7l-qyK"/>
                             <constraint firstItem="Pbr-Wx-dVt" firstAttribute="leading" secondItem="aZU-Os-XNi" secondAttribute="trailing" constant="5" id="kbe-Wa-4cF"/>
-                            <constraint firstItem="kg2-RB-h4o" firstAttribute="top" secondItem="qzg-iH-fJK" secondAttribute="bottom" constant="5" id="nUE-6S-bPZ"/>
-                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="kg2-RB-h4o" secondAttribute="bottom" id="r6B-no-Qn6"/>
-                            <constraint firstItem="STK-6f-s35" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="10" id="rxf-tK-SuU"/>
+                            <constraint firstItem="SK9-NK-bHs" firstAttribute="top" secondItem="BPi-JD-SP8" secondAttribute="bottom" constant="3" id="qwT-1I-2jE"/>
+                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="kg2-RB-h4o" secondAttribute="bottom" constant="5" id="r6B-no-Qn6"/>
+                            <constraint firstItem="STK-6f-s35" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="6" id="rxf-tK-SuU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ゴミの日探し" image="search.png" selectedImage="search.png" id="bt5-4G-fH6"/>
+                    <tabBarItem key="tabBarItem" title="ゴミの日探し" image="search.png" selectedImage="search.png" id="bt5-4G-fH6">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w0-bU-owq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1114,7 +1171,9 @@
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="leading" secondItem="GqS-Cx-Dym" secondAttribute="leadingMargin" id="zr6-Cf-wAe"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" image="setting.png" selectedImage="setting.png" id="x7M-HR-hXb"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="setting.png" selectedImage="setting.png" id="x7M-HR-hXb">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="2f4-P7-vv7" id="hdO-6Q-fdL"/>
                     </connections>
@@ -1129,7 +1188,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="543" y="-64"/>
+            <point key="canvasLocation" x="928" y="-71"/>
         </scene>
         <!--today-->
         <scene sceneID="7n7-Ky-ZFl">
@@ -1367,7 +1426,9 @@
                             <constraint firstAttribute="centerX" secondItem="YUv-FU-B7a" secondAttribute="centerX" id="zPt-X1-W9Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="todayL.png" selectedImage="todayL.png" id="fRs-pG-vEu" userLabel="Today's"/>
+                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="today.png" selectedImage="today.png" id="fRs-pG-vEu" userLabel="Today's">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="JGN-FS-h1h"/>
                     <connections>
                         <outlet property="imgCurrent" destination="zkx-9V-hdd" id="Vsd-t4-fXd"/>
@@ -1381,6 +1442,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzc-3i-PyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="160" y="-773"/>
+        </scene>
+        <!--kind search-->
+        <scene sceneID="QMT-Yp-3Vg">
+            <objects>
+                <viewController title="kind search" id="AHG-fq-hZq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z6v-M0-kWr"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfk-0x-WVA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zs3-nW-5dN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-qL-eHu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ujZ-LB-GBU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olL-hX-4Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="-71"/>
         </scene>
     </scenes>
     <resources>
@@ -1406,7 +1492,7 @@
         <image name="shisetsu-list.png" width="1075" height="1641"/>
         <image name="shohin-pla-list.png" width="1076" height="1643"/>
         <image name="special-oogata-list.png" width="1079" height="1640"/>
-        <image name="todayL.png" width="60" height="60"/>
+        <image name="today.png" width="40" height="40"/>
         <image name="week.png" width="40" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
