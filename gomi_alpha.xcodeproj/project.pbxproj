@@ -54,6 +54,10 @@
 		CA794F9F19FB8CAD00C96F85 /* today.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F9E19FB8CAD00C96F85 /* today.png */; };
 		CA794FA219FB8DEF00C96F85 /* todayS.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794FA019FB8DEF00C96F85 /* todayS.png */; };
 		CA794FA319FB8DEF00C96F85 /* todayL.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794FA119FB8DEF00C96F85 /* todayL.png */; };
+		CAAAEBE11A32CAFB005B00B9 /* 8blk-01-2015.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAAEBDD1A32CAFB005B00B9 /* 8blk-01-2015.png */; };
+		CAAAEBE21A32CAFB005B00B9 /* 8blk-02-2015.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAAEBDE1A32CAFB005B00B9 /* 8blk-02-2015.png */; };
+		CAAAEBE31A32CAFB005B00B9 /* 8blk-12-2014.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAAEBDF1A32CAFB005B00B9 /* 8blk-12-2014.png */; };
+		CAAAEBE41A32CAFB005B00B9 /* 8blk-03-2015.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAAEBE01A32CAFB005B00B9 /* 8blk-03-2015.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +114,10 @@
 		CA794F9E19FB8CAD00C96F85 /* today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = today.png; sourceTree = "<group>"; };
 		CA794FA019FB8DEF00C96F85 /* todayS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todayS.png; sourceTree = "<group>"; };
 		CA794FA119FB8DEF00C96F85 /* todayL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todayL.png; sourceTree = "<group>"; };
+		CAAAEBDD1A32CAFB005B00B9 /* 8blk-01-2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8blk-01-2015.png"; sourceTree = "<group>"; };
+		CAAAEBDE1A32CAFB005B00B9 /* 8blk-02-2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8blk-02-2015.png"; sourceTree = "<group>"; };
+		CAAAEBDF1A32CAFB005B00B9 /* 8blk-12-2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8blk-12-2014.png"; sourceTree = "<group>"; };
+		CAAAEBE01A32CAFB005B00B9 /* 8blk-03-2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8blk-03-2015.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,10 @@
 		CA794F6219FB4C6900C96F85 /* image4app */ = {
 			isa = PBXGroup;
 			children = (
+				CAAAEBDD1A32CAFB005B00B9 /* 8blk-01-2015.png */,
+				CAAAEBDE1A32CAFB005B00B9 /* 8blk-02-2015.png */,
+				CAAAEBDF1A32CAFB005B00B9 /* 8blk-12-2014.png */,
+				CAAAEBE01A32CAFB005B00B9 /* 8blk-03-2015.png */,
 				CA0F5FC419FE9A19006D1CA0 /* shohin-pla-list.png */,
 				CA0F5FB219FE983D006D1CA0 /* shisetsu-list.png */,
 				CA0F5FB319FE983D006D1CA0 /* no-treat-list2.png */,
@@ -296,6 +308,7 @@
 				CA794F9119FB4C6900C96F85 /* shigen.png in Resources */,
 				CA794F9219FB4C6900C96F85 /* today_s.png in Resources */,
 				CA794F9319FB4C6900C96F85 /* week_s.png in Resources */,
+				CAAAEBE11A32CAFB005B00B9 /* 8blk-01-2015.png in Resources */,
 				CA794F9919FB8C2900C96F85 /* setting2.png in Resources */,
 				CA794F9A19FB8C2900C96F85 /* search.png in Resources */,
 				CA794F9B19FB8C2900C96F85 /* setting.png in Resources */,
@@ -307,13 +320,16 @@
 				CA0F5FB019FE94B1006D1CA0 /* funen-list.png in Resources */,
 				CA0F5FB119FE94B1006D1CA0 /* kanen-list.png in Resources */,
 				CA0F5FBB19FE983D006D1CA0 /* shisetsu-list.png in Resources */,
+				CAAAEBE21A32CAFB005B00B9 /* 8blk-02-2015.png in Resources */,
 				CA0F5FBC19FE983D006D1CA0 /* no-treat-list2.png in Resources */,
 				CA0F5FBD19FE983D006D1CA0 /* no-treat-list1.png in Resources */,
+				CAAAEBE31A32CAFB005B00B9 /* 8blk-12-2014.png in Resources */,
 				CA0F5FBE19FE983D006D1CA0 /* eda&smallkaden-list.png in Resources */,
 				CA0F5FBF19FE983D006D1CA0 /* special-oogata-list.png in Resources */,
 				CA0F5FC019FE983D006D1CA0 /* oogata-list.png in Resources */,
 				CA0F5FC119FE983D006D1CA0 /* plastic-list.png in Resources */,
 				CA0F5FC219FE983D006D1CA0 /* shigen-sonota-list.png in Resources */,
+				CAAAEBE41A32CAFB005B00B9 /* 8blk-03-2015.png in Resources */,
 				CA0F5FC319FE983D006D1CA0 /* shigen-kobetsu-list.png in Resources */,
 				CA0F5FC519FE9A19006D1CA0 /* shohin-pla-list.png in Resources */,
 			);

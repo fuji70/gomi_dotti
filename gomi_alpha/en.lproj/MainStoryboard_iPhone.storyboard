@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -419,13 +419,6 @@
                                     <constraint firstAttribute="width" constant="140" id="wad-N5-LYx"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-l8-OYI" propertyAccessControl="none">
-                                <rect key="frame" x="166" y="145" width="140" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="6td-8w-TMu"/>
-                                    <constraint firstAttribute="height" constant="70" id="zYe-Rs-xOv"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-WR-Q2P" propertyAccessControl="none">
                                 <rect key="frame" x="164" y="370" width="140" height="70"/>
                                 <constraints>
@@ -433,8 +426,8 @@
                                     <constraint firstAttribute="height" constant="70" id="X3m-LU-G1X"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="10/28(火)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-Av-43M">
-                                <rect key="frame" x="16" y="145" width="150" height="70"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="10/28(火)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-Av-43M">
+                                <rect key="frame" x="14" y="145" width="150" height="70"/>
                                 <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="cws-pp-R8i"/>
@@ -548,6 +541,13 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-l8-OYI" propertyAccessControl="none">
+                                <rect key="frame" x="164" y="145" width="140" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="6td-8w-TMu"/>
+                                    <constraint firstAttribute="height" constant="70" id="zYe-Rs-xOv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -560,7 +560,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ZiQ-mr-hVP" secondAttribute="trailing" id="AFj-zB-JDU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="w2V-Vp-2Tb" secondAttribute="trailing" id="BvN-Pp-K5Z"/>
                             <constraint firstItem="AbT-uY-rnd" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="trailing" id="CSn-io-aiw"/>
-                            <constraint firstItem="A2D-Av-43M" firstAttribute="leading" secondItem="WrJ-6Q-ev3" secondAttribute="leadingMargin" id="DjR-1r-yOd"/>
                             <constraint firstItem="MFt-WR-Q2P" firstAttribute="leading" secondItem="uAm-dX-ukR" secondAttribute="trailing" id="JEB-Bi-0i2"/>
                             <constraint firstItem="uAm-dX-ukR" firstAttribute="top" secondItem="3Sh-XA-1Aq" secondAttribute="bottom" constant="5" id="M22-r4-ccS"/>
                             <constraint firstItem="H1S-l8-OYI" firstAttribute="leading" secondItem="A2D-Av-43M" secondAttribute="trailing" id="Mci-IU-Wc0"/>
@@ -689,12 +688,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2014calender-oct.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
-                                <rect key="frame" x="6" y="70" width="308" height="444"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="435" id="ki4-ah-Xjt"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ブロック" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2b-Iw-EIa">
                                 <rect key="frame" x="234" y="30" width="70" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -715,6 +708,12 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="8blk-12-2014.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
+                                <rect key="frame" x="6" y="70" width="308" height="444"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="435" id="ki4-ah-Xjt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -1305,7 +1304,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9m-ex-1jJ">
-                                <rect key="frame" x="229" y="449" width="67" height="22"/>
+                                <rect key="frame" x="229" y="452" width="67" height="22"/>
                                 <state key="normal" title="DEBUG"/>
                                 <connections>
                                     <action selector="pushButtonDebug:" destination="ZfS-Qq-a3W" eventType="touchUpInside" id="dLE-HL-qL6"/>
@@ -1385,7 +1384,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2014calender-oct.png" width="806" height="546"/>
+        <image name="8blk-12-2014.png" width="1754" height="1239"/>
         <image name="can.png" width="400" height="200"/>
         <image name="eda&amp;smallkaden-list.png" width="1075" height="1646"/>
         <image name="funen-list.png" width="1080" height="1644"/>
