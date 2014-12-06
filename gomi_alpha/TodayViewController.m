@@ -20,6 +20,15 @@
 
 @implementation TodayViewController
 
+- (int)getBlkNumConfig {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return (int)[defaults integerForKey:@"blkNum"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [self getBlkNumConfig]];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -97,8 +106,8 @@
     _imgNext1.image   = [self rndIcon];
     _imgNext2.image   = [self rndIcon];
     _imgNext3.image   = [self rndIcon];
-    int blkNum = (random() % 8) + 1;
-    _lblBlknum.text = [NSString stringWithFormat:@"%d", blkNum];
+    //int blkNum = (random() % 8) + 1;
+    //_lblBlknum.text = [NSString stringWithFormat:@"%d", blkNum];
 }
 
 @end
