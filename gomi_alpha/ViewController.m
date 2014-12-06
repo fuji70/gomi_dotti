@@ -26,7 +26,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSURLRequest* req1 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.co.jp/"]]; [webView1 loadRequest:req1];
 //    NSURLRequest* req1 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://fj4.city.fujisawa.kanagawa.jp/fdust/"]]; [webView1 loadRequest:req1];
-    NSURLRequest* req2 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/h2603-h2703/jusho-a-ta.html"]]; [webView2 loadRequest:req2];
+    NSURLRequest* req2 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.google.co.jp/"]]; [webView2 loadRequest:req2];
+//    NSURLRequest* req2 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/h2603-h2703/jusho-a-ta.html"]]; [webView2 loadRequest:req2];
 }
 
 - (void)didReceiveMemoryWarning
