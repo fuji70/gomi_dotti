@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingViewController : UIViewController
+
+- (IBAction)btnBlk1:(id)sender;
+- (IBAction)btnBlk2:(id)sender;
+- (IBAction)btnBlk3:(id)sender;
+- (IBAction)btnBlk4:(id)sender;
+- (IBAction)btnBlk5:(id)sender;
+- (IBAction)btnBlk6:(id)sender;
+- (IBAction)btnBlk7:(id)sender;
 - (IBAction)btnBlk8:(id)sender;
+- (IBAction)btnBlk9:(id)sender;
+- (IBAction)btnBlk10:(id)sender;
 
 @end

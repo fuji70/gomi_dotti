@@ -44,8 +44,54 @@
     
 }
 
+- (IBAction)btnBlk1:(id)sender {
+    int blkNum=1;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk2:(id)sender {
+    int blkNum=2;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk3:(id)sender {
+    int blkNum=3;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk4:(id)sender {
+    int blkNum=4;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk5:(id)sender {
+    int blkNum=5;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk6:(id)sender {
+    int blkNum=6;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk7:(id)sender {
+    int blkNum=7;
+    [self setBlkNum:blkNum];
+}
+
 - (IBAction)btnBlk8:(id)sender {
     int blkNum=8;
     [self setBlkNum:blkNum];
 }
+
+- (IBAction)btnBlk9:(id)sender {
+    int blkNum=9;
+    [self setBlkNum:blkNum];
+}
+
+- (IBAction)btnBlk10:(id)sender {
+    int blkNum=10;
+    [self setBlkNum:blkNum];
+}
+
 @end
