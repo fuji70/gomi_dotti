@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="-295" y="1278"/>
         </scene>
-        <!--可燃ごみ・ビン-->
+        <!--可燃ゴミ-->
         <scene sceneID="agG-rM-pCL">
             <objects>
                 <viewController id="41v-KM-NLD" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <constraint firstItem="oif-IV-cyf" firstAttribute="top" secondItem="Oon-KI-3OT" secondAttribute="bottom" id="scY-uz-fXf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="可燃ごみ・ビン" id="tfg-TF-KgC"/>
+                    <tabBarItem key="tabBarItem" title="可燃ゴミ" id="tfg-TF-KgC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uur-zs-0of" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -663,7 +663,7 @@
                             <constraint firstItem="MFt-WR-Q2P" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="x3h-19-SyC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今週のゴミ" image="week.png" selectedImage="week.png" id="uUC-Td-a1b">
+                    <tabBarItem key="tabBarItem" title="今週のゴミ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
@@ -845,7 +845,7 @@
                             <constraint firstItem="Qrm-rt-QQx" firstAttribute="trailing" secondItem="rPx-X3-Iq8" secondAttribute="trailing" id="xRg-ww-qGU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今月のゴミ" image="month.png" selectedImage="month.png" id="S1Q-UH-V3E">
+                    <tabBarItem key="tabBarItem" title="今月のゴミ" image="tab_month.png" selectedImage="tab_month.png" id="S1Q-UH-V3E">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
@@ -857,7 +857,7 @@
             </objects>
             <point key="canvasLocation" x="-295" y="-71"/>
         </scene>
-        <!--ゴミの日探し-->
+        <!--種類検索-->
         <scene sceneID="rlM-OR-rBn">
             <objects>
                 <viewController id="SnU-nH-BS8" customClass="SearchViewController" sceneMemberID="viewController">
@@ -1068,7 +1068,7 @@
                             <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="kg2-RB-h4o" secondAttribute="bottom" constant="10" id="r6B-no-Qn6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ゴミの日探し" image="search.png" selectedImage="search.png" id="bt5-4G-fH6">
+                    <tabBarItem key="tabBarItem" title="種類検索" image="tab_search.png" selectedImage="tab_search.png" id="bt5-4G-fH6">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
@@ -1085,7 +1085,7 @@
             </objects>
             <point key="canvasLocation" x="142" y="-71"/>
         </scene>
-        <!--設定-->
+        <!--自宅設定-->
         <scene sceneID="vTt-KK-Vqz">
             <objects>
                 <viewController id="UFz-DU-91U" customClass="SettingViewController" sceneMemberID="viewController">
@@ -1344,7 +1344,7 @@
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="leading" secondItem="GqS-Cx-Dym" secondAttribute="leadingMargin" id="zr6-Cf-wAe"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" image="setting.png" selectedImage="setting.png" id="x7M-HR-hXb">
+                    <tabBarItem key="tabBarItem" title="自宅設定" image="tab_setting.png" selectedImage="tab_setting.png" id="x7M-HR-hXb">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
@@ -1601,7 +1601,7 @@
                             <constraint firstAttribute="centerX" secondItem="YUv-FU-B7a" secondAttribute="centerX" id="zPt-X1-W9Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="today.png" selectedImage="today.png" id="fRs-pG-vEu" userLabel="Today's">
+                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="tab_today.png" selectedImage="tab_today.png" id="fRs-pG-vEu" userLabel="Today's">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="JGN-FS-h1h"/>
@@ -1677,23 +1677,23 @@
         <image name="funen.png" width="400" height="200"/>
         <image name="kanen-list.png" width="1079" height="1643"/>
         <image name="kanen.png" width="400" height="200"/>
-        <image name="month.png" width="40" height="40"/>
         <image name="no-treat-list1.png" width="1080" height="1643"/>
         <image name="no-treat-list2.png" width="1074" height="1644"/>
         <image name="oogata-list.png" width="1079" height="1643"/>
         <image name="petbottole.png" width="400" height="200"/>
         <image name="plastic-list.png" width="1080" height="1644"/>
         <image name="plastic.png" width="400" height="200"/>
-        <image name="search.png" width="40" height="40"/>
-        <image name="setting.png" width="40" height="40"/>
         <image name="shigen-kobetsu-list.png" width="1079" height="1644"/>
         <image name="shigen-sonota-list.png" width="1077" height="1646"/>
         <image name="shigen.png" width="400" height="200"/>
         <image name="shisetsu-list.png" width="1075" height="1641"/>
         <image name="shohin-pla-list.png" width="1076" height="1643"/>
         <image name="special-oogata-list.png" width="1079" height="1640"/>
-        <image name="today.png" width="40" height="40"/>
-        <image name="week.png" width="40" height="40"/>
+        <image name="tab_month.png" width="30" height="30"/>
+        <image name="tab_search.png" width="30" height="30"/>
+        <image name="tab_setting.png" width="30" height="30"/>
+        <image name="tab_today.png" width="30" height="30"/>
+        <image name="tab_week.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
