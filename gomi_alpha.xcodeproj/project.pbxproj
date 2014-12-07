@@ -12,6 +12,7 @@
 		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
 		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
 		B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71071A34047D00E21D98 /* HandleDb.m */; };
+		B0EE710B1A34146400E21D98 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EE710A1A34146400E21D98 /* test.json */; };
 		B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F769261A2AEB1900858A02 /* TodayViewController.m */; };
 		CA0F5FB019FE94B1006D1CA0 /* funen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */; };
 		CA0F5FB119FE94B1006D1CA0 /* kanen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAF19FE94B1006D1CA0 /* kanen-list.png */; };
@@ -81,6 +82,7 @@
 		B0EE71041A33ED3200E21D98 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		B0EE71061A34047D00E21D98 /* HandleDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleDb.h; sourceTree = "<group>"; };
 		B0EE71071A34047D00E21D98 /* HandleDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleDb.m; sourceTree = "<group>"; };
+		B0EE710A1A34146400E21D98 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		B0F769251A2AEB1900858A02 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		B0F769261A2AEB1900858A02 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funen-list.png"; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		CA794F4319FB44EE00C96F85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0EE710A1A34146400E21D98 /* test.json */,
 				CA794F6219FB4C6900C96F85 /* image4app */,
 				CA794F4419FB44EE00C96F85 /* gomi_alpha-Info.plist */,
 				CA794F4519FB44EE00C96F85 /* InfoPlist.strings */,
@@ -345,6 +348,7 @@
 				CA794F8C19FB4C6900C96F85 /* plastic.png in Resources */,
 				CA794F8D19FB4C6900C96F85 /* search_s.png in Resources */,
 				CA53FBC31A335A4E003F8EA8 /* 7blk-2014-12.png in Resources */,
+				B0EE710B1A34146400E21D98 /* test.json in Resources */,
 				CAB4535E1A3355F600C0DFE2 /* 4blk-2014-12.png in Resources */,
 				CA794F8E19FB4C6900C96F85 /* settings_s.png in Resources */,
 				CA794F8F19FB4C6900C96F85 /* shigen-rule1.png in Resources */,

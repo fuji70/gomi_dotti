@@ -12,5 +12,6 @@
 
 + (int)getBlkNum;
 + (void)setBlkNum:(int) blkNum;
++ (void)testJson;
 
 @end
