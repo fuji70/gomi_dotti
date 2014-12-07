@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B079467B1A32DEF500C7B5E1 /* SettingViewController.m */; };
+		B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */; };
+		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
+		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
+		B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71071A34047D00E21D98 /* HandleDb.m */; };
 		B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F769261A2AEB1900858A02 /* TodayViewController.m */; };
 		CA0F5FB019FE94B1006D1CA0 /* funen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */; };
 		CA0F5FB119FE94B1006D1CA0 /* kanen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAF19FE94B1006D1CA0 /* kanen-list.png */; };
@@ -69,6 +73,14 @@
 /* Begin PBXFileReference section */
 		B079467A1A32DEF500C7B5E1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B079467B1A32DEF500C7B5E1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
+		B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
+		B0EE71001A33ED0E00E21D98 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
+		B0EE71011A33ED0E00E21D98 /* MonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthViewController.m; sourceTree = "<group>"; };
+		B0EE71031A33ED3200E21D98 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B0EE71041A33ED3200E21D98 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B0EE71061A34047D00E21D98 /* HandleDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleDb.h; sourceTree = "<group>"; };
+		B0EE71071A34047D00E21D98 /* HandleDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleDb.m; sourceTree = "<group>"; };
 		B0F769251A2AEB1900858A02 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		B0F769261A2AEB1900858A02 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funen-list.png"; sourceTree = "<group>"; };
@@ -180,7 +192,15 @@
 				CA794F4B19FB44EE00C96F85 /* AppDelegate.h */,
 				CA794F4C19FB44EE00C96F85 /* AppDelegate.m */,
 				CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */,
+				B0EE71031A33ED3200E21D98 /* SearchViewController.h */,
+				B0EE71041A33ED3200E21D98 /* SearchViewController.m */,
+				B0EE71001A33ED0E00E21D98 /* MonthViewController.h */,
+				B0EE71011A33ED0E00E21D98 /* MonthViewController.m */,
+				B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */,
+				B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */,
 				B079467A1A32DEF500C7B5E1 /* SettingViewController.h */,
+				B0EE71061A34047D00E21D98 /* HandleDb.h */,
+				B0EE71071A34047D00E21D98 /* HandleDb.m */,
 				B079467B1A32DEF500C7B5E1 /* SettingViewController.m */,
 				B0F769251A2AEB1900858A02 /* TodayViewController.h */,
 				B0F769261A2AEB1900858A02 /* TodayViewController.m */,
@@ -369,8 +389,12 @@
 			files = (
 				B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */,
 				CA794F4919FB44EE00C96F85 /* main.m in Sources */,
+				B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */,
 				CA794F4D19FB44EE00C96F85 /* AppDelegate.m in Sources */,
+				B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */,
 				CA794F5C19FB44EE00C96F85 /* ViewController.m in Sources */,
+				B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */,
+				B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */,
 				B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

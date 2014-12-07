@@ -7,9 +7,11 @@
 //
 
 #import "TodayViewController.h"
+#import "HandleDb.h"
 
 @interface TodayViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *lblBlknum;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext1;
@@ -20,13 +22,8 @@
 
 @implementation TodayViewController
 
-- (int)getBlkNumConfig {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return (int)[defaults integerForKey:@"blkNum"];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
-    _lblBlknum.text = [NSString stringWithFormat:@"%d", [self getBlkNumConfig]];
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
 }
 
 - (void)viewDidLoad {
