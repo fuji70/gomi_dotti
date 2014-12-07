@@ -23,7 +23,9 @@
 @implementation TodayViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+    [self viewTodayIcons];
 }
 
 - (void)viewDidLoad {
@@ -64,21 +66,17 @@
     [self refreshCurrent:now];
 }
 
-//- (UIImage*)getImage:(NSString*)icons {
-//    
-//    NSDictionary * dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
-//                             @"can.png"        ,@"カン",
-//                             @"plastic.png"    ,@"プ・油・特",
-//                             @"petbottole.png" ,@"ペット",
-//                             @"shigen.png"     ,@"他資源",
-//                             @"kanen.png"      ,@"可・ビン",
-//                             @"funen.png"      , @"本・不・商",
-//                         nil];
-//    
-//    NSString * imgName = [dbIcon objectForKey:icons];
-//    NSLog(@"icons: %@  ->  imgName: %@", icons, imgName);
-//    return [UIImage imageNamed:imgName];
-//}
+- (void)viewTodayIcons {
+    NSDate *now = [NSDate date];
+    int oneday = 60*60*24;
+    _imgCurrent.image = [HandleDb getIconImageFromDate:now];
+    _imgNext1.image = [HandleDb getIconImageFromDate:
+                       [now initWithTimeIntervalSinceNow:oneday*1]];
+    _imgNext2.image = [HandleDb getIconImageFromDate:
+                       [now initWithTimeIntervalSinceNow:oneday*2]];
+    _imgNext3.image = [HandleDb getIconImageFromDate:
+                       [now initWithTimeIntervalSinceNow:oneday*3]];
+}
 
 - (UIImage *)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
