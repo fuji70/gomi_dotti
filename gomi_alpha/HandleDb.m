@@ -48,11 +48,20 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"json"];
     NSError *error;
     NSString *text = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
-    NSLog(@"%@", text);
+    NSLog(@"NSString: %@", text);
 
     NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
     id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-    NSLog(@"%@", obj);
+    NSLog(@"id: %@", obj);
+
+    
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                         options:NSJSONReadingAllowFragments
+                                                           error:nil];
+    // JSONのパースに失敗した場合は`nil`が入る
+    if (json) {
+        NSLog(@"NSDictionary: %@", json);
+    }
     
 }
 @end
