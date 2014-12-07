@@ -7,12 +7,18 @@
 //
 
 #import "MonthViewController.h"
+#import "HandleDb.h"
 
 @interface MonthViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 
 @end
 
 @implementation MonthViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

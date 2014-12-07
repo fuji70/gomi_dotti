@@ -666,6 +666,9 @@
                     <tabBarItem key="tabBarItem" title="今週のゴミ" image="week.png" selectedImage="week.png" id="uUC-Td-a1b">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="lblBlknum" destination="B2v-cu-Gei" id="L3I-nj-Aee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGO-m9-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -833,6 +836,9 @@
                     <tabBarItem key="tabBarItem" title="今月のゴミ" image="month.png" selectedImage="month.png" id="S1Q-UH-V3E">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="lblBlknum" destination="eSA-7u-0Nb" id="t0G-Zp-V5N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Na-go-4iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1052,6 +1058,9 @@
                     <tabBarItem key="tabBarItem" title="ゴミの日探し" image="search.png" selectedImage="search.png" id="bt5-4G-fH6">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="lblBlknum" destination="Wqt-pK-Whr" id="gkv-ly-e9c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w0-bU-owq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1320,6 +1329,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="lblBlknum" destination="ZyN-If-Uge" id="z6D-Vq-Mus"/>
                         <outlet property="searchDisplayController" destination="2f4-P7-vv7" id="hdO-6Q-fdL"/>
                     </connections>
                 </viewController>

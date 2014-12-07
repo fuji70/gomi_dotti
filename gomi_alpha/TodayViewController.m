@@ -7,6 +7,7 @@
 //
 
 #import "TodayViewController.h"
+#import "HandleDb.h"
 
 @interface TodayViewController ()
 
@@ -21,13 +22,8 @@
 
 @implementation TodayViewController
 
-- (int)getBlkNumConfig {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return (int)[defaults integerForKey:@"blkNum"];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
-    _lblBlknum.text = [NSString stringWithFormat:@"%d", [self getBlkNumConfig]];
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
 }
 
 - (void)viewDidLoad {

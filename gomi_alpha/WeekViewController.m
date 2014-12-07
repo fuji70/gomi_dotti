@@ -7,12 +7,18 @@
 //
 
 #import "WeekViewController.h"
+#import "HandleDb.h"
 
 @interface WeekViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 
 @end
 
 @implementation WeekViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

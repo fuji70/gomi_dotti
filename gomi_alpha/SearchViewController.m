@@ -7,12 +7,18 @@
 //
 
 #import "SearchViewController.h"
+#import "HandleDb.h"
 
 @interface SearchViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 
 @end
 
 @implementation SearchViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,12 +7,18 @@
 //
 
 #import "SettingViewController.h"
+#import "HandleDb.h"
 
 @interface SettingViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 
 @end
 
 @implementation SettingViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,13 +41,8 @@
 */
 
 - (void)setBlkNum:(int) blkNum {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:blkNum forKey:@"blkNum"];
-    BOOL successful = [defaults synchronize];
-    if (successful) {
-        NSLog(@"set to blkNum: %d.", blkNum);
-    }
-    
+    [HandleDb setBlkNum:blkNum];
+    _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
 }
 
 - (IBAction)btnBlk1:(id)sender {
