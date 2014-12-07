@@ -8,7 +8,85 @@
 
 #import "HandleDb.h"
 
+NSString *FILE_DB = @"db2014.json";
+
+@interface HandleDb ()
+{
+    NSDate       *_curDate;
+    NSDictionary *_dbCalendar;
+    NSDictionary *_dbIcon;
+}
+@end
+
 @implementation HandleDb
+
+#pragma mark Singleton Methods
+
++ (id)getInstance {
+    static HandleDb *sharedDb = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedDb = [[self alloc] init];
+    });
+    return sharedDb;
+}
+
+- (void)dealloc {
+    // Should never be called, but just here for clarity really.
+}
+
+- (void)initDbIcon {
+    _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
+               @"can.png"        ,@"カン",
+               @"plastic.png"    ,@"プ・油・特",
+               @"petbottole.png" ,@"ペット",
+               @"shigen.png"     ,@"他資源",
+               @"kanen.png"      ,@"可・ビン",
+               @"funen.png"      , @"本・不・商",
+               nil];
+}
+
+- (id)init {
+    if (self = [super init]) {
+        _curDate = [NSDate date];
+        _dbCalendar = [self loadJsonDb:FILE_DB];
+        [self initDbIcon];
+    }
+    return self;
+}
+
+- (UIImage*)_getIconImage:(NSString*)icons {
+    NSString * imgName = [_dbIcon objectForKey:icons];
+    NSLog(@"icons: %@  ->  imgName: %@", icons, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
++ (UIImage*)getIconImage:(NSString*)icons {
+    return [[HandleDb getInstance] _getIconImage:icons];
+}
+
+- (NSDictionary *)loadJsonDb:(NSString *)infile {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:infile ofType:nil];
+    NSError *error;
+    NSString *text = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
+    NSLog(@"Loadfile: %@", infile);
+    NSLog(@" in NSString: %@", text);
+    
+    NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data
+                                                        options:NSJSONReadingAllowFragments
+                                                          error:&error];
+    // JSONのパースに失敗した場合は`nil`が入る
+    if (dic) {
+        NSLog(@"NSDictionary: %@", dic);
+    }
+    else {
+        NSLog(@"Error: %@", error);
+    }
+    
+    return dic;
+}
+
 
 + (int)getBlkNumDefault {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -45,19 +123,20 @@
     NSLog(@"%@", obj);
     */
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"json"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"db2014.json" ofType:nil];
     NSError *error;
     NSString *text = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     NSLog(@"NSString: %@", text);
 
     NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
-    id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    NSLog(@"NSData: %@", data);
+     id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     NSLog(@"id: %@", obj);
 
     
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
                                                          options:NSJSONReadingAllowFragments
-                                                           error:nil];
+                                                           error:&error];
     // JSONのパースに失敗した場合は`nil`が入る
     if (json) {
         NSLog(@"NSDictionary: %@", json);

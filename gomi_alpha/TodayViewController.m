@@ -64,21 +64,21 @@
     [self refreshCurrent:now];
 }
 
-- (UIImage*)getImage:(NSString*)icons {
-    
-    NSDictionary * dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @"can.png"        ,@"カン",
-                             @"plastic.png"    ,@"プ・油・特",
-                             @"petbottole.png" ,@"ペット",
-                             @"shigen.png"     ,@"他資源",
-                             @"kanen.png"      ,@"可・ビン",
-                             @"funen.png"      , @"本・不・商",
-                         nil];
-    
-    NSString * imgName = [dbIcon objectForKey:icons];
-    NSLog(@"icons: %@  ->  imgName: %@", icons, imgName);
-    return [UIImage imageNamed:imgName];
-}
+//- (UIImage*)getImage:(NSString*)icons {
+//    
+//    NSDictionary * dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
+//                             @"can.png"        ,@"カン",
+//                             @"plastic.png"    ,@"プ・油・特",
+//                             @"petbottole.png" ,@"ペット",
+//                             @"shigen.png"     ,@"他資源",
+//                             @"kanen.png"      ,@"可・ビン",
+//                             @"funen.png"      , @"本・不・商",
+//                         nil];
+//    
+//    NSString * imgName = [dbIcon objectForKey:icons];
+//    NSLog(@"icons: %@  ->  imgName: %@", icons, imgName);
+//    return [UIImage imageNamed:imgName];
+//}
 
 - (UIImage *)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
@@ -94,7 +94,8 @@
     int rnd = random() % iconTypes;
     NSString* rndStr = [strIcons objectAtIndex:rnd];
     NSLog(@"rndStr: %@", rndStr);
-    UIImage * rndImage = [self getImage:rndStr];
+    //UIImage * rndImage = [self getImage:rndStr];
+    UIImage * rndImage = [HandleDb getIconImage:rndStr];
     return rndImage;
 }
 
@@ -103,8 +104,6 @@
     _imgNext1.image   = [self rndIcon];
     _imgNext2.image   = [self rndIcon];
     _imgNext3.image   = [self rndIcon];
-
-    [HandleDb testJson];
 }
 
 @end

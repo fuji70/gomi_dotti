@@ -10,8 +10,13 @@
 
 @interface HandleDb : NSObject
 
++ (UIImage*)getIconImage:(NSString*)icons;
+
++ (id)getInstance;
 + (int)getBlkNum;
 + (void)setBlkNum:(int) blkNum;
 + (void)testJson;
+
+
 
 @end
