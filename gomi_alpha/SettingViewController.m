@@ -17,6 +17,7 @@
 @implementation SettingViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
 }
 

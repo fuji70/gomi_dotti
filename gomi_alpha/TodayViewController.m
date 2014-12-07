@@ -10,6 +10,9 @@
 #import "HandleDb.h"
 
 @interface TodayViewController ()
+{
+    NSDate *_curDate;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
@@ -23,13 +26,15 @@
 @implementation TodayViewController
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+    [self refreshCurrent];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self doRefreshCurrent];
+    [self initCurrent];
 
 }
 
@@ -48,36 +53,32 @@
 }
 */
 
-- (void)refreshCurrent:(NSDate*) date {
-    NSDate* curDate = date;
+- (void)refreshCurrent {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"MM月dd日(E)";
-    NSString *strCurDate = [dateFormatter stringFromDate:curDate];
+    NSString *strCurDate = [dateFormatter stringFromDate:_curDate];
     
     NSLog(@"Refresh to date= [%@]", strCurDate);
     _lblCurrent.text = strCurDate;
     
+    [self viewCurrentIcons];
 }
 
-- (void)doRefreshCurrent {
-    NSDate* now = [NSDate date];
-    [self refreshCurrent:now];
+- (void)initCurrent {
+    _curDate = [NSDate date];
+    [self refreshCurrent];
 }
 
-- (UIImage*)getImage:(NSString*)icons {
-    
-    NSDictionary * dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @"can.png"        ,@"カン",
-                             @"plastic.png"    ,@"プ・油・特",
-                             @"petbottole.png" ,@"ペット",
-                             @"shigen.png"     ,@"他資源",
-                             @"kanen.png"      ,@"可・ビン",
-                             @"funen.png"      , @"本・不・商",
-                         nil];
-    
-    NSString * imgName = [dbIcon objectForKey:icons];
-    NSLog(@"icons: %@  ->  imgName: %@", icons, imgName);
-    return [UIImage imageNamed:imgName];
+- (void)viewCurrentIcons {
+    NSDate *now = _curDate;
+    int oneday = 60*60*24;
+    _imgCurrent.image = [HandleDb getIconImageFromDate:now];
+    _imgNext1.image = [HandleDb getIconImageFromDate:
+                       [now initWithTimeInterval:oneday*1 sinceDate:now]];
+    _imgNext2.image = [HandleDb getIconImageFromDate:
+                       [now initWithTimeInterval:oneday*2 sinceDate:now]];
+    _imgNext3.image = [HandleDb getIconImageFromDate:
+                       [now initWithTimeInterval:oneday*3 sinceDate:now]];
 }
 
 - (UIImage *)rndIcon {
@@ -94,17 +95,14 @@
     int rnd = random() % iconTypes;
     NSString* rndStr = [strIcons objectAtIndex:rnd];
     NSLog(@"rndStr: %@", rndStr);
-    UIImage * rndImage = [self getImage:rndStr];
+    //UIImage * rndImage = [self getImage:rndStr];
+    UIImage * rndImage = [HandleDb getIconImage:rndStr];
     return rndImage;
 }
 
 - (IBAction)pushButtonDebug:(id)sender {
-    _imgCurrent.image = [self rndIcon];
-    _imgNext1.image   = [self rndIcon];
-    _imgNext2.image   = [self rndIcon];
-    _imgNext3.image   = [self rndIcon];
-    //int blkNum = (random() % 8) + 1;
-    //_lblBlknum.text = [NSString stringWithFormat:@"%d", blkNum];
+    _curDate = [_curDate initWithTimeInterval:(60*60*24) sinceDate:_curDate];
+    [self refreshCurrent];
 }
 
 @end

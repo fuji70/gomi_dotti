@@ -10,7 +10,16 @@
 
 @interface HandleDb : NSObject
 
++ (NSString*)getIconsStr:(NSDate*)date;
++ (NSDate*)getNextDate:(NSString*)iconsStr startDate:(NSDate*)startDate;
++ (UIImage*)getIconImage:(NSString*)iconsStr;
++ (UIImage*)getIconImageFromDate:(NSDate*)date;
+
++ (id)getInstance;
 + (int)getBlkNum;
 + (void)setBlkNum:(int) blkNum;
++ (void)testJson;
+
+
 
 @end

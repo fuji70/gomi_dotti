@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B079467B1A32DEF500C7B5E1 /* SettingViewController.m */; };
+		B0A2699D1A348BA200589AD9 /* db2014.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A2699C1A348BA200589AD9 /* db2014.json */; };
 		B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */; };
 		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
 		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
 		B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71071A34047D00E21D98 /* HandleDb.m */; };
+		B0EE710B1A34146400E21D98 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = B0EE710A1A34146400E21D98 /* test.json */; };
 		B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F769261A2AEB1900858A02 /* TodayViewController.m */; };
 		CA0F5FB019FE94B1006D1CA0 /* funen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */; };
 		CA0F5FB119FE94B1006D1CA0 /* kanen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAF19FE94B1006D1CA0 /* kanen-list.png */; };
@@ -70,6 +72,7 @@
 /* Begin PBXFileReference section */
 		B079467A1A32DEF500C7B5E1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B079467B1A32DEF500C7B5E1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B0A2699C1A348BA200589AD9 /* db2014.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2014.json; sourceTree = "<group>"; };
 		B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		B0EE71001A33ED0E00E21D98 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		B0EE71041A33ED3200E21D98 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		B0EE71061A34047D00E21D98 /* HandleDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleDb.h; sourceTree = "<group>"; };
 		B0EE71071A34047D00E21D98 /* HandleDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleDb.m; sourceTree = "<group>"; };
+		B0EE710A1A34146400E21D98 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		B0F769251A2AEB1900858A02 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		B0F769261A2AEB1900858A02 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funen-list.png"; sourceTree = "<group>"; };
@@ -153,6 +157,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0A2699B1A348BA200589AD9 /* db_calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B0A2699C1A348BA200589AD9 /* db2014.json */,
+			);
+			path = db_calendar;
+			sourceTree = "<group>";
+		};
 		CA794F3019FB44EE00C96F85 = {
 			isa = PBXGroup;
 			children = (
@@ -209,13 +221,15 @@
 		CA794F4319FB44EE00C96F85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0EE710A1A34146400E21D98 /* test.json */,
+				B0A2699B1A348BA200589AD9 /* db_calendar */,
 				CA794F6219FB4C6900C96F85 /* image4app */,
 				CA794F4419FB44EE00C96F85 /* gomi_alpha-Info.plist */,
 				CA794F4519FB44EE00C96F85 /* InfoPlist.strings */,
 				CA794F4819FB44EE00C96F85 /* main.m */,
 				CA794F4A19FB44EE00C96F85 /* gomi_alpha-Prefix.pch */,
-				CA794F4E19FB44EE00C96F85 /* Default.png */,
 				CA794F5019FB44EE00C96F85 /* Default@2x.png */,
+				CA794F4E19FB44EE00C96F85 /* Default.png */,
 				CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -320,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC973E31A3484E400D85C60 /* tab_setting@2x.png in Resources */,
+				B0A2699D1A348BA200589AD9 /* db2014.json in Resources */,
 				CA53FBC21A335A4E003F8EA8 /* 6blk-2014-12.png in Resources */,
 				CA53FBC71A335A65003F8EA8 /* 10blk-2014-12.png in Resources */,
 				CA794F4719FB44EE00C96F85 /* InfoPlist.strings in Resources */,
@@ -336,6 +351,7 @@
 				CA794F8B19FB4C6900C96F85 /* petbottole.png in Resources */,
 				CA794F8C19FB4C6900C96F85 /* plastic.png in Resources */,
 				CA53FBC31A335A4E003F8EA8 /* 7blk-2014-12.png in Resources */,
+				B0EE710B1A34146400E21D98 /* test.json in Resources */,
 				CAB4535E1A3355F600C0DFE2 /* 4blk-2014-12.png in Resources */,
 				CA794F8F19FB4C6900C96F85 /* shigen-rule1.png in Resources */,
 				CA794F9019FB4C6900C96F85 /* shigen-rule2.png in Resources */,
