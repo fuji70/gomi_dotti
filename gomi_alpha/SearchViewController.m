@@ -11,6 +11,12 @@
 
 @interface SearchViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
+@property (weak, nonatomic) IBOutlet UIImageView *imgPet;
+@property (weak, nonatomic) IBOutlet UIImageView *imgOther;
+@property (weak, nonatomic) IBOutlet UIImageView *imgKanen;
+@property (weak, nonatomic) IBOutlet UIImageView *imgCan;
+@property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
+@property (weak, nonatomic) IBOutlet UIImageView *imgPlastic;
 
 @end
 

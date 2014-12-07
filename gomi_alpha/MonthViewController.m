@@ -11,6 +11,7 @@
 
 @interface MonthViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
+@property (weak, nonatomic) IBOutlet UIImageView *imgMonth;
 
 @end
 

@@ -667,7 +667,19 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="imgFri" destination="MFt-WR-Q2P" id="mhm-v3-1YG"/>
+                        <outlet property="imgMon" destination="ZiQ-mr-hVP" id="zfg-bK-oan"/>
+                        <outlet property="imgSat" destination="F9m-lk-Sjt" id="uFX-vc-snj"/>
+                        <outlet property="imgThu" destination="1Lo-aB-ldc" id="aCI-DV-p4Q"/>
+                        <outlet property="imgTue" destination="H1S-l8-OYI" id="4fb-Gp-twk"/>
+                        <outlet property="imgWed" destination="AbT-uY-rnd" id="PdU-gy-biT"/>
                         <outlet property="lblBlknum" destination="B2v-cu-Gei" id="L3I-nj-Aee"/>
+                        <outlet property="lblFri" destination="uAm-dX-ukR" id="AJd-qQ-P9O"/>
+                        <outlet property="lblMon" destination="EXb-Rm-ZOX" id="Efa-zK-ati"/>
+                        <outlet property="lblSat" destination="1qV-yK-PfA" id="oTt-w6-NbL"/>
+                        <outlet property="lblThu" destination="3Sh-XA-1Aq" id="GFn-37-bRa"/>
+                        <outlet property="lblTue" destination="A2D-Av-43M" id="IG5-4s-dNr"/>
+                        <outlet property="lblWed" destination="C3m-xH-cCQ" id="T5V-x6-Js0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGO-m9-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -837,6 +849,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="imgMonth" destination="mLs-Fy-YrX" id="JYN-Qf-x8s"/>
                         <outlet property="lblBlknum" destination="eSA-7u-0Nb" id="t0G-Zp-V5N"/>
                     </connections>
                 </viewController>
@@ -868,28 +881,28 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="petbottole.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" image="petbottole.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
                                 <rect key="frame" x="9" y="58" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="pEM-tc-j77"/>
                                     <constraint firstAttribute="height" constant="70" id="tef-nu-VY0"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shigen.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" image="shigen.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
                                 <rect key="frame" x="9" y="132" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="brN-w9-4PL"/>
                                     <constraint firstAttribute="height" constant="70" id="xEb-wu-GQ0"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
                                 <rect key="frame" x="9" y="206" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="x3Z-xf-bEI"/>
                                     <constraint firstAttribute="width" constant="150" id="xRt-3a-R6f"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
+                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
                                 <rect key="frame" x="164" y="206" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="PQi-LD-mDm"/>
@@ -935,14 +948,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
                                 <rect key="frame" x="164" y="132" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="9Qc-oy-6WC"/>
                                     <constraint firstAttribute="height" constant="70" id="rMg-cB-FiT"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
                                 <rect key="frame" x="164" y="58" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="8JL-t4-gqe"/>
@@ -1059,6 +1072,12 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="imgCan" destination="Pbr-Wx-dVt" id="tei-RX-apu"/>
+                        <outlet property="imgFunen" destination="3DM-jt-r2p" id="lDc-fg-zN8"/>
+                        <outlet property="imgKanen" destination="WCe-ys-v6q" id="jWz-0V-FRn"/>
+                        <outlet property="imgOther" destination="tYr-HQ-86B" id="Ekb-L0-MjK"/>
+                        <outlet property="imgPet" destination="aZU-Os-XNi" id="Vcw-Wv-Vb4"/>
+                        <outlet property="imgPlastic" destination="NIV-Yh-tzg" id="Agv-1e-tGI"/>
                         <outlet property="lblBlknum" destination="Wqt-pK-Whr" id="gkv-ly-e9c"/>
                     </connections>
                 </viewController>

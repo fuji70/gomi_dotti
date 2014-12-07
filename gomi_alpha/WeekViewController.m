@@ -11,7 +11,19 @@
 
 @interface WeekViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
+@property (weak, nonatomic) IBOutlet UILabel *lblMon;
+@property (weak, nonatomic) IBOutlet UILabel *lblTue;
+@property (weak, nonatomic) IBOutlet UILabel *lblWed;
+@property (weak, nonatomic) IBOutlet UILabel *lblThu;
+@property (weak, nonatomic) IBOutlet UILabel *lblFri;
+@property (weak, nonatomic) IBOutlet UILabel *lblSat;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgMon;
+@property (weak, nonatomic) IBOutlet UIImageView *imgTue;
+@property (weak, nonatomic) IBOutlet UIImageView *imgWed;
+@property (weak, nonatomic) IBOutlet UIImageView *imgThu;
+@property (weak, nonatomic) IBOutlet UIImageView *imgFri;
+@property (weak, nonatomic) IBOutlet UILabel *imgSat;
 @end
 
 @implementation WeekViewController
