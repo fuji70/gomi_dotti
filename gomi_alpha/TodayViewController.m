@@ -9,7 +9,8 @@
 #import "TodayViewController.h"
 
 @interface TodayViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *lblBlknum;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext1;

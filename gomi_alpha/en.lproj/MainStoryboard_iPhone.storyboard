@@ -1416,16 +1416,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vbo-8Q-GZz">
-                                <rect key="frame" x="155" y="0.0" width="26" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="26" id="QK5-6o-IOm"/>
-                                    <constraint firstAttribute="height" constant="30" id="pKz-Kx-dI1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
                                 <rect key="frame" x="10" y="169" width="300" height="150"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -1552,7 +1542,6 @@
                             <constraint firstItem="YUv-FU-B7a" firstAttribute="top" secondItem="zkx-9V-hdd" secondAttribute="bottom" constant="5" id="NW6-F4-nhd"/>
                             <constraint firstAttribute="centerX" secondItem="Tin-ey-V4f" secondAttribute="centerX" id="P9a-5i-9V8"/>
                             <constraint firstItem="32H-Lf-LMP" firstAttribute="top" secondItem="yse-Ad-ZgO" secondAttribute="bottom" constant="5" id="QKN-wr-3FZ"/>
-                            <constraint firstItem="y1c-RW-JMh" firstAttribute="leading" secondItem="vbo-8Q-GZz" secondAttribute="trailing" constant="-10" id="Qub-wy-UeA"/>
                             <constraint firstItem="k7e-u8-FeY" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Qyv-z4-4cG"/>
                             <constraint firstItem="s3g-bP-ijs" firstAttribute="top" secondItem="zkx-9V-hdd" secondAttribute="bottom" constant="5" id="Rej-Xl-qox"/>
                             <constraint firstItem="yse-Ad-ZgO" firstAttribute="top" secondItem="k7e-u8-FeY" secondAttribute="bottom" constant="5" id="RxD-3i-PxZ"/>
@@ -1576,7 +1565,6 @@
                             <constraint firstAttribute="centerX" secondItem="zkx-9V-hdd" secondAttribute="centerX" id="leo-cE-EmZ"/>
                             <constraint firstItem="k7e-u8-FeY" firstAttribute="top" secondItem="541-dx-PpN" secondAttribute="bottom" id="oD4-kk-yT3"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="top" secondItem="s3g-bP-ijs" secondAttribute="bottom" constant="5" id="ole-s3-Izz"/>
-                            <constraint firstItem="vbo-8Q-GZz" firstAttribute="top" secondItem="541-dx-PpN" secondAttribute="bottom" constant="10" id="pBD-Ja-nn8"/>
                             <constraint firstItem="K6T-U9-2YT" firstAttribute="leading" secondItem="z8S-TT-lcJ" secondAttribute="trailing" constant="5" id="sNS-H3-DbT"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="K6T-U9-2YT" secondAttribute="bottom" constant="5" id="tzI-rW-GKN"/>
                             <constraint firstItem="y1c-RW-JMh" firstAttribute="leading" secondItem="D9O-SO-UO2" secondAttribute="trailing" constant="-10" id="xk0-8c-95W"/>
@@ -1593,7 +1581,7 @@
                         <outlet property="imgNext1" destination="Tin-ey-V4f" id="cZb-KX-PWd"/>
                         <outlet property="imgNext2" destination="aI4-XA-KOc" id="1vZ-Xt-A95"/>
                         <outlet property="imgNext3" destination="5m2-xw-uaT" id="bUv-Qe-l23"/>
-                        <outlet property="lblBlknum" destination="vbo-8Q-GZz" id="AOv-SQ-P4l"/>
+                        <outlet property="lblBlknum" destination="D9O-SO-UO2" id="vwk-Fj-Onh"/>
                         <outlet property="lblCurrent" destination="k7e-u8-FeY" id="Hr9-6v-TqL"/>
                     </connections>
                 </viewController>
