@@ -1495,9 +1495,9 @@
                                     <constraint firstAttribute="height" constant="30" id="aqe-IC-ToX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9m-ex-1jJ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9m-ex-1jJ">
                                 <rect key="frame" x="241" y="439" width="53" height="30"/>
-                                <state key="normal" title="DEBUG"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="pushButtonDebug:" destination="ZfS-Qq-a3W" eventType="touchUpInside" id="dLE-HL-qL6"/>
                                 </connections>

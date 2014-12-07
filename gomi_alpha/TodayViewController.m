@@ -10,6 +10,9 @@
 #import "HandleDb.h"
 
 @interface TodayViewController ()
+{
+    NSDate *_curDate;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
@@ -25,13 +28,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
-    [self viewTodayIcons];
+    [self refreshCurrent];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self doRefreshCurrent];
+    [self initCurrent];
 
 }
 
@@ -50,32 +53,32 @@
 }
 */
 
-- (void)refreshCurrent:(NSDate*) date {
-    NSDate* curDate = date;
+- (void)refreshCurrent {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"MM月dd日(E)";
-    NSString *strCurDate = [dateFormatter stringFromDate:curDate];
+    NSString *strCurDate = [dateFormatter stringFromDate:_curDate];
     
     NSLog(@"Refresh to date= [%@]", strCurDate);
     _lblCurrent.text = strCurDate;
     
+    [self viewCurrentIcons];
 }
 
-- (void)doRefreshCurrent {
-    NSDate* now = [NSDate date];
-    [self refreshCurrent:now];
+- (void)initCurrent {
+    _curDate = [NSDate date];
+    [self refreshCurrent];
 }
 
-- (void)viewTodayIcons {
-    NSDate *now = [NSDate date];
+- (void)viewCurrentIcons {
+    NSDate *now = _curDate;
     int oneday = 60*60*24;
     _imgCurrent.image = [HandleDb getIconImageFromDate:now];
     _imgNext1.image = [HandleDb getIconImageFromDate:
-                       [now initWithTimeIntervalSinceNow:oneday*1]];
+                       [now initWithTimeInterval:oneday*1 sinceDate:now]];
     _imgNext2.image = [HandleDb getIconImageFromDate:
-                       [now initWithTimeIntervalSinceNow:oneday*2]];
+                       [now initWithTimeInterval:oneday*2 sinceDate:now]];
     _imgNext3.image = [HandleDb getIconImageFromDate:
-                       [now initWithTimeIntervalSinceNow:oneday*3]];
+                       [now initWithTimeInterval:oneday*3 sinceDate:now]];
 }
 
 - (UIImage *)rndIcon {
@@ -98,10 +101,8 @@
 }
 
 - (IBAction)pushButtonDebug:(id)sender {
-    _imgCurrent.image = [self rndIcon];
-    _imgNext1.image   = [self rndIcon];
-    _imgNext2.image   = [self rndIcon];
-    _imgNext3.image   = [self rndIcon];
+    _curDate = [_curDate initWithTimeInterval:(60*60*24) sinceDate:_curDate];
+    [self refreshCurrent];
 }
 
 @end
