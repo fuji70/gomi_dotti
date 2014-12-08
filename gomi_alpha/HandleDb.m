@@ -139,6 +139,14 @@ NSString *FILE_DB = @"db2014.json";
     return [UIImage imageNamed:imgName];
 }
 
++ (UIImage*)getMonthImage:(NSDate*)date {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"YYYY-MM";
+    NSString *strDate = [dateFormatter stringFromDate:date];
+    NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
+    return [UIImage imageNamed:imgName];
+}
+
 - (NSDictionary *)loadJsonDb:(NSString *)infile {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:infile ofType:nil];
     NSError *error;

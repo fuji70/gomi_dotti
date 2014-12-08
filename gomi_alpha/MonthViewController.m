@@ -10,6 +10,10 @@
 #import "HandleDb.h"
 
 @interface MonthViewController ()
+{
+    NSDate * _curDate;
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UIImageView *imgMonth;
 
@@ -19,6 +23,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+    _curDate = [NSDate date];
+    [self drawView];
 }
 
 - (void)viewDidLoad {
@@ -41,4 +47,7 @@
 }
 */
 
+- (void)drawView {
+    _imgMonth.image = [HandleDb getMonthImage:_curDate];
+}
 @end

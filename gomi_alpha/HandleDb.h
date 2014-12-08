@@ -15,6 +15,7 @@
 + (UIImage*)getIconImage:(NSString*)iconsStr;
 + (UIImage*)getIconImageFromDate:(NSDate*)date;
 + (NSString*)getPitStr:(NSString*)iconsStr;
++ (UIImage*)getMonthImage:(NSDate*)date;
 
 + (id)getInstance;
 + (int)getBlkNum;
