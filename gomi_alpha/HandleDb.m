@@ -15,6 +15,7 @@ NSString *FILE_DB = @"db2014.json";
     NSDate       *_curDate;
     NSDictionary *_dbCalendar;
     NSDictionary *_dbIcon;
+    NSDictionary *_dbPit;
 }
 @end
 
@@ -37,15 +38,27 @@ NSString *FILE_DB = @"db2014.json";
 
 - (void)initDbIcon {
     _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
+               // filename       ,keyStr
                @"can.png"        ,@"カン",
                @"plastic.png"    ,@"プ・油・特",
                @"petbottole.png" ,@"ペット",
                @"shigen.png"     ,@"他資源",
                @"kanen.png"      ,@"可・ビン",
-               @"funen.png"      , @"本・不・商",
+               @"funen.png"      ,@"本・不・商",
                nil];
 }
 
+- (void)initDbPit {
+    _dbPit = [NSDictionary dictionaryWithObjectsAndKeys:
+              // Pit, keyStr
+              @"自宅前" ,@"カン",
+              @"自宅前" ,@"プ・油・特",
+              @"自宅前" ,@"ペット",
+              @"集積所" ,@"他資源",
+              @"自宅前" ,@"可・ビン",
+              @"自宅前" ,@"本・不・商",
+              nil];
+}
 
 + (NSString*)getIconsStr:(NSDate*)date {
     return [[HandleDb getInstance] _getIconsStr:date];
@@ -60,6 +73,10 @@ NSString *FILE_DB = @"db2014.json";
     return value;
 }
 
++ (NSDate*)getNextDate:(NSString*)iconsStr startDate:(NSDate*)startDate {
+    return [[HandleDb getInstance] _getNextDate:iconsStr startDate:startDate];
+}
+
 - (NSDate*)_getNextDate:(NSString*)iconsStr startDate:(NSDate*)startDate {
     NSDate *date = [NSDate alloc];
     NSDate *rdate = nil;
@@ -67,6 +84,7 @@ NSString *FILE_DB = @"db2014.json";
     for (int i=0; i<14; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:startDate];
         NSString *ticons = [self _getIconsStr:date];
+        NSLog(@"searchNext: %d  %@  %@", i, date, ticons);
         if ([ticons isEqualToString:iconsStr]) {
             rdate = date;
             break;
@@ -81,6 +99,14 @@ NSString *FILE_DB = @"db2014.json";
 
 + (UIImage*)getIconImage:(NSString*)iconsStr {
     return [[HandleDb getInstance] _getIconImage:iconsStr];
+}
+
+- (NSString*)_getPitStr:(NSString*)iconsStr {
+    return _dbPit[iconsStr];
+}
+
++ (NSString*)getPitStr:(NSString*)iconsStr {
+    return [[HandleDb getInstance] _getPitStr:iconsStr];
 }
 
 + (NSString*)getKeyDate: (NSDate*)date {
@@ -102,6 +128,7 @@ NSString *FILE_DB = @"db2014.json";
         _curDate = [NSDate date];
         _dbCalendar = [self loadJsonDb:FILE_DB];
         [self initDbIcon];
+        [self initDbPit];
     }
     return self;
 }

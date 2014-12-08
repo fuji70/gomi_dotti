@@ -14,6 +14,7 @@
 + (NSDate*)getNextDate:(NSString*)iconsStr startDate:(NSDate*)startDate;
 + (UIImage*)getIconImage:(NSString*)iconsStr;
 + (UIImage*)getIconImageFromDate:(NSDate*)date;
++ (NSString*)getPitStr:(NSString*)iconsStr;
 
 + (id)getInstance;
 + (int)getBlkNum;
