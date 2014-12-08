@@ -71,6 +71,8 @@
     UITouch *touch = [touches anyObject];
     NSNumber *keyBtn = [NSNumber numberWithInt:(int)touch.view.tag];
     NSString *iconsStr = _tblBtn[keyBtn];
+    if (!iconsStr) return;
+    
     NSLog( @"touch: %@ -> %@", keyBtn, iconsStr );
     NSDate *now = [NSDate date];
     
