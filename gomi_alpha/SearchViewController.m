@@ -10,6 +10,10 @@
 #import "HandleDb.h"
 
 @interface SearchViewController ()
+{
+    NSDictionary * _tblBtn;
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPet;
 @property (weak, nonatomic) IBOutlet UIImageView *imgOther;
@@ -17,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgCan;
 @property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPlastic;
+@property (weak, nonatomic) IBOutlet UILabel *lblType;
+@property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
+@property (weak, nonatomic) IBOutlet UILabel *lblPit;
 
 @end
 
@@ -29,6 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self initTblBtn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,5 +53,38 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)initTblBtn {
+    _tblBtn = [NSDictionary dictionaryWithObjectsAndKeys:
+               // iconStr,  keyBtnTag
+               @"カン",      @4,
+               @"プ・油・特", @6,
+               @"ペット",    @1,
+               @"他資源",    @2,
+               @"可・ビン",  @3,
+               @"本・不・商", @5,
+               nil];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    NSNumber *keyBtn = [NSNumber numberWithInt:(int)touch.view.tag];
+    NSString *iconsStr = _tblBtn[keyBtn];
+    NSLog( @"touch: %@ -> %@", keyBtn, iconsStr );
+    NSDate *now = [NSDate date];
+    
+    NSDate * nextDate = [HandleDb getNextDate:iconsStr startDate:now];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"MM月dd日(E)";
+    NSString *strNextDate = [dateFormatter stringFromDate:nextDate];
+    _lblNextDate.text = strNextDate;
+    
+    _lblType.text = iconsStr;
+    _lblPit.text = [HandleDb getPitStr:iconsStr];
+    
+}
+
 
 @end
