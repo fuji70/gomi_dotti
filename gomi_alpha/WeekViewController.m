@@ -9,21 +9,13 @@
 #import "WeekViewController.h"
 #import "HandleDb.h"
 
-@interface WeekViewController ()
+@interface WeekViewController () {
+    NSDate * _curDate;
+}
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
-@property (weak, nonatomic) IBOutlet UILabel *lblMon;
-@property (weak, nonatomic) IBOutlet UILabel *lblTue;
-@property (weak, nonatomic) IBOutlet UILabel *lblWed;
-@property (weak, nonatomic) IBOutlet UILabel *lblThu;
-@property (weak, nonatomic) IBOutlet UILabel *lblFri;
-@property (weak, nonatomic) IBOutlet UILabel *lblSat;
 
-@property (weak, nonatomic) IBOutlet UIImageView *imgMon;
-@property (weak, nonatomic) IBOutlet UIImageView *imgTue;
-@property (weak, nonatomic) IBOutlet UIImageView *imgWed;
-@property (weak, nonatomic) IBOutlet UIImageView *imgThu;
-@property (weak, nonatomic) IBOutlet UIImageView *imgFri;
-@property (weak, nonatomic) IBOutlet UILabel *imgSat;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSMutableArray *lblWeekdays;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgWeekdays;
 @end
 
 @implementation WeekViewController
@@ -31,6 +23,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+    _curDate = [NSDate date];
+    [self drawWeekdays];
 }
 
 - (void)viewDidLoad {
@@ -52,5 +46,37 @@
     // Pass the selected object to the new view controller.
 }
 */
+
++ (int)getDaynum:(NSDate*)date {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit|NSWeekdayCalendarUnit fromDate:date];
+    return (int)[components weekday]; // 1:Sun 2:Mon .... 7:Sat
+}
+
++ (NSDate*)getThisMonday:(NSDate*)date {
+    int daynum = [WeekViewController getDaynum:date];
+    int toMon = daynum - 2;
+    if (toMon < 0) toMon += 7;
+    int oneday = 60*60*24;
+    return [date initWithTimeInterval:oneday*(-toMon) sinceDate:date];
+}
+
++ (NSString*)date2str:(NSDate*)date {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"MM月dd日(E)";
+    return[dateFormatter stringFromDate:date];
+}
+
+- (void)drawWeekdays {
+    int numLbl = (int)[_lblWeekdays count];
+    int oneday = 60*60*24;
+    NSDate * date = _curDate;
+    NSDate * sinceDate = [WeekViewController getThisMonday:_curDate];
+    for (int i=0; i<numLbl; ++i) {
+        date = [date initWithTimeInterval:oneday*i sinceDate:sinceDate];
+        ((UILabel*)_lblWeekdays[i]).text = [WeekViewController date2str:date];
+        ((UIImageView*)_imgWeekdays[i]).image = [HandleDb getIconImageFromDate:date];
+    }
+}
 
 @end
