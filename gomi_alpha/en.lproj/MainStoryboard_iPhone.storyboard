@@ -888,7 +888,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView tag="1" contentMode="scaleAspectFit" image="petbottole.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
+                            <imageView tag="1" contentMode="scaleAspectFit" image="petbottle.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
                                 <rect key="frame" x="9" y="58" width="150" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="pEM-tc-j77"/>
@@ -1694,7 +1694,7 @@
         <image name="no-treat-list1.png" width="1080" height="1643"/>
         <image name="no-treat-list2.png" width="1074" height="1644"/>
         <image name="oogata-list.png" width="1079" height="1643"/>
-        <image name="petbottole.png" width="400" height="200"/>
+        <image name="petbottle.png" width="400" height="200"/>
         <image name="plastic-list.png" width="1080" height="1644"/>
         <image name="plastic.png" width="400" height="200"/>
         <image name="shigen-kobetsu-list.png" width="1079" height="1644"/>

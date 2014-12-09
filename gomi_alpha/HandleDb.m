@@ -41,7 +41,7 @@ NSString *FILE_DB = @"db2014.json";
                // filename       ,keyStr
                @"can.png"        ,@"カン",
                @"plastic.png"    ,@"プ・油・特",
-               @"petbottole.png" ,@"ペット",
+               @"petbottle.png" ,@"ペット",
                @"shigen.png"     ,@"他資源",
                @"kanen.png"      ,@"可・ビン",
                @"funen.png"      ,@"本・不・商",
