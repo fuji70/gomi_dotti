@@ -75,6 +75,8 @@
     for (int i=0; i<numLbl; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:sinceDate];
         ((UILabel*)_lblWeekdays[i]).text = [WeekViewController date2str:date];
+        NSString * strIcons = [HandleDb getIconsStr:date];
+        ((UILabel*)_lblWeekdays[i]).backgroundColor = [UIColor colorWithPatternImage:[HandleDb getDateIconImage:strIcons]];
         ((UIImageView*)_imgWeekdays[i]).image = [HandleDb getIconImageFromDate:date];
     }
 }
