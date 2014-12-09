@@ -414,7 +414,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-tj-AL4">
                                 <rect key="frame" x="164" y="295" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="fch-ZL-BBz"/>
                                     <constraint firstAttribute="width" constant="140" id="hcb-2k-zzV"/>
@@ -424,7 +424,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-lk-Sjt">
                                 <rect key="frame" x="164" y="445" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="FyR-7b-LAf"/>
                                     <constraint firstAttribute="width" constant="140" id="gf2-QC-Mmh"/>
@@ -434,7 +434,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-cY-hLm">
                                 <rect key="frame" x="164" y="145" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="jNS-0z-hYs"/>
                                     <constraint firstAttribute="width" constant="140" id="xId-OJ-xbd"/>
@@ -444,7 +444,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LId-1m-kfe">
                                 <rect key="frame" x="164" y="220" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ETY-YP-7I8"/>
                                     <constraint firstAttribute="width" constant="140" id="jAV-hv-5mu"/>
@@ -454,7 +454,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bws-3O-sw4">
                                 <rect key="frame" x="164" y="70" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="dMP-Kd-3pN"/>
                                     <constraint firstAttribute="height" constant="70" id="fG6-Ia-6gS"/>
@@ -481,7 +481,7 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-jf-hQF">
                                 <rect key="frame" x="164" y="370" width="140" height="70"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="4I2-be-123"/>
                                     <constraint firstAttribute="height" constant="70" id="iVd-z8-PAW"/>
@@ -610,7 +610,7 @@
                                     <constraint firstAttribute="width" constant="140" id="bcT-0O-sww"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-0o-lCG" propertyAccessControl="none">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-0o-lCG" propertyAccessControl="none">
                                 <rect key="frame" x="164" y="445" width="140" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Egd-0K-582"/>
@@ -634,6 +634,7 @@
                             <constraint firstItem="LId-1m-kfe" firstAttribute="top" secondItem="T8I-cY-hLm" secondAttribute="bottom" constant="5" id="AmP-jS-98f"/>
                             <constraint firstItem="bbf-62-d7L" firstAttribute="leading" secondItem="tGb-pd-zhi" secondAttribute="trailing" constant="-10" id="B5z-sj-C1O"/>
                             <constraint firstItem="AbT-uY-rnd" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="trailing" id="CSn-io-aiw"/>
+                            <constraint firstItem="WkS-0o-lCG" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="F9Y-u0-9Nn"/>
                             <constraint firstItem="kMP-tj-AL4" firstAttribute="leading" secondItem="3Sh-XA-1Aq" secondAttribute="trailing" id="Iog-lL-RHg"/>
                             <constraint firstItem="MFt-WR-Q2P" firstAttribute="leading" secondItem="uAm-dX-ukR" secondAttribute="trailing" id="JEB-Bi-0i2"/>
                             <constraint firstItem="kMP-tj-AL4" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="KTf-aX-SXV"/>
@@ -659,6 +660,7 @@
                             <constraint firstItem="rvE-jf-hQF" firstAttribute="top" secondItem="kMP-tj-AL4" secondAttribute="bottom" constant="5" id="hrZ-iZ-Mtc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bbf-62-d7L" secondAttribute="trailing" id="iNY-Xs-o8f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bws-3O-sw4" secondAttribute="trailing" id="ipu-QQ-qxY"/>
+                            <constraint firstItem="WkS-0o-lCG" firstAttribute="top" secondItem="MFt-WR-Q2P" secondAttribute="bottom" constant="5" id="l2c-xh-TM1"/>
                             <constraint firstItem="hYe-bt-7aw" firstAttribute="top" secondItem="gZz-zs-TyP" secondAttribute="bottom" id="o2a-TI-kED"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="leading" id="oYq-MV-QSP"/>
                             <constraint firstItem="T8I-cY-hLm" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="ogi-dz-qu7"/>
@@ -668,6 +670,7 @@
                             <constraint firstItem="F9m-lk-Sjt" firstAttribute="leading" secondItem="1qV-yK-PfA" secondAttribute="trailing" id="u42-64-dBl"/>
                             <constraint firstItem="ZiQ-mr-hVP" firstAttribute="leading" secondItem="EXb-Rm-ZOX" secondAttribute="trailing" id="wbX-83-f5b"/>
                             <constraint firstItem="MFt-WR-Q2P" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="x3h-19-SyC"/>
+                            <constraint firstItem="WkS-0o-lCG" firstAttribute="leading" secondItem="1qV-yK-PfA" secondAttribute="trailing" id="yzX-75-ESb"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="今週のゴミ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
