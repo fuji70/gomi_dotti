@@ -21,9 +21,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgCan;
 @property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPlastic;
-@property (weak, nonatomic) IBOutlet UILabel *lblType;
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
+@property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
+
 
 @end
 
@@ -82,8 +83,7 @@
     dateFormatter.dateFormat = @"MM月dd日(E)";
     NSString *strNextDate = [dateFormatter stringFromDate:nextDate];
     _lblNextDate.text = strNextDate;
-    
-    _lblType.text = iconsStr;
+    _imgWordType.image = [HandleDb getWordIconImage:iconsStr];
     _lblPit.text = [HandleDb getPitStr:iconsStr];
     
 }

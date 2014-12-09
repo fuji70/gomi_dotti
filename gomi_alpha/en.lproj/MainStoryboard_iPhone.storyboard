@@ -1017,13 +1017,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_can.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Lh-qy6">
-                                <rect key="frame" x="89" y="421" width="220" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="Pve-0N-xfL"/>
-                                    <constraint firstAttribute="height" constant="36" id="ZhH-bw-15a"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="次の" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-RB-h4o">
                                 <rect key="frame" x="10" y="423" width="300" height="30"/>
                                 <constraints>
@@ -1034,6 +1027,13 @@
                                 <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="word_can.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Lh-qy6">
+                                <rect key="frame" x="89" y="421" width="220" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Pve-0N-xfL"/>
+                                    <constraint firstAttribute="height" constant="36" id="ZhH-bw-15a"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -1084,6 +1084,7 @@
                         <outlet property="imgOther" destination="tYr-HQ-86B" id="Ekb-L0-MjK"/>
                         <outlet property="imgPet" destination="aZU-Os-XNi" id="Vcw-Wv-Vb4"/>
                         <outlet property="imgPlastic" destination="NIV-Yh-tzg" id="Agv-1e-tGI"/>
+                        <outlet property="imgWordType" destination="g1D-Lh-qy6" id="dbc-hU-0Ej"/>
                         <outlet property="lblBlknum" destination="Wqt-pK-Whr" id="gkv-ly-e9c"/>
                         <outlet property="lblNextDate" destination="LxF-Ic-JFO" id="taS-9z-nRd"/>
                         <outlet property="lblPit" destination="Lw3-FO-vL3" id="5Zc-iX-Wci"/>

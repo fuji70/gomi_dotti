@@ -13,6 +13,7 @@
 + (NSString*)getIconsStr:(NSDate*)date;
 + (NSDate*)getNextDate:(NSString*)iconsStr startDate:(NSDate*)startDate;
 + (UIImage*)getIconImage:(NSString*)iconsStr;
++ (UIImage*)getWordIconImage:(NSString*)iconsStr;
 + (UIImage*)getIconImageFromDate:(NSDate*)date;
 + (NSString*)getPitStr:(NSString*)iconsStr;
 + (UIImage*)getMonthImage:(NSDate*)date;
