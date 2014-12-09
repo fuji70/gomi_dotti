@@ -53,10 +53,15 @@
     return (int)[components weekday]; // 1:Sun 2:Mon .... 7:Sat
 }
 
-+ (NSDate*)getThisMonday:(NSDate*)date {
++ (int)offsetToMonday:(NSDate*)date {
     int daynum = [WeekViewController getDaynum:date];
     int toMon = daynum - 2;
     if (toMon < 0) toMon += 7;
+    return toMon;
+}
+
++ (NSDate*)getThisMonday:(NSDate*)date {
+    int toMon = [WeekViewController offsetToMonday:date];
     int oneday = 60*60*24;
     return [date initWithTimeInterval:oneday*(-toMon) sinceDate:date];
 }
@@ -71,10 +76,12 @@
     int numLbl = (int)[_lblWeekdays count];
     int oneday = 60*60*24;
     NSDate * date = _curDate;
+    int todayIdx = [WeekViewController offsetToMonday:_curDate];
     NSDate * sinceDate = [WeekViewController getThisMonday:_curDate];
     for (int i=0; i<numLbl; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:sinceDate];
         ((UILabel*)_lblWeekdays[i]).text = [WeekViewController date2str:date];
+        ((UILabel*)_lblWeekdays[i]).highlighted = (i==todayIdx);
         NSString * strIcons = [HandleDb getIconsStr:date];
         ((UILabel*)_lblWeekdays[i]).backgroundColor = [UIColor colorWithPatternImage:[HandleDb getDateIconImage:strIcons]];
         ((UIImageView*)_imgWeekdays[i]).image = [HandleDb getIconImageFromDate:date];
