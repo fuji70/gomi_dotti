@@ -105,6 +105,10 @@ NSString *FILE_DB = @"db2014.json";
     return [[HandleDb getInstance] _getWordIconImage:iconsStr];
 }
 
++ (UIImage*)getDateIconImage:(NSString*)iconsStr {
+    return [[HandleDb getInstance] _getDateIconImage:iconsStr];
+}
+
 - (NSString*)_getPitStr:(NSString*)iconsStr {
     return _dbPit[iconsStr];
 }
@@ -146,6 +150,14 @@ NSString *FILE_DB = @"db2014.json";
 - (UIImage*)_getWordIconImage:(NSString*)iconsStr {
     NSString * imgName = [NSString stringWithFormat:@"word_%@", [_dbIcon objectForKey:iconsStr]];
     NSLog(@"wordicons: %@  ->  imgName: %@", iconsStr, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
+- (UIImage*)_getDateIconImage:(NSString*)iconsStr {
+    NSString * baseName = [_dbIcon objectForKey:iconsStr];
+    if (!baseName) { baseName = @"non.png"; }
+    NSString * imgName = [NSString stringWithFormat:@"date_%@", baseName];
+    NSLog(@"dateicons: %@  ->  imgName: %@", iconsStr, imgName);
     return [UIImage imageNamed:imgName];
 }
 
