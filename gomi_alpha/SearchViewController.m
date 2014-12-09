@@ -80,6 +80,7 @@
     NSDate * nextDate = [HandleDb getNextDate:iconsStr startDate:now];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     dateFormatter.dateFormat = @"MM月dd日(E)";
     NSString *strNextDate = [dateFormatter stringFromDate:nextDate];
     _lblNextDate.text = strNextDate;

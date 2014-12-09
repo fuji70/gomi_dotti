@@ -68,6 +68,7 @@
 
 + (NSString*)date2str:(NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     dateFormatter.dateFormat = @"MM月dd日(E)";
     return[dateFormatter stringFromDate:date];
 }

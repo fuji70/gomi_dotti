@@ -55,6 +55,7 @@
 
 - (void)refreshCurrent {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     dateFormatter.dateFormat = @"MM月dd日(E)";
     NSString *strCurDate = [dateFormatter stringFromDate:_curDate];
     
