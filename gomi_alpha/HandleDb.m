@@ -41,7 +41,7 @@ NSString *FILE_DB = @"db2014.json";
                // filename       ,keyStr
                @"can.png"        ,@"カン",
                @"plastic.png"    ,@"プ・油・特",
-               @"petbottole.png" ,@"ペット",
+               @"petbottle.png" ,@"ペット",
                @"shigen.png"     ,@"他資源",
                @"kanen.png"      ,@"可・ビン",
                @"funen.png"      ,@"本・不・商",
@@ -101,6 +101,10 @@ NSString *FILE_DB = @"db2014.json";
     return [[HandleDb getInstance] _getIconImage:iconsStr];
 }
 
++ (UIImage*)getWordIconImage:(NSString*)iconsStr {
+    return [[HandleDb getInstance] _getWordIconImage:iconsStr];
+}
+
 - (NSString*)_getPitStr:(NSString*)iconsStr {
     return _dbPit[iconsStr];
 }
@@ -136,6 +140,12 @@ NSString *FILE_DB = @"db2014.json";
 - (UIImage*)_getIconImage:(NSString*)iconsStr {
     NSString * imgName = [_dbIcon objectForKey:iconsStr];
     NSLog(@"icons: %@  ->  imgName: %@", iconsStr, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
+- (UIImage*)_getWordIconImage:(NSString*)iconsStr {
+    NSString * imgName = [NSString stringWithFormat:@"word_%@", [_dbIcon objectForKey:iconsStr]];
+    NSLog(@"wordicons: %@  ->  imgName: %@", iconsStr, imgName);
     return [UIImage imageNamed:imgName];
 }
 

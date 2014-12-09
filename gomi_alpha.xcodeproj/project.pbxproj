@@ -61,7 +61,7 @@
 		CA794F7D19FB4C6900C96F85 /* can.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F6419FB4C6900C96F85 /* can.png */; };
 		CA794F7E19FB4C6900C96F85 /* funen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F6519FB4C6900C96F85 /* funen.png */; };
 		CA794F8919FB4C6900C96F85 /* kanen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7119FB4C6900C96F85 /* kanen.png */; };
-		CA794F8B19FB4C6900C96F85 /* petbottole.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7319FB4C6900C96F85 /* petbottole.png */; };
+		CA794F8B19FB4C6900C96F85 /* petbottle.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7319FB4C6900C96F85 /* petbottle.png */; };
 		CA794F8C19FB4C6900C96F85 /* plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7419FB4C6900C96F85 /* plastic.png */; };
 		CA794F8F19FB4C6900C96F85 /* shigen-rule1.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7719FB4C6900C96F85 /* shigen-rule1.png */; };
 		CA794F9019FB4C6900C96F85 /* shigen-rule2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7819FB4C6900C96F85 /* shigen-rule2.png */; };
@@ -148,7 +148,7 @@
 		CA794F6419FB4C6900C96F85 /* can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = can.png; sourceTree = "<group>"; };
 		CA794F6519FB4C6900C96F85 /* funen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funen.png; sourceTree = "<group>"; };
 		CA794F7119FB4C6900C96F85 /* kanen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanen.png; sourceTree = "<group>"; };
-		CA794F7319FB4C6900C96F85 /* petbottole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = petbottole.png; sourceTree = "<group>"; };
+		CA794F7319FB4C6900C96F85 /* petbottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = petbottle.png; sourceTree = "<group>"; };
 		CA794F7419FB4C6900C96F85 /* plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plastic.png; sourceTree = "<group>"; };
 		CA794F7719FB4C6900C96F85 /* shigen-rule1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shigen-rule1.png"; sourceTree = "<group>"; };
 		CA794F7819FB4C6900C96F85 /* shigen-rule2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shigen-rule2.png"; sourceTree = "<group>"; };
@@ -312,7 +312,7 @@
 				CA794F6419FB4C6900C96F85 /* can.png */,
 				CA794F6519FB4C6900C96F85 /* funen.png */,
 				CA794F7119FB4C6900C96F85 /* kanen.png */,
-				CA794F7319FB4C6900C96F85 /* petbottole.png */,
+				CA794F7319FB4C6900C96F85 /* petbottle.png */,
 				CA794F7419FB4C6900C96F85 /* plastic.png */,
 				CA794F7719FB4C6900C96F85 /* shigen-rule1.png */,
 				CA794F7819FB4C6900C96F85 /* shigen-rule2.png */,
@@ -388,7 +388,7 @@
 				CA794F7E19FB4C6900C96F85 /* funen.png in Resources */,
 				CA794F8919FB4C6900C96F85 /* kanen.png in Resources */,
 				CAC973D71A3484A900D85C60 /* tab_week@2x.png in Resources */,
-				CA794F8B19FB4C6900C96F85 /* petbottole.png in Resources */,
+				CA794F8B19FB4C6900C96F85 /* petbottle.png in Resources */,
 				CA794F8C19FB4C6900C96F85 /* plastic.png in Resources */,
 				CA53FBC31A335A4E003F8EA8 /* 7blk-2014-12.png in Resources */,
 				CA2C40121A35F833000ED743 /* date_shigen.png in Resources */,
