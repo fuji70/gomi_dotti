@@ -609,7 +609,6 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今週のごみ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hYe-bt-7aw">
                                 <rect key="frame" x="16" y="20" width="200" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DBQ-RK-sNy"/>
                                     <constraint firstAttribute="width" constant="200" id="kTL-mq-vPu"/>
@@ -619,7 +618,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="top" secondItem="C3m-xH-cCQ" secondAttribute="bottom" constant="5" id="0DR-BB-maJ"/>
                             <constraint firstItem="LId-1m-kfe" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="trailing" id="0Ov-KH-zdY"/>
@@ -814,7 +813,6 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今月のごみ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-Bl-asD">
                                 <rect key="frame" x="16" y="20" width="200" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="j65-t0-x4n"/>
                                     <constraint firstAttribute="height" constant="50" id="upj-RZ-ScG"/>
@@ -824,7 +822,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rPx-X3-Iq8" firstAttribute="leading" secondItem="efX-oW-5NC" secondAttribute="leading" id="1Us-US-NAw"/>
                             <constraint firstItem="Ba4-Bl-asD" firstAttribute="leading" secondItem="tmC-ih-re3" secondAttribute="leadingMargin" id="4MT-60-H8y"/>
@@ -880,18 +878,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-NK-bHs">
-                                <rect key="frame" x="5" y="414" width="310" height="103"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="103" id="JO3-sO-Xm1"/>
-                                    <constraint firstAttribute="width" constant="310" id="N56-ai-nOE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
                             <imageView tag="1" contentMode="scaleAspectFit" image="petbottle.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
                                 <rect key="frame" x="9" y="58" width="150" height="70"/>
                                 <constraints>
@@ -962,9 +948,8 @@
                                     <constraint firstAttribute="width" constant="150" id="EE9-Rs-Ivw"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" text="大型ごみ/特別大型ごみ/剪定枝の収集の申し込みは、(株)藤沢市興業公社へ（0466-23-5301）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
-                                <rect key="frame" x="5" y="357" width="310" height="54"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="大型ごみ/特別大型ごみ/剪定枝の収集の申し込みは、(株)藤沢市興業公社へ（0466-23-5301）" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
+                                <rect key="frame" x="5" y="359" width="310" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="13D-m8-O3g"/>
                                     <constraint firstAttribute="width" constant="310" id="fP8-k5-tqQ"/>
@@ -997,7 +982,6 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="種類検索" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="imK-vP-Abn">
                                 <rect key="frame" x="16" y="20" width="200" height="36"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="OsP-ue-cwQ"/>
                                     <constraint firstAttribute="width" constant="200" id="fLL-CV-w3D"/>
@@ -1038,8 +1022,20 @@
                                     <segue destination="AHG-fq-hZq" kind="modal" id="OtL-xL-VyP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-NK-bHs">
+                                <rect key="frame" x="5" y="416" width="310" height="103"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="JO3-sO-Xm1"/>
+                                    <constraint firstAttribute="width" constant="310" id="N56-ai-nOE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="j9t-at-FM4" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="6" id="1cP-qM-vk3"/>
                             <constraint firstItem="BPi-JD-SP8" firstAttribute="top" secondItem="qzg-iH-fJK" secondAttribute="bottom" constant="4" id="1gn-da-8P2"/>
@@ -1127,17 +1123,6 @@
                                     <segue destination="lXW-45-t5O" kind="modal" id="1jt-8W-21l"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※住所、自治会、町内会　　　　　　　のいずれか入力してください" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
-                                <rect key="frame" x="10" y="125" width="300" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Yed-uP-6fa"/>
-                                    <constraint firstAttribute="width" constant="300" id="cOJ-rI-JMI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-TJ-aJ5">
                                 <rect key="frame" x="234" y="30" width="70" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1318,8 +1303,18 @@
                                     <action selector="btnBlk8:" destination="UFz-DU-91U" eventType="touchUpInside" id="6X7-1t-rF7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※住所、自治会、町内会　　　　　　　のいずれか入力してください" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
+                                <rect key="frame" x="10" y="125" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yed-uP-6fa"/>
+                                    <constraint firstAttribute="width" constant="300" id="cOJ-rI-JMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="fNL-Ys-iYB" secondAttribute="centerX" id="1Sf-iK-wb6"/>
                             <constraint firstItem="dss-Yg-lF6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9ql-XK-yNv" secondAttribute="trailing" constant="50" id="3TZ-Mr-3Fx"/>
@@ -1490,16 +1485,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" text="10月27日(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-u8-FeY">
-                                <rect key="frame" x="16" y="20" width="200" height="49"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="bfh-RU-6xS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-XA-KOc">
                                 <rect key="frame" x="110" y="429" width="100" height="50"/>
                                 <constraints>
@@ -1569,9 +1554,17 @@
                                     <constraint firstAttribute="height" constant="150" id="qtO-UI-6eX"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" text="10月27日(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-u8-FeY">
+                                <rect key="frame" x="16" y="20" width="200" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bfh-RU-6xS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yse-Ad-ZgO">
                                 <rect key="frame" x="60" y="77" width="200" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <string key="text" base64-UTF8="YES">
 5LuK5pel44GuCOOBlOOBvw
 </string>
@@ -1580,7 +1573,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gUu-FT-akQ" firstAttribute="top" secondItem="f25-Pg-zC9" secondAttribute="bottom" constant="5" id="2BK-2e-6EY"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="top" secondItem="Tin-ey-V4f" secondAttribute="bottom" constant="5" id="41L-1y-AVW"/>
