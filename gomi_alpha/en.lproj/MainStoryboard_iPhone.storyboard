@@ -1130,7 +1130,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lXW-45-t5O" kind="modal" id="THm-wK-GhO"/>
+                                    <segue destination="lXW-45-t5O" kind="modal" id="1jt-8W-21l"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※住所、自治会、町内会　　　　　　　のいずれか入力してください" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
@@ -1690,7 +1690,7 @@
         <!--WebAddressSearch-->
         <scene sceneID="5Aq-67-sNk">
             <objects>
-                <viewController title="WebAddressSearch" id="lXW-45-t5O" sceneMemberID="viewController">
+                <viewController title="WebAddressSearch" id="lXW-45-t5O" customClass="WebAddressSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nl3-RM-cOi"/>
                         <viewControllerLayoutGuide type="bottom" id="dyF-gk-DhI"/>
@@ -1699,31 +1699,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4o-pE-UaZ">
-                                <rect key="frame" x="0.0" y="39" width="320" height="529"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                            </webView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c06-S2-wlG">
                                 <rect key="frame" x="0.0" y="-5" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="5b5-Uo-4ru">
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="7vl-98-uFK">
                                             <connections>
-                                                <segue destination="dKR-cx-5sf" kind="unwind" unwindAction="mainViewReturnActionForSegue:" id="w5Q-6a-nZy"/>
+                                                <segue destination="dKR-cx-5sf" kind="unwind" unwindAction="mainViewReturnActionForSegue:" id="7ww-UI-cRd"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4o-pE-UaZ">
+                                <rect key="frame" x="0.0" y="39" width="320" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.82261423919999999" green="0.80154262279999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="webSearch" destination="w4o-pE-UaZ" id="loH-cy-1eD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-1N-Kma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dKR-cx-5sf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="-71"/>
+            <point key="canvasLocation" x="1378" y="-71"/>
         </scene>
     </scenes>
     <resources>
