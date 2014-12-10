@@ -14,6 +14,7 @@
     NSDictionary * _tblBtn;
 }
 
+@property (weak, nonatomic) IBOutlet UIButton *btnJumpTypeSearch;
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPet;
 @property (weak, nonatomic) IBOutlet UIImageView *imgOther;
