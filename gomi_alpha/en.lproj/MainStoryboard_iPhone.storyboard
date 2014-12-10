@@ -370,6 +370,7 @@
         <scene sceneID="9Hf-8W-cMj">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="IUk-Ic-rlg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zOz-dk-YNl"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="9fR-Sc-VWG">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -381,7 +382,6 @@
                         <segue destination="KkE-JK-GfM" kind="relationship" relationship="viewControllers" id="K6B-DS-00z"/>
                         <segue destination="CQY-op-aHE" kind="relationship" relationship="viewControllers" id="mos-Tl-bfa"/>
                         <segue destination="SnU-nH-BS8" kind="relationship" relationship="viewControllers" id="NWO-9d-XaJ"/>
-                        <segue destination="UFz-DU-91U" kind="relationship" relationship="viewControllers" id="92b-ga-Ek1"/>
                         <segue destination="41v-KM-NLD" kind="relationship" relationship="viewControllers" id="dl8-rH-m2p"/>
                         <segue destination="6NO-GF-GJO" kind="relationship" relationship="viewControllers" id="sbC-gf-4gZ"/>
                         <segue destination="orH-rj-gEf" kind="relationship" relationship="viewControllers" id="5Rk-BH-IFz"/>
@@ -398,7 +398,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6g-aL-yAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="-773"/>
+            <point key="canvasLocation" x="-295" y="-787"/>
         </scene>
         <!--week-->
         <scene sceneID="vne-DP-f3E">
@@ -972,21 +972,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
-                                <rect key="frame" x="60" y="277" width="200" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="RNX-g7-HyU"/>
-                                    <constraint firstAttribute="width" constant="200" id="pzz-21-z8E"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
-                                <state key="normal" title="品名検索">
-                                    <color key="titleColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="AHG-fq-hZq" kind="push" id="zEx-2j-lgJ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-at-FM4">
                                 <rect key="frame" x="234" y="26" width="70" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1037,6 +1022,27 @@
                                     <constraint firstAttribute="height" constant="36" id="ZhH-bw-15a"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U12-Uk-5EC">
+                                <rect key="frame" x="264" y="277" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
+                                <rect key="frame" x="60" y="277" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="RNX-g7-HyU"/>
+                                    <constraint firstAttribute="width" constant="200" id="pzz-21-z8E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
+                                <state key="normal" title="品名検索">
+                                    <color key="titleColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AHG-fq-hZq" kind="modal" id="OtL-xL-VyP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -1080,7 +1086,9 @@
                     <tabBarItem key="tabBarItem" title="種類検索" image="tab_search.png" selectedImage="tab_search.png" id="bt5-4G-fH6">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="mpB-Sd-IXM"/>
                     <connections>
+                        <outlet property="btnJumpTypeSearch" destination="zby-2W-xRp" id="uSX-wT-cCV"/>
                         <outlet property="imgCan" destination="Pbr-Wx-dVt" id="tei-RX-apu"/>
                         <outlet property="imgFunen" destination="3DM-jt-r2p" id="lDc-fg-zN8"/>
                         <outlet property="imgKanen" destination="WCe-ys-v6q" id="jWz-0V-FRn"/>
@@ -1165,7 +1173,7 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB1-qn-Kua">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB1-qn-Kua">
                                 <rect key="frame" x="16" y="299" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1180,7 +1188,7 @@
                                     <action selector="btnBlk2:" destination="UFz-DU-91U" eventType="touchUpInside" id="iWr-wm-sEx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-XK-yNv">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-XK-yNv">
                                 <rect key="frame" x="16" y="354" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1195,7 +1203,7 @@
                                     <action selector="btnBlk3:" destination="UFz-DU-91U" eventType="touchUpInside" id="Gn8-3K-lG6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-Hs-aup">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-Hs-aup">
                                 <rect key="frame" x="16" y="409" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1210,7 +1218,7 @@
                                     <action selector="btnBlk4:" destination="UFz-DU-91U" eventType="touchUpInside" id="HMa-BO-mXB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-Vb-xCY">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-Vb-xCY">
                                 <rect key="frame" x="16" y="464" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1225,7 +1233,7 @@
                                     <action selector="btnBlk5:" destination="UFz-DU-91U" eventType="touchUpInside" id="Gnd-4T-joM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Dx-qsd">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Dx-qsd">
                                 <rect key="frame" x="164" y="244" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1240,7 +1248,7 @@
                                     <action selector="btnBlk6:" destination="UFz-DU-91U" eventType="touchUpInside" id="ZYu-HK-WVt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-5c-As7">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-5c-As7">
                                 <rect key="frame" x="164" y="299" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1255,7 +1263,7 @@
                                     <action selector="btnBlk7:" destination="UFz-DU-91U" eventType="touchUpInside" id="NRC-un-PcV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Tp-Kpa">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Tp-Kpa">
                                 <rect key="frame" x="164" y="409" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1270,7 +1278,7 @@
                                     <action selector="btnBlk9:" destination="UFz-DU-91U" eventType="touchUpInside" id="4ps-dE-DTb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-5b-fwr">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-5b-fwr">
                                 <rect key="frame" x="164" y="464" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1285,7 +1293,7 @@
                                     <action selector="btnBlk10:" destination="UFz-DU-91U" eventType="touchUpInside" id="TPn-EG-2HN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-fN-ezQ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-fN-ezQ">
                                 <rect key="frame" x="16" y="244" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1300,7 +1308,7 @@
                                     <action selector="btnBlk1:" destination="UFz-DU-91U" eventType="touchUpInside" id="zWT-EQ-sDf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Yg-lF6">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Yg-lF6">
                                 <rect key="frame" x="164" y="354" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1636,10 +1644,10 @@
             </objects>
             <point key="canvasLocation" x="142" y="-773"/>
         </scene>
-        <!--kind search-->
+        <!--WebTypeSearch-->
         <scene sceneID="QMT-Yp-3Vg">
             <objects>
-                <viewController title="kind search" id="AHG-fq-hZq" sceneMemberID="viewController">
+                <viewController title="WebTypeSearch" id="AHG-fq-hZq" customClass="WebTypeSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z6v-M0-kWr"/>
                         <viewControllerLayoutGuide type="bottom" id="cfk-0x-WVA"/>
@@ -1648,23 +1656,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-qL-eHu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7c-nk-ogc">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-Ae-we6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="YIN-mx-Xxe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="dlR-RU-mQt">
+                                            <connections>
+                                                <segue destination="WS4-Yi-43y" kind="unwind" unwindAction="mainViewReturnActionForSegue:" id="tTm-xH-4MX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.82261423919999999" green="0.80154262279999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ujZ-LB-GBU"/>
+                    <navigationItem key="navigationItem" title="Title" id="2eQ-DN-MDE"/>
+                    <connections>
+                        <outlet property="webTypeSearch" destination="y7c-nk-ogc" id="Gjl-Ks-0td"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olL-hX-4Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WS4-Yi-43y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="525" y="-71"/>
+            <point key="canvasLocation" x="550" y="-121"/>
         </scene>
-        <!--kind search-->
+        <!--WebAddressSearch-->
         <scene sceneID="5Aq-67-sNk">
             <objects>
-                <viewController title="kind search" id="lXW-45-t5O" sceneMemberID="viewController">
+                <viewController title="WebAddressSearch" id="lXW-45-t5O" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nl3-RM-cOi"/>
                         <viewControllerLayoutGuide type="bottom" id="dyF-gk-DhI"/>
