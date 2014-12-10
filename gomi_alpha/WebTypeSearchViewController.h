@@ -10,6 +10,5 @@
 
 @interface WebTypeSearchViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIWebView *webTypeSearch;
 
 @end

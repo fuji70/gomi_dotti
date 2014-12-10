@@ -9,6 +9,7 @@
 #import "WebTypeSearchViewController.h"
 
 @interface WebTypeSearchViewController ()
+@property (strong, nonatomic) IBOutlet UIWebView *webTypeSearch;
 
 @end
 
@@ -16,7 +17,7 @@
 @implementation WebTypeSearchViewController
 
 - (void)loadWeb {
-    NSString* strUrl = @"http://google.com";
+    NSString* strUrl = @"http://fj4.city.fujisawa.kanagawa.jp/fdust/";
     NSURLRequest* myRequest = [NSURLRequest requestWithURL: [NSURL URLWithString:strUrl]];
     [_webTypeSearch loadRequest:myRequest];
 }
@@ -29,8 +30,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _webTypeSearch.delegate = self;
-    //[self loadWeb];
+    
+    [self loadWeb];
 }
 
 - (void)didReceiveMemoryWarning {
