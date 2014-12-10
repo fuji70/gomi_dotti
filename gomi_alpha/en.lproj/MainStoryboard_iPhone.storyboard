@@ -1690,7 +1690,7 @@
         <!--WebAddressSearch-->
         <scene sceneID="5Aq-67-sNk">
             <objects>
-                <viewController title="WebAddressSearch" id="lXW-45-t5O" sceneMemberID="viewController">
+                <viewController title="WebAddressSearch" id="lXW-45-t5O" customClass="WebAddressSearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nl3-RM-cOi"/>
                         <viewControllerLayoutGuide type="bottom" id="dyF-gk-DhI"/>
@@ -1719,6 +1719,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="webSearch" destination="w4o-pE-UaZ" id="QNu-zz-0c1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-1N-Kma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dKR-cx-5sf" userLabel="Exit" sceneMemberID="exit"/>
