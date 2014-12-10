@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="-295" y="1278"/>
         </scene>
-        <!--可燃ゴミ-->
+        <!--可燃ごみ-->
         <scene sceneID="agG-rM-pCL">
             <objects>
-                <viewController id="41v-KM-NLD" sceneMemberID="viewController">
+                <viewController title="可燃ごみ" id="41v-KM-NLD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oon-KI-3OT"/>
                         <viewControllerLayoutGuide type="bottom" id="e7f-Md-Hsh"/>
@@ -60,7 +60,7 @@
                             <constraint firstItem="oif-IV-cyf" firstAttribute="top" secondItem="Oon-KI-3OT" secondAttribute="bottom" id="scY-uz-fXf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="可燃ゴミ" id="tfg-TF-KgC"/>
+                    <tabBarItem key="tabBarItem" title="可燃ごみ" id="tfg-TF-KgC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uur-zs-0of" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -534,17 +534,6 @@
                                     <constraint firstAttribute="height" constant="70" id="Lev-8S-2of"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今週のゴミ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hYe-bt-7aw">
-                                <rect key="frame" x="16" y="20" width="200" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="DBQ-RK-sNy"/>
-                                    <constraint firstAttribute="width" constant="200" id="kTL-mq-vPu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="10/31(金)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uAm-dX-ukR">
                                 <rect key="frame" x="14" y="370" width="150" height="70"/>
                                 <color key="backgroundColor" red="1" green="0.79545454550000005" blue="0.79545454550000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -618,6 +607,17 @@
                                     <constraint firstAttribute="width" constant="140" id="Rbo-Vy-4n7"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今週のごみ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hYe-bt-7aw">
+                                <rect key="frame" x="16" y="20" width="200" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DBQ-RK-sNy"/>
+                                    <constraint firstAttribute="width" constant="200" id="kTL-mq-vPu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -674,7 +674,7 @@
                             <constraint firstItem="WkS-0o-lCG" firstAttribute="leading" secondItem="1qV-yK-PfA" secondAttribute="trailing" id="yzX-75-ESb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今週のゴミ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
+                    <tabBarItem key="tabBarItem" title="今週のごみ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
@@ -709,17 +709,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今月のゴミ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-Bl-asD">
-                                <rect key="frame" x="16" y="20" width="200" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="j65-t0-x4n"/>
-                                    <constraint firstAttribute="height" constant="50" id="upj-RZ-ScG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efX-oW-5NC">
                                 <rect key="frame" x="28" y="458" width="4" height="54"/>
                                 <color key="backgroundColor" red="1" green="0.19289090719999999" blue="0.27557419820000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -823,6 +812,17 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="435" id="ki4-ah-Xjt"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今月のごみ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-Bl-asD">
+                                <rect key="frame" x="16" y="20" width="200" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="j65-t0-x4n"/>
+                                    <constraint firstAttribute="height" constant="50" id="upj-RZ-ScG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -856,7 +856,7 @@
                             <constraint firstItem="Qrm-rt-QQx" firstAttribute="trailing" secondItem="rPx-X3-Iq8" secondAttribute="trailing" id="xRg-ww-qGU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今月のゴミ" image="tab_month.png" selectedImage="tab_month.png" id="S1Q-UH-V3E">
+                    <tabBarItem key="tabBarItem" title="今月のごみ" image="tab_month.png" selectedImage="tab_month.png" id="S1Q-UH-V3E">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
@@ -1496,13 +1496,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今日のゴミ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yse-Ad-ZgO">
-                                <rect key="frame" x="60" y="74" width="200" height="40"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" text="10月27日(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-u8-FeY">
                                 <rect key="frame" x="16" y="20" width="200" height="49"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -1582,6 +1575,16 @@
                                     <constraint firstAttribute="height" constant="150" id="qtO-UI-6eX"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yse-Ad-ZgO">
+                                <rect key="frame" x="60" y="77" width="200" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <string key="text" base64-UTF8="YES">
+5LuK5pel44GuCOOBlOOBvw
+</string>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -1628,7 +1631,7 @@
                             <constraint firstAttribute="centerX" secondItem="YUv-FU-B7a" secondAttribute="centerX" id="zPt-X1-W9Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今日のゴミ" image="tab_today.png" selectedImage="tab_today.png" id="fRs-pG-vEu" userLabel="Today's">
+                    <tabBarItem key="tabBarItem" title="今日のごみ" image="tab_today.png" selectedImage="tab_today.png" id="fRs-pG-vEu" userLabel="Today's">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="JGN-FS-h1h"/>
