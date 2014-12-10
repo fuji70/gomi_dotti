@@ -15,6 +15,7 @@
 		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
 		B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71071A34047D00E21D98 /* HandleDb.m */; };
 		B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F769261A2AEB1900858A02 /* TodayViewController.m */; };
+		B0FC81881A38A11900382855 /* WebAddressSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FC81871A38A11900382855 /* WebAddressSearchViewController.m */; };
 		CA0F5FB019FE94B1006D1CA0 /* funen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */; };
 		CA0F5FB119FE94B1006D1CA0 /* kanen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FAF19FE94B1006D1CA0 /* kanen-list.png */; };
 		CA0F5FBB19FE983D006D1CA0 /* shisetsu-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA0F5FB219FE983D006D1CA0 /* shisetsu-list.png */; };
@@ -99,6 +100,8 @@
 		B0F769251A2AEB1900858A02 /* TodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		B0F769261A2AEB1900858A02 /* TodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		B0FC81841A388EED00382855 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B0FC81861A38A11900382855 /* WebAddressSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAddressSearchViewController.h; sourceTree = "<group>"; };
+		B0FC81871A38A11900382855 /* WebAddressSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAddressSearchViewController.m; sourceTree = "<group>"; };
 		CA0F5FAE19FE94B1006D1CA0 /* funen-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funen-list.png"; sourceTree = "<group>"; };
 		CA0F5FAF19FE94B1006D1CA0 /* kanen-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kanen-list.png"; sourceTree = "<group>"; };
 		CA0F5FB219FE983D006D1CA0 /* shisetsu-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shisetsu-list.png"; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 				B079467B1A32DEF500C7B5E1 /* SettingViewController.m */,
 				B0F769251A2AEB1900858A02 /* TodayViewController.h */,
 				B0F769261A2AEB1900858A02 /* TodayViewController.m */,
+				B0FC81861A38A11900382855 /* WebAddressSearchViewController.h */,
+				B0FC81871A38A11900382855 /* WebAddressSearchViewController.m */,
 				B094637A1A37555500BD776D /* WebTypeSearchViewController.h */,
 				B094637B1A37555500BD776D /* WebTypeSearchViewController.m */,
 				CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */,
@@ -447,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */,
+				B0FC81881A38A11900382855 /* WebAddressSearchViewController.m in Sources */,
 				CA794F4919FB44EE00C96F85 /* main.m in Sources */,
 				B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */,
 				CA794F4D19FB44EE00C96F85 /* AppDelegate.m in Sources */,
