@@ -29,6 +29,7 @@
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
     [self initCurrent];
+    //[self speech_str:@"きょうのごみ"]; // not on emulator. only with a device
 }
 
 - (void)viewDidLoad {
@@ -106,4 +107,10 @@
     [self refreshCurrent];
 }
 
+- (void)speech_str:(NSString*)str {
+    _speaker = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
+    [_speaker speakUtterance:sentence];
+    NSLog(@"speech: '%@'", str);
+}
 @end
