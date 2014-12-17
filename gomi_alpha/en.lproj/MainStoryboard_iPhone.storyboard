@@ -827,14 +827,6 @@
                                     <constraint firstAttribute="width" constant="150" id="sta-Ue-z6T"/>
                                 </constraints>
                             </imageView>
-                            <searchBar contentMode="redraw" ambiguous="YES" barStyle="black" text="フライパン" translatesAutoresizingMaskIntoConstraints="NO" id="qzg-iH-fJK">
-                                <rect key="frame" x="10" y="313" width="300" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="SWg-gI-OUt"/>
-                                    <constraint firstAttribute="width" constant="300" id="ZdE-TT-QG5"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="　/　(　)" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-Ic-JFO">
                                 <rect key="frame" x="10" y="463" width="300" height="50"/>
                                 <constraints>
@@ -911,21 +903,6 @@
                                 <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
-                                <rect key="frame" x="60" y="277" width="200" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="RNX-g7-HyU"/>
-                                    <constraint firstAttribute="width" constant="200" id="pzz-21-z8E"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
-                                <state key="normal" title="品名検索">
-                                    <color key="titleColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="AHG-fq-hZq" kind="modal" id="OtL-xL-VyP"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="自宅前" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-FO-vL3">
                                 <rect key="frame" x="10" y="463" width="300" height="50"/>
                                 <constraints>
@@ -943,18 +920,31 @@
                                     <constraint firstAttribute="height" constant="36" id="ZhH-bw-15a"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
+                                <rect key="frame" x="10" y="299" width="300" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RNX-g7-HyU"/>
+                                    <constraint firstAttribute="width" constant="300" id="pzz-21-z8E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="30"/>
+                                <state key="normal" title="藤沢市HP 品名検索→">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AHG-fq-hZq" kind="modal" id="OtL-xL-VyP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="j9t-at-FM4" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="6" id="1cP-qM-vk3"/>
-                            <constraint firstItem="BPi-JD-SP8" firstAttribute="top" secondItem="qzg-iH-fJK" secondAttribute="bottom" constant="4" id="1gn-da-8P2"/>
                             <constraint firstAttribute="centerX" secondItem="BPi-JD-SP8" secondAttribute="centerX" id="3YJ-lI-Xzv"/>
                             <constraint firstItem="NIV-Yh-tzg" firstAttribute="top" secondItem="3DM-jt-r2p" secondAttribute="bottom" constant="4" id="4Fe-Qb-1Xf"/>
                             <constraint firstItem="j9t-at-FM4" firstAttribute="leading" secondItem="Wqt-pK-Whr" secondAttribute="trailing" constant="-10" id="61T-3r-Vy0"/>
                             <constraint firstItem="a5O-HO-GxO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LxF-Ic-JFO" secondAttribute="bottom" constant="6" id="7dF-LZ-Qpl"/>
                             <constraint firstItem="3DM-jt-r2p" firstAttribute="top" secondItem="Pbr-Wx-dVt" secondAttribute="bottom" constant="4" id="Abr-FT-P2s"/>
                             <constraint firstItem="tYr-HQ-86B" firstAttribute="top" secondItem="aZU-Os-XNi" secondAttribute="bottom" constant="4" id="CXs-vg-lg0"/>
-                            <constraint firstAttribute="centerX" secondItem="qzg-iH-fJK" secondAttribute="centerX" id="Dtn-NO-Zy8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NIV-Yh-tzg" secondAttribute="trailing" constant="-10" id="EiS-Qk-JuW"/>
                             <constraint firstAttribute="centerX" secondItem="SK9-NK-bHs" secondAttribute="centerX" id="K0X-e1-53z"/>
                             <constraint firstItem="aZU-Os-XNi" firstAttribute="top" secondItem="imK-vP-Abn" secondAttribute="bottom" constant="2" id="MDH-o6-xQf"/>
@@ -968,8 +958,8 @@
                             <constraint firstItem="a5O-HO-GxO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SK9-NK-bHs" secondAttribute="bottom" constant="2" id="VN4-fj-c8m"/>
                             <constraint firstItem="tYr-HQ-86B" firstAttribute="leading" secondItem="aZU-Os-XNi" secondAttribute="leading" id="WbT-P9-E7h"/>
                             <constraint firstAttribute="centerX" secondItem="kg2-RB-h4o" secondAttribute="centerX" id="XHg-5c-t6Y"/>
+                            <constraint firstItem="BPi-JD-SP8" firstAttribute="top" secondItem="zby-2W-xRp" secondAttribute="bottom" constant="10" id="aTh-wz-t1N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g1D-Lh-qy6" secondAttribute="trailing" constant="-5" id="awo-yL-ZOr"/>
-                            <constraint firstItem="qzg-iH-fJK" firstAttribute="top" secondItem="zby-2W-xRp" secondAttribute="bottom" id="b48-qB-j1i"/>
                             <constraint firstAttribute="centerX" secondItem="zby-2W-xRp" secondAttribute="centerX" id="dkC-G2-645"/>
                             <constraint firstItem="imK-vP-Abn" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" id="eIx-w7-sHj"/>
                             <constraint firstAttribute="centerX" secondItem="Lw3-FO-vL3" secondAttribute="centerX" id="eoN-SV-OwN"/>
