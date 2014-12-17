@@ -922,13 +922,13 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
                                 <rect key="frame" x="10" y="299" width="300" height="50"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RNX-g7-HyU"/>
                                     <constraint firstAttribute="width" constant="300" id="pzz-21-z8E"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="30"/>
-                                <state key="normal" title="藤沢市HP 品名検索→">
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="22"/>
+                                <state key="normal" title="品名検索はこちら(藤沢市HP)">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -958,7 +958,7 @@
                             <constraint firstItem="a5O-HO-GxO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SK9-NK-bHs" secondAttribute="bottom" constant="2" id="VN4-fj-c8m"/>
                             <constraint firstItem="tYr-HQ-86B" firstAttribute="leading" secondItem="aZU-Os-XNi" secondAttribute="leading" id="WbT-P9-E7h"/>
                             <constraint firstAttribute="centerX" secondItem="kg2-RB-h4o" secondAttribute="centerX" id="XHg-5c-t6Y"/>
-                            <constraint firstItem="BPi-JD-SP8" firstAttribute="top" secondItem="zby-2W-xRp" secondAttribute="bottom" constant="10" id="aTh-wz-t1N"/>
+                            <constraint firstItem="BPi-JD-SP8" firstAttribute="top" secondItem="zby-2W-xRp" secondAttribute="bottom" constant="15" id="aTh-wz-t1N"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g1D-Lh-qy6" secondAttribute="trailing" constant="-5" id="awo-yL-ZOr"/>
                             <constraint firstAttribute="centerX" secondItem="zby-2W-xRp" secondAttribute="centerX" id="dkC-G2-645"/>
                             <constraint firstItem="imK-vP-Abn" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" id="eIx-w7-sHj"/>
@@ -993,7 +993,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w0-bU-owq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="169" y="-71"/>
+            <point key="canvasLocation" x="169" y="-94"/>
         </scene>
         <!--自宅設定-->
         <scene sceneID="vTt-KK-Vqz">
@@ -1008,14 +1008,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNL-Ys-iYB">
-                                <rect key="frame" x="10" y="78" width="300" height="50"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="10" y="68" width="300" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="810-lI-wli"/>
                                     <constraint firstAttribute="height" constant="50" id="kn6-uJ-BnH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="34"/>
-                                <state key="normal" title="藤沢市HP 住所設定">
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
+                                <state key="normal" title="自宅ブロックの検索はこちら">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1205,15 +1205,16 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="※自宅の所属ブロックが分かる方はブロックを選択。分からない方は上のボタンから藤沢市HPで住所からブロックを調べてください。" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
-                                <rect key="frame" x="10" y="136" width="300" height="100"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※自宅の所属ブロックが分かる方はブロックを選択。分からない方は上ボタンの藤沢市HPで住所からブロックを調べてください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
+                                <rect key="frame" x="10" y="120" width="300" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Yed-uP-6fa"/>
+                                    <constraint firstAttribute="height" constant="80" id="Yed-uP-6fa"/>
                                     <constraint firstAttribute="width" constant="300" id="cOJ-rI-JMI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1235,7 +1236,7 @@
                             <constraint firstItem="ZyN-If-Uge" firstAttribute="top" secondItem="cPN-p8-SoZ" secondAttribute="bottom" constant="10" id="UFu-Wr-fOq"/>
                             <constraint firstItem="mV0-5c-As7" firstAttribute="top" secondItem="2Ty-Dx-qsd" secondAttribute="bottom" constant="5" id="a5A-rd-6kB"/>
                             <constraint firstItem="dZl-Tp-Kpa" firstAttribute="trailing" secondItem="GqS-Cx-Dym" secondAttribute="trailingMargin" id="a66-Qh-YxC"/>
-                            <constraint firstItem="fNL-Ys-iYB" firstAttribute="top" secondItem="JrT-GT-rkE" secondAttribute="bottom" constant="5" id="aQf-FA-zQm"/>
+                            <constraint firstItem="fNL-Ys-iYB" firstAttribute="top" secondItem="JrT-GT-rkE" secondAttribute="bottom" id="aQf-FA-zQm"/>
                             <constraint firstItem="CB1-qn-Kua" firstAttribute="top" secondItem="Ape-fN-ezQ" secondAttribute="bottom" constant="5" id="aT6-Li-o4T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2Ty-Dx-qsd" secondAttribute="trailing" id="bZw-p6-DMX"/>
                             <constraint firstItem="dZl-Tp-Kpa" firstAttribute="leading" relation="lessThanOrEqual" secondItem="gpI-Hs-aup" secondAttribute="trailing" constant="50" id="cCB-XB-AWW"/>
