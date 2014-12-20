@@ -47,6 +47,7 @@
 		CA53FBC31A335A4E003F8EA8 /* 7blk-2014-12.png in Resources */ = {isa = PBXBuildFile; fileRef = CA53FBC01A335A4E003F8EA8 /* 7blk-2014-12.png */; };
 		CA53FBC61A335A65003F8EA8 /* 9blk-2014-12.png in Resources */ = {isa = PBXBuildFile; fileRef = CA53FBC41A335A65003F8EA8 /* 9blk-2014-12.png */; };
 		CA53FBC71A335A65003F8EA8 /* 10blk-2014-12.png in Resources */ = {isa = PBXBuildFile; fileRef = CA53FBC51A335A65003F8EA8 /* 10blk-2014-12.png */; };
+		CA7025A11A45EBCF0017A98F /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7025A01A45EBCF0017A98F /* image.xcassets */; };
 		CA794F3D19FB44EE00C96F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F3C19FB44EE00C96F85 /* UIKit.framework */; };
 		CA794F3F19FB44EE00C96F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F3E19FB44EE00C96F85 /* Foundation.framework */; };
 		CA794F4119FB44EE00C96F85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F4019FB44EE00C96F85 /* CoreGraphics.framework */; };
@@ -133,6 +134,7 @@
 		CA53FBC01A335A4E003F8EA8 /* 7blk-2014-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7blk-2014-12.png"; sourceTree = "<group>"; };
 		CA53FBC41A335A65003F8EA8 /* 9blk-2014-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9blk-2014-12.png"; sourceTree = "<group>"; };
 		CA53FBC51A335A65003F8EA8 /* 10blk-2014-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10blk-2014-12.png"; sourceTree = "<group>"; };
+		CA7025A01A45EBCF0017A98F /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		CA794F3919FB44EE00C96F85 /* gomi_alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gomi_alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA794F3C19FB44EE00C96F85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA794F3E19FB44EE00C96F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -250,6 +252,7 @@
 				CA794F5A19FB44EE00C96F85 /* ViewController.h */,
 				CA794F5B19FB44EE00C96F85 /* ViewController.m */,
 				CA794F4319FB44EE00C96F85 /* Supporting Files */,
+				CA7025A01A45EBCF0017A98F /* image.xcassets */,
 			);
 			path = gomi_alpha;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				CA0F5FBF19FE983D006D1CA0 /* special-oogata-list.png in Resources */,
 				CAC973DF1A3484C400D85C60 /* tab_search@2x.png in Resources */,
 				CA2C40041A35F82B000ED743 /* word_shigen.png in Resources */,
+				CA7025A11A45EBCF0017A98F /* image.xcassets in Resources */,
 				CA2C400D1A35F833000ED743 /* date_funen.png in Resources */,
 				CA2C40111A35F833000ED743 /* date_plastic.png in Resources */,
 				CAC973D21A34849D00D85C60 /* tab_today.png in Resources */,
@@ -556,6 +560,8 @@
 		CA794F6019FB44EE00C96F85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/gomi_alpha-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/gomi_alpha-Info.plist";
@@ -569,6 +575,8 @@
 		CA794F6119FB44EE00C96F85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/gomi_alpha-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/gomi_alpha-Info.plist";
