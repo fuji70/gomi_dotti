@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
+@property (weak, nonatomic) IBOutlet UIButton *btnJumpPhoneCall;
 
 
 @end
@@ -92,6 +93,14 @@
 
 - (IBAction)mainViewReturnActionForSegue:(UIStoryboardSegue *)segue
 {
+    
+}
+
+- (IBAction)tapTEL {
+    
+//    NSURL *url = [[NSURL alloc] initWithString:@"tel:0466-23-5301"];
+//    [[UIApplication sharedApplication] openURL:url];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0466-23-5301"]];
     
 }
 
