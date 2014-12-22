@@ -24,25 +24,25 @@
     // Override point for customization after application launch.
     
     // 起動2回目以降
-    //if ([HandleDb getBlkNum] != 0) {
+    if ([HandleDb getBlkNum] != 0) {
         
         // ここに2回目以降の処理を書く
         // 今回は特に記述しなくていい
+        //[HandleDb setBlkNum:0]; // for debug
         
-    //} else { // 初回起動時はこっち
-    if (false) {
+    } else { // 初回起動時はこっち
+         //if (true) { // for debug
+
         // Storyboard を呼ぶ
         UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
-        
-        // 設定画面を表示
-        // Storyboard の中のどの ViewContorller を呼ぶか
-        // @""の中は Storyboard IDを記述する。ココ間違えばブラック画面かな。
+        UITabBarController *tb = [MainSB instantiateViewControllerWithIdentifier: @"TabBarController"];
+        UINavigationController *more = tb.moreNavigationController;
+        // 設定画面を表示 @""の中は Storyboard IDを記述。
         SettingViewController *vc = [MainSB instantiateViewControllerWithIdentifier: @"SettingViewController"];
-        // その画面を表示させる
-        [self.window setRootViewController:vc];
-        
-        //[self.navigationController pushViewController:wc animated:YES];
-        
+
+        tb.selectedViewController = more;
+        [more pushViewController:vc animated:true];
+        [self.window setRootViewController:tb];
     }
     
     return YES;
