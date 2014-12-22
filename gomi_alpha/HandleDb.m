@@ -41,7 +41,7 @@ NSString *FILE_DB = @"db2014.json";
                // filename       ,keyStr
                @"can.png"        ,@"カン",
                @"plastic.png"    ,@"プ・油・特",
-               @"petbottle.png" ,@"ペット",
+               @"petbottle.png"  ,@"ペット",
                @"shigen.png"     ,@"他資源",
                @"kanen.png"      ,@"可・ビン",
                @"funen.png"      ,@"本・不・商",
@@ -69,7 +69,7 @@ NSString *FILE_DB = @"db2014.json";
     NSString *keyDate = [HandleDb getKeyDate:date];
     NSString *keyPath = [NSString stringWithFormat:@"%@.%@", keyBlk, keyDate];
     NSString *value = [_dbCalendar valueForKeyPath:keyPath];
-    NSLog(@"getIconsStr: %@", value);
+    NSLog(@"getIconsStr:[%@] %@", keyPath, value);
     return value;
 }
 
@@ -81,7 +81,8 @@ NSString *FILE_DB = @"db2014.json";
     NSDate *date = [NSDate alloc];
     NSDate *rdate = nil;
     int oneday = 60*60*24;
-    for (int i=0; i<14; ++i) {
+    int searchDays = 42;
+    for (int i=0; i<searchDays; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:startDate];
         NSString *ticons = [self _getIconsStr:date];
         NSLog(@"searchNext: %d  %@  %@", i, date, ticons);
@@ -119,7 +120,7 @@ NSString *FILE_DB = @"db2014.json";
 
 + (NSString*)getKeyDate: (NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"YYYY-MM-dd";
+    dateFormatter.dateFormat = @"yyyy-MM-dd";
     NSString *strDate = [dateFormatter stringFromDate:date];
     
     NSLog(@"keyDate= [%@]", strDate);
@@ -163,7 +164,7 @@ NSString *FILE_DB = @"db2014.json";
 
 + (UIImage*)getMonthImage:(NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"YYYY-MM";
+    dateFormatter.dateFormat = @"yyyy-MM";
     NSString *strDate = [dateFormatter stringFromDate:date];
     NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
     return [UIImage imageNamed:imgName];
