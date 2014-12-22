@@ -649,6 +649,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushBtnNextWeek:" destination="KkE-JK-GfM" eventType="touchUpInside" id="B45-Zv-3EY"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-kE-cDy" propertyAccessControl="none">
                                 <rect key="frame" x="164" y="469" width="140" height="29"/>
@@ -729,6 +732,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="btnNextWeek" destination="8V4-i2-WX3" id="1HZ-Ie-B7F"/>
                         <outlet property="lblBlknum" destination="B2v-cu-Gei" id="L3I-nj-Aee"/>
                         <outletCollection property="lblWeekdays" destination="EXb-Rm-ZOX" collectionClass="NSMutableArray" id="nZD-rH-rHt"/>
                         <outletCollection property="lblWeekdays" destination="A2D-Av-43M" collectionClass="NSMutableArray" id="Mtm-62-vDj"/>
@@ -742,6 +746,8 @@
                         <outletCollection property="imgWeekdays" destination="1Lo-aB-ldc" id="qhT-1a-UKb"/>
                         <outletCollection property="imgWeekdays" destination="MFt-WR-Q2P" id="0U3-ba-Qio"/>
                         <outletCollection property="imgWeekdays" destination="WkS-0o-lCG" id="Qgx-JL-hSg"/>
+                        <outletCollection property="lblWeekdays" destination="I6F-Zf-w9p" collectionClass="NSMutableArray" id="rQa-Ie-cam"/>
+                        <outletCollection property="imgWeekdays" destination="Khw-kE-cDy" id="kbJ-Bt-ssU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGO-m9-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
