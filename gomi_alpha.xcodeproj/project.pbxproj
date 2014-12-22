@@ -60,7 +60,6 @@
 		CA794F5319FB44EE00C96F85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */; };
 		CA794F5619FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */; };
 		CA794F5919FB44EE00C96F85 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */; };
-		CA794F5C19FB44EE00C96F85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA794F5B19FB44EE00C96F85 /* ViewController.m */; };
 		CA794F7D19FB4C6900C96F85 /* can.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F6419FB4C6900C96F85 /* can.png */; };
 		CA794F7E19FB4C6900C96F85 /* funen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F6519FB4C6900C96F85 /* funen.png */; };
 		CA794F8919FB4C6900C96F85 /* kanen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7119FB4C6900C96F85 /* kanen.png */; };
@@ -152,8 +151,6 @@
 		CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CA794F5519FB44EE00C96F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CA794F5819FB44EE00C96F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CA794F5A19FB44EE00C96F85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA794F5B19FB44EE00C96F85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CA794F6419FB4C6900C96F85 /* can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = can.png; sourceTree = "<group>"; };
 		CA794F6519FB4C6900C96F85 /* funen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funen.png; sourceTree = "<group>"; };
 		CA794F7119FB4C6900C96F85 /* kanen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanen.png; sourceTree = "<group>"; };
@@ -251,8 +248,6 @@
 				B094637A1A37555500BD776D /* WebTypeSearchViewController.h */,
 				B094637B1A37555500BD776D /* WebTypeSearchViewController.m */,
 				CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */,
-				CA794F5A19FB44EE00C96F85 /* ViewController.h */,
-				CA794F5B19FB44EE00C96F85 /* ViewController.m */,
 				CA794F4319FB44EE00C96F85 /* Supporting Files */,
 				CA7025A01A45EBCF0017A98F /* image.xcassets */,
 				CA7025A21A45F1EA0017A98F /* InfoPlist.strings */,
@@ -465,7 +460,6 @@
 				B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */,
 				CA794F4D19FB44EE00C96F85 /* AppDelegate.m in Sources */,
 				B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */,
-				CA794F5C19FB44EE00C96F85 /* ViewController.m in Sources */,
 				B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */,
 				B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */,
 				B094637C1A37555500BD776D /* WebTypeSearchViewController.m in Sources */,
