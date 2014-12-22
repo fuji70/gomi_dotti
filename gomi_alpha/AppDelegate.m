@@ -30,7 +30,7 @@
         // 今回は特に記述しなくていい
         
     //} else { // 初回起動時はこっち
-    if (true) {
+    if (false) {
         // Storyboard を呼ぶ
         UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
         
