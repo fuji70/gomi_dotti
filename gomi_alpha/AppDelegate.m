@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "HandleDb.h"
+#import "SettingViewController.h"
+
 
 @implementation AppDelegate
 
@@ -19,6 +22,29 @@
 //    [[UITabBar appearance] setSelectionIndicatorImage:image3];
     
     // Override point for customization after application launch.
+    
+    // 起動2回目以降
+    //if ([HandleDb getBlkNum] != 0) {
+        
+        // ここに2回目以降の処理を書く
+        // 今回は特に記述しなくていい
+        
+    //} else { // 初回起動時はこっち
+    if (true) {
+        // Storyboard を呼ぶ
+        UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
+        
+        // 設定画面を表示
+        // Storyboard の中のどの ViewContorller を呼ぶか
+        // @""の中は Storyboard IDを記述する。ココ間違えばブラック画面かな。
+        SettingViewController *vc = [MainSB instantiateViewControllerWithIdentifier: @"SettingViewController"];
+        // その画面を表示させる
+        [self.window setRootViewController:vc];
+        
+        //[self.navigationController pushViewController:wc animated:YES];
+        
+    }
+    
     return YES;
 }
 							

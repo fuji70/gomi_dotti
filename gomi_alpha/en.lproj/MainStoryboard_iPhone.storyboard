@@ -1072,7 +1072,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
         <!--自宅設定-->
         <scene sceneID="vTt-KK-Vqz">
             <objects>
-                <viewController id="UFz-DU-91U" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UFz-DU-91U" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cPN-p8-SoZ"/>
                         <viewControllerLayoutGuide type="bottom" id="m8C-8V-NZh"/>
