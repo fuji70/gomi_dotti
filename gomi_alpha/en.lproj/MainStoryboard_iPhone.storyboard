@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Urf-6z-5rP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JyU-F2-06l">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="oogata-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="43T-u1-1Wg">
@@ -45,7 +45,7 @@
                         <viewControllerLayoutGuide type="bottom" id="e7f-Md-Hsh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NL9-xS-TEt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="kanen-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="oif-IV-cyf">
@@ -75,7 +75,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FQA-hX-GY2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sJm-xM-oSB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="funen-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="nby-bC-DOP">
@@ -105,7 +105,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qdg-NY-mSt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x7Q-pj-2dE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shigen-kobetsu-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="zOW-aN-siG">
@@ -135,7 +135,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Rt9-NG-L8T"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vlQ-x6-9LX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shigen-sonota-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ngs-Aa-LNF">
@@ -165,7 +165,7 @@
                         <viewControllerLayoutGuide type="bottom" id="RrC-oK-Zef"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qLt-mi-ZOg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plastic-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-YB-288">
@@ -195,7 +195,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Bg5-iA-9Bw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vhB-3e-mcI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="special-oogata-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jit-nl-Rso">
@@ -225,7 +225,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Cu4-qY-y9Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XgF-Wp-bJD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="eda&amp;smallkaden-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="pRQ-Ev-g3t">
@@ -255,7 +255,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uaj-Nj-n4r"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U7G-dN-1WH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shohin-pla-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-Lk-yd2">
@@ -285,7 +285,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CqN-l6-qqD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uxe-4t-bBF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="no-treat-list1.png" translatesAutoresizingMaskIntoConstraints="NO" id="coc-DU-aP4">
@@ -315,7 +315,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8tv-mV-mPx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r55-Gr-ZLZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shisetsu-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Wu-4U-0xW">
@@ -345,7 +345,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4o0-vo-z8A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xhy-Bz-UuI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="no-treat-list2.png" translatesAutoresizingMaskIntoConstraints="NO" id="r8V-dc-Jrv">
@@ -371,8 +371,8 @@
             <objects>
                 <tabBarController storyboardIdentifier="TabBarController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IUk-Ic-rlg" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zOz-dk-YNl"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="9fR-Sc-VWG">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="9fR-Sc-VWG">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -380,8 +380,8 @@
                     <connections>
                         <segue destination="ZfS-Qq-a3W" kind="relationship" relationship="viewControllers" id="hQT-pC-2ca"/>
                         <segue destination="KkE-JK-GfM" kind="relationship" relationship="viewControllers" id="K6B-DS-00z"/>
-                        <segue destination="CQY-op-aHE" kind="relationship" relationship="viewControllers" id="mos-Tl-bfa"/>
                         <segue destination="SnU-nH-BS8" kind="relationship" relationship="viewControllers" id="NWO-9d-XaJ"/>
+                        <segue destination="CQY-op-aHE" kind="relationship" relationship="viewControllers" id="mos-Tl-bfa"/>
                         <segue destination="UFz-DU-91U" kind="relationship" relationship="viewControllers" id="gmB-Ws-XC3"/>
                         <segue destination="41v-KM-NLD" kind="relationship" relationship="viewControllers" id="pzm-3x-W3w"/>
                         <segue destination="6NO-GF-GJO" kind="relationship" relationship="viewControllers" id="a1C-mq-TNf"/>
@@ -389,11 +389,11 @@
                         <segue destination="vIX-cI-w01" kind="relationship" relationship="viewControllers" id="HSY-1w-V3m"/>
                         <segue destination="vQy-RL-D1Z" kind="relationship" relationship="viewControllers" id="Oh0-Lu-Pya"/>
                         <segue destination="VoL-cH-XHe" kind="relationship" relationship="viewControllers" id="ZN8-26-UI9"/>
-                        <segue destination="I1z-5V-KVE" kind="relationship" relationship="viewControllers" id="f2d-f4-7N3"/>
                         <segue destination="uN5-FE-ur4" kind="relationship" relationship="viewControllers" id="wnc-MI-SYG"/>
-                        <segue destination="kAF-tq-g7P" kind="relationship" relationship="viewControllers" id="2qN-3k-xBV"/>
+                        <segue destination="I1z-5V-KVE" kind="relationship" relationship="viewControllers" id="f2d-f4-7N3"/>
                         <segue destination="fcF-3I-NZR" kind="relationship" relationship="viewControllers" id="3Zg-Hz-zPS"/>
                         <segue destination="5El-TC-yw5" kind="relationship" relationship="viewControllers" id="fIM-pl-E1Q"/>
+                        <segue destination="kAF-tq-g7P" kind="relationship" relationship="viewControllers" id="2qN-3k-xBV"/>
                         <segue destination="eas-vT-qMS" kind="relationship" relationship="viewControllers" id="xzY-Nb-Kmn"/>
                     </connections>
                 </tabBarController>
@@ -410,7 +410,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HHT-gc-421"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WrJ-6Q-ev3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-tj-AL4">
@@ -763,7 +763,7 @@
                         <viewControllerLayoutGuide type="bottom" id="E1U-Rz-BAF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tmC-ih-re3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-sS-Wm5">
@@ -842,7 +842,7 @@
                         <viewControllerLayoutGuide type="bottom" id="a5O-HO-GxO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Er-xN-W7g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-NK-bHs">
@@ -1084,7 +1084,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                         <viewControllerLayoutGuide type="bottom" id="m8C-8V-NZh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GqS-Cx-Dym">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNL-Ys-iYB">
@@ -1366,7 +1366,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                         <viewControllerLayoutGuide type="bottom" id="gUu-FT-akQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ToW-0N-PeX" userLabel="todays">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frV-QW-HJA">
