@@ -12,6 +12,7 @@
 @interface TodayViewController ()
 {
     NSDate *_curDate;
+    //AVSpeechSynthesizer *_speaker;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
@@ -29,7 +30,8 @@
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
     [self initCurrent];
-    //[self speech_str:@"きょうのごみ"]; // not on emulator. only with a device
+    [self test_speech];
+    [self speech_str:@"きょうのごみ"]; // not on emulator. only with a device
 }
 
 - (void)viewDidLoad {
@@ -105,6 +107,27 @@
 - (IBAction)pushButtonDebug:(id)sender {
     _curDate = [_curDate initWithTimeInterval:(60*60*24) sinceDate:_curDate];
     [self refreshCurrent];
+}
+
+- (void)test_speech
+{
+    AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    NSString* speakingText = @"こんにちは。";
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
+    utterance.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
+    utterance.pitchMultiplier = 0.5f;                           //声の高さ
+    utterance.volume = 0.5f;                                    //声の大きさ
+    NSTimeInterval interval = 1;
+    utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
+    utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
+    [speechSynthesizer speakUtterance:utterance];
+    
+    NSString* speakingText2 = @"ワンダープラネットです。";
+    AVSpeechUtterance *utterance2 = [AVSpeechUtterance speechUtteranceWithString:speakingText2];
+    utterance2.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
+    utterance2.pitchMultiplier = 0.5f;                           //声の高さ
+    utterance2.volume = 0.5f;                                    //声の大きさ
+    [speechSynthesizer speakUtterance:utterance2];
 }
 
 - (void)speech_str:(NSString*)str {
