@@ -93,7 +93,6 @@
 		CA794F5119FB44EE00C96F85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5019FB44EE00C96F85 /* Default@2x.png */; };
 		CA794F5319FB44EE00C96F85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */; };
 		CA794F5619FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */; };
-		CA794F5919FB44EE00C96F85 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */; };
 		CA794F7D19FB4C6900C96F85 /* can.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F6419FB4C6900C96F85 /* can.png */; };
 		CA794F7E19FB4C6900C96F85 /* funen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F6519FB4C6900C96F85 /* funen.png */; };
 		CA794F8919FB4C6900C96F85 /* kanen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F7119FB4C6900C96F85 /* kanen.png */; };
@@ -214,7 +213,6 @@
 		CA794F5019FB44EE00C96F85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CA794F5519FB44EE00C96F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CA794F5819FB44EE00C96F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		CA794F6419FB4C6900C96F85 /* can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = can.png; sourceTree = "<group>"; };
 		CA794F6519FB4C6900C96F85 /* funen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funen.png; sourceTree = "<group>"; };
 		CA794F7119FB4C6900C96F85 /* kanen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanen.png; sourceTree = "<group>"; };
@@ -307,7 +305,6 @@
 				B0FC81871A38A11900382855 /* WebAddressSearchViewController.m */,
 				B094637A1A37555500BD776D /* WebTypeSearchViewController.h */,
 				B094637B1A37555500BD776D /* WebTypeSearchViewController.m */,
-				CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */,
 				CA794F4319FB44EE00C96F85 /* Supporting Files */,
 				CA7025A01A45EBCF0017A98F /* image.xcassets */,
 				CA7025A21A45F1EA0017A98F /* InfoPlist.strings */,
@@ -449,6 +446,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = vidacomoda;
+				TargetAttributes = {
+					CA794F3819FB44EE00C96F85 = {
+						DevelopmentTeam = W54UCZ555B;
+					};
+				};
 			};
 			buildConfigurationList = CA794F3419FB44EE00C96F85 /* Build configuration list for PBXProject "gomi_alpha" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -490,7 +492,6 @@
 				CA4819911A49A55C00E9D030 /* 8blk-2015-02.png in Resources */,
 				CA48197D1A49A55C00E9D030 /* 3blk-2015-02.png in Resources */,
 				CA794F5619FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard in Resources */,
-				CA794F5919FB44EE00C96F85 /* MainStoryboard_iPad.storyboard in Resources */,
 				CA4819751A49A55C00E9D030 /* 1blk-2015-02.png in Resources */,
 				CA794F7D19FB4C6900C96F85 /* can.png in Resources */,
 				CA4819941A49A55C00E9D030 /* 9blk-2015-01.png in Resources */,
@@ -606,14 +607,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		CA794F5719FB44EE00C96F85 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA794F5819FB44EE00C96F85 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -680,6 +673,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/gomi_alpha-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/gomi_alpha-Info.plist";
@@ -695,6 +689,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/gomi_alpha-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/gomi_alpha-Info.plist";
