@@ -16,6 +16,7 @@ NSString *FILE_DB = @"db2014.json";
     NSDictionary *_dbCalendar;
     NSDictionary *_dbIcon;
     NSDictionary *_dbPit;
+    NSDictionary *_dbSpeech;
 }
 @end
 
@@ -58,6 +59,30 @@ NSString *FILE_DB = @"db2014.json";
               @"自宅前" ,@"可・ビン",
               @"自宅前" ,@"本・不・商",
               nil];
+}
+
+- (void)initDbSpeech {
+    _dbSpeech = [NSDictionary dictionaryWithObjectsAndKeys:
+              // say, keyStr
+              @"カン" ,@"カン",
+              @"プラスチック" ,@"プ・油・特",
+              @"ペットボトル" ,@"ペット",
+              @"資源ゴミ" ,@"他資源",
+              @"可燃ゴミ" ,@"可・ビン",
+              @"不燃ゴミ" ,@"本・不・商",
+              nil];
+}
+
+
+- (id)init {
+    if (self = [super init]) {
+        _curDate = [NSDate date];
+        _dbCalendar = [self loadJsonDb:FILE_DB];
+        [self initDbIcon];
+        [self initDbPit];
+        [self initDbSpeech];
+    }
+    return self;
 }
 
 + (NSString*)getIconsStr:(NSDate*)date {
@@ -118,6 +143,16 @@ NSString *FILE_DB = @"db2014.json";
     return [[HandleDb getInstance] _getPitStr:iconsStr];
 }
 
+- (NSString*)_getSpeechStr:(NSString*)iconsStr {
+    NSString *ret = _dbSpeech[iconsStr];
+    
+    return (ret ? ret : @"回収無し");
+}
+
++ (NSString*)getSpeechStr:(NSString*)iconsStr {
+    return [[HandleDb getInstance] _getSpeechStr:iconsStr];
+}
+
 + (NSString*)getKeyDate: (NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd";
@@ -130,16 +165,6 @@ NSString *FILE_DB = @"db2014.json";
 + (NSString*)getKeyBlk {
     int blkNum = [HandleDb getBlkNum];
     return [NSString stringWithFormat:@"blk-%d", blkNum];
-}
-
-- (id)init {
-    if (self = [super init]) {
-        _curDate = [NSDate date];
-        _dbCalendar = [self loadJsonDb:FILE_DB];
-        [self initDbIcon];
-        [self initDbPit];
-    }
-    return self;
 }
 
 - (UIImage*)_getIconImage:(NSString*)iconsStr {
@@ -252,4 +277,21 @@ NSString *FILE_DB = @"db2014.json";
     }
     
 }
+
++ (BOOL)getSpeechStatus
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return (int)[defaults boolForKey:@"doesSpeech"];
+}
+
++ (void)setSpeechStatus:(BOOL) sw
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:sw forKey:@"doesSpeech"];
+    BOOL successful = [defaults synchronize];
+    if (successful) {
+        NSLog(@"set to doesSpeech: %d.", sw);
+    }
+}
+
 @end

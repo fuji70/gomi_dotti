@@ -12,6 +12,7 @@
 @interface TodayViewController ()
 {
     NSDate *_curDate;
+    AVSpeechSynthesizer *_speaker;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
@@ -21,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext3;
 
+@property (strong, nonatomic) IBOutlet UISwitch *swSpeech;
+- (IBAction)touchSwSpeech:(id)sender;
 @end
 
 @implementation TodayViewController
@@ -29,12 +32,13 @@
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
     [self initCurrent];
+    _swSpeech.on = [HandleDb getSpeechStatus];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self initCurrent];
+    //[self initCurrent];
 
 }
 
@@ -63,6 +67,7 @@
     _lblCurrent.text = strCurDate;
     
     [self viewCurrentIcons];
+    [self say_today];
 }
 
 - (void)initCurrent {
@@ -106,4 +111,51 @@
     [self refreshCurrent];
 }
 
+- (void)test_speech
+{
+    AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    NSString* speakingText = @"こんにちは。";
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
+    utterance.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
+    utterance.pitchMultiplier = 0.5f;                           //声の高さ
+    utterance.volume = 0.5f;                                    //声の大きさ
+    NSTimeInterval interval = 1;
+    utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
+    utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
+    [speechSynthesizer speakUtterance:utterance];
+    
+    NSString* speakingText2 = @"ワンダープラネットです。";
+    AVSpeechUtterance *utterance2 = [AVSpeechUtterance speechUtteranceWithString:speakingText2];
+    utterance2.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
+    utterance2.pitchMultiplier = 0.5f;                           //声の高さ
+    utterance2.volume = 0.5f;                                    //声の大きさ
+    [speechSynthesizer speakUtterance:utterance2];
+}
+
+- (void)speech_str:(NSString*)str {
+    _speaker = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
+    //sentence.rate = AVSpeechUtteranceDefaultSpeechRate;
+    sentence.rate = 0.3;
+    
+    [_speaker speakUtterance:sentence];
+    NSLog(@"speech: '%@'", str);
+}
+
+- (BOOL)say_today {
+    if (![HandleDb getSpeechStatus]) return false;
+    
+    //[self test_speech];
+    [self speech_str:@"きょうのごみは "]; // not on emulator. only with a device
+    NSString *iconStr = [HandleDb getIconsStr:_curDate];
+    NSString *speech  = [HandleDb getSpeechStr:iconStr];
+    [self speech_str:speech];
+    [self speech_str:@"です"];
+    return true;
+}
+
+- (IBAction)touchSwSpeech:(id)sender {
+    [HandleDb setSpeechStatus:_swSpeech.on];
+    [self say_today];
+}
 @end
