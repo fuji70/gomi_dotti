@@ -20,8 +20,12 @@
 + (UIImage*)getMonthImage:(NSDate*)date;
 
 + (id)getInstance;
+
 + (int)getBlkNum;
 + (void)setBlkNum:(int) blkNum;
++ (BOOL)getSpeechStatus;
++ (void)setSpeechStatus:(BOOL) sw;
+
 + (void)testJson;
 
 

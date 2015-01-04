@@ -12,7 +12,7 @@
 @interface TodayViewController ()
 {
     NSDate *_curDate;
-    //AVSpeechSynthesizer *_speaker;
+    AVSpeechSynthesizer *_speaker;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext3;
 
+@property (strong, nonatomic) IBOutlet UISwitch *swSpeech;
+- (IBAction)touchSwSpeech:(id)sender;
 @end
 
 @implementation TodayViewController
@@ -30,8 +32,8 @@
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
     [self initCurrent];
-    [self test_speech];
-    [self speech_str:@"きょうのごみ"]; // not on emulator. only with a device
+    _swSpeech.on = [HandleDb getSpeechStatus];
+    [self say_today];
 }
 
 - (void)viewDidLoad {
@@ -135,5 +137,18 @@
     AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
     [_speaker speakUtterance:sentence];
     NSLog(@"speech: '%@'", str);
+}
+
+- (BOOL)say_today {
+    if (![HandleDb getSpeechStatus]) return false;
+    
+    //[self test_speech];
+    [self speech_str:@"きょうのごみ"]; // not on emulator. only with a device
+    return true;
+}
+
+- (IBAction)touchSwSpeech:(id)sender {
+    [HandleDb setSpeechStatus:_swSpeech.on];
+    [self say_today];
 }
 @end

@@ -252,4 +252,21 @@ NSString *FILE_DB = @"db2014.json";
     }
     
 }
+
++ (BOOL)getSpeechStatus
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return (int)[defaults boolForKey:@"doesSpeech"];
+}
+
++ (void)setSpeechStatus:(BOOL) sw
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:sw forKey:@"doesSpeech"];
+    BOOL successful = [defaults synchronize];
+    if (successful) {
+        NSLog(@"set to doesSpeech: %d.", sw);
+    }
+}
+
 @end
