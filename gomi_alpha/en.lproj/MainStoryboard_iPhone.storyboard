@@ -730,6 +730,7 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="jK7-zR-sD4" appends="YES" id="hhi-q1-du6"/>
+                            <outletCollection property="gestureRecognizers" destination="AVC-jb-WoL" appends="YES" id="wue-aj-M5q"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今週のごみ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
@@ -755,7 +756,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGO-m9-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="jK7-zR-sD4"/>
+                <swipeGestureRecognizer direction="left" id="jK7-zR-sD4">
+                    <connections>
+                        <action selector="swipe_left:" destination="KkE-JK-GfM" id="EVz-xY-PgV"/>
+                        <outlet property="delegate" destination="KkE-JK-GfM" id="cyz-KM-rTm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="AVC-jb-WoL" userLabel="swipeR">
+                    <connections>
+                        <action selector="swipe_right:" destination="KkE-JK-GfM" id="sLM-RK-IDE"/>
+                        <outlet property="delegate" destination="KkE-JK-GfM" id="qBH-bv-Yc0"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="543" y="-773"/>
         </scene>
@@ -811,6 +823,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Ba4-Bl-asD" firstAttribute="leading" secondItem="tmC-ih-re3" secondAttribute="leadingMargin" id="4MT-60-H8y"/>
                             <constraint firstItem="eSA-7u-0Nb" firstAttribute="top" secondItem="3bO-qV-ccL" secondAttribute="bottom" constant="10" id="6CL-GM-6Pq"/>
@@ -825,6 +838,10 @@
                             <constraint firstItem="mLs-Fy-YrX" firstAttribute="leading" secondItem="tmC-ih-re3" secondAttribute="leadingMargin" constant="-10" id="gdp-vM-ecf"/>
                             <constraint firstItem="U5o-sS-Wm5" firstAttribute="top" secondItem="3bO-qV-ccL" secondAttribute="bottom" constant="10" id="kGo-dX-ced"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="j2Q-Zf-xns" appends="YES" id="dOv-FG-TUn"/>
+                            <outletCollection property="gestureRecognizers" destination="kDa-jW-x03" appends="YES" id="wgU-mk-u7U"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今月のごみ" image="tab_month.png" selectedImage="tab_month.png" id="S1Q-UH-V3E">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
@@ -835,6 +852,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Na-go-4iI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="j2Q-Zf-xns" userLabel="swipeL">
+                    <connections>
+                        <action selector="swipe_left:" destination="CQY-op-aHE" id="gai-kB-A4X"/>
+                        <outlet property="delegate" destination="CQY-op-aHE" id="Ln7-mt-FuF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="kDa-jW-x03" userLabel="swipeR">
+                    <connections>
+                        <action selector="swipe_right:" destination="CQY-op-aHE" id="m2B-Ay-mWp"/>
+                        <outlet property="delegate" destination="CQY-op-aHE" id="qBG-Dd-6wn"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-295" y="-71"/>
         </scene>
@@ -1019,6 +1048,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="j9t-at-FM4" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" constant="6" id="1cP-qM-vk3"/>
                             <constraint firstAttribute="centerX" secondItem="GwU-mF-Afh" secondAttribute="centerX" id="1zM-vh-E0y"/>
@@ -1056,6 +1086,10 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                             <constraint firstAttribute="trailingMargin" secondItem="j9t-at-FM4" secondAttribute="trailing" id="nWA-BK-Kib"/>
                             <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="kg2-RB-h4o" secondAttribute="bottom" constant="6" id="r6B-no-Qn6"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Zqk-QC-6fm" appends="YES" id="PJe-30-y2A"/>
+                            <outletCollection property="gestureRecognizers" destination="5cA-fK-sUe" appends="YES" id="wnI-m3-yTK"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="種類検索" image="tab_search.png" selectedImage="tab_search.png" id="bt5-4G-fH6">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
@@ -1077,6 +1111,18 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w0-bU-owq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Zqk-QC-6fm" userLabel="swipeL">
+                    <connections>
+                        <action selector="swipe_left:" destination="SnU-nH-BS8" id="FXA-Z5-oxA"/>
+                        <outlet property="delegate" destination="SnU-nH-BS8" id="MZd-i6-2se"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="5cA-fK-sUe" userLabel="swipeR">
+                    <connections>
+                        <action selector="swipe_right:" destination="SnU-nH-BS8" id="ibE-sJ-TlO"/>
+                        <outlet property="delegate" destination="SnU-nH-BS8" id="u27-eF-yGd"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="135" y="-95"/>
         </scene>
