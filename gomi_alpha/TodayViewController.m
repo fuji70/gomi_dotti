@@ -8,6 +8,7 @@
 
 #import "TodayViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface TodayViewController ()
 {
@@ -24,6 +25,9 @@
 
 @property (strong, nonatomic) IBOutlet UISwitch *swSpeech;
 - (IBAction)touchSwSpeech:(id)sender;
+
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 @end
 
 @implementation TodayViewController
@@ -157,5 +161,15 @@
 - (IBAction)touchSwSpeech:(id)sender {
     [HandleDb setSpeechStatus:_swSpeech.on];
     [self say_today];
+}
+
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
 }
 @end

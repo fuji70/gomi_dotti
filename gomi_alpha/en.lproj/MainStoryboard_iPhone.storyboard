@@ -366,10 +366,10 @@
             </objects>
             <point key="canvasLocation" x="1104" y="1278"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar Controller-->
         <scene sceneID="9Hf-8W-cMj">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IUk-Ic-rlg" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IUk-Ic-rlg" customClass="MyTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zOz-dk-YNl"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="9fR-Sc-VWG">
@@ -662,6 +662,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="top" secondItem="C3m-xH-cCQ" secondAttribute="bottom" constant="4" id="0DR-BB-maJ"/>
                             <constraint firstItem="LId-1m-kfe" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="trailing" id="0Ov-KH-zdY"/>
@@ -727,6 +728,9 @@
                             <constraint firstItem="I6F-Zf-w9p" firstAttribute="top" secondItem="1qV-yK-PfA" secondAttribute="bottom" constant="1" id="xtj-mH-eXR"/>
                             <constraint firstItem="WkS-0o-lCG" firstAttribute="leading" secondItem="1qV-yK-PfA" secondAttribute="trailing" id="yzX-75-ESb"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jK7-zR-sD4" appends="YES" id="hhi-q1-du6"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今週のごみ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
@@ -751,6 +755,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGO-m9-DI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="jK7-zR-sD4"/>
             </objects>
             <point key="canvasLocation" x="543" y="-773"/>
         </scene>
@@ -1569,6 +1574,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gUu-FT-akQ" firstAttribute="top" secondItem="f25-Pg-zC9" secondAttribute="bottom" constant="5" id="2BK-2e-6EY"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="top" secondItem="Tin-ey-V4f" secondAttribute="bottom" constant="5" id="41L-1y-AVW"/>
@@ -1612,6 +1618,10 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                             <constraint firstItem="K6T-U9-2YT" firstAttribute="top" secondItem="s3g-bP-ijs" secondAttribute="bottom" constant="5" id="yqA-or-qD8"/>
                             <constraint firstAttribute="centerX" secondItem="YUv-FU-B7a" secondAttribute="centerX" id="zPt-X1-W9Y"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DdB-ob-ygy" appends="YES" id="33m-Hf-iCc"/>
+                            <outletCollection property="gestureRecognizers" destination="Rzu-0w-h83" appends="YES" id="kWI-Gb-GEq"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今日のごみ" image="tab_today.png" selectedImage="tab_today.png" id="fRs-pG-vEu" userLabel="Today's">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
@@ -1628,6 +1638,18 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzc-3i-PyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="DdB-ob-ygy" userLabel="swipeL">
+                    <connections>
+                        <action selector="swipe_left:" destination="ZfS-Qq-a3W" id="7iU-zs-EAa"/>
+                        <outlet property="delegate" destination="ZfS-Qq-a3W" id="xvS-4D-Uni"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Rzu-0w-h83">
+                    <connections>
+                        <action selector="swipe_right:" destination="ZfS-Qq-a3W" id="M26-Qn-XVf"/>
+                        <outlet property="delegate" destination="ZfS-Qq-a3W" id="ZXq-O3-0SE"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="142" y="-773"/>
         </scene>
