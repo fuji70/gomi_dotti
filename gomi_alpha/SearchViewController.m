@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface SearchViewController ()
 {
@@ -27,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
 @property (weak, nonatomic) IBOutlet UIButton *btnJumpPhoneCall;
 
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 
 @end
 
@@ -104,4 +107,13 @@
     
 }
 
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
+}
 @end

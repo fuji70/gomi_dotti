@@ -11,6 +11,7 @@
 		B094637C1A37555500BD776D /* WebTypeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B094637B1A37555500BD776D /* WebTypeSearchViewController.m */; };
 		B0A2699D1A348BA200589AD9 /* db2014.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A2699C1A348BA200589AD9 /* db2014.json */; };
 		B0D3F8EC1A3BABB200F6B934 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */; };
+		B0E1F3181A59D98700F67676 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F3171A59D98700F67676 /* MyTabBarController.m */; };
 		B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */; };
 		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
 		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
@@ -121,6 +122,8 @@
 		B094637B1A37555500BD776D /* WebTypeSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebTypeSearchViewController.m; sourceTree = "<group>"; };
 		B0A2699C1A348BA200589AD9 /* db2014.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2014.json; sourceTree = "<group>"; };
 		B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B0E1F3161A59D98700F67676 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
+		B0E1F3171A59D98700F67676 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 		B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		B0EE71001A33ED0E00E21D98 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
@@ -292,26 +295,28 @@
 			children = (
 				CA794F4B19FB44EE00C96F85 /* AppDelegate.h */,
 				CA794F4C19FB44EE00C96F85 /* AppDelegate.m */,
-				CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */,
-				B0EE71031A33ED3200E21D98 /* SearchViewController.h */,
-				B0EE71041A33ED3200E21D98 /* SearchViewController.m */,
-				B0EE71001A33ED0E00E21D98 /* MonthViewController.h */,
-				B0EE71011A33ED0E00E21D98 /* MonthViewController.m */,
-				B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */,
-				B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */,
 				B0EE71061A34047D00E21D98 /* HandleDb.h */,
 				B0EE71071A34047D00E21D98 /* HandleDb.m */,
+				CA7025A01A45EBCF0017A98F /* image.xcassets */,
+				CA7025A21A45F1EA0017A98F /* InfoPlist.strings */,
+				CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */,
+				B0EE71001A33ED0E00E21D98 /* MonthViewController.h */,
+				B0EE71011A33ED0E00E21D98 /* MonthViewController.m */,
+				B0E1F3161A59D98700F67676 /* MyTabBarController.h */,
+				B0E1F3171A59D98700F67676 /* MyTabBarController.m */,
+				B0EE71031A33ED3200E21D98 /* SearchViewController.h */,
+				B0EE71041A33ED3200E21D98 /* SearchViewController.m */,
 				B079467A1A32DEF500C7B5E1 /* SettingViewController.h */,
 				B079467B1A32DEF500C7B5E1 /* SettingViewController.m */,
+				CA794F4319FB44EE00C96F85 /* Supporting Files */,
 				B0F769251A2AEB1900858A02 /* TodayViewController.h */,
 				B0F769261A2AEB1900858A02 /* TodayViewController.m */,
 				B0FC81861A38A11900382855 /* WebAddressSearchViewController.h */,
 				B0FC81871A38A11900382855 /* WebAddressSearchViewController.m */,
 				B094637A1A37555500BD776D /* WebTypeSearchViewController.h */,
 				B094637B1A37555500BD776D /* WebTypeSearchViewController.m */,
-				CA794F4319FB44EE00C96F85 /* Supporting Files */,
-				CA7025A01A45EBCF0017A98F /* image.xcassets */,
-				CA7025A21A45F1EA0017A98F /* InfoPlist.strings */,
+				B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */,
+				B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */,
 			);
 			path = gomi_alpha;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 				B0EE71081A34047D00E21D98 /* HandleDb.m in Sources */,
 				B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */,
 				B094637C1A37555500BD776D /* WebTypeSearchViewController.m in Sources */,
+				B0E1F3181A59D98700F67676 /* MyTabBarController.m in Sources */,
 				B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

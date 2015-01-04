@@ -8,6 +8,7 @@
 
 #import "WeekViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface WeekViewController () {
     NSDate * _curDate;
@@ -18,6 +19,8 @@
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSMutableArray *lblWeekdays;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgWeekdays;
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 @end
 
 @implementation WeekViewController
@@ -96,5 +99,14 @@
 - (IBAction)pushBtnNextWeek:(id)sender {
     _curDate = [_curDate initWithTimeInterval:(7*60*60*24) sinceDate:_curDate];
     [self drawWeekdays];
+}
+
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
 }
 @end
