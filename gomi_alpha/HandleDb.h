@@ -17,6 +17,7 @@
 + (UIImage*)getDateIconImage:(NSString*)iconsStr;
 + (UIImage*)getIconImageFromDate:(NSDate*)date;
 + (NSString*)getPitStr:(NSString*)iconsStr;
++ (NSString*)getSpeechStr:(NSString*)iconsStr;
 + (UIImage*)getMonthImage:(NSDate*)date;
 
 + (id)getInstance;

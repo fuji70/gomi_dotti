@@ -33,13 +33,12 @@
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
     [self initCurrent];
     _swSpeech.on = [HandleDb getSpeechStatus];
-    [self say_today];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self initCurrent];
+    //[self initCurrent];
 
 }
 
@@ -68,6 +67,7 @@
     _lblCurrent.text = strCurDate;
     
     [self viewCurrentIcons];
+    [self say_today];
 }
 
 - (void)initCurrent {
@@ -146,7 +146,11 @@
     if (![HandleDb getSpeechStatus]) return false;
     
     //[self test_speech];
-    [self speech_str:@"きょうのごみ"]; // not on emulator. only with a device
+    [self speech_str:@"きょうのごみは "]; // not on emulator. only with a device
+    NSString *iconStr = [HandleDb getIconsStr:_curDate];
+    NSString *speech  = [HandleDb getSpeechStr:iconStr];
+    [self speech_str:speech];
+    [self speech_str:@"です"];
     return true;
 }
 
