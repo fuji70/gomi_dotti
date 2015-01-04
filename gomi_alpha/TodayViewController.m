@@ -135,6 +135,9 @@
 - (void)speech_str:(NSString*)str {
     _speaker = [[AVSpeechSynthesizer alloc] init];
     AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
+    //sentence.rate = AVSpeechUtteranceDefaultSpeechRate;
+    sentence.rate = 0.3;
+    
     [_speaker speakUtterance:sentence];
     NSLog(@"speech: '%@'", str);
 }
