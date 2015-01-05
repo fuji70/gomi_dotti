@@ -1803,14 +1803,9 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                             </mapView>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
-                                <rect key="frame" x="16" y="44" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-iI-xPo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
@@ -1823,6 +1818,12 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
+                                <rect key="frame" x="16" y="44" width="288" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1832,7 +1833,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                             <constraint firstItem="KX2-0V-Jhz" firstAttribute="centerX" secondItem="xnL-iI-xPo" secondAttribute="centerX" id="NcX-pm-fkL"/>
                             <constraint firstItem="xnL-iI-xPo" firstAttribute="top" secondItem="QkT-ct-mp6" secondAttribute="top" id="Oqa-Iw-2xJ"/>
                             <constraint firstItem="xnL-iI-xPo" firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="TRx-aP-Tzw"/>
-                            <constraint firstItem="LpM-dp-aQz" firstAttribute="bottom" secondItem="4tc-n5-0yq" secondAttribute="top" id="WS3-9A-NAw"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="bottom" secondItem="QkT-ct-mp6" secondAttribute="bottomMargin" id="gtl-xe-yyD"/>
                             <constraint firstItem="LpM-dp-aQz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leading" id="mhp-gg-fib"/>
                             <constraint firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="wIM-Xp-yN1"/>
                             <constraint firstItem="LpM-dp-aQz" firstAttribute="top" secondItem="KX2-0V-Jhz" secondAttribute="top" id="zyQ-Ny-b0z"/>
@@ -1840,6 +1841,10 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lblLocation" destination="KX2-0V-Jhz" id="Frl-7O-ikB"/>
+                        <outlet property="myMapView" destination="LpM-dp-aQz" id="doP-Tb-BRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLa-Q0-Yil" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="XE6-Ki-HW4" userLabel="Exit" sceneMemberID="exit"/>

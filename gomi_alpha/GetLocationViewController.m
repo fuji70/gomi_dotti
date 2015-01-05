@@ -10,6 +10,8 @@
 
 @interface GetLocationViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *lblLocation;
+@property (weak, nonatomic) IBOutlet MKMapView *myMapView;
 @end
 
 @implementation GetLocationViewController
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _myMapView.showsUserLocation = YES;
+    [_myMapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

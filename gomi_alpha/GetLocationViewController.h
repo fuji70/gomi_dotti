@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>import#import <CoreLocation/CoreLocation.h>
 
-@interface GetLocationViewController : UIViewController
+@interface GetLocationViewController : UIViewController <MKMapViewDelegate>
 
 @end
