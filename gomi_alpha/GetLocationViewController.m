@@ -9,6 +9,9 @@
 #import "GetLocationViewController.h"
 
 @interface GetLocationViewController ()
+{
+    CLLocationManager* locationManager;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *lblLocation;
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
@@ -19,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self startLocationServices];
+    [self getAddress];
     _myMapView.showsUserLocation = YES;
     [_myMapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
@@ -37,5 +42,93 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) startLocationServices
+{
+    if (!locationManager) {
+        locationManager = [[CLLocationManager alloc]init];
+        locationManager.delegate = self;
+        //locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        //locationManager.distanceFilter = kCLDistanceFilterNone;
+    }
+    
+    if( [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0 ) {
+        // iOS8の場合は、以下の何れかの処理を追加しないと位置の取得ができない
+        // アプリがアクティブな場合だけ位置取得する場合
+        [locationManager requestWhenInUseAuthorization];
+        // アプリが非アクティブな場合でも位置取得する場合
+        //[locationManager requestAlwaysAuthorization];
+    }
+    
+    if([CLLocationManager locationServicesEnabled]){
+        // 位置情報取得開始
+        [locationManager startUpdatingLocation];
+    }else{
+        // 位置取得が許可されていない場合
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation
+{
+    // 位置情報取得
+    CLLocationDegrees latitude = newLocation.coordinate.latitude;
+    CLLocationDegrees longitude = newLocation.coordinate.longitude;
+    NSLog(@"Currect Location %f, %f", latitude, longitude);
+    //[self getAddress:newLocation.coordinate];
+    // ロケーションマネージャ停止
+    //[locationManager stopUpdatingLocation];
+}
+
+// 位置情報が取得失敗した場合にコールされる。
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    if (error) {
+        switch ([error code]) {
+                // アプリでの位置情報サービスが許可されていない場合
+            case kCLErrorDenied:
+                NSLog(@"%@", @"このアプリは位置情報サービスが許可されていません");
+                break;
+            default:
+                NSLog(@"%@", @"位置情報の取得に失敗しました");
+                break;
+        }
+    }
+    // 位置情報取得停止
+    [locationManager stopUpdatingLocation];
+}
+
+- (void)getAddress
+{
+    // 緯度
+    double latitude = 35.658704;
+    // 経度
+    double longitude = 139.745408;
+    // 逆ジオコーディング
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
+    [geocoder reverseGeocodeLocation:location
+                   completionHandler:^(NSArray* placemarks, NSError* error) {
+                       if(error){
+                           // エラーが発生している
+                           NSLog(@"エラー %@", error);
+                       } else {
+                           if ([placemarks count] > 0) {
+                               // 住所取得成功
+                               CLPlacemark *placemark = (CLPlacemark *)[placemarks lastObject];
+                               NSLog(@"%@,%@", placemark.locality, placemark.country);
+                               NSDictionary *dict = placemark.addressDictionary;
+                               NSArray *lines = [dict valueForKey:@"FormattedAddressLines"];
+                               NSString *line = @"";
+                               for (int i = 0; i < lines.count; i++) {
+                                   line = [line stringByAppendingFormat:@"%@ ", [lines objectAtIndex:i]];
+                               }
+                               _lblLocation.text = [NSString stringWithFormat:@"%@",line];
+                           }
+                       }
+                   }];
+}
+
 
 @end
