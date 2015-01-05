@@ -23,7 +23,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self startLocationServices];
-    [self getAddress];
     _myMapView.showsUserLocation = YES;
     [_myMapView setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
@@ -76,7 +75,7 @@
     CLLocationDegrees latitude = newLocation.coordinate.latitude;
     CLLocationDegrees longitude = newLocation.coordinate.longitude;
     NSLog(@"Currect Location %f, %f", latitude, longitude);
-    //[self getAddress:newLocation.coordinate];
+    [self setAddressText:newLocation.coordinate];
     // ロケーションマネージャ停止
     //[locationManager stopUpdatingLocation];
 }
@@ -99,12 +98,13 @@
     [locationManager stopUpdatingLocation];
 }
 
-- (void)getAddress
+- (void)setAddressText:(CLLocationCoordinate2D)coordinate
 {
-    // 緯度
-    double latitude = 35.658704;
-    // 経度
-    double longitude = 139.745408;
+    // 緯度・経度
+    //double latitude = 35.658704;
+    //double longitude = 139.745408;
+    CLLocationDegrees latitude  = coordinate.latitude;
+    CLLocationDegrees longitude = coordinate.longitude;
     // 逆ジオコーディング
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     CLLocation *location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
@@ -129,6 +129,5 @@
                        }
                    }];
 }
-
 
 @end
