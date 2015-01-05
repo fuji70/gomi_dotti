@@ -1803,10 +1803,13 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="524" id="K3p-4e-hgU"/>
+                                </constraints>
                             </mapView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-iI-xPo">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-iI-xPo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="U91-l0-3qE">
@@ -1818,7 +1821,7 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
                                 <rect key="frame" x="16" y="44" width="288" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1827,16 +1830,14 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="leading" secondItem="xnL-iI-xPo" secondAttribute="leading" id="46s-xp-hkl"/>
                             <constraint firstItem="KX2-0V-Jhz" firstAttribute="top" secondItem="xnL-iI-xPo" secondAttribute="bottom" id="632-u2-o6c"/>
-                            <constraint firstItem="xnL-iI-xPo" firstAttribute="leading" secondItem="LpM-dp-aQz" secondAttribute="leading" id="EJZ-lg-hLr"/>
-                            <constraint firstItem="KX2-0V-Jhz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leadingMargin" id="Ifq-kd-fM9"/>
+                            <constraint firstAttribute="bottom" secondItem="LpM-dp-aQz" secondAttribute="bottom" id="CoB-2a-wRv"/>
                             <constraint firstItem="KX2-0V-Jhz" firstAttribute="centerX" secondItem="xnL-iI-xPo" secondAttribute="centerX" id="NcX-pm-fkL"/>
-                            <constraint firstItem="xnL-iI-xPo" firstAttribute="top" secondItem="QkT-ct-mp6" secondAttribute="top" id="Oqa-Iw-2xJ"/>
-                            <constraint firstItem="xnL-iI-xPo" firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="TRx-aP-Tzw"/>
-                            <constraint firstItem="LpM-dp-aQz" firstAttribute="bottom" secondItem="QkT-ct-mp6" secondAttribute="bottomMargin" id="gtl-xe-yyD"/>
-                            <constraint firstItem="LpM-dp-aQz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leading" id="mhp-gg-fib"/>
-                            <constraint firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="wIM-Xp-yN1"/>
-                            <constraint firstItem="LpM-dp-aQz" firstAttribute="top" secondItem="KX2-0V-Jhz" secondAttribute="top" id="zyQ-Ny-b0z"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leading" id="Qve-w4-l58"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="trailing" secondItem="xnL-iI-xPo" secondAttribute="trailing" id="U5U-j4-H5n"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="top" secondItem="KX2-0V-Jhz" secondAttribute="top" id="WWo-KH-DcQ"/>
+                            <constraint firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="ZxA-sw-odn"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
