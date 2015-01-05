@@ -1347,6 +1347,15 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hok-tE-vsY">
+                                <rect key="frame" x="169" y="206" width="135" height="30"/>
+                                <state key="normal" title="現在地点住所取得">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rai-Np-5mq" kind="modal" id="kTW-JO-6kk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1781,6 +1790,61 @@ KOagqinol6TmsqLluILoiIjmpa3lhaznpL7jgbgI8J+Tng
                 <exit id="dKR-cx-5sf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1378" y="-71"/>
+        </scene>
+        <!--Get Location View Controller-->
+        <scene sceneID="dbo-8C-oB3">
+            <objects>
+                <viewController id="rai-Np-5mq" customClass="GetLocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7at-pd-9Pp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4tc-n5-0yq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QkT-ct-mp6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
+                                <rect key="frame" x="16" y="44" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-iI-xPo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="U91-l0-3qE">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="SlG-Ls-gaJ">
+                                            <connections>
+                                                <segue destination="XE6-Ki-HW4" kind="unwind" unwindAction="mainViewReturnActionForSegue:" id="SlZ-kz-HFG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KX2-0V-Jhz" firstAttribute="top" secondItem="xnL-iI-xPo" secondAttribute="bottom" id="632-u2-o6c"/>
+                            <constraint firstItem="xnL-iI-xPo" firstAttribute="leading" secondItem="LpM-dp-aQz" secondAttribute="leading" id="EJZ-lg-hLr"/>
+                            <constraint firstItem="KX2-0V-Jhz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leadingMargin" id="Ifq-kd-fM9"/>
+                            <constraint firstItem="KX2-0V-Jhz" firstAttribute="centerX" secondItem="xnL-iI-xPo" secondAttribute="centerX" id="NcX-pm-fkL"/>
+                            <constraint firstItem="xnL-iI-xPo" firstAttribute="top" secondItem="QkT-ct-mp6" secondAttribute="top" id="Oqa-Iw-2xJ"/>
+                            <constraint firstItem="xnL-iI-xPo" firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="TRx-aP-Tzw"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="bottom" secondItem="4tc-n5-0yq" secondAttribute="top" id="WS3-9A-NAw"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leading" id="mhp-gg-fib"/>
+                            <constraint firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="wIM-Xp-yN1"/>
+                            <constraint firstItem="LpM-dp-aQz" firstAttribute="top" secondItem="KX2-0V-Jhz" secondAttribute="top" id="zyQ-Ny-b0z"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLa-Q0-Yil" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XE6-Ki-HW4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="-71"/>
         </scene>
     </scenes>
     <resources>

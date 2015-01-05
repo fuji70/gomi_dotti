@@ -12,6 +12,9 @@
 		B0A2699D1A348BA200589AD9 /* db2014.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A2699C1A348BA200589AD9 /* db2014.json */; };
 		B0D3F8EC1A3BABB200F6B934 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */; };
 		B0E1F3181A59D98700F67676 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F3171A59D98700F67676 /* MyTabBarController.m */; };
+		B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F3191A5A187400F67676 /* MapKit.framework */; };
+		B0E1F31C1A5A188300F67676 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F31B1A5A188300F67676 /* CoreLocation.framework */; };
+		B0E1F31F1A5A1A4700F67676 /* GetLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */; };
 		B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */; };
 		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
 		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
@@ -124,6 +127,10 @@
 		B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B0E1F3161A59D98700F67676 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
 		B0E1F3171A59D98700F67676 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
+		B0E1F3191A5A187400F67676 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B0E1F31B1A5A188300F67676 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B0E1F31D1A5A1A4700F67676 /* GetLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocationViewController.h; sourceTree = "<group>"; };
+		B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocationViewController.m; sourceTree = "<group>"; };
 		B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		B0EE71001A33ED0E00E21D98 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
@@ -243,6 +250,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E1F31C1A5A188300F67676 /* CoreLocation.framework in Frameworks */,
+				B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */,
 				B0D3F8EC1A3BABB200F6B934 /* AVFoundation.framework in Frameworks */,
 				CA794F3D19FB44EE00C96F85 /* UIKit.framework in Frameworks */,
 				CA794F3F19FB44EE00C96F85 /* Foundation.framework in Frameworks */,
@@ -281,6 +290,8 @@
 		CA794F3B19FB44EE00C96F85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0E1F31B1A5A188300F67676 /* CoreLocation.framework */,
+				B0E1F3191A5A187400F67676 /* MapKit.framework */,
 				B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */,
 				B0FC81841A388EED00382855 /* WebKit.framework */,
 				CA794F3C19FB44EE00C96F85 /* UIKit.framework */,
@@ -317,6 +328,8 @@
 				B094637B1A37555500BD776D /* WebTypeSearchViewController.m */,
 				B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */,
 				B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */,
+				B0E1F31D1A5A1A4700F67676 /* GetLocationViewController.h */,
+				B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */,
 			);
 			path = gomi_alpha;
 			sourceTree = "<group>";
@@ -586,6 +599,7 @@
 			files = (
 				B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */,
 				B0FC81881A38A11900382855 /* WebAddressSearchViewController.m in Sources */,
+				B0E1F31F1A5A1A4700F67676 /* GetLocationViewController.m in Sources */,
 				CA794F4919FB44EE00C96F85 /* main.m in Sources */,
 				B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */,
 				CA794F4D19FB44EE00C96F85 /* AppDelegate.m in Sources */,
