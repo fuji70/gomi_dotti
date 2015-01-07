@@ -156,6 +156,7 @@ NSString *FILE_DB = @"db2014.json";
 + (NSString*)getKeyDate: (NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd";
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSString *strDate = [dateFormatter stringFromDate:date];
     
     NSLog(@"keyDate= [%@]", strDate);
@@ -190,6 +191,7 @@ NSString *FILE_DB = @"db2014.json";
 + (UIImage*)getMonthImage:(NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM";
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSString *strDate = [dateFormatter stringFromDate:date];
     NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
     return [UIImage imageNamed:imgName];
