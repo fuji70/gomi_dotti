@@ -224,7 +224,6 @@
 		CA794F4E19FB44EE00C96F85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CA794F5019FB44EE00C96F85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CA794F5519FB44EE00C96F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CA794F6419FB4C6900C96F85 /* can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = can.png; sourceTree = "<group>"; };
 		CA794F6519FB4C6900C96F85 /* funen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funen.png; sourceTree = "<group>"; };
 		CA794F7119FB4C6900C96F85 /* kanen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kanen.png; sourceTree = "<group>"; };
@@ -233,6 +232,8 @@
 		CA794F7719FB4C6900C96F85 /* shigen-rule1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shigen-rule1.png"; sourceTree = "<group>"; };
 		CA794F7819FB4C6900C96F85 /* shigen-rule2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shigen-rule2.png"; sourceTree = "<group>"; };
 		CA794F7919FB4C6900C96F85 /* shigen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shigen.png; sourceTree = "<group>"; };
+		CABD97FB1A63FCBA00F6F9B1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CABD97FC1A63FCBA00F6F9B1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CAC973D01A34849D00D85C60 /* tab_today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_today.png; sourceTree = "<group>"; };
 		CAC973D11A34849D00D85C60 /* tab_today@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_today@2x.png"; sourceTree = "<group>"; };
 		CAC973D41A3484A900D85C60 /* tab_week.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_week.png; sourceTree = "<group>"; };
@@ -480,6 +481,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = CA794F3019FB44EE00C96F85;
 			productRefGroup = CA794F3A19FB44EE00C96F85 /* Products */;
@@ -619,6 +621,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CA794F4619FB44EE00C96F85 /* en */,
+				CABD97FC1A63FCBA00F6F9B1 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -626,7 +629,7 @@
 		CA794F5419FB44EE00C96F85 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA794F5519FB44EE00C96F85 /* en */,
+				CABD97FB1A63FCBA00F6F9B1 /* ja */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
