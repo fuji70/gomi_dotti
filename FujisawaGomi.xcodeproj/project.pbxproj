@@ -211,14 +211,14 @@
 		CA4819721A49A55C00E9D030 /* 10blk-2015-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10blk-2015-03.png"; sourceTree = "<group>"; };
 		CA7025A01A45EBCF0017A98F /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		CA7025A21A45F1EA0017A98F /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../InfoPlist.strings; sourceTree = "<group>"; };
-		CA794F3919FB44EE00C96F85 /* gomi_alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gomi_alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA794F3919FB44EE00C96F85 /* FujisawaGomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FujisawaGomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA794F3C19FB44EE00C96F85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA794F3E19FB44EE00C96F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CA794F4019FB44EE00C96F85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CA794F4419FB44EE00C96F85 /* gomi_alpha-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gomi_alpha-Info.plist"; sourceTree = "<group>"; };
+		CA794F4419FB44EE00C96F85 /* FujisawaGomi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FujisawaGomi-Info.plist"; sourceTree = "<group>"; };
 		CA794F4619FB44EE00C96F85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA794F4819FB44EE00C96F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CA794F4A19FB44EE00C96F85 /* gomi_alpha-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gomi_alpha-Prefix.pch"; sourceTree = "<group>"; };
+		CA794F4A19FB44EE00C96F85 /* FujisawaGomi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FujisawaGomi-Prefix.pch"; sourceTree = "<group>"; };
 		CA794F4B19FB44EE00C96F85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA794F4C19FB44EE00C96F85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CA794F4E19FB44EE00C96F85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 		CA794F3A19FB44EE00C96F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA794F3919FB44EE00C96F85 /* gomi_alpha.app */,
+				CA794F3919FB44EE00C96F85 /* FujisawaGomi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,10 +339,10 @@
 			children = (
 				B0A2699B1A348BA200589AD9 /* db_calendar */,
 				CA794F6219FB4C6900C96F85 /* image4app */,
-				CA794F4419FB44EE00C96F85 /* gomi_alpha-Info.plist */,
+				CA794F4419FB44EE00C96F85 /* FujisawaGomi-Info.plist */,
 				CA794F4519FB44EE00C96F85 /* InfoPlist.strings */,
 				CA794F4819FB44EE00C96F85 /* main.m */,
-				CA794F4A19FB44EE00C96F85 /* gomi_alpha-Prefix.pch */,
+				CA794F4A19FB44EE00C96F85 /* FujisawaGomi-Prefix.pch */,
 				CA794F5019FB44EE00C96F85 /* Default@2x.png */,
 				CA794F4E19FB44EE00C96F85 /* Default.png */,
 				CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */,
@@ -443,9 +443,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA794F3819FB44EE00C96F85 /* gomi_alpha */ = {
+		CA794F3819FB44EE00C96F85 /* FujisawaGomi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA794F5F19FB44EE00C96F85 /* Build configuration list for PBXNativeTarget "gomi_alpha" */;
+			buildConfigurationList = CA794F5F19FB44EE00C96F85 /* Build configuration list for PBXNativeTarget "FujisawaGomi" */;
 			buildPhases = (
 				CA794F3519FB44EE00C96F85 /* Sources */,
 				CA794F3619FB44EE00C96F85 /* Frameworks */,
@@ -455,9 +455,9 @@
 			);
 			dependencies = (
 			);
-			name = gomi_alpha;
+			name = FujisawaGomi;
 			productName = gomi_alpha;
-			productReference = CA794F3919FB44EE00C96F85 /* gomi_alpha.app */;
+			productReference = CA794F3919FB44EE00C96F85 /* FujisawaGomi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -467,14 +467,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = vidacomoda;
+				ORGANIZATIONNAME = "vida-comoda";
 				TargetAttributes = {
 					CA794F3819FB44EE00C96F85 = {
-						DevelopmentTeam = W54UCZ555B;
+						DevelopmentTeam = TNZAR8Q963;
 					};
 				};
 			};
-			buildConfigurationList = CA794F3419FB44EE00C96F85 /* Build configuration list for PBXProject "gomi_alpha" */;
+			buildConfigurationList = CA794F3419FB44EE00C96F85 /* Build configuration list for PBXProject "FujisawaGomi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -486,7 +486,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA794F3819FB44EE00C96F85 /* gomi_alpha */,
+				CA794F3819FB44EE00C96F85 /* FujisawaGomi */,
 			);
 		};
 /* End PBXProject section */
@@ -700,10 +700,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gomi_alpha/gomi_alpha-Prefix.pch";
-				INFOPLIST_FILE = "gomi_alpha/gomi_alpha-Info.plist";
+				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
+				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -718,10 +718,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "gomi_alpha/gomi_alpha-Prefix.pch";
-				INFOPLIST_FILE = "gomi_alpha/gomi_alpha-Info.plist";
+				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
+				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -731,7 +731,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA794F3419FB44EE00C96F85 /* Build configuration list for PBXProject "gomi_alpha" */ = {
+		CA794F3419FB44EE00C96F85 /* Build configuration list for PBXProject "FujisawaGomi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA794F5D19FB44EE00C96F85 /* Debug */,
@@ -740,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA794F5F19FB44EE00C96F85 /* Build configuration list for PBXNativeTarget "gomi_alpha" */ = {
+		CA794F5F19FB44EE00C96F85 /* Build configuration list for PBXNativeTarget "FujisawaGomi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA794F6019FB44EE00C96F85 /* Debug */,
