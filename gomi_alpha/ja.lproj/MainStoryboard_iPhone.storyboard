@@ -1832,25 +1832,25 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         </scene>
     </scenes>
     <resources>
-        <image name="8blk-2014-12.png" width="1754" height="1239"/>
+        <image name="8blk-2014-12.png" width="1062" height="750"/>
         <image name="can.png" width="400" height="200"/>
-        <image name="eda&amp;smallkaden-list.png" width="1075" height="1646"/>
-        <image name="funen-list.png" width="1080" height="1644"/>
+        <image name="eda&amp;smallkaden-list.png" width="490" height="750"/>
+        <image name="funen-list.png" width="493" height="750"/>
         <image name="funen.png" width="400" height="200"/>
-        <image name="kanen-list.png" width="1079" height="1643"/>
+        <image name="kanen-list.png" width="493" height="750"/>
         <image name="kanen.png" width="400" height="200"/>
         <image name="no-treat-list1.png" width="1080" height="1643"/>
         <image name="no-treat-list2.png" width="1074" height="1644"/>
-        <image name="oogata-list.png" width="1079" height="1643"/>
+        <image name="oogata-list.png" width="493" height="750"/>
         <image name="petbottle.png" width="400" height="200"/>
-        <image name="plastic-list.png" width="1080" height="1644"/>
+        <image name="plastic-list.png" width="493" height="750"/>
         <image name="plastic.png" width="400" height="200"/>
-        <image name="shigen-kobetsu-list.png" width="1079" height="1644"/>
-        <image name="shigen-sonota-list.png" width="1077" height="1646"/>
+        <image name="shigen-kobetsu-list.png" width="492" height="750"/>
+        <image name="shigen-sonota-list.png" width="491" height="750"/>
         <image name="shigen.png" width="400" height="200"/>
-        <image name="shisetsu-list.png" width="1075" height="1641"/>
-        <image name="shohin-pla-list.png" width="1076" height="1643"/>
-        <image name="special-oogata-list.png" width="1079" height="1640"/>
+        <image name="shisetsu-list.png" width="491" height="750"/>
+        <image name="shohin-pla-list.png" width="491" height="750"/>
+        <image name="special-oogata-list.png" width="493" height="750"/>
         <image name="tab_month.png" width="30" height="30"/>
         <image name="tab_search.png" width="30" height="30"/>
         <image name="tab_setting.png" width="30" height="30"/>
