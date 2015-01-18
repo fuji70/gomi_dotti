@@ -1164,11 +1164,11 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNL-Ys-iYB">
-                                <rect key="frame" x="10" y="68" width="300" height="50"/>
+                                <rect key="frame" x="10" y="70" width="300" height="35"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="810-lI-wli"/>
-                                    <constraint firstAttribute="height" constant="50" id="kn6-uJ-BnH"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="kn6-uJ-BnH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="23"/>
                                 <state key="normal" title="自宅ブロックの検索はこちら">
@@ -1201,71 +1201,11 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB1-qn-Kua">
-                                <rect key="frame" x="16" y="299" width="140" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Dx-qsd">
+                                <rect key="frame" x="164" y="181" width="140" height="113"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="SbV-y5-fy5"/>
-                                    <constraint firstAttribute="width" constant="140" id="dqP-1B-dyO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="２ブロック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBlk2:" destination="UFz-DU-91U" eventType="touchUpInside" id="iWr-wm-sEx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-XK-yNv">
-                                <rect key="frame" x="16" y="354" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="bpK-RS-8HC"/>
-                                    <constraint firstAttribute="height" constant="50" id="sIm-pJ-t0m"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="３ブロック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBlk3:" destination="UFz-DU-91U" eventType="touchUpInside" id="Gn8-3K-lG6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-Hs-aup">
-                                <rect key="frame" x="16" y="409" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bL0-os-1Ox"/>
-                                    <constraint firstAttribute="width" constant="140" id="hGU-Uo-tMz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="４ブロック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBlk4:" destination="UFz-DU-91U" eventType="touchUpInside" id="HMa-BO-mXB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-Vb-xCY">
-                                <rect key="frame" x="16" y="464" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="Ep4-vj-jfu"/>
-                                    <constraint firstAttribute="height" constant="50" id="XdX-Yb-u5q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="５ブロック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBlk5:" destination="UFz-DU-91U" eventType="touchUpInside" id="Gnd-4T-joM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Dx-qsd">
-                                <rect key="frame" x="164" y="244" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Jng-gS-dXm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="Jng-gS-dXm"/>
                                     <constraint firstAttribute="width" constant="140" id="qHG-Z5-G88"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
@@ -1276,11 +1216,11 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <action selector="btnBlk6:" destination="UFz-DU-91U" eventType="touchUpInside" id="ZYu-HK-WVt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-5c-As7">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-5c-As7">
                                 <rect key="frame" x="164" y="299" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NXf-9G-8Zl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="NXf-9G-8Zl"/>
                                     <constraint firstAttribute="width" constant="140" id="O7H-Ms-rPX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
@@ -1291,11 +1231,11 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <action selector="btnBlk7:" destination="UFz-DU-91U" eventType="touchUpInside" id="NRC-un-PcV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Tp-Kpa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Tp-Kpa">
                                 <rect key="frame" x="164" y="409" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="mZB-na-qDv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="mZB-na-qDv"/>
                                     <constraint firstAttribute="width" constant="140" id="xkF-0f-ohx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
@@ -1306,42 +1246,12 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <action selector="btnBlk9:" destination="UFz-DU-91U" eventType="touchUpInside" id="4ps-dE-DTb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-5b-fwr">
-                                <rect key="frame" x="164" y="464" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="gGh-Ah-5Sc"/>
-                                    <constraint firstAttribute="height" constant="50" id="jKR-Zl-tSO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="１０ブロック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBlk10:" destination="UFz-DU-91U" eventType="touchUpInside" id="TPn-EG-2HN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-fN-ezQ">
-                                <rect key="frame" x="16" y="244" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="9aU-NF-E8U"/>
-                                    <constraint firstAttribute="height" constant="50" id="9b8-j1-juY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="１ブロック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBlk1:" destination="UFz-DU-91U" eventType="touchUpInside" id="zWT-EQ-sDf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Yg-lF6">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Yg-lF6">
                                 <rect key="frame" x="164" y="354" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="Gpf-a2-hQk"/>
-                                    <constraint firstAttribute="height" constant="50" id="mib-el-0hJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="mib-el-0hJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="８ブロック">
@@ -1361,10 +1271,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※自宅の所属ブロックが分かる方はブロックを選択。分からない方は上ボタンの藤沢市HPで住所からブロックを調べてください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
-                                <rect key="frame" x="10" y="120" width="300" height="80"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="※自宅の所属ブロックが分かる方はブロックを選択。分からない方は上ボタンの藤沢市HPで住所からブロックを調べてください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="ncj-K3-Bxo">
+                                <rect key="frame" x="10" y="105" width="300" height="76"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Yed-uP-6fa"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Yed-uP-6fa"/>
                                     <constraint firstAttribute="width" constant="300" id="cOJ-rI-JMI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="19"/>
@@ -1372,12 +1282,103 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB1-qn-Kua">
+                                <rect key="frame" x="16" y="218" width="140" height="32"/>
+                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="SbV-y5-fy5"/>
+                                    <constraint firstAttribute="width" constant="140" id="dqP-1B-dyO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="２ブロック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlk2:" destination="UFz-DU-91U" eventType="touchUpInside" id="iWr-wm-sEx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-XK-yNv">
+                                <rect key="frame" x="16" y="255" width="140" height="185"/>
+                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="bpK-RS-8HC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="sIm-pJ-t0m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="３ブロック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlk3:" destination="UFz-DU-91U" eventType="touchUpInside" id="Gn8-3K-lG6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-Hs-aup">
+                                <rect key="frame" x="16" y="445" width="140" height="32"/>
+                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="bL0-os-1Ox"/>
+                                    <constraint firstAttribute="width" constant="140" id="hGU-Uo-tMz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="４ブロック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlk4:" destination="UFz-DU-91U" eventType="touchUpInside" id="HMa-BO-mXB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-Vb-xCY">
+                                <rect key="frame" x="16" y="482" width="140" height="32"/>
+                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Ep4-vj-jfu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="XdX-Yb-u5q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="５ブロック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlk5:" destination="UFz-DU-91U" eventType="touchUpInside" id="Gnd-4T-joM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-5b-fwr">
+                                <rect key="frame" x="164" y="464" width="140" height="50"/>
+                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="gGh-Ah-5Sc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="jKR-Zl-tSO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="１０ブロック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlk10:" destination="UFz-DU-91U" eventType="touchUpInside" id="TPn-EG-2HN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-fN-ezQ">
+                                <rect key="frame" x="16" y="181" width="140" height="32"/>
+                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="9aU-NF-E8U"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="25" id="9b8-j1-juY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
+                                <state key="normal" title="１ブロック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBlk1:" destination="UFz-DU-91U" eventType="touchUpInside" id="zWT-EQ-sDf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="fNL-Ys-iYB" secondAttribute="centerX" id="1Sf-iK-wb6"/>
                             <constraint firstItem="ncj-K3-Bxo" firstAttribute="top" secondItem="fNL-Ys-iYB" secondAttribute="bottom" id="1w4-aL-ycf"/>
                             <constraint firstItem="dss-Yg-lF6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9ql-XK-yNv" secondAttribute="trailing" constant="50" id="3TZ-Mr-3Fx"/>
+                            <constraint firstItem="Ape-fN-ezQ" firstAttribute="top" secondItem="ncj-K3-Bxo" secondAttribute="bottom" id="3wt-eJ-Dcx"/>
                             <constraint firstItem="m8C-8V-NZh" firstAttribute="top" secondItem="mHK-Vb-xCY" secondAttribute="bottom" constant="5" id="50O-Sp-G4U"/>
                             <constraint firstItem="UmJ-TJ-aJ5" firstAttribute="top" secondItem="cPN-p8-SoZ" secondAttribute="bottom" constant="10" id="6fS-uz-zed"/>
                             <constraint firstItem="m8C-8V-NZh" firstAttribute="top" secondItem="62S-5b-fwr" secondAttribute="bottom" constant="5" id="7XK-Q1-Bwc"/>
@@ -1400,6 +1401,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="centerX" secondItem="JrT-GT-rkE" secondAttribute="centerX" id="dkp-S3-hS7"/>
                             <constraint firstItem="gpI-Hs-aup" firstAttribute="leading" secondItem="GqS-Cx-Dym" secondAttribute="leadingMargin" id="gFC-FY-kdh"/>
                             <constraint firstItem="mHK-Vb-xCY" firstAttribute="top" secondItem="gpI-Hs-aup" secondAttribute="bottom" constant="5" id="i4L-D3-2CV"/>
+                            <constraint firstItem="2Ty-Dx-qsd" firstAttribute="top" secondItem="ncj-K3-Bxo" secondAttribute="bottom" id="kCc-86-8Ja"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UmJ-TJ-aJ5" secondAttribute="trailing" id="lPv-3p-WsA"/>
                             <constraint firstItem="mV0-5c-As7" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CB1-qn-Kua" secondAttribute="trailing" constant="50" id="ldS-mz-twb"/>
                             <constraint firstItem="2Ty-Dx-qsd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ape-fN-ezQ" secondAttribute="trailing" constant="50" id="nhX-5g-GwB"/>
@@ -1876,25 +1878,25 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         </scene>
     </scenes>
     <resources>
-        <image name="8blk-2014-12.png" width="1754" height="1239"/>
+        <image name="8blk-2014-12.png" width="1062" height="750"/>
         <image name="can.png" width="400" height="200"/>
-        <image name="eda&amp;smallkaden-list.png" width="1075" height="1646"/>
-        <image name="funen-list.png" width="1080" height="1644"/>
+        <image name="eda&amp;smallkaden-list.png" width="490" height="750"/>
+        <image name="funen-list.png" width="493" height="750"/>
         <image name="funen.png" width="400" height="200"/>
-        <image name="kanen-list.png" width="1079" height="1643"/>
+        <image name="kanen-list.png" width="493" height="750"/>
         <image name="kanen.png" width="400" height="200"/>
         <image name="no-treat-list1.png" width="1080" height="1643"/>
         <image name="no-treat-list2.png" width="1074" height="1644"/>
-        <image name="oogata-list.png" width="1079" height="1643"/>
+        <image name="oogata-list.png" width="493" height="750"/>
         <image name="petbottle.png" width="400" height="200"/>
-        <image name="plastic-list.png" width="1080" height="1644"/>
+        <image name="plastic-list.png" width="493" height="750"/>
         <image name="plastic.png" width="400" height="200"/>
-        <image name="shigen-kobetsu-list.png" width="1079" height="1644"/>
-        <image name="shigen-sonota-list.png" width="1077" height="1646"/>
+        <image name="shigen-kobetsu-list.png" width="492" height="750"/>
+        <image name="shigen-sonota-list.png" width="491" height="750"/>
         <image name="shigen.png" width="400" height="200"/>
-        <image name="shisetsu-list.png" width="1075" height="1641"/>
-        <image name="shohin-pla-list.png" width="1076" height="1643"/>
-        <image name="special-oogata-list.png" width="1079" height="1640"/>
+        <image name="shisetsu-list.png" width="491" height="750"/>
+        <image name="shohin-pla-list.png" width="491" height="750"/>
+        <image name="special-oogata-list.png" width="493" height="750"/>
         <image name="tab_month.png" width="30" height="30"/>
         <image name="tab_search.png" width="30" height="30"/>
         <image name="tab_setting.png" width="30" height="30"/>
