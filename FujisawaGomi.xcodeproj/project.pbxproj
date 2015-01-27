@@ -469,7 +469,7 @@
 				ORGANIZATIONNAME = "vida-comoda";
 				TargetAttributes = {
 					CA794F3819FB44EE00C96F85 = {
-						DevelopmentTeam = W54UCZ555B;
+						DevelopmentTeam = TNZAR8Q963;
 					};
 				};
 			};
