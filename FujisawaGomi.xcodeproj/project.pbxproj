@@ -273,7 +273,7 @@
 		CA794F3019FB44EE00C96F85 = {
 			isa = PBXGroup;
 			children = (
-				CA794F4219FB44EE00C96F85 /* gomi_alpha */,
+				CA794F4219FB44EE00C96F85 /* FujisawaGomi */,
 				CA794F3B19FB44EE00C96F85 /* Frameworks */,
 				CA794F3A19FB44EE00C96F85 /* Products */,
 			);
@@ -301,7 +301,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CA794F4219FB44EE00C96F85 /* gomi_alpha */ = {
+		CA794F4219FB44EE00C96F85 /* FujisawaGomi */ = {
 			isa = PBXGroup;
 			children = (
 				B0016A3B1A733A4900455DF0 /* MainStoryboard_iPhone.storyboard */,
@@ -330,6 +330,7 @@
 				B0E1F31D1A5A1A4700F67676 /* GetLocationViewController.h */,
 				B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */,
 			);
+			name = FujisawaGomi;
 			path = gomi_alpha;
 			sourceTree = "<group>";
 		};
