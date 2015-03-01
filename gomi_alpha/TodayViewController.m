@@ -9,11 +9,13 @@
 #import "TodayViewController.h"
 #import "HandleDb.h"
 #import "MyTabBarController.h"
+#import <iAd/iAd.h>
 
 @interface TodayViewController ()
 {
     NSDate *_curDate;
     AVSpeechSynthesizer *_speaker;
+        BOOL _bannerIsVisible;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
@@ -172,4 +174,26 @@
     MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
     [tb handleSwipeRight];
 }
+
+// iAd広告の表示が可能な状態になったときに呼ばれるメソッド
+// ADBannerViewDelegate Protocolのメソッド
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    //  バナー表示の準備が完了したため、バナーが表示されていなければバナーを表示する。
+    if (!_bannerIsVisible)
+    {
+        [UIView
+         //  フェードインのアニメーションを指定
+         animateWithDuration:1.0              //  アニメーションの時間を秒単位で指定
+         delay: 0.0                       //  アニメーション開始までの時間を秒単位で指定
+         options:UIViewAnimationOptionCurveEaseIn //  アニメーションの推移速度カーブの指定
+         animations:^{                     //  アニメーションで変化させるプロパティ値を指定
+             [banner setAlpha:1.0f];
+         }
+         completion:nil];
+        
+        _bannerIsVisible = YES;
+    }
+}
+
 @end
