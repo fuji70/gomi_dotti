@@ -47,7 +47,7 @@
         idx = (idx +1) % 4; // [0,3]
     }
     self.selectedIndex = idx;
-    NSLog(@"swipe %@ idx %d -> %d", @"L", oidx, idx);
+    NSLog(@"swipe %@ idx %ld -> %ld", @"L", (long)oidx, (long)idx);
 }
 
 - (void)handleSwipeRight
@@ -58,7 +58,7 @@
         idx = (idx -1 + 4) % 4; // [0,3]
     }
     self.selectedIndex = idx;
-    NSLog(@"swipe %@ idx %d -> %d", @"R", oidx, idx);
+    NSLog(@"swipe %@ idx %ld -> %ld", @"R", (long)oidx, (long)idx);
 }
 
 @end
