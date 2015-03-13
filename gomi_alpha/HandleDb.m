@@ -8,7 +8,7 @@
 
 #import "HandleDb.h"
 
-NSString *FILE_DB = @"db2014.json";
+NSString *FILE_DB = @"db2015.json";
 
 @interface HandleDb ()
 {
@@ -46,6 +46,13 @@ NSString *FILE_DB = @"db2014.json";
                @"shigen.png"     ,@"他資源",
                @"kanen.png"      ,@"可・ビン",
                @"funen.png"      ,@"本・不・商",
+               
+               @"shigen.png"     ,@"その他",
+               @"can.png"        ,@"カン",
+               @"plastic.png"    ,@"プラ",
+               @"petbottle.png"  ,@"ペット",
+               @"funen.png"      ,@"不・本",
+               @"kanen.png"      ,@"可・ビ",
                nil];
 }
 
@@ -209,6 +216,10 @@ NSString *FILE_DB = @"db2014.json";
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data
                                                         options:NSJSONReadingAllowFragments
                                                           error:&error];
+    if (error != nil) {
+        NSLog(@"failed to parse Json %ld", (long)error.code);
+    }
+    
     // JSONのパースに失敗した場合は`nil`が入る
     if (dic) {
         NSLog(@"NSDictionary: %@", dic);
@@ -217,7 +228,7 @@ NSString *FILE_DB = @"db2014.json";
         NSLog(@"Error: %@", error);
     }
 
-    NSString *value = [dic valueForKeyPath:@"blk-8.2014-12-12"];
+    NSString *value = [dic valueForKeyPath:@"blk-1.2015-04-01"];
     NSLog(@"val: %@", value);
 
     return dic;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B0016A3D1A733A4900455DF0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0016A3B1A733A4900455DF0 /* MainStoryboard_iPhone.storyboard */; };
+		B037B2551AB3283100A7EA03 /* db2015.json in Resources */ = {isa = PBXBuildFile; fileRef = B037B2541AB3283100A7EA03 /* db2015.json */; };
 		B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B079467B1A32DEF500C7B5E1 /* SettingViewController.m */; };
 		B094637C1A37555500BD776D /* WebTypeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B094637B1A37555500BD776D /* WebTypeSearchViewController.m */; };
 		B0A2699D1A348BA200589AD9 /* db2014.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A2699C1A348BA200589AD9 /* db2014.json */; };
@@ -120,6 +121,7 @@
 /* Begin PBXFileReference section */
 		B0016A3C1A733A4900455DF0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B0016A411A7341C400455DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B037B2541AB3283100A7EA03 /* db2015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2015.json; sourceTree = "<group>"; };
 		B079467A1A32DEF500C7B5E1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B079467B1A32DEF500C7B5E1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		B094637A1A37555500BD776D /* WebTypeSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebTypeSearchViewController.h; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		B0A2699B1A348BA200589AD9 /* db_calendar */ = {
 			isa = PBXGroup;
 			children = (
+				B037B2541AB3283100A7EA03 /* db2015.json */,
 				B0A2699C1A348BA200589AD9 /* db2014.json */,
 			);
 			path = db_calendar;
@@ -534,6 +537,7 @@
 				CA858DFD1A6B95D9005FA2B2 /* 5blk-2015-02.png in Resources */,
 				CA794F4719FB44EE00C96F85 /* InfoPlist.strings in Resources */,
 				CA858E1A1A6B95D9005FA2B2 /* date_shigen.png in Resources */,
+				B037B2551AB3283100A7EA03 /* db2015.json in Resources */,
 				CA858DF81A6B95D9005FA2B2 /* 4blk-2015-01.png in Resources */,
 				CA858DEC1A6B95D9005FA2B2 /* 1blk-2015-01.png in Resources */,
 				CA858DF51A6B95D9005FA2B2 /* 3blk-2015-02.png in Resources */,
