@@ -17,7 +17,7 @@
 @implementation WebAddressSearchViewController
 
 - (void)loadWeb {
-    NSString* strUrl = @"http://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/h2603-h2703/jusho-a-ta.html";
+    NSString* strUrl = @"http://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/h2703-h2803/jyusho-a-ta.html";
     NSURLRequest* myRequest = [NSURLRequest requestWithURL: [NSURL URLWithString:strUrl]];
     [_webSearch loadRequest:myRequest];
 }
