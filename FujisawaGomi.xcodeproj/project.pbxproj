@@ -17,6 +17,7 @@
 		B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F3191A5A187400F67676 /* MapKit.framework */; };
 		B0E1F31C1A5A188300F67676 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F31B1A5A188300F67676 /* CoreLocation.framework */; };
 		B0E1F31F1A5A1A4700F67676 /* GetLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */; };
+		B0EAD8A51ABE5C05009520E0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EAD8A41ABE5C05009520E0 /* iAd.framework */; };
 		B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */; };
 		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
 		B0EE71051A33ED3200E21D98 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71041A33ED3200E21D98 /* SearchViewController.m */; };
@@ -283,6 +284,7 @@
 		B0E1F31B1A5A188300F67676 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B0E1F31D1A5A1A4700F67676 /* GetLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocationViewController.h; sourceTree = "<group>"; };
 		B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocationViewController.m; sourceTree = "<group>"; };
+		B0EAD8A41ABE5C05009520E0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		B0EE71001A33ED0E00E21D98 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
@@ -550,6 +552,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EAD8A51ABE5C05009520E0 /* iAd.framework in Frameworks */,
 				B0E1F31C1A5A188300F67676 /* CoreLocation.framework in Frameworks */,
 				B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */,
 				B0D3F8EC1A3BABB200F6B934 /* AVFoundation.framework in Frameworks */,
@@ -608,6 +611,7 @@
 		CA794F3B19FB44EE00C96F85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0EAD8A41ABE5C05009520E0 /* iAd.framework */,
 				B0E1F31B1A5A188300F67676 /* CoreLocation.framework */,
 				B0E1F3191A5A187400F67676 /* MapKit.framework */,
 				B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */,
