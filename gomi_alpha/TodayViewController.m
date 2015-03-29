@@ -151,11 +151,10 @@
     if (![HandleDb getSpeechStatus]) return false;
     
     //[self test_speech];
-    [self speech_str:@"きょうのごみは "]; // not on emulator. only with a device
     NSString *iconStr = [HandleDb getIconsStr:_curDate];
-    NSString *speech  = [HandleDb getSpeechStr:iconStr];
+    NSString *typeStr = [HandleDb getSpeechStr:iconStr];
+    NSString *speech = [NSString stringWithFormat:@"きょうのごみは %@ です", typeStr];
     [self speech_str:speech];
-    [self speech_str:@"です"];
     return true;
 }
 
