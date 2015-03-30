@@ -153,7 +153,7 @@
     //[self test_speech];
     NSString *iconStr = [HandleDb getIconsStr:_curDate];
     NSString *typeStr = [HandleDb getSpeechStr:iconStr];
-    NSString *speech = [NSString stringWithFormat:@"きょうのごみは %@ です", typeStr];
+    NSString *speech = [NSString stringWithFormat:@"きょうのごみは、%@ です", typeStr];
     [self speech_str:speech];
     return true;
 }
