@@ -47,12 +47,12 @@ NSString *FILE_DB = @"db2015.json";
                @"kanen.png"      ,@"可・ビン",
                @"funen.png"      ,@"本・不・商",
                
-               @"shigen.png"     ,@"その他",
-               @"can.png"        ,@"カン",
-               @"plastic.png"    ,@"プラ",
-               @"petbottle.png"  ,@"ペット",
-               @"funen.png"      ,@"不・本",
-               @"kanen.png"      ,@"可・ビ",
+//               @"shigen.png"     ,@"その他",
+//               @"can.png"        ,@"カン",
+//               @"plastic.png"    ,@"プラ",
+//               @"petbottle.png"  ,@"ペット",
+//               @"funen.png"      ,@"不・本",
+//               @"kanen.png"      ,@"可・ビ",
                nil];
 }
 
