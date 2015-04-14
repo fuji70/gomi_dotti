@@ -414,7 +414,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-tj-AL4">
-                                <rect key="frame" x="160" y="279" width="144" height="71"/>
+                                <rect key="frame" x="160" y="279" width="144" height="71.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
@@ -426,7 +426,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-cY-hLm">
-                                <rect key="frame" x="160" y="128" width="144" height="71"/>
+                                <rect key="frame" x="160" y="127.5" width="144" height="71.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
@@ -438,22 +438,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bws-3O-sw4">
-                                <rect key="frame" x="160" y="52" width="144" height="72"/>
+                                <rect key="frame" x="160" y="52" width="144" height="71.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-aB-ldc" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="279" width="144" height="71"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_moyaseru.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-aB-ldc" propertyAccessControl="none">
+                                <rect key="frame" x="160" y="279" width="144" height="71.5"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-jf-hQF">
-                                <rect key="frame" x="160" y="354" width="144" height="72"/>
+                                <rect key="frame" x="160" y="354.5" width="144" height="71.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/20(火)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-Av-43M">
-                                <rect key="frame" x="16" y="128" width="144" height="71"/>
+                                <rect key="frame" x="16" y="127.5" width="144" height="71.5"/>
                                 <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -464,17 +464,11 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/22(木)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Sh-XA-1Aq">
-                                <rect key="frame" x="16" y="279" width="144" height="71"/>
-                                <color key="backgroundColor" red="0.98545306990000003" green="1" blue="0.74590136620000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
-                                <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-uY-rnd" propertyAccessControl="none">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-uY-rnd" propertyAccessControl="none">
                                 <rect key="frame" x="160" y="203" width="144" height="72"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/23(金)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uAm-dX-ukR">
-                                <rect key="frame" x="16" y="354" width="144" height="72"/>
+                                <rect key="frame" x="16" y="354.5" width="144" height="71.5"/>
                                 <color key="backgroundColor" red="1" green="0.79545454550000005" blue="0.79545454550000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -485,8 +479,8 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-l8-OYI" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="128" width="144" height="71"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-l8-OYI" propertyAccessControl="none">
+                                <rect key="frame" x="160" y="127.5" width="144" height="71.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-62-d7L">
                                 <rect key="frame" x="234" y="20" width="70" height="30"/>
@@ -510,10 +504,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-mr-hVP">
-                                <rect key="frame" x="160" y="52" width="144" height="72"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-mr-hVP">
+                                <rect key="frame" x="160" y="52" width="144" height="71.5"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-0o-lCG" propertyAccessControl="none">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_moyaseru.png" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-0o-lCG" propertyAccessControl="none">
                                 <rect key="frame" x="160" y="429" width="144" height="29"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmJ-Qh-lHf">
@@ -546,17 +540,17 @@
                                     <action selector="pushBtnNextWeek:" destination="KkE-JK-GfM" eventType="touchUpInside" id="B45-Zv-3EY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-kE-cDy" propertyAccessControl="none">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-kE-cDy" propertyAccessControl="none">
                                 <rect key="frame" x="160" y="459" width="144" height="29"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/19(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EXb-Rm-ZOX">
-                                <rect key="frame" x="16" y="52" width="144" height="72"/>
+                                <rect key="frame" x="16" y="52" width="144" height="71.5"/>
                                 <color key="backgroundColor" red="0.82261423919999999" green="0.80154262279999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-WR-Q2P" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="354" width="144" height="72"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-WR-Q2P" propertyAccessControl="none">
+                                <rect key="frame" x="160" y="354.5" width="144" height="71.5"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="　今週のごみ" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hYe-bt-7aw">
                                 <rect key="frame" x="16" y="20" width="288" height="32"/>
@@ -566,6 +560,12 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/22(木)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Sh-XA-1Aq">
+                                <rect key="frame" x="16" y="279" width="144" height="71.5"/>
+                                <color key="backgroundColor" red="0.98545306990000003" green="1" blue="0.74590136620000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
+                                <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -845,13 +845,13 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView tag="2" contentMode="scaleToFill" misplaced="YES" image="shigen.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
+                            <imageView tag="2" contentMode="scaleToFill" misplaced="YES" image="icon_moyasenai.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
                                 <rect key="frame" x="16" y="138" width="142" height="79"/>
                             </imageView>
-                            <imageView tag="3" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
+                            <imageView tag="3" contentMode="scaleToFill" image="icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
                                 <rect key="frame" x="16" y="221" width="142" height="80"/>
                             </imageView>
-                            <imageView tag="6" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
+                            <imageView tag="6" contentMode="scaleToFill" image="icon_bincanpet.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
                                 <rect key="frame" x="163" y="221" width="141" height="80"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/20(火)" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-Ic-JFO">
@@ -863,10 +863,10 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView tag="5" contentMode="scaleToFill" misplaced="YES" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
+                            <imageView tag="5" contentMode="scaleToFill" misplaced="YES" image="icon_koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
                                 <rect key="frame" x="163" y="138" width="141" height="79"/>
                             </imageView>
-                            <imageView tag="4" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
+                            <imageView tag="4" contentMode="scaleToFill" image="icon_moyaseru.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
                                 <rect key="frame" x="163" y="54" width="141" height="80"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="大型ごみ/特別大型ごみ/剪定枝の収集の申し込みは、(株)藤沢市興業公社へ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
@@ -915,7 +915,7 @@
                                 <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="word_kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Lh-qy6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="word_icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Lh-qy6">
                                 <rect key="frame" x="98" y="425" width="201" height="36"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
@@ -959,7 +959,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <action selector="tapTEL" destination="SnU-nH-BS8" eventType="touchUpInside" id="aWd-EG-B7g"/>
                                 </connections>
                             </button>
-                            <imageView tag="1" contentMode="scaleToFill" image="petbottle.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
+                            <imageView tag="1" contentMode="scaleToFill" image="icon_plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZU-Os-XNi">
                                 <rect key="frame" x="16" y="54" width="142" height="80"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="自宅前" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-FO-vL3">
@@ -1346,7 +1346,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-XA-KOc">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-XA-KOc">
                                 <rect key="frame" x="110" y="429" width="100" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4R8-xw-gOc"/>
@@ -1373,7 +1373,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-ey-V4f">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-ey-V4f">
                                 <rect key="frame" x="60" y="334" width="200" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="VfL-vZ-hch"/>
@@ -1430,7 +1430,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="5m2-xw-uaT">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_moyaseru.png" translatesAutoresizingMaskIntoConstraints="NO" id="5m2-xw-uaT">
                                 <rect key="frame" x="130" y="484" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="89r-mf-GXM"/>
@@ -1447,7 +1447,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
                                 <rect key="frame" x="16" y="159" width="288" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="yHg-su-4JL"/>
@@ -1776,21 +1776,21 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
     </scenes>
     <resources>
         <image name="8blk-2015-04.png" width="1280" height="960"/>
-        <image name="can.png" width="400" height="200"/>
         <image name="eda&amp;smallkaden-list.png" width="490" height="750"/>
         <image name="funen-list.png" width="493" height="750"/>
-        <image name="funen.png" width="400" height="200"/>
+        <image name="icon_bincanpet.png" width="400" height="200"/>
+        <image name="icon_iruinuno.png" width="400" height="200"/>
+        <image name="icon_koshi.png" width="400" height="200"/>
+        <image name="icon_moyasenai.png" width="400" height="200"/>
+        <image name="icon_moyaseru.png" width="400" height="200"/>
+        <image name="icon_plastic.png" width="400" height="200"/>
         <image name="kanen-list.png" width="493" height="750"/>
-        <image name="kanen.png" width="400" height="200"/>
         <image name="no-treat-list1.png" width="1080" height="1643"/>
         <image name="no-treat-list2.png" width="1074" height="1644"/>
         <image name="oogata-list.png" width="493" height="750"/>
-        <image name="petbottle.png" width="400" height="200"/>
         <image name="plastic-list.png" width="493" height="750"/>
-        <image name="plastic.png" width="400" height="200"/>
         <image name="shigen-kobetsu-list.png" width="492" height="750"/>
         <image name="shigen-sonota-list.png" width="491" height="750"/>
-        <image name="shigen.png" width="400" height="200"/>
         <image name="shisetsu-list.png" width="491" height="750"/>
         <image name="shohin-pla-list.png" width="491" height="750"/>
         <image name="special-oogata-list.png" width="493" height="750"/>
@@ -1799,7 +1799,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         <image name="tab_setting.png" width="30" height="30"/>
         <image name="tab_today.png" width="30" height="30"/>
         <image name="tab_week.png" width="30" height="30"/>
-        <image name="word_kanen.png" width="400" height="66"/>
+        <image name="word_icon_iruinuno.png" width="493" height="750"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

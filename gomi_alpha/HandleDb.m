@@ -8,7 +8,7 @@
 
 #import "HandleDb.h"
 
-NSString *FILE_DB = @"db2015.json";
+NSString *FILE_DB = @"Tdb2015chigasaki.json";
 
 @interface HandleDb ()
 {
@@ -40,43 +40,43 @@ NSString *FILE_DB = @"db2015.json";
 - (void)initDbIcon {
     _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
                // filename       ,keyStr
-               @"can.png"        ,@"カン",
-               @"plastic.png"    ,@"プ・油・特",
-               @"petbottle.png"  ,@"ペット",
-               @"shigen.png"     ,@"他資源",
-               @"kanen.png"      ,@"可・ビン",
-               @"funen.png"      ,@"本・不・商",
+               @"icon_moyaseru.png"        ,@"燃やせるごみ",
+               @"icon_moyasenai.png"    ,@"燃やせないごみ",
+               @"icon_plastic.png"  ,@"プラスチック製容器包装類",
+               @"icon_bincanpet.png"     ,@"びん・かん・ペットボトル",
+               @"icon_iruinuno.png"      ,@"衣類・布類",
+               @"icon_koshi.png"      ,@"古紙類",
                
-//               @"shigen.png"     ,@"その他",
-//               @"can.png"        ,@"カン",
-//               @"plastic.png"    ,@"プラ",
-//               @"petbottle.png"  ,@"ペット",
-//               @"funen.png"      ,@"不・本",
-//               @"kanen.png"      ,@"可・ビ",
+//               @"びん・かん・ペットボトル"     ,@"その他",
+//               @"icon_moyaseru.png"        ,@"燃やせるごみ",
+//               @"icon_moyasenai.png"    ,@"プラ",
+//               @"icon_plastic.png"  ,@"プラスチック製容器包装類",
+//               @"icon_koshi.png"      ,@"不・本",
+//               @"icon_iruinuno.png"      ,@"可・ビ",
                nil];
 }
 
 - (void)initDbPit {
     _dbPit = [NSDictionary dictionaryWithObjectsAndKeys:
               // Pit, keyStr
-              @"自宅前" ,@"カン",
-              @"自宅前" ,@"プ・油・特",
-              @"自宅前" ,@"ペット",
-              @"集積所" ,@"他資源",
-              @"自宅前" ,@"可・ビン",
-              @"自宅前" ,@"本・不・商",
+              @"集積所" ,@"燃やせるごみ",
+              @"集積所" ,@"燃やせないごみ",
+              @"集積所" ,@"プラスチック製容器包装類",
+              @"集積所" ,@"びん・かん・ペットボトル",
+              @"集積所" ,@"衣類・布類",
+              @"集積所" ,@"古紙類",
               nil];
 }
 
 - (void)initDbSpeech {
     _dbSpeech = [NSDictionary dictionaryWithObjectsAndKeys:
               // say, keyStr
-              @"カン、なべ類" ,@"カン",
-              @"プラ、油、特定品目" ,@"プ・油・特",
-              @"ペットボトル" ,@"ペット",
-              @"その他資源" ,@"他資源",
-              @"可燃ゴミ、ビン" ,@"可・ビン",
-              @"不燃、本、雑がみ、商品プラ" ,@"本・不・商",
+              @"燃やせるごみ" ,@"燃やせるごみ",
+              @"燃やせないごみ" ,@"燃やせないごみ",
+              @"プラスチック製容器包装類" ,@"プラスチック製容器包装類",
+              @"びん、かん、ペットボトル" ,@"びん・かん・ペットボトル",
+              @"可燃ゴミ、ビン" ,@"衣類・布類",
+              @"不燃、本、雑がみ、商品プラ" ,@"古紙類",
               nil];
 }
 
