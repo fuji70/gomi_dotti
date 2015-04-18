@@ -46,7 +46,12 @@
     [HandleDb setBlkNum:blkNum];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
 }
-
+/*
+- (IBAction)btnBlk8:(id)sender {
+    int blkNum=1;
+    [self setBlkNum:blkNum];
+}
+*/
 - (IBAction)btnBlk1:(id)sender {
     int blkNum=1;
     [self setBlkNum:blkNum];
@@ -66,7 +71,12 @@
     int blkNum=4;
     [self setBlkNum:blkNum];
 }
-
+/*
+- (IBAction)btnBlk6:(id)sender {
+    int blkNum=6;
+    [self setBlkNum:blkNum];
+}
+*/
 - (IBAction)btnBlk5:(id)sender {
     int blkNum=5;
     [self setBlkNum:blkNum];
@@ -84,16 +94,6 @@
 
 - (IBAction)btnBlk8:(id)sender {
     int blkNum=8;
-    [self setBlkNum:blkNum];
-}
-
-- (IBAction)btnBlk9:(id)sender {
-    int blkNum=9;
-    [self setBlkNum:blkNum];
-}
-
-- (IBAction)btnBlk10:(id)sender {
-    int blkNum=10;
     [self setBlkNum:blkNum];
 }
 
