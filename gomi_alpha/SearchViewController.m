@@ -17,12 +17,13 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnJumpTypeSearch;
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
-@property (weak, nonatomic) IBOutlet UIImageView *imgPet;
-@property (weak, nonatomic) IBOutlet UIImageView *imgOther;
-@property (weak, nonatomic) IBOutlet UIImageView *imgKanen;
-@property (weak, nonatomic) IBOutlet UIImageView *imgCan;
-@property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPlastic;
+@property (weak, nonatomic) IBOutlet UIImageView *imgHaiyukinzoku;
+@property (weak, nonatomic) IBOutlet UIImageView *imgBincanpet;
+@property (weak, nonatomic) IBOutlet UIImageView *imgMoyaseru;
+@property (weak, nonatomic) IBOutlet UIImageView *imgMoyasenai;
+@property (weak, nonatomic) IBOutlet UIImageView *imgIruinunorui;
+@property (weak, nonatomic) IBOutlet UIImageView *imgKoshirui;
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
@@ -65,12 +66,13 @@
 - (void)initTblBtn {
     _tblBtn = [NSDictionary dictionaryWithObjectsAndKeys:
                // iconStr,  keyBtnTag
-               @"プラスチック製容器包装類",    @1,
-               @"燃やせないごみ",    @2,
-               @"衣類・布類",  @3,
+               @"プラスチック製容器包装類", @1,
+               @"廃食用油・金属類", @2,
+               @"びん・かん・ペットボトル", @3,
                @"燃やせるごみ", @4,
-               @"古紙類", @5,
-               @"びん・かん・ペットボトル", @6,
+               @"燃やせないごみ", @5,
+               @"衣類・布類", @6,
+               @"古紙類", @7,
                nil];
 }
 
@@ -105,7 +107,7 @@
     
 //    NSURL *url = [[NSURL alloc] initWithString:@"tel:0466-23-5301"];
 //    [[UIApplication sharedApplication] openURL:url];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0466-23-5301"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0467-57-1166"]];
     
 }
 
