@@ -94,12 +94,12 @@
 
 - (UIImage *)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
-                     @"燃やせるごみ",
-                     @"燃やせないごみ",
-                     @"プラスチック製容器包装類",
-                     @"びん・かん・ペットボトル",
-                     @"衣類・布類",
-                     @"古紙類",
+                     @"カン",
+                     @"プ・油・特",
+                     @"ペット",
+                     @"他資源",
+                     @"可・ビン",
+                     @"本・不・商",
                      nil];
     int iconTypes = (int)[strIcons count];
     
