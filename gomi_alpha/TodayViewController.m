@@ -100,7 +100,6 @@
                      @"びん・かん・ペットボトル",
                      @"衣類・布類",
                      @"古紙類",
-                     @"廃食用油・金属類",
                      nil];
     int iconTypes = (int)[strIcons count];
     

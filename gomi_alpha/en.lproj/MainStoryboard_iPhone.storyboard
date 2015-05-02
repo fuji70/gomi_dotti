@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1810,7 +1811,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         <image name="tab_setting.png" width="30" height="30"/>
         <image name="tab_today.png" width="30" height="30"/>
         <image name="tab_week.png" width="30" height="30"/>
-        <image name="word_icon_iruinuno.png" width="400" height="66"/>
+        <image name="word_icon_iruinuno.png" width="493" height="750"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
