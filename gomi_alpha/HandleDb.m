@@ -8,7 +8,7 @@
 
 #import "HandleDb.h"
 
-NSString *FILE_DB = @"db2015chigasaki.json";
+NSString *FILE_DB = @"Tdb2015chigasaki.json";
 
 @interface HandleDb ()
 {
@@ -40,13 +40,12 @@ NSString *FILE_DB = @"db2015chigasaki.json";
 - (void)initDbIcon {
     _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
                // filename       ,keyStr
-               @"icon_moyaseru.png",@"燃やせるごみ",
-               @"icon_moyasenai.png",@"燃やせないごみ",
-               @"icon_plastic.png",@"プラスチック製容器包装類",
-               @"icon_bincanpet.png",@"びん・かん・ペットボトル",
-               @"icon_iruinuno.png",@"衣類・布類",
-               @"icon_koshi.png",@"古紙類",
-//               @"icon_haiyukinzoku.png"      ,@"廃食用油・金属類",
+               @"icon_moyaseru.png"        ,@"燃やせるごみ",
+               @"icon_moyasenai.png"    ,@"燃やせないごみ",
+               @"icon_plastic.png"  ,@"プラスチック製容器包装類",
+               @"icon_bincanpet.png"     ,@"びん・かん・ペットボトル",
+               @"icon_iruinuno.png"      ,@"衣類・布類",
+               @"icon_koshi.png"      ,@"古紙類",
                
 //               @"びん・かん・ペットボトル"     ,@"その他",
 //               @"icon_moyaseru.png"        ,@"燃やせるごみ",
@@ -66,7 +65,6 @@ NSString *FILE_DB = @"db2015chigasaki.json";
               @"集積所" ,@"びん・かん・ペットボトル",
               @"集積所" ,@"衣類・布類",
               @"集積所" ,@"古紙類",
-//               @"集積所"      ,@"廃食用油・金属類",
               nil];
 }
 
@@ -79,8 +77,7 @@ NSString *FILE_DB = @"db2015chigasaki.json";
               @"びん、かん、ペットボトル" ,@"びん・かん・ペットボトル",
               @"可燃ゴミ、ビン" ,@"衣類・布類",
               @"不燃、本、雑がみ、商品プラ" ,@"古紙類",
-//               @"廃食用油、金属類"      ,@"廃食用油・金属類",
-                 nil];
+              nil];
 }
 
 
