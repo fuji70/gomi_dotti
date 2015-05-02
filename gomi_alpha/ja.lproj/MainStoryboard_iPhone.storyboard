@@ -1188,7 +1188,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <rect key="frame" x="16" y="54" width="288" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="L5Z-0h-m45"/>
                                     <constraint firstAttribute="height" constant="40" id="yvZ-37-IaL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="22"/>
@@ -1200,21 +1199,18 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <segue destination="lXW-45-t5O" kind="modal" id="1jt-8W-21l"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="※自宅の所属地区が分かる方は下記の地区を選択。分からない方は上ボタンの茅ヶ崎市HPで地区を調べ、下記の地区選択してください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="14" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="igr-9k-SFW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="※自宅の所属地区が分かる方は下記の地区を選択。分からない方は上ボタンの茅ヶ崎市HPで地区を調べ、下記の地区選択してください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="igr-9k-SFW">
                                 <rect key="frame" x="16" y="94" width="288" height="76"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="YQH-Op-sQX"/>
+                                    <constraint firstAttribute="height" constant="60" id="YQH-Op-sQX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="     住所設定" lineBreakMode="tailTruncation" minimumFontSize="18" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-GT-rkE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="     住所設定" lineBreakMode="tailTruncation" minimumFontSize="18" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-GT-rkE">
                                 <rect key="frame" x="16" y="22" width="288" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="LaK-Cc-fuF"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1242,7 +1238,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="igr-9k-SFW" firstAttribute="top" secondItem="fNL-Ys-iYB" secondAttribute="bottom" id="BLk-02-Uak"/>
                             <constraint firstItem="UmJ-TJ-aJ5" firstAttribute="leading" secondItem="ZyN-If-Uge" secondAttribute="trailing" constant="-1" id="BNN-Ou-JxD"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="width" secondItem="dss-Yg-lF6" secondAttribute="width" id="CvN-22-h3V"/>
-                            <constraint firstItem="9ql-XK-yNv" firstAttribute="height" secondItem="mHK-Vb-xCY" secondAttribute="height" id="EDv-DX-050"/>
+                            <constraint firstItem="9ql-XK-yNv" firstAttribute="height" relation="greaterThanOrEqual" secondItem="mHK-Vb-xCY" secondAttribute="height" id="EDv-DX-050"/>
                             <constraint firstAttribute="trailingMargin" secondItem="igr-9k-SFW" secondAttribute="trailing" constant="-6" id="EoQ-kT-Ecb"/>
                             <constraint firstItem="JrT-GT-rkE" firstAttribute="top" secondItem="cPN-p8-SoZ" secondAttribute="bottom" constant="2" id="HaW-jj-dqE"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="width" secondItem="gpI-Hs-aup" secondAttribute="width" id="J5m-ly-4SK"/>
@@ -1256,7 +1252,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="JrT-GT-rkE" secondAttribute="trailing" id="QKN-gg-03T"/>
                             <constraint firstItem="62S-5b-fwr" firstAttribute="trailing" secondItem="dss-Yg-lF6" secondAttribute="trailing" id="RLl-s8-Cm2"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="width" secondItem="mV0-5c-As7" secondAttribute="width" id="RLr-lf-Pi3"/>
-                            <constraint firstItem="9ql-XK-yNv" firstAttribute="height" secondItem="gpI-Hs-aup" secondAttribute="height" id="Rvr-Xl-mm4"/>
+                            <constraint firstItem="9ql-XK-yNv" firstAttribute="height" relation="greaterThanOrEqual" secondItem="gpI-Hs-aup" secondAttribute="height" id="Rvr-Xl-mm4"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="top" secondItem="CB1-qn-Kua" secondAttribute="bottom" constant="3" id="StS-0l-SE1"/>
                             <constraint firstItem="ZyN-If-Uge" firstAttribute="top" secondItem="cPN-p8-SoZ" secondAttribute="bottom" constant="2" id="UFu-Wr-fOq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fNL-Ys-iYB" secondAttribute="trailing" id="UaM-rP-HYu"/>
@@ -1266,7 +1262,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="igr-9k-SFW" firstAttribute="leading" secondItem="GqS-Cx-Dym" secondAttribute="leadingMargin" constant="-6" id="d69-o6-tYm"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="height" secondItem="dZl-Tp-Kpa" secondAttribute="height" id="dpp-Wl-ldz"/>
                             <constraint firstItem="gpI-Hs-aup" firstAttribute="leading" secondItem="CB1-qn-Kua" secondAttribute="leading" id="fPs-aA-jwM"/>
-                            <constraint firstItem="9ql-XK-yNv" firstAttribute="height" secondItem="CB1-qn-Kua" secondAttribute="height" id="fSU-G5-Ebh"/>
+                            <constraint firstItem="9ql-XK-yNv" firstAttribute="height" relation="greaterThanOrEqual" secondItem="CB1-qn-Kua" secondAttribute="height" id="fSU-G5-Ebh"/>
                             <constraint firstItem="fNL-Ys-iYB" firstAttribute="leading" secondItem="GqS-Cx-Dym" secondAttribute="leadingMargin" id="hPH-xm-kED"/>
                             <constraint firstItem="mHK-Vb-xCY" firstAttribute="top" secondItem="gpI-Hs-aup" secondAttribute="bottom" constant="3" id="i4L-D3-2CV"/>
                             <constraint firstItem="62S-5b-fwr" firstAttribute="trailing" secondItem="dZl-Tp-Kpa" secondAttribute="trailing" id="kIY-ma-hck"/>
