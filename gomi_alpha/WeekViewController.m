@@ -8,14 +8,19 @@
 
 #import "WeekViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface WeekViewController () {
     NSDate * _curDate;
 }
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
+@property (strong, nonatomic) IBOutlet UIButton *btnNextWeek;
+- (IBAction)pushBtnNextWeek:(id)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSMutableArray *lblWeekdays;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgWeekdays;
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 @end
 
 @implementation WeekViewController
@@ -30,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.canDisplayBannerAds = YES; // auto add iAd banner
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,14 +85,29 @@
     NSDate * date = _curDate;
     int todayIdx = [WeekViewController offsetToMonday:_curDate];
     NSDate * sinceDate = [WeekViewController getThisMonday:_curDate];
+    NSTimeInterval dif = [_curDate timeIntervalSinceNow];
+    bool isToday = (abs(dif) < 60*60*24);
     for (int i=0; i<numLbl; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:sinceDate];
         ((UILabel*)_lblWeekdays[i]).text = [WeekViewController date2str:date];
-        ((UILabel*)_lblWeekdays[i]).highlighted = (i==todayIdx);
+        ((UILabel*)_lblWeekdays[i]).highlighted = (i==todayIdx && isToday);
         NSString * strIcons = [HandleDb getIconsStr:date];
         ((UILabel*)_lblWeekdays[i]).backgroundColor = [UIColor colorWithPatternImage:[HandleDb getDateIconImage:strIcons]];
         ((UIImageView*)_imgWeekdays[i]).image = [HandleDb getIconImageFromDate:date];
     }
 }
 
+- (IBAction)pushBtnNextWeek:(id)sender {
+    _curDate = [_curDate initWithTimeInterval:(7*60*60*24) sinceDate:_curDate];
+    [self drawWeekdays];
+}
+
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
+}
 @end

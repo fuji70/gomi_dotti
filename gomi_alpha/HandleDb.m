@@ -8,7 +8,7 @@
 
 #import "HandleDb.h"
 
-NSString *FILE_DB = @"db2014.json";
+NSString *FILE_DB = @"db2015chigasaki.json";
 
 @interface HandleDb ()
 {
@@ -16,6 +16,7 @@ NSString *FILE_DB = @"db2014.json";
     NSDictionary *_dbCalendar;
     NSDictionary *_dbIcon;
     NSDictionary *_dbPit;
+    NSDictionary *_dbSpeech;
 }
 @end
 
@@ -39,25 +40,59 @@ NSString *FILE_DB = @"db2014.json";
 - (void)initDbIcon {
     _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
                // filename       ,keyStr
-               @"can.png"        ,@"カン",
-               @"plastic.png"    ,@"プ・油・特",
-               @"petbottle.png" ,@"ペット",
-               @"shigen.png"     ,@"他資源",
-               @"kanen.png"      ,@"可・ビン",
-               @"funen.png"      ,@"本・不・商",
+               @"icon_moyaseru.png",@"燃やせるごみ",
+               @"icon_moyasenai.png",@"燃やせないごみ",
+               @"icon_plastic.png",@"プラスチック製容器包装類",
+               @"icon_bincanpet.png",@"びん・かん・ペットボトル",
+               @"icon_iruinuno.png",@"衣類・布類",
+               @"icon_koshi.png",@"古紙類",
+               @"icon_haiyukinzoku.png",@"廃食用油・金属類",
+               
+//               @"びん・かん・ペットボトル"     ,@"その他",
+//               @"icon_moyaseru.png"        ,@"燃やせるごみ",
+//               @"icon_moyasenai.png"    ,@"プラ",
+//               @"icon_plastic.png"  ,@"プラスチック製容器包装類",
+//               @"icon_koshi.png"      ,@"不・本",
+//               @"icon_iruinuno.png"      ,@"可・ビ",
                nil];
 }
 
 - (void)initDbPit {
     _dbPit = [NSDictionary dictionaryWithObjectsAndKeys:
               // Pit, keyStr
-              @"自宅前" ,@"カン",
-              @"自宅前" ,@"プ・油・特",
-              @"自宅前" ,@"ペット",
-              @"集積所" ,@"他資源",
-              @"自宅前" ,@"可・ビン",
-              @"自宅前" ,@"本・不・商",
+              @"集積所" ,@"燃やせるごみ",
+              @"集積所" ,@"燃やせないごみ",
+              @"集積所" ,@"プラスチック製容器包装類",
+              @"集積所" ,@"びん・かん・ペットボトル",
+              @"集積所" ,@"衣類・布類",
+              @"集積所" ,@"古紙類",
+              @"集積所" ,@"廃食用油・金属類",
               nil];
+}
+
+- (void)initDbSpeech {
+    _dbSpeech = [NSDictionary dictionaryWithObjectsAndKeys:
+              // say, keyStr
+              @"燃やせるごみ" ,@"燃やせるごみ",
+              @"燃やせないごみ" ,@"燃やせないごみ",
+              @"プラスチック製容器、包装類" ,@"プラスチック製容器包装類",
+              @"びん、かん、ペットボトル" ,@"びん・かん・ペットボトル",
+              @"可燃ゴミ、ビン" ,@"衣類・布類",
+              @"古紙類" ,@"古紙類",
+              @"廃食用油、金属類",@"廃食用油・金属類",
+                 nil];
+}
+
+
+- (id)init {
+    if (self = [super init]) {
+        _curDate = [NSDate date];
+        _dbCalendar = [self loadJsonDb:FILE_DB];
+        [self initDbIcon];
+        [self initDbPit];
+        [self initDbSpeech];
+    }
+    return self;
 }
 
 + (NSString*)getIconsStr:(NSDate*)date {
@@ -69,7 +104,7 @@ NSString *FILE_DB = @"db2014.json";
     NSString *keyDate = [HandleDb getKeyDate:date];
     NSString *keyPath = [NSString stringWithFormat:@"%@.%@", keyBlk, keyDate];
     NSString *value = [_dbCalendar valueForKeyPath:keyPath];
-    NSLog(@"getIconsStr: %@", value);
+    NSLog(@"getIconsStr:[%@] %@", keyPath, value);
     return value;
 }
 
@@ -81,7 +116,8 @@ NSString *FILE_DB = @"db2014.json";
     NSDate *date = [NSDate alloc];
     NSDate *rdate = nil;
     int oneday = 60*60*24;
-    for (int i=0; i<14; ++i) {
+    int searchDays = 42;
+    for (int i=0; i<searchDays; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:startDate];
         NSString *ticons = [self _getIconsStr:date];
         NSLog(@"searchNext: %d  %@  %@", i, date, ticons);
@@ -117,9 +153,20 @@ NSString *FILE_DB = @"db2014.json";
     return [[HandleDb getInstance] _getPitStr:iconsStr];
 }
 
+- (NSString*)_getSpeechStr:(NSString*)iconsStr {
+    NSString *ret = _dbSpeech[iconsStr];
+    
+    return (ret ? ret : @"回収無し");
+}
+
++ (NSString*)getSpeechStr:(NSString*)iconsStr {
+    return [[HandleDb getInstance] _getSpeechStr:iconsStr];
+}
+
 + (NSString*)getKeyDate: (NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"YYYY-MM-dd";
+    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSString *strDate = [dateFormatter stringFromDate:date];
     
     NSLog(@"keyDate= [%@]", strDate);
@@ -129,16 +176,6 @@ NSString *FILE_DB = @"db2014.json";
 + (NSString*)getKeyBlk {
     int blkNum = [HandleDb getBlkNum];
     return [NSString stringWithFormat:@"blk-%d", blkNum];
-}
-
-- (id)init {
-    if (self = [super init]) {
-        _curDate = [NSDate date];
-        _dbCalendar = [self loadJsonDb:FILE_DB];
-        [self initDbIcon];
-        [self initDbPit];
-    }
-    return self;
 }
 
 - (UIImage*)_getIconImage:(NSString*)iconsStr {
@@ -163,7 +200,8 @@ NSString *FILE_DB = @"db2014.json";
 
 + (UIImage*)getMonthImage:(NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"YYYY-MM";
+    dateFormatter.dateFormat = @"yyyy-MM";
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSString *strDate = [dateFormatter stringFromDate:date];
     NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
     return [UIImage imageNamed:imgName];
@@ -181,6 +219,10 @@ NSString *FILE_DB = @"db2014.json";
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data
                                                         options:NSJSONReadingAllowFragments
                                                           error:&error];
+    if (error != nil) {
+        NSLog(@"failed to parse Json %ld", (long)error.code);
+    }
+    
     // JSONのパースに失敗した場合は`nil`が入る
     if (dic) {
         NSLog(@"NSDictionary: %@", dic);
@@ -189,7 +231,7 @@ NSString *FILE_DB = @"db2014.json";
         NSLog(@"Error: %@", error);
     }
 
-    NSString *value = [dic valueForKeyPath:@"blk-8.2014-12-12"];
+    NSString *value = [dic valueForKeyPath:@"blk-1.2015-04-01"];
     NSLog(@"val: %@", value);
 
     return dic;
@@ -251,4 +293,21 @@ NSString *FILE_DB = @"db2014.json";
     }
     
 }
+
++ (BOOL)getSpeechStatus
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return (int)[defaults boolForKey:@"doesSpeech"];
+}
+
++ (void)setSpeechStatus:(BOOL) sw
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:sw forKey:@"doesSpeech"];
+    BOOL successful = [defaults synchronize];
+    if (successful) {
+        NSLog(@"set to doesSpeech: %d.", sw);
+    }
+}
+
 @end

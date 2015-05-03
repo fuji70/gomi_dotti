@@ -8,6 +8,7 @@
 
 #import "MonthViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface MonthViewController ()
 {
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UIImageView *imgMonth;
 
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 @end
 
 @implementation MonthViewController
@@ -30,6 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.canDisplayBannerAds = YES; // auto add iAd banner
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,5 +53,15 @@
 
 - (void)drawView {
     _imgMonth.image = [HandleDb getMonthImage:_curDate];
+}
+
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
 }
 @end

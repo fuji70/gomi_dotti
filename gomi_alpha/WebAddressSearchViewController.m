@@ -17,7 +17,7 @@
 @implementation WebAddressSearchViewController
 
 - (void)loadWeb {
-    NSString* strUrl = @"http://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/h2603-h2703/jusho-a-ta.html";
+    NSString* strUrl = @"http://www.city.chigasaki.kanagawa.jp/kankyo/gomi/1003229/1003292.html";
     NSURLRequest* myRequest = [NSURLRequest requestWithURL: [NSURL URLWithString:strUrl]];
     [_webSearch loadRequest:myRequest];
 }
@@ -30,8 +30,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     [self loadWeb];
+    self.canDisplayBannerAds = YES; // auto add iAd banner
+
 }
 
 - (void)didReceiveMemoryWarning {

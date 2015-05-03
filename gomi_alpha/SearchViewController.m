@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface SearchViewController ()
 {
@@ -16,16 +17,20 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnJumpTypeSearch;
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
-@property (weak, nonatomic) IBOutlet UIImageView *imgPet;
-@property (weak, nonatomic) IBOutlet UIImageView *imgOther;
-@property (weak, nonatomic) IBOutlet UIImageView *imgKanen;
-@property (weak, nonatomic) IBOutlet UIImageView *imgCan;
-@property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPlastic;
+@property (weak, nonatomic) IBOutlet UIImageView *imgHaiyukinzoku;
+@property (weak, nonatomic) IBOutlet UIImageView *imgBincanpet;
+@property (weak, nonatomic) IBOutlet UIImageView *imgMoyaseru;
+@property (weak, nonatomic) IBOutlet UIImageView *imgMoyasenai;
+@property (weak, nonatomic) IBOutlet UIImageView *imgIruinunorui;
+@property (weak, nonatomic) IBOutlet UIImageView *imgKoshirui;
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
+@property (weak, nonatomic) IBOutlet UIButton *btnJumpPhoneCall;
 
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 
 @end
 
@@ -39,6 +44,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initTblBtn];
+    self.canDisplayBannerAds = YES; // auto add iAd banner
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,12 +66,13 @@
 - (void)initTblBtn {
     _tblBtn = [NSDictionary dictionaryWithObjectsAndKeys:
                // iconStr,  keyBtnTag
-               @"カン",      @4,
-               @"プ・油・特", @6,
-               @"ペット",    @1,
-               @"他資源",    @2,
-               @"可・ビン",  @3,
-               @"本・不・商", @5,
+               @"プラスチック製容器包装類", @1,
+               @"廃食用油・金属類", @2,
+               @"びん・かん・ペットボトル", @3,
+               @"燃やせるごみ", @4,
+               @"燃やせないごみ", @5,
+               @"衣類・布類", @6,
+               @"古紙類", @7,
                nil];
 }
 
@@ -95,4 +103,21 @@
     
 }
 
+- (IBAction)tapTEL {
+    
+//    NSURL *url = [[NSURL alloc] initWithString:@"tel:0466-23-5301"];
+//    [[UIApplication sharedApplication] openURL:url];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0467-57-1166"]];
+    
+}
+
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
+}
 @end

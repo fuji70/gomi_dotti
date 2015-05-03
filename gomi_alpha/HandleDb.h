@@ -17,11 +17,16 @@
 + (UIImage*)getDateIconImage:(NSString*)iconsStr;
 + (UIImage*)getIconImageFromDate:(NSDate*)date;
 + (NSString*)getPitStr:(NSString*)iconsStr;
++ (NSString*)getSpeechStr:(NSString*)iconsStr;
 + (UIImage*)getMonthImage:(NSDate*)date;
 
 + (id)getInstance;
+
 + (int)getBlkNum;
 + (void)setBlkNum:(int) blkNum;
++ (BOOL)getSpeechStatus;
++ (void)setSpeechStatus:(BOOL) sw;
+
 + (void)testJson;
 
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
 @interface SettingViewController : UIViewController
 
@@ -18,7 +19,6 @@
 - (IBAction)btnBlk6:(id)sender;
 - (IBAction)btnBlk7:(id)sender;
 - (IBAction)btnBlk8:(id)sender;
-- (IBAction)btnBlk9:(id)sender;
-- (IBAction)btnBlk10:(id)sender;
+
 
 @end

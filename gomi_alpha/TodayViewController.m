@@ -8,10 +8,12 @@
 
 #import "TodayViewController.h"
 #import "HandleDb.h"
+#import "MyTabBarController.h"
 
 @interface TodayViewController ()
 {
     NSDate *_curDate;
+    AVSpeechSynthesizer *_speaker;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
@@ -21,6 +23,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext3;
 
+@property (strong, nonatomic) IBOutlet UISwitch *swSpeech;
+- (IBAction)touchSwSpeech:(id)sender;
+
+- (IBAction)swipe_left:(id)sender;
+- (IBAction)swipe_right:(id)sender;
 @end
 
 @implementation TodayViewController
@@ -29,12 +36,14 @@
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
     [self initCurrent];
+    _swSpeech.on = [HandleDb getSpeechStatus];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self initCurrent];
+    self.canDisplayBannerAds = YES; // auto add iAd banner
+    //[self initCurrent];
 
 }
 
@@ -63,6 +72,7 @@
     _lblCurrent.text = strCurDate;
     
     [self viewCurrentIcons];
+    [self say_today];
 }
 
 - (void)initCurrent {
@@ -84,12 +94,13 @@
 
 - (UIImage *)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
-                     @"カン",
-                     @"プ・油・特",
-                     @"ペット",
-                     @"他資源",
-                     @"可・ビン",
-                     @"本・不・商",
+                     @"燃やせるごみ",
+                     @"燃やせないごみ",
+                     @"プラスチック製容器包装類",
+                     @"びん・かん・ペットボトル",
+                     @"衣類・布類",
+                     @"古紙類",
+                     @"廃食用油・金属類",
                      nil];
     int iconTypes = (int)[strIcons count];
     
@@ -106,4 +117,60 @@
     [self refreshCurrent];
 }
 
+- (void)test_speech
+{
+    AVSpeechSynthesizer* speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
+    NSString* speakingText = @"こんにちは。";
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:speakingText];
+    utterance.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
+    utterance.pitchMultiplier = 0.5f;                           //声の高さ
+    utterance.volume = 0.5f;                                    //声の大きさ
+    NSTimeInterval interval = 1;
+    utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
+    utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
+    [speechSynthesizer speakUtterance:utterance];
+    
+    NSString* speakingText2 = @"ワンダープラネットです。";
+    AVSpeechUtterance *utterance2 = [AVSpeechUtterance speechUtteranceWithString:speakingText2];
+    utterance2.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
+    utterance2.pitchMultiplier = 0.5f;                           //声の高さ
+    utterance2.volume = 0.5f;                                    //声の大きさ
+    [speechSynthesizer speakUtterance:utterance2];
+}
+
+- (void)speech_str:(NSString*)str {
+    _speaker = [[AVSpeechSynthesizer alloc] init];
+    AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
+    //sentence.rate = AVSpeechUtteranceDefaultSpeechRate;
+    sentence.rate = 0.3;
+    
+    [_speaker speakUtterance:sentence];
+    NSLog(@"speech: '%@'", str);
+}
+
+- (BOOL)say_today {
+    if (![HandleDb getSpeechStatus]) return false;
+    
+    //[self test_speech];
+    NSString *iconStr = [HandleDb getIconsStr:_curDate];
+    NSString *typeStr = [HandleDb getSpeechStr:iconStr];
+    NSString *speech = [NSString stringWithFormat:@"きょうのごみは、%@ です", typeStr];
+    [self speech_str:speech];
+    return true;
+}
+
+- (IBAction)touchSwSpeech:(id)sender {
+    [HandleDb setSpeechStatus:_swSpeech.on];
+    [self say_today];
+}
+
+- (IBAction)swipe_left:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeLeft];
+}
+
+- (IBAction)swipe_right:(id)sender {
+    MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
+    [tb handleSwipeRight];
+}
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
+
 #import "WebTypeSearchViewController.h"
 
 @interface SearchViewController : UIViewController

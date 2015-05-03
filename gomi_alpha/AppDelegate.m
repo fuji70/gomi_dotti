@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "HandleDb.h"
+#import "SettingViewController.h"
+
 
 @implementation AppDelegate
 
@@ -19,6 +22,29 @@
 //    [[UITabBar appearance] setSelectionIndicatorImage:image3];
     
     // Override point for customization after application launch.
+    
+    // 起動2回目以降
+    if ([HandleDb getBlkNum] != 0) {
+        
+        // ここに2回目以降の処理を書く
+        // 今回は特に記述しなくていい
+        //[HandleDb setBlkNum:0]; // for debug
+        
+    } else { // 初回起動時はこっち
+         //if (true) { // for debug
+
+        // Storyboard を呼ぶ
+        UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle: nil];
+        UITabBarController *tb = [MainSB instantiateViewControllerWithIdentifier: @"TabBarController"];
+        UINavigationController *more = tb.moreNavigationController;
+        // 設定画面を表示 @""の中は Storyboard IDを記述。
+        SettingViewController *vc = [MainSB instantiateViewControllerWithIdentifier: @"SettingViewController"];
+
+        tb.selectedViewController = more;
+        [more pushViewController:vc animated:true];
+        [self.window setRootViewController:tb];
+    }
+    
     return YES;
 }
 							
@@ -48,5 +74,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end
