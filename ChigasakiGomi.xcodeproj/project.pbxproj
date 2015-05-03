@@ -12,6 +12,8 @@
 		B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B079467B1A32DEF500C7B5E1 /* SettingViewController.m */; };
 		B094637C1A37555500BD776D /* WebTypeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B094637B1A37555500BD776D /* WebTypeSearchViewController.m */; };
 		B0A2699D1A348BA200589AD9 /* db2014.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A2699C1A348BA200589AD9 /* db2014.json */; };
+		B0A86E5C1AF5BA03008DE101 /* icon_plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A86E5A1AF5BA03008DE101 /* icon_plastic.png */; };
+		B0A86E5D1AF5BA03008DE101 /* shigen.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A86E5B1AF5BA03008DE101 /* shigen.png */; };
 		B0D3F8EC1A3BABB200F6B934 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */; };
 		B0E1F3181A59D98700F67676 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F3171A59D98700F67676 /* MyTabBarController.m */; };
 		B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F3191A5A187400F67676 /* MapKit.framework */; };
@@ -110,6 +112,8 @@
 		B094637A1A37555500BD776D /* WebTypeSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebTypeSearchViewController.h; sourceTree = "<group>"; };
 		B094637B1A37555500BD776D /* WebTypeSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebTypeSearchViewController.m; sourceTree = "<group>"; };
 		B0A2699C1A348BA200589AD9 /* db2014.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2014.json; sourceTree = "<group>"; };
+		B0A86E5A1AF5BA03008DE101 /* icon_plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_plastic.png; sourceTree = "<group>"; };
+		B0A86E5B1AF5BA03008DE101 /* shigen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shigen.png; sourceTree = "<group>"; };
 		B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B0E1F3161A59D98700F67676 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
 		B0E1F3171A59D98700F67676 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
@@ -367,6 +371,8 @@
 		CA794F6219FB4C6900C96F85 /* image4app */ = {
 			isa = PBXGroup;
 			children = (
+				B0A86E5A1AF5BA03008DE101 /* icon_plastic.png */,
+				B0A86E5B1AF5BA03008DE101 /* shigen.png */,
 				CA6A0CA41AE4038700982CA4 /* plastic.png */,
 				CA6A0C9A1AE4033E00982CA4 /* icon_haiyukinzoku.png */,
 				CA6A0C9B1AE4033E00982CA4 /* icon_iruinuno.png */,
@@ -542,6 +548,7 @@
 				CA858E2E1A6B95D9005FA2B2 /* tab_month.png in Resources */,
 				B0F2A20F1AB3C89200C5170E /* shisetsu-list.png in Resources */,
 				CA6A0C991AE4031600982CA4 /* icon_bincanpet.png in Resources */,
+				B0A86E5C1AF5BA03008DE101 /* icon_plastic.png in Resources */,
 				CA6A0C961AE3FFC000982CA4 /* word_icon_moyaseru.png in Resources */,
 				B0F2A1FA1AB3C89200C5170E /* search.gif in Resources */,
 				B0F2A21A1AB3C89200C5170E /* tab_week.png in Resources */,
@@ -561,6 +568,7 @@
 				B0F2A2011AB3C89200C5170E /* week_s.gif in Resources */,
 				CAFCA8841ADD68A900FDE34F /* 6blk-2015-04.png in Resources */,
 				CA794F4F19FB44EE00C96F85 /* Default.png in Resources */,
+				B0A86E5D1AF5BA03008DE101 /* shigen.png in Resources */,
 				CAFCA8821ADD68A900FDE34F /* 4blk-2015-04.png in Resources */,
 				B0F2A1F81AB3C89200C5170E /* month.gif in Resources */,
 				CAFCA8801ADD68A900FDE34F /* 2blk-2015-04.png in Resources */,
