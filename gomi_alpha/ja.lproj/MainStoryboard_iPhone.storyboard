@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -835,13 +835,13 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView tag="2" contentMode="scaleToFill" image="haiyukinzoku.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
+                            <imageView tag="2" contentMode="scaleToFill" image="icon_haiyukinzoku.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
                                 <rect key="frame" x="16" y="143.5" width="142" height="85"/>
                             </imageView>
-                            <imageView tag="3" contentMode="scaleToFill" image="bincanpet.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
+                            <imageView tag="3" contentMode="scaleToFill" image="icon_bincanpet.png" translatesAutoresizingMaskIntoConstraints="NO" id="WCe-ys-v6q">
                                 <rect key="frame" x="16" y="232.5" width="141.5" height="85.5"/>
                             </imageView>
-                            <imageView tag="6" contentMode="scaleToFill" image="iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
+                            <imageView tag="6" contentMode="scaleToFill" image="icon_iruinuno.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
                                 <rect key="frame" x="163" y="188" width="141.5" height="63"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/20(火)" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-Ic-JFO">
@@ -853,10 +853,10 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView tag="5" contentMode="scaleToFill" image="moyasenai.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
+                            <imageView tag="5" contentMode="scaleToFill" image="icon_moyasenai.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
                                 <rect key="frame" x="163" y="121" width="141" height="63"/>
                             </imageView>
-                            <imageView tag="4" contentMode="scaleToFill" image="moyaseru.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
+                            <imageView tag="4" contentMode="scaleToFill" image="icon_moyaseru.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt">
                                 <rect key="frame" x="162.5" y="54" width="141.5" height="63"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="特定大型ごみ、特定粗大ごみの収集の申し込みは、予約専用ダイヤル" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
@@ -961,7 +961,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView tag="7" contentMode="scaleToFill" image="koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="86U-9f-rdy">
+                            <imageView tag="7" contentMode="scaleToFill" image="icon_koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="86U-9f-rdy">
                                 <rect key="frame" x="163" y="255" width="141.5" height="63"/>
                             </imageView>
                         </subviews>
@@ -1419,7 +1419,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_koshi.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
                                 <rect key="frame" x="16" y="159" width="288" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="yHg-su-4JL"/>
@@ -1748,20 +1748,16 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
     </scenes>
     <resources>
         <image name="8blk-2015-04.png" width="1280" height="960"/>
-        <image name="bincanpet.png" width="400" height="200"/>
         <image name="eda&amp;smallkaden-list.png" width="490" height="750"/>
         <image name="funen-list.png" width="493" height="750"/>
-        <image name="haiyukinzoku.png" width="400" height="200"/>
+        <image name="icon_bincanpet.png" width="400" height="200"/>
+        <image name="icon_haiyukinzoku.png" width="400" height="200"/>
         <image name="icon_iruinuno.png" width="400" height="200"/>
         <image name="icon_koshi.png" width="400" height="200"/>
         <image name="icon_moyasenai.png" width="400" height="200"/>
         <image name="icon_moyaseru.png" width="400" height="200"/>
         <image name="icon_plastic.png" width="400" height="200"/>
-        <image name="iruinuno.png" width="400" height="200"/>
         <image name="kanen-list.png" width="493" height="750"/>
-        <image name="koshi.png" width="400" height="200"/>
-        <image name="moyasenai.png" width="400" height="200"/>
-        <image name="moyaseru.png" width="400" height="200"/>
         <image name="no-treat-list1.png" width="1080" height="1643"/>
         <image name="no-treat-list2.png" width="1074" height="1644"/>
         <image name="oogata-list.png" width="493" height="750"/>
