@@ -1456,12 +1456,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-aG-Vks">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-aG-Vks">
                                 <rect key="frame" x="252" y="484" width="52" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q5w-eL-QKR"/>
-                                    <constraint firstAttribute="width" constant="50" id="mfc-Dc-TOk"/>
-                                </constraints>
                                 <connections>
                                     <action selector="touchSwSpeech:" destination="ZfS-Qq-a3W" eventType="touchUpInside" id="Eza-cf-Pby"/>
                                 </connections>
@@ -1552,7 +1548,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="centerY" secondItem="Rgg-w2-Pzg" secondAttribute="centerY" id="Lku-ZB-lBn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yse-Ad-ZgO" secondAttribute="trailing" id="MEF-li-axj"/>
                             <constraint firstItem="yse-Ad-ZgO" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="P6T-9y-yNI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Bft-aG-Vks" secondAttribute="trailing" constant="2" id="QAs-xg-PKo"/>
                             <constraint firstItem="32H-Lf-LMP" firstAttribute="top" secondItem="yse-Ad-ZgO" secondAttribute="bottom" constant="5" id="QKN-wr-3FZ"/>
                             <constraint firstItem="k7e-u8-FeY" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Qyv-z4-4cG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5m2-xw-uaT" secondAttribute="trailing" constant="114" id="RgM-KF-XgX"/>
@@ -1562,9 +1557,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="Tin-ey-V4f" secondAttribute="trailing" constant="44" id="Tc0-5l-DGx"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="top" id="Tz3-CH-Khc"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="frV-QW-HJA" secondAttribute="top" id="Unj-ZT-6jd"/>
+                            <constraint firstItem="Bft-aG-Vks" firstAttribute="top" secondItem="ZxN-ba-Iby" secondAttribute="top" id="W3P-P0-rhW"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="leading" secondItem="Rgg-w2-Pzg" secondAttribute="trailing" constant="5" id="Wa8-oc-68O"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="top" secondItem="s3g-bP-ijs" secondAttribute="top" id="Wr4-5L-2SR"/>
-                            <constraint firstItem="gUu-FT-akQ" firstAttribute="top" secondItem="Bft-aG-Vks" secondAttribute="bottom" constant="5" id="adt-la-7DR"/>
+                            <constraint firstItem="Bft-aG-Vks" firstAttribute="leading" secondItem="hDn-Zh-UvM" secondAttribute="leading" id="ZhW-Mb-nba"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="114" id="bEB-4i-Ekg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="frV-QW-HJA" secondAttribute="trailing" id="cgx-CN-5Ga"/>
                             <constraint firstItem="K6T-U9-2YT" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="94" id="cqe-7t-g8L"/>
@@ -1577,7 +1573,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="3UJ-am-cfU" firstAttribute="bottom" secondItem="K6T-U9-2YT" secondAttribute="bottom" id="gyE-KV-46l"/>
                             <constraint firstItem="3UJ-am-cfU" firstAttribute="top" secondItem="aI4-XA-KOc" secondAttribute="top" id="hP1-Bd-dDh"/>
                             <constraint firstItem="Tin-ey-V4f" firstAttribute="top" secondItem="zkx-9V-hdd" secondAttribute="bottom" constant="5" id="i0I-j1-whe"/>
-                            <constraint firstItem="Bft-aG-Vks" firstAttribute="top" secondItem="hDn-Zh-UvM" secondAttribute="bottom" constant="4" id="iFn-Yd-v03"/>
                             <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="ikd-ec-7uh"/>
                             <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="pff-7l-2dR" secondAttribute="trailing" constant="2" id="irr-wz-5FS"/>
                             <constraint firstItem="Tin-ey-V4f" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="lpA-wU-xzC"/>
@@ -1592,6 +1587,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="s3g-bP-ijs" secondAttribute="trailing" constant="44" id="vDd-9H-Pmn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="G2D-FM-Uv7" secondAttribute="trailing" constant="6" id="xH4-VM-FeS"/>
                             <constraint firstItem="y1c-RW-JMh" firstAttribute="leading" secondItem="D9O-SO-UO2" secondAttribute="trailing" constant="-1" id="xk0-8c-95W"/>
+                            <constraint firstItem="Bft-aG-Vks" firstAttribute="top" secondItem="hDn-Zh-UvM" secondAttribute="bottom" constant="4" id="yKZ-VG-NtG"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="114" id="yeo-ze-lxr"/>
                         </constraints>
                         <connections>
