@@ -1724,13 +1724,19 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-dp-aQz">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="524" id="K3p-4e-hgU"/>
+                                    <constraint firstAttribute="height" constant="524" id="K3p-4e-hgU"/>
                                 </constraints>
                             </mapView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-iI-xPo">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
+                                <rect key="frame" x="16" y="44" width="288" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-iI-xPo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="U91-l0-3qE">
@@ -1742,12 +1748,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="現在地住所" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX2-0V-Jhz" userLabel="lblLocation">
-                                <rect key="frame" x="16" y="44" width="288" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1759,6 +1759,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="LpM-dp-aQz" firstAttribute="trailing" secondItem="xnL-iI-xPo" secondAttribute="trailing" id="U5U-j4-H5n"/>
                             <constraint firstItem="LpM-dp-aQz" firstAttribute="top" secondItem="KX2-0V-Jhz" secondAttribute="top" id="WWo-KH-DcQ"/>
                             <constraint firstAttribute="trailing" secondItem="LpM-dp-aQz" secondAttribute="trailing" id="ZxA-sw-odn"/>
+                            <constraint firstItem="KX2-0V-Jhz" firstAttribute="trailing" secondItem="QkT-ct-mp6" secondAttribute="trailingMargin" id="dtL-IH-nbX"/>
+                            <constraint firstItem="KX2-0V-Jhz" firstAttribute="leading" secondItem="QkT-ct-mp6" secondAttribute="leadingMargin" id="oDF-5L-hsc"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
