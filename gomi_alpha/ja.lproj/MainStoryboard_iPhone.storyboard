@@ -1352,8 +1352,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="50" id="4R8-xw-gOc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frV-QW-HJA">
-                                <rect key="frame" x="16" y="159" width="288" height="170"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frV-QW-HJA">
+                                <rect key="frame" x="16" y="179" width="288" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="50G-Mk-dik"/>
@@ -1379,8 +1379,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="90" id="VfL-vZ-hch"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="自宅前" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="32H-Lf-LMP">
-                                <rect key="frame" x="16" y="129" width="288" height="30"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="自宅前" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="32H-Lf-LMP">
+                                <rect key="frame" x="16" y="149" width="288" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OdD-Gt-JWe"/>
@@ -1421,7 +1421,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-7l-2dR">
-                                <rect key="frame" x="-5" y="359" width="60" height="40"/>
+                                <rect key="frame" x="-2" y="359" width="60" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aA9-Ut-gED"/>
                                     <constraint firstAttribute="width" constant="60" id="fKv-lJ-oQ7"/>
@@ -1447,14 +1447,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
-                                <rect key="frame" x="16" y="159" width="288" height="170"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="yHg-su-4JL"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yse-Ad-ZgO">
-                                <rect key="frame" x="16" y="57" width="288" height="67"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yse-Ad-ZgO">
+                                <rect key="frame" x="16" y="57" width="288" height="87"/>
                                 <string key="text" base64-UTF8="YES">
 5LuK5pel44GuCOOBlOOBvw
 </string>
@@ -1505,8 +1499,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="　　　" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2D-FM-Uv7">
-                                <rect key="frame" x="284" y="403" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="　　　" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2D-FM-Uv7">
+                                <rect key="frame" x="248" y="429" width="50" height="24"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="69W-Ll-59l"/>
@@ -1523,6 +1517,12 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-9V-hdd">
+                                <rect key="frame" x="16" y="179" width="288" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="yHg-su-4JL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -1579,7 +1579,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="Tin-ey-V4f" firstAttribute="top" secondItem="zkx-9V-hdd" secondAttribute="bottom" constant="5" id="i0I-j1-whe"/>
                             <constraint firstItem="Bft-aG-Vks" firstAttribute="top" secondItem="hDn-Zh-UvM" secondAttribute="bottom" constant="4" id="iFn-Yd-v03"/>
                             <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="ikd-ec-7uh"/>
-                            <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="pff-7l-2dR" secondAttribute="trailing" constant="5" id="irr-wz-5FS"/>
+                            <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="pff-7l-2dR" secondAttribute="trailing" constant="2" id="irr-wz-5FS"/>
                             <constraint firstItem="Tin-ey-V4f" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="lpA-wU-xzC"/>
                             <constraint firstItem="3UJ-am-cfU" firstAttribute="bottom" secondItem="aI4-XA-KOc" secondAttribute="bottom" id="nnM-50-2jJ"/>
                             <constraint firstItem="k7e-u8-FeY" firstAttribute="top" secondItem="541-dx-PpN" secondAttribute="bottom" id="oD4-kk-yT3"/>
