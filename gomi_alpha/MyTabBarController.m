@@ -22,6 +22,7 @@
     //UITabBarItem *item = self.tabBar.items[2];
     //item.badgeValue = @"不燃";
     //self.selectedIndex = 1;
+    self.customizableViewControllers=nil;//TabBarの編集ボタン表示を消す
 }
 
 - (void)didReceiveMemoryWarning {
