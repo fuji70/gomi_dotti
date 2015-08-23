@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="IUk-Ic-rlg">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1447,17 +1447,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yse-Ad-ZgO">
-                                <rect key="frame" x="16" y="57" width="288" height="87"/>
-                                <string key="text" base64-UTF8="YES">
-5LuK5pel44GuCOOBlOOBvw
-</string>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-aG-Vks">
-                                <rect key="frame" x="252" y="484" width="52" height="30"/>
+                                <rect key="frame" x="252" y="484" width="51" height="31"/>
                                 <connections>
                                     <action selector="touchSwSpeech:" destination="ZfS-Qq-a3W" eventType="touchUpInside" id="Eza-cf-Pby"/>
                                 </connections>
@@ -1519,10 +1510,24 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="150" id="yHg-su-4JL"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzR-dD-FQK">
+                                <rect key="frame" x="0.0" y="52" width="320" height="97"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+5LuK5pel44GuCOOBlOOBvw
+</string>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset2today:" destination="ZfS-Qq-a3W" eventType="touchDown" id="jfM-Gd-Uf3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="FzR-dD-FQK" firstAttribute="top" secondItem="k7e-u8-FeY" secondAttribute="bottom" id="1Ek-6B-ibJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hDn-Zh-UvM" secondAttribute="trailing" id="2fy-Dr-sXo"/>
                             <constraint firstItem="32H-Lf-LMP" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="3Gs-Wl-qSv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Cs-l5-wEZ" secondAttribute="trailing" constant="114" id="3k7-EV-NQf"/>
@@ -1533,12 +1538,15 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="bottom" secondItem="s3g-bP-ijs" secondAttribute="bottom" id="7OI-8K-Ntp"/>
                             <constraint firstItem="y1c-RW-JMh" firstAttribute="top" secondItem="541-dx-PpN" secondAttribute="bottom" id="8hm-gh-P8x"/>
                             <constraint firstItem="4Cs-l5-wEZ" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="114" id="8uj-YZ-RRF"/>
+                            <constraint firstAttribute="trailing" secondItem="FzR-dD-FQK" secondAttribute="trailing" id="Bhx-U1-zLA"/>
                             <constraint firstItem="3UJ-am-cfU" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="94" id="CEd-ne-hNz"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="top" secondItem="Tin-ey-V4f" secondAttribute="top" id="CeN-eX-3hE"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Clx-aa-88J"/>
                             <constraint firstItem="hDn-Zh-UvM" firstAttribute="top" secondItem="G2D-FM-Uv7" secondAttribute="bottom" constant="6" id="Djy-px-rGQ"/>
+                            <constraint firstItem="32H-Lf-LMP" firstAttribute="top" secondItem="FzR-dD-FQK" secondAttribute="bottom" id="Er7-lh-WQt"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="32H-Lf-LMP" secondAttribute="bottom" id="Fbm-1o-FQv"/>
                             <constraint firstItem="frV-QW-HJA" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Gah-Kr-YvL"/>
+                            <constraint firstItem="FzR-dD-FQK" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leading" id="Gxc-j2-8Nc"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="Hvu-9J-Xc3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3UJ-am-cfU" secondAttribute="trailing" constant="94" id="I0Z-S6-QdQ"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="94" id="JaS-EB-6Sn"/>
@@ -1546,13 +1554,9 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="gUu-FT-akQ" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="bottom" constant="5" id="LWs-nV-xGF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="32H-Lf-LMP" secondAttribute="trailing" id="LXa-GI-XtF"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="centerY" secondItem="Rgg-w2-Pzg" secondAttribute="centerY" id="Lku-ZB-lBn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yse-Ad-ZgO" secondAttribute="trailing" id="MEF-li-axj"/>
-                            <constraint firstItem="yse-Ad-ZgO" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="P6T-9y-yNI"/>
-                            <constraint firstItem="32H-Lf-LMP" firstAttribute="top" secondItem="yse-Ad-ZgO" secondAttribute="bottom" constant="5" id="QKN-wr-3FZ"/>
                             <constraint firstItem="k7e-u8-FeY" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Qyv-z4-4cG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5m2-xw-uaT" secondAttribute="trailing" constant="114" id="RgM-KF-XgX"/>
                             <constraint firstItem="pff-7l-2dR" firstAttribute="centerY" secondItem="Tin-ey-V4f" secondAttribute="centerY" id="Rlf-3t-vN1"/>
-                            <constraint firstItem="yse-Ad-ZgO" firstAttribute="top" secondItem="k7e-u8-FeY" secondAttribute="bottom" constant="5" id="RxD-3i-PxZ"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="top" secondItem="aI4-XA-KOc" secondAttribute="bottom" constant="5" id="TXc-1M-fTY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tin-ey-V4f" secondAttribute="trailing" constant="44" id="Tc0-5l-DGx"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="top" id="Tz3-CH-Khc"/>
@@ -1593,6 +1597,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="DdB-ob-ygy" appends="YES" id="33m-Hf-iCc"/>
                             <outletCollection property="gestureRecognizers" destination="Rzu-0w-h83" appends="YES" id="kWI-Gb-GEq"/>
+                            <outletCollection property="gestureRecognizers" destination="wzR-fe-2vy" appends="YES" id="c0x-gs-70w"/>
+                            <outletCollection property="gestureRecognizers" destination="uks-K2-qSt" appends="YES" id="AhO-qk-obP"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今日のごみ" image="tab_today.png" selectedImage="tab_today.png" id="fRs-pG-vEu" userLabel="Today's">
@@ -1616,10 +1622,22 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <outlet property="delegate" destination="ZfS-Qq-a3W" id="xvS-4D-Uni"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="Rzu-0w-h83">
+                <swipeGestureRecognizer direction="right" id="Rzu-0w-h83" userLabel="swipeR">
                     <connections>
                         <action selector="swipe_right:" destination="ZfS-Qq-a3W" id="M26-Qn-XVf"/>
                         <outlet property="delegate" destination="ZfS-Qq-a3W" id="ZXq-O3-0SE"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="wzR-fe-2vy" userLabel="swipeU">
+                    <connections>
+                        <action selector="swipe_upper:" destination="ZfS-Qq-a3W" id="h7W-im-g8v"/>
+                        <outlet property="delegate" destination="ZfS-Qq-a3W" id="QzV-Az-uqv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="uks-K2-qSt" userLabel="swipeD">
+                    <connections>
+                        <action selector="swipe_down:" destination="ZfS-Qq-a3W" id="Qko-r4-l6k"/>
+                        <outlet property="delegate" destination="ZfS-Qq-a3W" id="raE-95-IWt"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
