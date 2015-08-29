@@ -70,10 +70,10 @@
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
     dateFormatter.dateFormat = @"MM月dd日(E)";
     NSString *strCurDate = [dateFormatter stringFromDate:_curDate];
-    
+
     NSLog(@"Refresh to date= [%@]", strCurDate);
     _lblCurrent.text = strCurDate;
-    
+
     [self viewCurrentIcons];
     [self say_today];
 }
@@ -110,7 +110,7 @@
                      @"本・不・商",
                      nil];
     int iconTypes = (int)[strIcons count];
-    
+
     int rnd = random() % iconTypes;
     NSString* rndStr = [strIcons objectAtIndex:rnd];
     NSLog(@"rndStr: %@", rndStr);
@@ -136,7 +136,7 @@
     utterance.preUtteranceDelay = interval;                     //しゃべりだす前のインターバル
     utterance.postUtteranceDelay = interval;                    //しゃべり終わった後の次のメッセージをしゃべるまでのインターバル
     [speechSynthesizer speakUtterance:utterance];
-    
+
     NSString* speakingText2 = @"ワンダープラネットです。";
     AVSpeechUtterance *utterance2 = [AVSpeechUtterance speechUtteranceWithString:speakingText2];
     utterance2.rate = AVSpeechUtteranceMinimumSpeechRate;        //読み上げる速さ
@@ -150,14 +150,14 @@
     AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
     //sentence.rate = AVSpeechUtteranceDefaultSpeechRate;
     sentence.rate = 0.3;
-    
+
     [_speaker speakUtterance:sentence];
     NSLog(@"speech: '%@'", str);
 }
 
 - (BOOL)say_today {
     if (![HandleDb getSpeechStatus]) return false;
-    
+
     //[self test_speech];
     NSString *iconStr = [HandleDb getIconsStr:_curDate];
     NSString *typeStr = [HandleDb getSpeechStr:iconStr];

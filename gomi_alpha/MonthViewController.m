@@ -20,14 +20,15 @@
 
 - (IBAction)swipe_left:(id)sender;
 - (IBAction)swipe_right:(id)sender;
+- (IBAction)swipe_up:(id)sender;
+- (IBAction)swipe_down:(id)sender;
 @end
 
 @implementation MonthViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
-    _curDate = [NSDate date];
-    [self drawView];
+    [self initDate];
 }
 
 - (void)viewDidLoad {
@@ -51,8 +52,18 @@
 }
 */
 
-- (void)drawView {
+- (void)drawMonth {
     _imgMonth.image = [HandleDb getMonthImage:_curDate];
+}
+
+- (void)initDate {
+    _curDate = [NSDate date];
+    [self drawMonth];
+}
+
+- (void)changeMonth:(int)months {
+    _curDate = [_curDate initWithTimeInterval:(60*60*24)*30*months sinceDate:_curDate];
+    [self drawMonth];
 }
 
 - (IBAction)swipe_left:(id)sender {
@@ -63,5 +74,13 @@
 - (IBAction)swipe_right:(id)sender {
     MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
     [tb handleSwipeRight];
+}
+
+- (IBAction)swipe_up:(id)sender {
+    [self changeMonth:+1];
+}
+
+- (IBAction)swipe_down:(id)sender {
+    [self changeMonth:-1];
 }
 @end
