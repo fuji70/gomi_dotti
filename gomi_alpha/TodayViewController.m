@@ -22,12 +22,15 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext1;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext3;
-
 @property (strong, nonatomic) IBOutlet UISwitch *swSpeech;
-- (IBAction)touchSwSpeech:(id)sender;
 
+- (IBAction)touchSwSpeech:(id)sender;
 - (IBAction)swipe_left:(id)sender;
 - (IBAction)swipe_right:(id)sender;
+- (IBAction)swipe_upper:(id)sender;
+- (IBAction)swipe_down:(id)sender;
+- (IBAction)reset2today:(id)sender;
+
 @end
 
 @implementation TodayViewController
@@ -77,6 +80,11 @@
 
 - (void)initCurrent {
     _curDate = [NSDate date];
+    [self refreshCurrent];
+}
+
+- (void)changeDate:(int)days {
+    _curDate = [_curDate initWithTimeInterval:(60*60*24)*days sinceDate:_curDate];
     [self refreshCurrent];
 }
 
@@ -171,5 +179,19 @@
 - (IBAction)swipe_right:(id)sender {
     MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
     [tb handleSwipeRight];
+}
+
+- (IBAction)swipe_upper:(id)sender {
+    NSLog(@"swipe up");
+    [self changeDate:+1];
+}
+
+- (IBAction)swipe_down:(id)sender {
+    NSLog(@"swipe down");
+    [self changeDate:-1];
+}
+
+- (IBAction)reset2today:(id)sender {
+    [self initCurrent];
 }
 @end
