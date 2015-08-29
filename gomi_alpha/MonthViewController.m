@@ -22,6 +22,8 @@
 - (IBAction)swipe_right:(id)sender;
 - (IBAction)swipe_up:(id)sender;
 - (IBAction)swipe_down:(id)sender;
+
+- (IBAction)reset2today:(id)sender;
 @end
 
 @implementation MonthViewController
@@ -62,7 +64,7 @@
 }
 
 - (void)changeMonth:(int)months {
-    _curDate = [_curDate initWithTimeInterval:(60*60*24)*30*months sinceDate:_curDate];
+    _curDate = [_curDate initWithTimeInterval:(60*60*24*30*months) sinceDate:_curDate];
     [self drawMonth];
 }
 
@@ -82,5 +84,9 @@
 
 - (IBAction)swipe_down:(id)sender {
     [self changeMonth:-1];
+}
+
+- (IBAction)reset2today:(id)sender {
+    [self initDate];
 }
 @end
