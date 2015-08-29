@@ -796,6 +796,8 @@
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="j2Q-Zf-xns" appends="YES" id="dOv-FG-TUn"/>
                             <outletCollection property="gestureRecognizers" destination="kDa-jW-x03" appends="YES" id="wgU-mk-u7U"/>
+                            <outletCollection property="gestureRecognizers" destination="JhE-I8-W0D" appends="YES" id="x76-UL-yVZ"/>
+                            <outletCollection property="gestureRecognizers" destination="HYf-Gw-bDT" appends="YES" id="2MC-1z-fFT"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今月のごみ" image="tab_month.png" selectedImage="tab_month.png" id="S1Q-UH-V3E">
@@ -817,6 +819,18 @@
                     <connections>
                         <action selector="swipe_right:" destination="CQY-op-aHE" id="m2B-Ay-mWp"/>
                         <outlet property="delegate" destination="CQY-op-aHE" id="qBG-Dd-6wn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="JhE-I8-W0D" userLabel="swipeU">
+                    <connections>
+                        <action selector="swipe_up:" destination="CQY-op-aHE" id="zp4-u7-bno"/>
+                        <outlet property="delegate" destination="CQY-op-aHE" id="rFl-A2-WsD"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="HYf-Gw-bDT" userLabel="swipeD">
+                    <connections>
+                        <action selector="swipe_down:" destination="CQY-op-aHE" id="Byh-yO-NBo"/>
+                        <outlet property="delegate" destination="CQY-op-aHE" id="60u-au-w3Q"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
