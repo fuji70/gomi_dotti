@@ -201,6 +201,7 @@ NSString *FILE_DB = @"db2015.json";
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSString *strDate = [dateFormatter stringFromDate:date];
     NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
+    NSLog(@"month: %@", imgName);
     return [UIImage imageNamed:imgName];
 }
 
