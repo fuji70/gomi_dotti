@@ -760,36 +760,41 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="8blk-2015-09.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="8blk-2015-09.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
                                 <rect key="frame" x="6" y="70" width="308" height="444"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="435" id="ki4-ah-Xjt"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="今月のごみ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-Bl-asD">
-                                <rect key="frame" x="16" y="20" width="200" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxX-MI-2kp">
+                                <rect key="frame" x="16" y="0.0" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="j65-t0-x4n"/>
-                                    <constraint firstAttribute="height" constant="50" id="upj-RZ-ScG"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ifv-1R-8cz"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ve1-Ep-gIJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="48"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
+                                <state key="normal" title="今月のごみ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset2today:" destination="CQY-op-aHE" eventType="touchDown" id="dVT-cB-Tbf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ba4-Bl-asD" firstAttribute="leading" secondItem="tmC-ih-re3" secondAttribute="leadingMargin" id="4MT-60-H8y"/>
+                            <constraint firstItem="oxX-MI-2kp" firstAttribute="leading" secondItem="tmC-ih-re3" secondAttribute="leadingMargin" id="2JL-PH-d87"/>
                             <constraint firstItem="eSA-7u-0Nb" firstAttribute="top" secondItem="3bO-qV-ccL" secondAttribute="bottom" constant="10" id="6CL-GM-6Pq"/>
                             <constraint firstItem="U5o-sS-Wm5" firstAttribute="leading" secondItem="eSA-7u-0Nb" secondAttribute="trailing" constant="-10" id="Akt-lT-yXU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U5o-sS-Wm5" secondAttribute="trailing" id="B77-db-kWl"/>
                             <constraint firstItem="E1U-Rz-BAF" firstAttribute="top" secondItem="mLs-Fy-YrX" secondAttribute="bottom" constant="5" id="Dud-6u-YXb"/>
                             <constraint firstAttribute="centerX" secondItem="mLs-Fy-YrX" secondAttribute="centerX" id="MyU-85-pki"/>
-                            <constraint firstItem="Ba4-Bl-asD" firstAttribute="top" secondItem="3bO-qV-ccL" secondAttribute="bottom" id="RAZ-aF-KSZ"/>
+                            <constraint firstItem="mLs-Fy-YrX" firstAttribute="top" secondItem="oxX-MI-2kp" secondAttribute="bottom" id="N5I-Lr-STv"/>
+                            <constraint firstItem="eSA-7u-0Nb" firstAttribute="leading" secondItem="oxX-MI-2kp" secondAttribute="trailing" constant="2" id="QUZ-5H-Ild"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mLs-Fy-YrX" secondAttribute="trailing" constant="-10" id="XVM-Je-F3K"/>
+                            <constraint firstItem="oxX-MI-2kp" firstAttribute="top" secondItem="tmC-ih-re3" secondAttribute="topMargin" id="bJU-QV-eU3"/>
                             <constraint firstItem="U5o-sS-Wm5" firstAttribute="leading" secondItem="eSA-7u-0Nb" secondAttribute="trailing" constant="-10" id="bnP-uJ-iIv"/>
-                            <constraint firstItem="mLs-Fy-YrX" firstAttribute="top" secondItem="Ba4-Bl-asD" secondAttribute="bottom" id="dHF-yJ-asj"/>
                             <constraint firstItem="mLs-Fy-YrX" firstAttribute="leading" secondItem="tmC-ih-re3" secondAttribute="leadingMargin" constant="-10" id="gdp-vM-ecf"/>
                             <constraint firstItem="U5o-sS-Wm5" firstAttribute="top" secondItem="3bO-qV-ccL" secondAttribute="bottom" constant="10" id="kGo-dX-ced"/>
                         </constraints>
