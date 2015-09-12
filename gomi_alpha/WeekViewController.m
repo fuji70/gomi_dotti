@@ -21,6 +21,8 @@
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgWeekdays;
 - (IBAction)swipe_left:(id)sender;
 - (IBAction)swipe_right:(id)sender;
+- (IBAction)swipe_up:(id)sender;
+- (IBAction)swipe_down:(id)sender;
 @end
 
 @implementation WeekViewController
@@ -97,9 +99,13 @@
     }
 }
 
-- (IBAction)pushBtnNextWeek:(id)sender {
-    _curDate = [_curDate initWithTimeInterval:(7*60*60*24) sinceDate:_curDate];
+- (void)changeWeek:(int)weeks {
+    _curDate = [_curDate initWithTimeInterval:(60*60*24*7*weeks) sinceDate:_curDate];
     [self drawWeekdays];
+}
+
+- (IBAction)pushBtnNextWeek:(id)sender {
+    [self changeWeek:+1];
 }
 
 - (IBAction)swipe_left:(id)sender {
@@ -109,5 +115,13 @@
 - (IBAction)swipe_right:(id)sender {
     MyTabBarController *tb = (MyTabBarController*)self.tabBarController;
     [tb handleSwipeRight];
+}
+
+- (IBAction)swipe_up:(id)sender {
+    [self changeWeek:+1];
+}
+
+- (IBAction)swipe_down:(id)sender {
+    [self changeWeek:-1];
 }
 @end

@@ -686,6 +686,8 @@
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="jK7-zR-sD4" appends="YES" id="hhi-q1-du6"/>
                             <outletCollection property="gestureRecognizers" destination="AVC-jb-WoL" appends="YES" id="wue-aj-M5q"/>
+                            <outletCollection property="gestureRecognizers" destination="Qz7-Af-n3R" appends="YES" id="mqb-zS-u5N"/>
+                            <outletCollection property="gestureRecognizers" destination="gEw-5z-8d9" appends="YES" id="RE5-5o-Atc"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="今週のごみ" image="tab_week.png" selectedImage="tab_week.png" id="uUC-Td-a1b">
@@ -721,6 +723,18 @@
                     <connections>
                         <action selector="swipe_right:" destination="KkE-JK-GfM" id="sLM-RK-IDE"/>
                         <outlet property="delegate" destination="KkE-JK-GfM" id="qBH-bv-Yc0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Qz7-Af-n3R" userLabel="swipeU">
+                    <connections>
+                        <action selector="swipe_up:" destination="KkE-JK-GfM" id="Ge8-WD-RCP"/>
+                        <outlet property="delegate" destination="KkE-JK-GfM" id="iym-le-ujy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="gEw-5z-8d9" userLabel="swipeD">
+                    <connections>
+                        <action selector="swipe_down:" destination="KkE-JK-GfM" id="XKd-BJ-v5n"/>
+                        <outlet property="delegate" destination="KkE-JK-GfM" id="Jrw-hZ-jCW"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -832,7 +846,7 @@
                         <outlet property="delegate" destination="CQY-op-aHE" id="rFl-A2-WsD"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="HYf-Gw-bDT" userLabel="swipeD">
+                <swipeGestureRecognizer direction="down" id="HYf-Gw-bDT" userLabel="swipeD">
                     <connections>
                         <action selector="swipe_down:" destination="CQY-op-aHE" id="Byh-yO-NBo"/>
                         <outlet property="delegate" destination="CQY-op-aHE" id="60u-au-w3Q"/>
