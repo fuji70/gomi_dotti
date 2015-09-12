@@ -30,6 +30,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     _lblBlknum.text = [NSString stringWithFormat:@"%d", [HandleDb getBlkNum]];
+    [self initDate];
+}
+
+- (void)initDate {
     _curDate = [NSDate date];
     [self drawWeekdays];
 }
@@ -123,5 +127,9 @@
 
 - (IBAction)swipe_down:(id)sender {
     [self changeWeek:-1];
+}
+
+- (IBAction)reset2today:(id)sender {
+    [self initDate];
 }
 @end
