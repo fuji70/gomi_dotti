@@ -9,6 +9,7 @@
 #import "TodayViewController.h"
 #import "HandleDb.h"
 #import "MyTabBarController.h"
+#import <QuartzCore/QuartzCore.h> //UIViewを角丸にする
 
 @interface TodayViewController ()
 {
@@ -193,5 +194,16 @@
 
 - (IBAction)reset2today:(id)sender {
     [self initCurrent];
+}
+
+- (void)createRoundedRectangle {
+    // UIViewの角丸を設定する
+    UIView *view = [self.view viewWithTag:1];
+    view.layer.cornerRadius = 10.0f;
+    view.layer.masksToBounds = YES;
+    // UIView内全体のぼかし効果
+    view.layer.shouldRasterize = YES; //レイヤーをラスタライズする
+    view.layer.rasterizationScale = 0.5f; //レイヤーをラスタライズ時の縮小率
+    view.layer.minificationFilter = kCAFilterTrilinear; //レイヤーを縮小する際のフィルタ
 }
 @end
