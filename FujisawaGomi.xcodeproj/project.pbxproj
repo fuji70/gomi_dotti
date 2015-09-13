@@ -118,6 +118,7 @@
 		CA7558AF1BA550070079C419 /* 10blk-2016-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7558A81BA550070079C419 /* 10blk-2016-01.png */; };
 		CA7558B01BA550070079C419 /* 10blk-2016-02.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7558A91BA550070079C419 /* 10blk-2016-02.png */; };
 		CA7558B11BA550070079C419 /* 10blk-2016-03.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7558AA1BA550070079C419 /* 10blk-2016-03.png */; };
+		CA7558B31BA554A70079C419 /* back2today.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7558B21BA554A70079C419 /* back2today.png */; };
 		CA794F3D19FB44EE00C96F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F3C19FB44EE00C96F85 /* UIKit.framework */; };
 		CA794F3F19FB44EE00C96F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F3E19FB44EE00C96F85 /* Foundation.framework */; };
 		CA794F4119FB44EE00C96F85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F4019FB44EE00C96F85 /* CoreGraphics.framework */; };
@@ -295,6 +296,7 @@
 		CA7558A81BA550070079C419 /* 10blk-2016-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10blk-2016-01.png"; sourceTree = "<group>"; };
 		CA7558A91BA550070079C419 /* 10blk-2016-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10blk-2016-02.png"; sourceTree = "<group>"; };
 		CA7558AA1BA550070079C419 /* 10blk-2016-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10blk-2016-03.png"; sourceTree = "<group>"; };
+		CA7558B21BA554A70079C419 /* back2today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2today.png; sourceTree = "<group>"; };
 		CA794F3919FB44EE00C96F85 /* FujisawaGomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FujisawaGomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA794F3C19FB44EE00C96F85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA794F3E19FB44EE00C96F85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -464,6 +466,7 @@
 		CA794F6219FB4C6900C96F85 /* image4app */ = {
 			isa = PBXGroup;
 			children = (
+				CA7558B21BA554A70079C419 /* back2today.png */,
 				CA7558261BA54FA30079C419 /* 1blk-2015-09.png */,
 				CA7558271BA54FA30079C419 /* 1blk-2015-10.png */,
 				CA7558281BA54FA30079C419 /* 1blk-2015-11.png */,
@@ -755,6 +758,7 @@
 				CA7558931BA54FF10079C419 /* 8blk-2016-01.png in Resources */,
 				CA858E1C1A6B95D9005FA2B2 /* funen-list.png in Resources */,
 				CA75584B1BA54FBD0079C419 /* 3blk-2015-11.png in Resources */,
+				CA7558B31BA554A70079C419 /* back2today.png in Resources */,
 				CA75582F1BA54FA30079C419 /* 1blk-2015-11.png in Resources */,
 				CA7558681BA54FD20079C419 /* 5blk-2015-12.png in Resources */,
 				CA7558A11BA54FFC0079C419 /* 9blk-2016-01.png in Resources */,
