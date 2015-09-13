@@ -413,80 +413,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-tj-AL4">
-                                <rect key="frame" x="160" y="279" width="144" height="72"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-tj-AL4">
+                                <rect key="frame" x="160" y="296" width="144" height="77"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-lk-Sjt">
-                                <rect key="frame" x="160" y="429" width="144" height="29"/>
+                                <rect key="frame" x="160" y="457" width="144" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-cY-hLm">
-                                <rect key="frame" x="160" y="127" width="144" height="72"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-cY-hLm">
+                                <rect key="frame" x="160" y="135" width="144" height="77"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LId-1m-kfe">
-                                <rect key="frame" x="160" y="204" width="144" height="72"/>
+                                <rect key="frame" x="160" y="216" width="144" height="76"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bws-3O-sw4">
-                                <rect key="frame" x="160" y="54" width="144" height="71"/>
+                                <rect key="frame" x="160" y="54" width="144" height="77"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-aB-ldc" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="279" width="144" height="72"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-aB-ldc" propertyAccessControl="none">
+                                <rect key="frame" x="160" y="296" width="144" height="77"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-jf-hQF">
-                                <rect key="frame" x="160" y="355" width="144" height="71"/>
+                                <rect key="frame" x="160" y="377" width="144" height="77"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="01/20(火)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-Av-43M">
-                                <rect key="frame" x="16" y="127" width="144" height="72"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/20(火)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-Av-43M">
+                                <rect key="frame" x="16" y="135" width="144" height="77"/>
                                 <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/21(水)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="C3m-xH-cCQ">
-                                <rect key="frame" x="16" y="204" width="144" height="72"/>
+                                <rect key="frame" x="16" y="216" width="144" height="76"/>
                                 <color key="backgroundColor" red="0.82276459850000006" green="0.94545922729999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="01/22(木)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Sh-XA-1Aq">
-                                <rect key="frame" x="16" y="279" width="144" height="72"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/22(木)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Sh-XA-1Aq">
+                                <rect key="frame" x="16" y="296" width="144" height="77"/>
                                 <color key="backgroundColor" red="0.98545306990000003" green="1" blue="0.74590136620000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-uY-rnd" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="204" width="144" height="72"/>
+                                <rect key="frame" x="160" y="216" width="144" height="76"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/23(金)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uAm-dX-ukR">
-                                <rect key="frame" x="16" y="355" width="144" height="71"/>
+                                <rect key="frame" x="16" y="377" width="144" height="77"/>
                                 <color key="backgroundColor" red="1" green="0.79545454550000005" blue="0.79545454550000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/24(土)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1qV-yK-PfA">
-                                <rect key="frame" x="16" y="429" width="144" height="29"/>
+                                <rect key="frame" x="16" y="457" width="144" height="29"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-l8-OYI" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="127" width="144" height="72"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="H1S-l8-OYI" propertyAccessControl="none">
+                                <rect key="frame" x="160" y="135" width="144" height="77"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-62-d7L">
                                 <rect key="frame" x="244" y="20" width="60" height="30"/>
@@ -511,19 +511,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-mr-hVP">
-                                <rect key="frame" x="160" y="54" width="144" height="71"/>
+                                <rect key="frame" x="160" y="54" width="144" height="77"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-0o-lCG" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="429" width="144" height="29"/>
+                                <rect key="frame" x="160" y="457" width="144" height="29"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmJ-Qh-lHf">
-                                <rect key="frame" x="160" y="459" width="144" height="29"/>
+                                <rect key="frame" x="160" y="488" width="144" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/25(日)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="I6F-Zf-w9p">
-                                <rect key="frame" x="16" y="459" width="144" height="29"/>
+                                <rect key="frame" x="16" y="488" width="144" height="29"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="10D-KM-JA3"/>
@@ -531,29 +531,11 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V4-i2-WX3">
-                                <rect key="frame" x="16" y="489" width="288" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IRW-n1-3QH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="24"/>
-                                <state key="normal" title="⬇️　　来週の ごみ　　⬇️">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pushBtnNextWeek:" destination="KkE-JK-GfM" eventType="touchUpInside" id="B45-Zv-3EY"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-kE-cDy" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="459" width="144" height="29"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-WR-Q2P" propertyAccessControl="none">
-                                <rect key="frame" x="160" y="355" width="144" height="71"/>
+                                <rect key="frame" x="160" y="377" width="144" height="77"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/19(月)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EXb-Rm-ZOX">
-                                <rect key="frame" x="16" y="54" width="144" height="71"/>
+                                <rect key="frame" x="16" y="54" width="144" height="77"/>
                                 <color key="backgroundColor" red="0.82261423919999999" green="0.80154262279999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -578,6 +560,9 @@
                                     <action selector="reset2today:" destination="KkE-JK-GfM" eventType="touchDown" id="FHe-Xc-R5U"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-kE-cDy" propertyAccessControl="none">
+                                <rect key="frame" x="160" y="488" width="144" height="29"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -585,9 +570,7 @@
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="bws-3O-sw4" secondAttribute="width" id="04Z-vQ-sYZ"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="top" secondItem="C3m-xH-cCQ" secondAttribute="bottom" constant="4" id="0DR-BB-maJ"/>
                             <constraint firstItem="LId-1m-kfe" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="trailing" id="0Ov-KH-zdY"/>
-                            <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="8V4-i2-WX3" secondAttribute="leading" id="2G2-92-I7V"/>
                             <constraint firstItem="bws-3O-sw4" firstAttribute="top" secondItem="ZiQ-mr-hVP" secondAttribute="top" id="3ly-PY-eZw"/>
-                            <constraint firstItem="8V4-i2-WX3" firstAttribute="leading" secondItem="WrJ-6Q-ev3" secondAttribute="leadingMargin" id="3tU-uy-hin"/>
                             <constraint firstItem="1Lo-aB-ldc" firstAttribute="top" secondItem="AbT-uY-rnd" secondAttribute="bottom" constant="4" id="4Qz-5T-Uuo"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="kMP-tj-AL4" secondAttribute="width" id="4cc-YY-eiO"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="top" secondItem="2FP-bG-uwI" secondAttribute="bottom" constant="2" id="5aJ-ux-U25"/>
@@ -609,14 +592,13 @@
                             <constraint firstItem="PmJ-Qh-lHf" firstAttribute="leading" secondItem="I6F-Zf-w9p" secondAttribute="trailing" id="Clb-jo-IwJ"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="3Sh-XA-1Aq" secondAttribute="width" id="CpY-zi-axf"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="LId-1m-kfe" secondAttribute="width" id="D6T-Pt-Kap"/>
-                            <constraint firstItem="PmJ-Qh-lHf" firstAttribute="top" secondItem="F9m-lk-Sjt" secondAttribute="bottom" constant="1" id="EkJ-Uh-fh0"/>
+                            <constraint firstItem="PmJ-Qh-lHf" firstAttribute="top" secondItem="F9m-lk-Sjt" secondAttribute="bottom" constant="2" id="EkJ-Uh-fh0"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="H1S-l8-OYI" secondAttribute="width" id="FEd-gf-AdQ"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="1qV-yK-PfA" secondAttribute="leading" id="FSF-Rs-naF"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="MFt-WR-Q2P" secondAttribute="height" id="Fak-FW-1YH"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="rvE-jf-hQF" secondAttribute="width" id="GGe-MH-nhp"/>
                             <constraint firstItem="1Lo-aB-ldc" firstAttribute="top" secondItem="kMP-tj-AL4" secondAttribute="top" id="GR9-jp-FhX"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="EXb-Rm-ZOX" secondAttribute="leading" id="Gf8-IU-1Qw"/>
-                            <constraint firstItem="8V4-i2-WX3" firstAttribute="top" secondItem="I6F-Zf-w9p" secondAttribute="bottom" constant="1" id="HXI-GA-Xqa"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="1qV-yK-PfA" secondAttribute="width" id="IHP-mo-L8n"/>
                             <constraint firstItem="kMP-tj-AL4" firstAttribute="leading" secondItem="3Sh-XA-1Aq" secondAttribute="trailing" id="Iog-lL-RHg"/>
                             <constraint firstItem="MFt-WR-Q2P" firstAttribute="leading" secondItem="uAm-dX-ukR" secondAttribute="trailing" id="JEB-Bi-0i2"/>
@@ -626,7 +608,6 @@
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="bws-3O-sw4" secondAttribute="height" id="LYa-h1-XSh"/>
                             <constraint firstItem="uAm-dX-ukR" firstAttribute="top" secondItem="3Sh-XA-1Aq" secondAttribute="bottom" constant="4" id="M22-r4-ccS"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="T8I-cY-hLm" secondAttribute="height" id="M6b-r0-4Un"/>
-                            <constraint firstItem="8V4-i2-WX3" firstAttribute="top" secondItem="Khw-kE-cDy" secondAttribute="bottom" constant="1" id="M9c-Zx-kSq"/>
                             <constraint firstItem="rvE-jf-hQF" firstAttribute="top" secondItem="MFt-WR-Q2P" secondAttribute="top" id="MRR-jU-mAl"/>
                             <constraint firstItem="H1S-l8-OYI" firstAttribute="leading" secondItem="A2D-Av-43M" secondAttribute="trailing" id="Mci-IU-Wc0"/>
                             <constraint firstItem="B2v-cu-Gei" firstAttribute="top" secondItem="gZz-zs-TyP" secondAttribute="bottom" id="Mt6-gs-T83"/>
@@ -636,7 +617,6 @@
                             <constraint firstItem="B2v-cu-Gei" firstAttribute="leading" secondItem="2FP-bG-uwI" secondAttribute="trailing" constant="3" id="Q7y-OB-d6O"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="A2D-Av-43M" secondAttribute="width" id="Qky-tP-0qh"/>
                             <constraint firstItem="rvE-jf-hQF" firstAttribute="leading" secondItem="uAm-dX-ukR" secondAttribute="trailing" id="S3k-T0-cfk"/>
-                            <constraint firstItem="8V4-i2-WX3" firstAttribute="top" secondItem="PmJ-Qh-lHf" secondAttribute="bottom" constant="1" id="S43-75-qBg"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="C3m-xH-cCQ" secondAttribute="width" id="TGx-no-kwc"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="1Lo-aB-ldc" secondAttribute="width" id="UYe-V0-OgI"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="uAm-dX-ukR" secondAttribute="leading" id="VB9-Iw-4gE"/>
@@ -644,7 +624,6 @@
                             <constraint firstItem="bbf-62-d7L" firstAttribute="top" secondItem="gZz-zs-TyP" secondAttribute="bottom" id="VOf-X4-dOm"/>
                             <constraint firstItem="1Lo-aB-ldc" firstAttribute="leading" secondItem="3Sh-XA-1Aq" secondAttribute="trailing" id="Wmr-l3-JNF"/>
                             <constraint firstItem="bws-3O-sw4" firstAttribute="trailing" secondItem="WrJ-6Q-ev3" secondAttribute="trailingMargin" id="YuC-Jh-kIQ"/>
-                            <constraint firstItem="HHT-gc-421" firstAttribute="top" secondItem="8V4-i2-WX3" secondAttribute="bottom" id="ZYy-FS-sz9"/>
                             <constraint firstItem="WkS-0o-lCG" firstAttribute="height" secondItem="Khw-kE-cDy" secondAttribute="height" id="aV2-WA-bb6"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="C3m-xH-cCQ" secondAttribute="leading" id="b83-cY-YUC"/>
                             <constraint firstItem="uAm-dX-ukR" firstAttribute="top" secondItem="MFt-WR-Q2P" secondAttribute="top" id="bVz-TC-vgu"/>
@@ -655,19 +634,20 @@
                             <constraint firstItem="H1S-l8-OYI" firstAttribute="top" secondItem="T8I-cY-hLm" secondAttribute="top" id="eIv-cR-umK"/>
                             <constraint firstItem="F9m-lk-Sjt" firstAttribute="top" secondItem="1qV-yK-PfA" secondAttribute="top" id="gE3-zX-jEQ"/>
                             <constraint firstItem="A2D-Av-43M" firstAttribute="top" secondItem="EXb-Rm-ZOX" secondAttribute="bottom" constant="4" id="gOb-dR-O3b"/>
+                            <constraint firstItem="HHT-gc-421" firstAttribute="top" secondItem="I6F-Zf-w9p" secondAttribute="bottom" constant="2" id="geK-R1-XCV"/>
                             <constraint firstItem="1Lo-aB-ldc" firstAttribute="top" secondItem="3Sh-XA-1Aq" secondAttribute="top" id="h68-Vo-IyV"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="H1S-l8-OYI" secondAttribute="height" id="h7U-8s-2NV"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="top" secondItem="AbT-uY-rnd" secondAttribute="top" id="hFN-oe-yac"/>
                             <constraint firstItem="rvE-jf-hQF" firstAttribute="top" secondItem="kMP-tj-AL4" secondAttribute="bottom" constant="4" id="hrZ-iZ-Mtc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bbf-62-d7L" secondAttribute="trailing" id="iNY-Xs-o8f"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8V4-i2-WX3" secondAttribute="trailing" id="iSu-E1-7Be"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="I6F-Zf-w9p" secondAttribute="width" id="kSa-i6-fUg"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="LId-1m-kfe" secondAttribute="height" id="kXe-uh-SxA"/>
                             <constraint firstItem="WkS-0o-lCG" firstAttribute="top" secondItem="MFt-WR-Q2P" secondAttribute="bottom" constant="3" id="l2c-xh-TM1"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="kMP-tj-AL4" secondAttribute="height" id="laz-kW-zNw"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="rvE-jf-hQF" secondAttribute="height" id="m1A-qB-r3g"/>
-                            <constraint firstItem="Khw-kE-cDy" firstAttribute="top" secondItem="WkS-0o-lCG" secondAttribute="bottom" constant="1" id="m5z-r3-eHn"/>
+                            <constraint firstItem="Khw-kE-cDy" firstAttribute="top" secondItem="WkS-0o-lCG" secondAttribute="bottom" constant="2" id="m5z-r3-eHn"/>
                             <constraint firstItem="3Sh-XA-1Aq" firstAttribute="leading" secondItem="I6F-Zf-w9p" secondAttribute="leading" id="mGv-4z-zcL"/>
+                            <constraint firstItem="HHT-gc-421" firstAttribute="top" secondItem="Khw-kE-cDy" secondAttribute="bottom" constant="2" id="muv-uV-yWf"/>
                             <constraint firstItem="F9m-lk-Sjt" firstAttribute="top" secondItem="rvE-jf-hQF" secondAttribute="bottom" constant="3" id="oq2-wm-DS6"/>
                             <constraint firstItem="F9m-lk-Sjt" firstAttribute="top" secondItem="WkS-0o-lCG" secondAttribute="top" id="pLw-wl-n65"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="EXb-Rm-ZOX" secondAttribute="height" id="qEJ-74-8Bw"/>
@@ -678,12 +658,13 @@
                             <constraint firstItem="bbf-62-d7L" firstAttribute="leading" secondItem="B2v-cu-Gei" secondAttribute="trailing" constant="-1" id="rpJ-Io-HAc"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="ZiQ-mr-hVP" secondAttribute="width" id="ryN-6w-i2v"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="uAm-dX-ukR" secondAttribute="height" id="s8p-qY-HDE"/>
+                            <constraint firstItem="HHT-gc-421" firstAttribute="top" secondItem="PmJ-Qh-lHf" secondAttribute="bottom" constant="2" id="sFv-wZ-sJd"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="AbT-uY-rnd" secondAttribute="width" id="sm3-BI-qb7"/>
                             <constraint firstItem="F9m-lk-Sjt" firstAttribute="leading" secondItem="1qV-yK-PfA" secondAttribute="trailing" id="u42-64-dBl"/>
                             <constraint firstItem="A2D-Av-43M" firstAttribute="top" secondItem="H1S-l8-OYI" secondAttribute="top" id="vFq-63-0wv"/>
                             <constraint firstItem="ZiQ-mr-hVP" firstAttribute="leading" secondItem="EXb-Rm-ZOX" secondAttribute="trailing" id="wbX-83-f5b"/>
                             <constraint firstItem="EXb-Rm-ZOX" firstAttribute="width" secondItem="PmJ-Qh-lHf" secondAttribute="width" id="x3L-uI-4PU"/>
-                            <constraint firstItem="I6F-Zf-w9p" firstAttribute="top" secondItem="1qV-yK-PfA" secondAttribute="bottom" constant="1" id="xtj-mH-eXR"/>
+                            <constraint firstItem="I6F-Zf-w9p" firstAttribute="top" secondItem="1qV-yK-PfA" secondAttribute="bottom" constant="2" id="xtj-mH-eXR"/>
                             <constraint firstItem="C3m-xH-cCQ" firstAttribute="height" secondItem="3Sh-XA-1Aq" secondAttribute="height" id="yFx-dx-sCe"/>
                             <constraint firstItem="WkS-0o-lCG" firstAttribute="height" secondItem="1qV-yK-PfA" secondAttribute="height" id="ypI-XJ-9XJ"/>
                             <constraint firstItem="WkS-0o-lCG" firstAttribute="height" secondItem="I6F-Zf-w9p" secondAttribute="height" id="yuQ-X5-NAO"/>
@@ -703,7 +684,6 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="1"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="btnNextWeek" destination="8V4-i2-WX3" id="1HZ-Ie-B7F"/>
                         <outlet property="lblBlknum" destination="B2v-cu-Gei" id="L3I-nj-Aee"/>
                         <outletCollection property="lblWeekdays" destination="EXb-Rm-ZOX" collectionClass="NSMutableArray" id="nZD-rH-rHt"/>
                         <outletCollection property="lblWeekdays" destination="A2D-Av-43M" collectionClass="NSMutableArray" id="Mtm-62-vDj"/>
@@ -818,7 +798,7 @@
                             <constraint firstItem="eSA-7u-0Nb" firstAttribute="top" secondItem="3bO-qV-ccL" secondAttribute="bottom" id="6CL-GM-6Pq"/>
                             <constraint firstItem="U5o-sS-Wm5" firstAttribute="leading" secondItem="eSA-7u-0Nb" secondAttribute="trailing" constant="-1" id="Akt-lT-yXU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U5o-sS-Wm5" secondAttribute="trailing" id="B77-db-kWl"/>
-                            <constraint firstItem="E1U-Rz-BAF" firstAttribute="top" secondItem="mLs-Fy-YrX" secondAttribute="bottom" constant="5" id="Dud-6u-YXb"/>
+                            <constraint firstItem="E1U-Rz-BAF" firstAttribute="top" secondItem="mLs-Fy-YrX" secondAttribute="bottom" constant="2" id="Dud-6u-YXb"/>
                             <constraint firstAttribute="centerX" secondItem="mLs-Fy-YrX" secondAttribute="centerX" id="MyU-85-pki"/>
                             <constraint firstItem="mLs-Fy-YrX" firstAttribute="top" secondItem="oxX-MI-2kp" secondAttribute="bottom" constant="2" id="N5I-Lr-STv"/>
                             <constraint firstItem="eSA-7u-0Nb" firstAttribute="leading" secondItem="oxX-MI-2kp" secondAttribute="trailing" constant="3" id="QUZ-5H-Ild"/>
