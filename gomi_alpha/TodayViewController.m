@@ -150,7 +150,7 @@
     _speaker = [[AVSpeechSynthesizer alloc] init];
     AVSpeechUtterance * sentence = [AVSpeechUtterance speechUtteranceWithString:str];
     //sentence.rate = AVSpeechUtteranceDefaultSpeechRate;
-    sentence.rate = 0.3;
+    sentence.rate = 0.5;                                        //読み上げる速さ
 
     [_speaker speakUtterance:sentence];
     NSLog(@"speech: '%@'", str);
