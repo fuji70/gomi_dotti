@@ -92,7 +92,7 @@
     int todayIdx = [WeekViewController offsetToMonday:_curDate];
     NSDate * sinceDate = [WeekViewController getThisMonday:_curDate];
     NSTimeInterval dif = [_curDate timeIntervalSinceNow];
-    bool isToday = (abs(dif) < 60*60*24);
+    bool isToday = (fabs(dif) < 60*60*24);
     for (int i=0; i<numLbl; ++i) {
         date = [date initWithTimeInterval:oneday*i sinceDate:sinceDate];
         ((UILabel*)_lblWeekdays[i]).text = [WeekViewController date2str:date];
