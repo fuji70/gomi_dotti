@@ -64,13 +64,13 @@
 
 - (void)initTblBtn {
     _tblBtn = [NSDictionary dictionaryWithObjectsAndKeys:
-               // iconStr,  keyBtnTag
-               @"カン",      @4,
-               @"プ・油・特", @6,
-               @"ペット",    @1,
-               @"他資源",    @2,
-               @"可・ビン",  @3,
-               @"本・不・商", @5,
+               // iconStr,  keyBtnTag 2016
+               @"カン", @4,
+               @"プラ", @6,
+               @"ペット", @1,
+               @"その他", @2,
+               @"可・ビ", @3,
+               @"不・本", @5,
                nil];
 }
 

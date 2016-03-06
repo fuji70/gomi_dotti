@@ -8,7 +8,7 @@
 
 #import "HandleDb.h"
 
-NSString *FILE_DB = @"db2015.json";
+NSString *FILE_DB = @"db2016.json";
 
 @interface HandleDb ()
 {
@@ -39,44 +39,37 @@ NSString *FILE_DB = @"db2015.json";
 
 - (void)initDbIcon {
     _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
-               // filename       ,keyStr
-               @"can.png"        ,@"カン",
-               @"plastic.png"    ,@"プ・油・特",
-               @"petbottle.png"  ,@"ペット",
-               @"shigen.png"     ,@"他資源",
-               @"kanen.png"      ,@"可・ビン",
-               @"funen.png"      ,@"本・不・商",
-               
-               @"shigen.png"     ,@"その他",
+               // filename       ,keyStr 2016
+               @"kanen.png"      ,@"可・ビ",
                @"can.png"        ,@"カン",
                @"plastic.png"    ,@"プラ",
-               @"petbottle.png"  ,@"ペット",
                @"funen.png"      ,@"不・本",
-               @"kanen.png"      ,@"可・ビ",
+               @"petbottle.png"  ,@"ペット",
+               @"shigen.png"     ,@"その他",
                nil];
 }
 
 - (void)initDbPit {
     _dbPit = [NSDictionary dictionaryWithObjectsAndKeys:
-              // Pit, keyStr
+              // Pit, keyStr 2016
               @"自宅前" ,@"カン",
-              @"自宅前" ,@"プ・油・特",
+              @"自宅前" ,@"プラ",
               @"自宅前" ,@"ペット",
-              @"集積所" ,@"他資源",
-              @"自宅前" ,@"可・ビン",
-              @"自宅前" ,@"本・不・商",
+              @"集積所" ,@"その他",
+              @"自宅前" ,@"可・ビ",
+              @"自宅前" ,@"不・本",
               nil];
 }
 
 - (void)initDbSpeech {
     _dbSpeech = [NSDictionary dictionaryWithObjectsAndKeys:
-              // say, keyStr
+              // say, keyStr 2016
               @"カン、なべ類" ,@"カン",
-              @"プラ、油、特定品目" ,@"プ・油・特",
+              @"プラ、油、特定品目" ,@"プラ",
               @"ペットボトル" ,@"ペット",
-              @"その他資源" ,@"他資源",
-              @"可燃ゴミ、ビン" ,@"可・ビン",
-              @"不燃、本、雑がみ、商品プラ" ,@"本・不・商",
+              @"その他資源" ,@"その他",
+              @"可燃ゴミ、ビン" ,@"可・ビ",
+              @"不燃、本、雑がみ、商品プラ" ,@"不・本",
               nil];
 }
 
