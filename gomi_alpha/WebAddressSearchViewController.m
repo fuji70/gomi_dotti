@@ -11,13 +11,13 @@
 @interface WebAddressSearchViewController ()
 @property (strong, nonatomic) IBOutlet UIWebView *webSearch;
 
-
 @end
+
 
 @implementation WebAddressSearchViewController
 
 - (void)loadWeb {
-    NSString* strUrl = @"http://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/h2703-h2803/jyusho-a-ta.html";
+    NSString* strUrl = @"https://www.city.fujisawa.kanagawa.jp/kankyo-j/kurashi/gomi/shushubi/nittei/jyusho-a-ta.html";
     NSURLRequest* myRequest = [NSURLRequest requestWithURL: [NSURL URLWithString:strUrl]];
     [_webSearch loadRequest:myRequest];
 }
@@ -32,7 +32,6 @@
     // Do any additional setup after loading the view.
     [self loadWeb];
     self.canDisplayBannerAds = YES; // auto add iAd banner
-
 }
 
 - (void)didReceiveMemoryWarning {
