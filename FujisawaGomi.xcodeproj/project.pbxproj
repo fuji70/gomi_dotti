@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B0016A3D1A733A4900455DF0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0016A3B1A733A4900455DF0 /* MainStoryboard_iPhone.storyboard */; };
-		B037B2551AB3283100A7EA03 /* db2015.json in Resources */ = {isa = PBXBuildFile; fileRef = B037B2541AB3283100A7EA03 /* db2015.json */; };
 		B079467C1A32DEF500C7B5E1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B079467B1A32DEF500C7B5E1 /* SettingViewController.m */; };
 		B094637C1A37555500BD776D /* WebTypeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B094637B1A37555500BD776D /* WebTypeSearchViewController.m */; };
-		B0A2699D1A348BA200589AD9 /* db2014.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A2699C1A348BA200589AD9 /* db2014.json */; };
 		B0D3F8EC1A3BABB200F6B934 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */; };
 		B0E1F3181A59D98700F67676 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F3171A59D98700F67676 /* MyTabBarController.m */; };
 		B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F3191A5A187400F67676 /* MapKit.framework */; };
@@ -215,12 +213,10 @@
 /* Begin PBXFileReference section */
 		B0016A3C1A733A4900455DF0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B0016A411A7341C400455DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		B037B2541AB3283100A7EA03 /* db2015.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2015.json; sourceTree = "<group>"; };
 		B079467A1A32DEF500C7B5E1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B079467B1A32DEF500C7B5E1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		B094637A1A37555500BD776D /* WebTypeSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebTypeSearchViewController.h; sourceTree = "<group>"; };
 		B094637B1A37555500BD776D /* WebTypeSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebTypeSearchViewController.m; sourceTree = "<group>"; };
-		B0A2699C1A348BA200589AD9 /* db2014.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2014.json; sourceTree = "<group>"; };
 		B0D3F8EB1A3BABB200F6B934 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B0E1F3161A59D98700F67676 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
 		B0E1F3171A59D98700F67676 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
@@ -498,8 +494,6 @@
 			isa = PBXGroup;
 			children = (
 				CAC5BC1B1C8C80EB004E8B2D /* db2016.json */,
-				B037B2541AB3283100A7EA03 /* db2015.json */,
-				B0A2699C1A348BA200589AD9 /* db2014.json */,
 			);
 			path = db_calendar;
 			sourceTree = "<group>";
@@ -902,7 +896,6 @@
 				CA858E161A6B95D9005FA2B2 /* date_kanen.png in Resources */,
 				CA858E241A6B95D9005FA2B2 /* plastic-list.png in Resources */,
 				CAC5BBB51C8C8097004E8B2D /* 6blk-2016-10.png in Resources */,
-				B0A2699D1A348BA200589AD9 /* db2014.json in Resources */,
 				CAC5BB9D1C8C808C004E8B2D /* 5blk-2016-10.png in Resources */,
 				CAC5BBAF1C8C8097004E8B2D /* 6blk-2016-04.png in Resources */,
 				CAC5BB3D1C8C8055004E8B2D /* 1blk-2016-10.png in Resources */,
@@ -978,7 +971,6 @@
 				CAC5BB591C8C8063004E8B2D /* 2blk-2017-02.png in Resources */,
 				CAC5BB711C8C806F004E8B2D /* 3blk-2017-02.png in Resources */,
 				CAC5BC1C1C8C80EB004E8B2D /* db2016.json in Resources */,
-				B037B2551AB3283100A7EA03 /* db2015.json in Resources */,
 				CAC5BC001C8C80BA004E8B2D /* 9blk-2017-01.png in Resources */,
 				CAC5BB991C8C808C004E8B2D /* 5blk-2016-06.png in Resources */,
 				CA75586B1BA54FD20079C419 /* 5blk-2016-03.png in Resources */,
