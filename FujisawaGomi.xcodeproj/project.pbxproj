@@ -1159,7 +1159,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vida-comoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
@@ -1178,7 +1178,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vida-comoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
