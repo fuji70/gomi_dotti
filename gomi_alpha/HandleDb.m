@@ -156,7 +156,7 @@ NSString *FILE_DB = @"db2016.json";
 + (NSString*)getKeyDate: (NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd";
-    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSString *strDate = [dateFormatter stringFromDate:date];
     
     NSLog(@"keyDate= [%@]", strDate);
@@ -191,7 +191,7 @@ NSString *FILE_DB = @"db2016.json";
 + (UIImage*)getMonthImage:(NSDate*)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM";
-    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSString *strDate = [dateFormatter stringFromDate:date];
     NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
     NSLog(@"month: %@", imgName);
@@ -222,7 +222,7 @@ NSString *FILE_DB = @"db2016.json";
         NSLog(@"Error: %@", error);
     }
 
-    NSString *value = [dic valueForKeyPath:@"blk-1.2015-04-01"];
+    NSString *value = [dic valueForKeyPath:@"blk-1.2016-04-01"];
     NSLog(@"val: %@", value);
 
     return dic;
