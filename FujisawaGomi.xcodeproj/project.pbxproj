@@ -127,6 +127,7 @@
 		CA3480FD1E7DB03F00822188 /* h29p22.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3480F31E7DB03F00822188 /* h29p22.png */; };
 		CA3480FE1E7DB03F00822188 /* h29p23.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3480F41E7DB03F00822188 /* h29p23.png */; };
 		CA5556C91E2217C80079031B /* date_kanen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA5556C81E2217C80079031B /* date_kanen.png */; };
+		CA6C8C371FE527E2003E1101 /* snowflakes Macro_800x600.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6C8C361FE527E1003E1101 /* snowflakes Macro_800x600.png */; };
 		CA7025A11A45EBCF0017A98F /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7025A01A45EBCF0017A98F /* image.xcassets */; };
 		CA7558251BA53D9C0079C419 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7558241BA53D9C0079C419 /* QuartzCore.framework */; };
 		CA7558B31BA554A70079C419 /* back2today.png in Resources */ = {isa = PBXBuildFile; fileRef = CA7558B21BA554A70079C419 /* back2today.png */; };
@@ -316,6 +317,7 @@
 		CA3480F31E7DB03F00822188 /* h29p22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h29p22.png; sourceTree = "<group>"; };
 		CA3480F41E7DB03F00822188 /* h29p23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h29p23.png; sourceTree = "<group>"; };
 		CA5556C81E2217C80079031B /* date_kanen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_kanen.png; sourceTree = "<group>"; };
+		CA6C8C361FE527E1003E1101 /* snowflakes Macro_800x600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "snowflakes Macro_800x600.png"; path = "gomi_alpha/image.xcassets/AppIcon.appiconset/snowflakes Macro_800x600.png"; sourceTree = SOURCE_ROOT; };
 		CA7025A01A45EBCF0017A98F /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		CA7558241BA53D9C0079C419 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CA7558B21BA554A70079C419 /* back2today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2today.png; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 		CA794F6219FB4C6900C96F85 /* image4app */ = {
 			isa = PBXGroup;
 			children = (
+				CA6C8C361FE527E1003E1101 /* snowflakes Macro_800x600.png */,
 				CAE6D7941FE4E8C400D1650E /* skystar.png */,
 				CA3480EB1E7DB03F00822188 /* h29p2.png */,
 				CA3480EC1E7DB03F00822188 /* h29p15.png */,
@@ -718,6 +721,7 @@
 				B0F2A2181AB3C89200C5170E /* tab_today.png in Resources */,
 				CA06CACE1FAD975800F53E7F /* 7blk-2018-03.png in Resources */,
 				CA06CAAA1FAD975800F53E7F /* 1blk-2018-01.png in Resources */,
+				CA6C8C371FE527E2003E1101 /* snowflakes Macro_800x600.png in Resources */,
 				CA06CAD91FAD975800F53E7F /* 9blk-2017-11.png in Resources */,
 				CA858E331A6B95D9005FA2B2 /* tab_setting@2x.png in Resources */,
 				CA06CAB31FAD975800F53E7F /* 2blk-2018-01.png in Resources */,
