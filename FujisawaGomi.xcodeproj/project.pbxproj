@@ -160,6 +160,7 @@
 		CA858E381A6B95D9005FA2B2 /* word_can.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DE51A6B95D9005FA2B2 /* word_can.png */; };
 		CA858E3D1A6B95D9005FA2B2 /* word_shigen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DEA1A6B95D9005FA2B2 /* word_shigen.png */; };
 		CACE2D551E23FC10002A2ECC /* date_shigen.png in Resources */ = {isa = PBXBuildFile; fileRef = CACE2D541E23FC10002A2ECC /* date_shigen.png */; };
+		CAE6D7951FE4E8C600D1650E /* skystar.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE6D7941FE4E8C400D1650E /* skystar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -372,6 +373,7 @@
 		CA858DE91A6B95D9005FA2B2 /* word_plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_plastic.png; sourceTree = "<group>"; };
 		CA858DEA1A6B95D9005FA2B2 /* word_shigen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_shigen.png; sourceTree = "<group>"; };
 		CACE2D541E23FC10002A2ECC /* date_shigen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_shigen.png; sourceTree = "<group>"; };
+		CAE6D7941FE4E8C400D1650E /* skystar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skystar.png; path = gomi_alpha/image.xcassets/AppIcon.appiconset/skystar.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,6 +489,7 @@
 		CA794F6219FB4C6900C96F85 /* image4app */ = {
 			isa = PBXGroup;
 			children = (
+				CAE6D7941FE4E8C400D1650E /* skystar.png */,
 				CA3480EB1E7DB03F00822188 /* h29p2.png */,
 				CA3480EC1E7DB03F00822188 /* h29p15.png */,
 				CA3480ED1E7DB03F00822188 /* h29p16.png */,
@@ -745,6 +748,7 @@
 				CA3480F51E7DB03F00822188 /* h29p2.png in Resources */,
 				B0F2A20A1AB3C89200C5170E /* shigen-kobetsu-list.png in Resources */,
 				CA06CAD01FAD975800F53E7F /* 4blk-2017-09.png in Resources */,
+				CAE6D7951FE4E8C600D1650E /* skystar.png in Resources */,
 				CA858E271A6B95D9005FA2B2 /* shigen-rule1.png in Resources */,
 				CA06CAC31FAD975800F53E7F /* 2blk-2018-02.png in Resources */,
 				B0F2A2041AB3C89200C5170E /* no-treat-list1.png in Resources */,
