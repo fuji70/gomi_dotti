@@ -199,7 +199,7 @@ NSString *FILE_DB = @"db2018.json";
     dateFormatter.dateFormat = @"yyyy-MM";
     dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSString *strDate = [dateFormatter stringFromDate:date];
-    NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.png", [HandleDb getBlkNum], strDate];
+    NSString *imgName = [NSString stringWithFormat:@"%dblk-%@.jpg", [HandleDb getBlkNum], strDate];
     NSLog(@"month: %@", imgName);
     return [UIImage imageNamed:imgName];
 }
