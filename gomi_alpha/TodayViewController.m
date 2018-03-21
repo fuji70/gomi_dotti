@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext3;
 @property (strong, nonatomic) IBOutlet UISwitch *swSpeech;
+@property (weak, nonatomic) IBOutlet UILabel *lblDbPit;
 
 - (IBAction)touchSwSpeech:(id)sender;
 - (IBAction)swipe_left:(id)sender;
@@ -75,6 +76,11 @@
     NSLog(@"Refresh to date= [%@]", strCurDate);
     _lblCurrent.text = strCurDate;
 
+/* ゴミ捨て場の表示切替
+    NSString *strDbPit = [DbPit];
+    _lblDbPit.text = strDbPit;
+*/
+    
     [self viewCurrentIcons];
     [self say_today];
 }

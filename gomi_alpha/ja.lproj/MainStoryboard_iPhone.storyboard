@@ -2080,6 +2080,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <outlet property="imgNext3" destination="5m2-xw-uaT" id="bUv-Qe-l23"/>
                         <outlet property="lblBlknum" destination="D9O-SO-UO2" id="vwk-Fj-Onh"/>
                         <outlet property="lblCurrent" destination="k7e-u8-FeY" id="Hr9-6v-TqL"/>
+                        <outlet property="lblDbPit" destination="32H-Lf-LMP" id="bZY-aq-Mn6"/>
                         <outlet property="swSpeech" destination="Bft-aG-Vks" id="2hs-bd-NvV"/>
                     </connections>
                 </viewController>
