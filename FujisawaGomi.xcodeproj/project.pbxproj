@@ -207,6 +207,7 @@
 		CA794F4F19FB44EE00C96F85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F4E19FB44EE00C96F85 /* Default.png */; };
 		CA794F5119FB44EE00C96F85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5019FB44EE00C96F85 /* Default@2x.png */; };
 		CA794F5319FB44EE00C96F85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */; };
+		CA81D07E20DF5DD900808A38 /* bg_rainbow-enoshima_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA81D07D20DF5DD800808A38 /* bg_rainbow-enoshima_s.jpg */; };
 		CA858E141A6B95D9005FA2B2 /* date_can.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC11A6B95D9005FA2B2 /* date_can.png */; };
 		CA858E171A6B95D9005FA2B2 /* date_non.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC41A6B95D9005FA2B2 /* date_non.png */; };
 		CA858E181A6B95D9005FA2B2 /* date_petbottle.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC51A6B95D9005FA2B2 /* date_petbottle.png */; };
@@ -475,6 +476,7 @@
 		CA794F5019FB44EE00C96F85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CA794F5219FB44EE00C96F85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CA7C28B41A62ED9A00EB538D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA81D07D20DF5DD800808A38 /* bg_rainbow-enoshima_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg_rainbow-enoshima_s.jpg"; sourceTree = "<group>"; };
 		CA858DC01A6B95D9005FA2B2 /* can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = can.png; sourceTree = "<group>"; };
 		CA858DC11A6B95D9005FA2B2 /* date_can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_can.png; sourceTree = "<group>"; };
 		CA858DC21A6B95D9005FA2B2 /* date_funen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_funen.png; sourceTree = "<group>"; };
@@ -746,6 +748,7 @@
 		CACEF00B205D4434005A3995 /* background */ = {
 			isa = PBXGroup;
 			children = (
+				CA81D07D20DF5DD800808A38 /* bg_rainbow-enoshima_s.jpg */,
 				CACEF033205D516F005A3995 /* bg_sakura.jpg */,
 			);
 			path = background;
@@ -1098,6 +1101,7 @@
 				CA24B08020DE1F8700D4AAEC /* 8blk-2018-05.png in Resources */,
 				CA24B09920DE1F8700D4AAEC /* 3blk-2018-08.png in Resources */,
 				CA24B02F20DE1F8700D4AAEC /* 5blk-2018-02.png in Resources */,
+				CA81D07E20DF5DD900808A38 /* bg_rainbow-enoshima_s.jpg in Resources */,
 				CA24B06520DE1F8700D4AAEC /* 7blk-2019-01.png in Resources */,
 				CA24B03320DE1F8700D4AAEC /* 2blk-2019-03.png in Resources */,
 				CA24B08B20DE1F8700D4AAEC /* 9blk-2019-03.png in Resources */,

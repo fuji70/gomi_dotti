@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="IUk-Ic-rlg">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -419,7 +419,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sakura.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cDI-eI-BYQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cDI-eI-BYQ">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bws-3O-sw4">
@@ -785,7 +785,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sakura.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="INE-d6-ULz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="INE-d6-ULz">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-sS-Wm5">
@@ -810,7 +810,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="1blk-2018-04.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2blk-2018-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
                                 <rect key="frame" x="6" y="67" width="308" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="435" id="ki4-ah-Xjt"/>
@@ -922,7 +922,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sakura.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-xo-tDb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-xo-tDb">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-NK-bHs">
@@ -1308,7 +1308,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sakura.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mZj-9z-dlJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mZj-9z-dlJ">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-TJ-aJ5">
@@ -1715,7 +1715,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_sakura.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MhE-7P-zAn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MhE-7P-zAn">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="回収なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3g-bP-ijs">
@@ -2120,7 +2120,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7c-nk-ogc">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="80" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
@@ -2138,7 +2138,38 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="          " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt9-jl-3YM">
+                                <rect key="frame" x="36" y="0.0" width="284" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-hR-Akv">
+                                <rect key="frame" x="0.0" y="30" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">上にスクロールで
+検索欄が現われます</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ0-aO-JWg">
+                                <rect key="frame" x="0.0" y="25" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">↑
+戻る</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="kt9-jl-3YM" firstAttribute="trailing" secondItem="zs3-nW-5dN" secondAttribute="trailingMargin" constant="16" id="FmN-zn-unK"/>
+                            <constraint firstItem="kt9-jl-3YM" firstAttribute="leading" secondItem="zs3-nW-5dN" secondAttribute="leadingMargin" constant="20" id="IbH-Ef-Muo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2eQ-DN-MDE"/>
                     <connections>
@@ -2148,7 +2179,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olL-hX-4Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="WS4-Yi-43y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="542.5" y="-95.5"/>
+            <point key="canvasLocation" x="542" y="-96"/>
         </scene>
         <!--WebAddressSearch-->
         <scene sceneID="5Aq-67-sNk">
@@ -2194,9 +2225,9 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         </scene>
     </scenes>
     <resources>
-        <image name="1blk-2018-04.jpg" width="800" height="566"/>
+        <image name="2blk-2018-03.png" width="800" height="566"/>
         <image name="back2today.png" width="256" height="223"/>
-        <image name="bg_sakura.jpg" width="720" height="1280"/>
+        <image name="bg_rainbow-enoshima_s.jpg" width="992" height="1150"/>
         <image name="can.png" width="400" height="200"/>
         <image name="funen.png" width="400" height="200"/>
         <image name="h29p15.png" width="800" height="566"/>
