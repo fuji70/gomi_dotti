@@ -70,9 +70,9 @@
 - (void)refreshCurrent {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
+
     dateFormatter.dateFormat = @"MM月dd日(E)";
     NSString *strCurDate = [dateFormatter stringFromDate:_curDate];
-
     NSLog(@"Refresh to date= [%@]", strCurDate);
     _lblCurrent.text = strCurDate;
 
@@ -109,12 +109,13 @@
 
 - (UIImage *)rndIcon {
     NSArray* strIcons = [NSArray arrayWithObjects:
-                     @"カン",
-                     @"プ・油・特",
-                     @"ペット",
-                     @"他資源",
-                     @"可・ビン",
-                     @"本・不・商",
+     @"燃やせる",
+     @"かん",
+     @"ビン・スプレー",
+     @"燃やせない",
+     @"ペット",
+     @"粗大",
+     @"紙・布",
                      nil];
     int iconTypes = (int)[strIcons count];
 

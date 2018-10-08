@@ -6,6 +6,11 @@
 //  Copyright (c) 2014年 vidacomoda. All rights reserved.
 //
 
+//  north:blk-1
+//  south:blk-2
+//  east :blk-3
+//  west :blk-4
+
 #import "HandleDb.h"
 
 NSString *FILE_DB = @"db2018.json";
@@ -40,36 +45,40 @@ NSString *FILE_DB = @"db2018.json";
 - (void)initDbIcon {
     _dbIcon = [NSDictionary dictionaryWithObjectsAndKeys:
                // filename       ,keyStr 2016
-               @"kanen.png"      ,@"可・ビ",
-               @"can.png"        ,@"カン",
-               @"plastic.png"    ,@"プラ",
-               @"funen.png"      ,@"不・本",
-               @"petbottle.png"  ,@"ペット",
-               @"shigen.png"     ,@"その他",
+               @"kanen.png"           ,@"燃やせる",
+               @"can.png"             ,@"かん",
+               @"glass-splay.png"     ,@"ビン・スプレー",
+               @"funen.png"           ,@"燃やせない",
+               @"petbottle.png"       ,@"ペット",
+               @"discard_article.png" ,@"粗大",
+               @"paper-cloth.png"     ,@"紙・布",
+
                nil];
 }
 
 - (void)initDbPit {
     _dbPit = [NSDictionary dictionaryWithObjectsAndKeys:
               // Pit, keyStr 2016
-              @"自宅前" ,@"カン",
-              @"自宅前" ,@"プラ",
-              @"自宅前" ,@"ペット",
-              @"集積所" ,@"その他",
-              @"自宅前" ,@"可・ビ",
-              @"自宅前" ,@"不・本",
+              @"集積所" ,@"燃やせる",
+              @"集積所" ,@"かん",
+              @"集積所" ,@"ビン・スプレー",
+              @"集積所" ,@"燃やせない",
+              @"集積所" ,@"ペット",
+              @"自宅前" ,@"粗大",
+              @"集積所",@"紙・布",
               nil];
 }
 
 - (void)initDbSpeech {
     _dbSpeech = [NSDictionary dictionaryWithObjectsAndKeys:
               // say, keyStr 2016
-              @"カン、なべ類" ,@"カン",
-              @"プラ、油、特定品目" ,@"プラ",
-              @"ペットボトル" ,@"ペット",
-              @"その他資源" ,@"その他",
-              @"可燃ゴミ、ビン" ,@"可・ビ",
-              @"不燃、本、雑がみ、商品プラ" ,@"不・本",
+            @"もやせるごみ" ,@"燃やせる",
+            @"かん" ,@"かん",
+            @"びん、スプレー容器" ,@"ビン・スプレー",
+            @"もやせないごみ" ,@"燃やせない",
+            @"ペットボトル" ,@"ペット",
+            @"粗大ごみ" ,@"粗大",
+            @"こし、こふ",@"紙・布",
               nil];
 }
 
@@ -146,7 +155,7 @@ NSString *FILE_DB = @"db2018.json";
 - (NSString*)_getSpeechStr:(NSString*)iconsStr {
     NSString *ret = _dbSpeech[iconsStr];
     
-    return (ret ? ret : @"回収無し");
+    return (ret ? ret : @"収拾無し");
 }
 
 + (NSString*)getSpeechStr:(NSString*)iconsStr {

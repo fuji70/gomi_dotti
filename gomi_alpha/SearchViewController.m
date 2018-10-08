@@ -18,11 +18,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnJumpTypeSearch;
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPet;
-@property (weak, nonatomic) IBOutlet UIImageView *imgOther;
+@property (weak, nonatomic) IBOutlet UIImageView *imgDiscard;
 @property (weak, nonatomic) IBOutlet UIImageView *imgKanen;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCan;
+@property (weak, nonatomic) IBOutlet UIImageView *imgGlass;
 @property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
-@property (weak, nonatomic) IBOutlet UIImageView *imgPlastic;
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
@@ -65,12 +65,13 @@
 - (void)initTblBtn {
     _tblBtn = [NSDictionary dictionaryWithObjectsAndKeys:
                // iconStr,  keyBtnTag 2016
-               @"カン", @4,
-               @"プラ", @6,
                @"ペット", @1,
-               @"その他", @2,
-               @"可・ビ", @3,
-               @"不・本", @5,
+               @"粗大", @2,
+               @"燃やせる", @3,
+               @"かん", @4,
+               @"ビン・スプレー", @5,
+               @"燃やせない", @6,
+               @"紙・布", @7,
                nil];
 }
 
@@ -105,7 +106,7 @@
     
 //    NSURL *url = [[NSURL alloc] initWithString:@"tel:0466-23-5301"];
 //    [[UIApplication sharedApplication] openURL:url];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:0466-23-5301"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:029-860-2984"]];
     
 }
 

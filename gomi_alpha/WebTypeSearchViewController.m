@@ -17,7 +17,7 @@
 @implementation WebTypeSearchViewController
 
 - (void)loadWeb {
-    NSString* strUrl = @"https://fujisawa-city.sakura.ne.jp/";
+    NSString* strUrl = @"http://www.city.tsukuba.lg.jp/kurashi/recycle/gomi/katei/wakekata/index.html";
     NSURLRequest* myRequest = [NSURLRequest requestWithURL: [NSURL URLWithString:strUrl]];
     [_webTypeSearch loadRequest:myRequest];
 }
