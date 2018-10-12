@@ -21,18 +21,7 @@
                     <view key="view" contentMode="scaleToFill" id="JyU-F2-06l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p20.png" translatesAutoresizingMaskIntoConstraints="NO" id="43T-u1-1Wg">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Urf-6z-5rP" firstAttribute="top" secondItem="43T-u1-1Wg" secondAttribute="bottom" id="ABq-bU-VKr"/>
-                            <constraint firstItem="43T-u1-1Wg" firstAttribute="top" secondItem="qBy-55-cZi" secondAttribute="bottom" id="NuY-kX-OHy"/>
-                            <constraint firstItem="43T-u1-1Wg" firstAttribute="leading" secondItem="JyU-F2-06l" secondAttribute="leading" id="TU1-Ss-bZh"/>
-                            <constraint firstItem="43T-u1-1Wg" firstAttribute="trailing" secondItem="JyU-F2-06l" secondAttribute="trailing" id="VZr-3P-1mE"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="その他資源・大型ごみ・特別大型ごみ" id="J5H-bP-b2x" userLabel="Tab Bar Item - 大型ごみ"/>
                 </viewController>
@@ -51,19 +40,7 @@
                     <view key="view" contentMode="scaleToFill" id="NL9-xS-TEt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" image="h29p2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oif-IV-cyf">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="oif-IV-cyf" firstAttribute="leading" secondItem="NL9-xS-TEt" secondAttribute="leading" id="1gy-R6-her"/>
-                            <constraint firstItem="e7f-Md-Hsh" firstAttribute="top" secondItem="oif-IV-cyf" secondAttribute="bottom" id="RBB-Rr-bvz"/>
-                            <constraint firstItem="oif-IV-cyf" firstAttribute="trailing" secondItem="NL9-xS-TEt" secondAttribute="trailing" id="eiL-i4-HcX"/>
-                            <constraint firstItem="oif-IV-cyf" firstAttribute="top" secondItem="Oon-KI-3OT" secondAttribute="bottom" id="scY-uz-fXf"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="藤沢市からお知らせ、ごみ関連施設" id="tfg-TF-KgC"/>
                 </viewController>
@@ -82,19 +59,7 @@
                     <view key="view" contentMode="scaleToFill" id="sJm-xM-oSB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p15.png" translatesAutoresizingMaskIntoConstraints="NO" id="nby-bC-DOP">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="nby-bC-DOP" firstAttribute="top" secondItem="qsh-5K-IBB" secondAttribute="bottom" id="PVd-3J-ph4"/>
-                            <constraint firstItem="FQA-hX-GY2" firstAttribute="top" secondItem="nby-bC-DOP" secondAttribute="bottom" id="oUH-uw-rFH"/>
-                            <constraint firstItem="nby-bC-DOP" firstAttribute="trailing" secondItem="sJm-xM-oSB" secondAttribute="trailing" id="v8u-Wc-bJm"/>
-                            <constraint firstItem="nby-bC-DOP" firstAttribute="leading" secondItem="sJm-xM-oSB" secondAttribute="leading" id="wXb-R6-SZv"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="個別収集について、その他資源収集について、有料指定収集袋" id="kDi-sf-lZK"/>
                 </viewController>
@@ -113,18 +78,7 @@
                     <view key="view" contentMode="scaleToFill" id="x7Q-pj-2dE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p16.png" translatesAutoresizingMaskIntoConstraints="NO" id="zOW-aN-siG">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zOW-aN-siG" firstAttribute="leading" secondItem="x7Q-pj-2dE" secondAttribute="leading" id="I3P-MX-gka"/>
-                            <constraint firstItem="qdg-NY-mSt" firstAttribute="top" secondItem="zOW-aN-siG" secondAttribute="bottom" id="Ps1-yw-RDu"/>
-                            <constraint firstItem="zOW-aN-siG" firstAttribute="trailing" secondItem="x7Q-pj-2dE" secondAttribute="trailing" id="ewu-1G-DHs"/>
-                            <constraint firstItem="zOW-aN-siG" firstAttribute="top" secondItem="HK2-yG-oh7" secondAttribute="bottom" id="vbF-Nh-OoK"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="可燃ごみ・ビン" id="Ahc-r4-U4a"/>
                 </viewController>
@@ -143,18 +97,7 @@
                     <view key="view" contentMode="scaleToFill" id="vlQ-x6-9LX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p17.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ngs-Aa-LNF">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ngs-Aa-LNF" firstAttribute="trailing" secondItem="vlQ-x6-9LX" secondAttribute="trailing" id="22X-Ra-41d"/>
-                            <constraint firstItem="Ngs-Aa-LNF" firstAttribute="top" secondItem="47E-ib-Sbh" secondAttribute="bottom" id="Chg-Ux-hFC"/>
-                            <constraint firstItem="Rt9-NG-L8T" firstAttribute="top" secondItem="Ngs-Aa-LNF" secondAttribute="bottom" id="kqS-b4-iOf"/>
-                            <constraint firstItem="Ngs-Aa-LNF" firstAttribute="leading" secondItem="vlQ-x6-9LX" secondAttribute="leading" id="ktL-B0-A9T"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="不燃ごみ・商品プラ・本・雑がみ" id="Waw-rE-cZf"/>
                 </viewController>
@@ -173,18 +116,7 @@
                     <view key="view" contentMode="scaleToFill" id="qLt-mi-ZOg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p18.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmO-YB-288">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="XmO-YB-288" firstAttribute="leading" secondItem="qLt-mi-ZOg" secondAttribute="leading" id="1hg-XT-hU4"/>
-                            <constraint firstItem="RrC-oK-Zef" firstAttribute="top" secondItem="XmO-YB-288" secondAttribute="bottom" id="4Ft-5s-3os"/>
-                            <constraint firstItem="XmO-YB-288" firstAttribute="trailing" secondItem="qLt-mi-ZOg" secondAttribute="trailing" id="ksR-Gq-uTH"/>
-                            <constraint firstItem="XmO-YB-288" firstAttribute="top" secondItem="Ygr-XS-TjG" secondAttribute="bottom" id="wzx-Lq-IBK"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="プラスチック容器・廃食用油・特定品目" id="L1H-bX-xnd"/>
                 </viewController>
@@ -203,18 +135,7 @@
                     <view key="view" contentMode="scaleToFill" id="vhB-3e-mcI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p21.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jit-nl-Rso">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Jit-nl-Rso" firstAttribute="trailing" secondItem="vhB-3e-mcI" secondAttribute="trailing" id="IEw-aX-pXm"/>
-                            <constraint firstItem="Bg5-iA-9Bw" firstAttribute="top" secondItem="Jit-nl-Rso" secondAttribute="bottom" id="bSq-h6-8pf"/>
-                            <constraint firstItem="Jit-nl-Rso" firstAttribute="leading" secondItem="vhB-3e-mcI" secondAttribute="leading" id="fdU-b9-yR2"/>
-                            <constraint firstItem="Jit-nl-Rso" firstAttribute="top" secondItem="GEc-me-Tj6" secondAttribute="bottom" id="pfd-Cw-cph"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="剪定枝・小型家電リサイクル・市で収集処理できないもの" id="sx1-Go-4AA"/>
                 </viewController>
@@ -233,18 +154,7 @@
                     <view key="view" contentMode="scaleToFill" id="XgF-Wp-bJD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p22.png" translatesAutoresizingMaskIntoConstraints="NO" id="pRQ-Ev-g3t">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="pRQ-Ev-g3t" firstAttribute="top" secondItem="bAX-vn-hS2" secondAttribute="bottom" id="CNc-CF-rWL"/>
-                            <constraint firstItem="pRQ-Ev-g3t" firstAttribute="leading" secondItem="XgF-Wp-bJD" secondAttribute="leading" id="IEg-X8-qLn"/>
-                            <constraint firstItem="Cu4-qY-y9Z" firstAttribute="top" secondItem="pRQ-Ev-g3t" secondAttribute="bottom" id="hWE-as-ApV"/>
-                            <constraint firstItem="pRQ-Ev-g3t" firstAttribute="trailing" secondItem="XgF-Wp-bJD" secondAttribute="trailing" id="tI9-hN-vWE"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="家電リサイクル対象品目、危険物・処理困難、パソコン、産廃" id="rFd-8J-ua6"/>
                 </viewController>
@@ -263,18 +173,7 @@
                     <view key="view" contentMode="scaleToFill" id="U7G-dN-1WH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p19.png" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-Lk-yd2">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NUo-Lk-yd2" firstAttribute="top" secondItem="oYb-fm-ObG" secondAttribute="bottom" id="aWY-S7-ZYT"/>
-                            <constraint firstItem="NUo-Lk-yd2" firstAttribute="trailing" secondItem="U7G-dN-1WH" secondAttribute="trailing" id="kKW-nZ-GAD"/>
-                            <constraint firstItem="uaj-Nj-n4r" firstAttribute="top" secondItem="NUo-Lk-yd2" secondAttribute="bottom" id="qye-8G-fkT"/>
-                            <constraint firstItem="NUo-Lk-yd2" firstAttribute="leading" secondItem="U7G-dN-1WH" secondAttribute="leading" id="wiE-Jr-rnh"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="カン・なべ類、ペットボトル、その他資源" id="bhS-eN-Pld"/>
                 </viewController>
@@ -293,18 +192,7 @@
                     <view key="view" contentMode="scaleToFill" id="uxe-4t-bBF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="h29p23.png" translatesAutoresizingMaskIntoConstraints="NO" id="coc-DU-aP4">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="coc-DU-aP4" firstAttribute="leading" secondItem="uxe-4t-bBF" secondAttribute="leading" id="3y8-i5-L6j"/>
-                            <constraint firstItem="CqN-l6-qqD" firstAttribute="top" secondItem="coc-DU-aP4" secondAttribute="bottom" id="Aga-vJ-mJJ"/>
-                            <constraint firstItem="coc-DU-aP4" firstAttribute="top" secondItem="W6P-ns-ejw" secondAttribute="bottom" id="Gup-QK-E2B"/>
-                            <constraint firstItem="coc-DU-aP4" firstAttribute="trailing" secondItem="uxe-4t-bBF" secondAttribute="trailing" id="uGx-K1-RsZ"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="その他、不法投棄、ボランティア清掃、一声ふれあい収集" id="sUC-04-1Zw"/>
                 </viewController>
@@ -323,18 +211,7 @@
                     <view key="view" contentMode="scaleToFill" id="r55-Gr-ZLZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shisetsu-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Wu-4U-0xW">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="7Wu-4U-0xW" firstAttribute="leading" secondItem="r55-Gr-ZLZ" secondAttribute="leading" id="0lO-Bz-tmU"/>
-                            <constraint firstItem="7Wu-4U-0xW" firstAttribute="trailing" secondItem="r55-Gr-ZLZ" secondAttribute="trailing" id="HWb-9x-dpv"/>
-                            <constraint firstItem="8tv-mV-mPx" firstAttribute="top" secondItem="7Wu-4U-0xW" secondAttribute="bottom" id="PkJ-dL-Ioc"/>
-                            <constraint firstItem="7Wu-4U-0xW" firstAttribute="top" secondItem="ayf-72-Foh" secondAttribute="bottom" id="vbT-WV-jFi"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ごみ関連施設のご案内" id="afT-u1-GBr"/>
                 </viewController>
@@ -353,18 +230,7 @@
                     <view key="view" contentMode="scaleToFill" id="Xhy-Bz-UuI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="no-treat-list2.png" translatesAutoresizingMaskIntoConstraints="NO" id="r8V-dc-Jrv">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="4o0-vo-z8A" firstAttribute="top" secondItem="r8V-dc-Jrv" secondAttribute="bottom" id="9lB-hA-DnM"/>
-                            <constraint firstItem="r8V-dc-Jrv" firstAttribute="leading" secondItem="Xhy-Bz-UuI" secondAttribute="leading" id="ACE-43-1gD"/>
-                            <constraint firstItem="r8V-dc-Jrv" firstAttribute="top" secondItem="yjc-gF-ZZS" secondAttribute="bottom" id="AQY-EO-6FA"/>
-                            <constraint firstItem="r8V-dc-Jrv" firstAttribute="trailing" secondItem="Xhy-Bz-UuI" secondAttribute="trailing" id="dC6-Xv-GZI"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="市で収集、処理できないもの2" id="0N3-RS-5hn"/>
                 </viewController>
@@ -472,14 +338,14 @@
                                     <action selector="reset2today:" destination="KkE-JK-GfM" eventType="touchDown" id="FHe-Xc-R5U"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-62-d7L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-62-d7L">
                                 <rect key="frame" x="244" y="20" width="60" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="guo-qa-yNZ"/>
                                     <constraint firstAttribute="height" constant="30" id="t3R-rE-KU3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -488,6 +354,17 @@
                                 <color key="backgroundColor" red="0.82261423919999999" green="0.80154262279999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFt-WR-Q2P" propertyAccessControl="none">
                                 <rect key="frame" x="160" y="380" width="144" height="74"/>
@@ -515,6 +392,17 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-mr-hVP">
                                 <rect key="frame" x="160" y="67" width="144" height="74"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-cu-Gei">
                                 <rect key="frame" x="219" y="20" width="26" height="30"/>
@@ -542,7 +430,7 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="highlightedColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-uY-rnd" propertyAccessControl="none">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="petbottle.png" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-uY-rnd" propertyAccessControl="none">
                                 <rect key="frame" x="160" y="223.5" width="144" height="74"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/22(木)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Sh-XA-1Aq">
@@ -566,7 +454,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="can.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Lo-aB-ldc" propertyAccessControl="none">
                                 <rect key="frame" x="160" y="301.5" width="144" height="74.5"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="収集なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-lk-Sjt">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="収拾なし" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-lk-Sjt">
                                 <rect key="frame" x="160" y="457" width="144" height="29"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
@@ -766,14 +654,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="INE-d6-ULz">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-sS-Wm5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-sS-Wm5">
                                 <rect key="frame" x="244" y="20" width="60" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3M2-Zc-WBR"/>
                                     <constraint firstAttribute="width" constant="60" id="oAV-4Y-fJE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -788,7 +676,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2blk-2019-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="1blk-2018-11.png" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Fy-YrX">
                                 <rect key="frame" x="6" y="67" width="308" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="435" id="ki4-ah-Xjt"/>
@@ -914,7 +802,7 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <imageView tag="2" contentMode="scaleToFill" image="shigen.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
+                            <imageView tag="2" contentMode="scaleToFill" image="discard_article.png" translatesAutoresizingMaskIntoConstraints="NO" id="tYr-HQ-86B">
                                 <rect key="frame" x="16" y="141.5" width="141.5" height="78"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
@@ -942,7 +830,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView tag="6" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
+                            <imageView tag="6" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
                                 <rect key="frame" x="162.5" y="223.5" width="141.5" height="77.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
@@ -965,7 +853,7 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView tag="5" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
+                            <imageView tag="5" contentMode="scaleToFill" image="glass-splay.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p">
                                 <rect key="frame" x="162.5" y="141.5" width="141.5" height="78"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
@@ -993,11 +881,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="大型ごみ/特別大型ごみ/剪定枝の収集の申し込みは、(株)藤沢市興業公社へ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-JD-SP8">
                                 <rect key="frame" x="16" y="347" width="288" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="13D-m8-O3g"/>
                                 </constraints>
+                                <string key="text">粗大ごみ受付センター
+                                    有料戸別収集 予約は２日前までに</string>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1015,14 +905,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-at-FM4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9t-at-FM4">
                                 <rect key="frame" x="244" y="20" width="60" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="6EN-Lc-gAx"/>
                                     <constraint firstAttribute="height" constant="30" id="jK2-If-i8f"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1053,7 +943,7 @@
                                     <constraint firstAttribute="height" constant="36" id="80i-3b-tSG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="品名検索はこちら(藤沢市HP)">
+                                <state key="normal" title="品名検索はこちら(つくば市HP)">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1071,7 +961,7 @@
                                     <segue destination="AHG-fq-hZq" kind="modal" id="OtL-xL-VyP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="0466-23-5301" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FYU-4B-h0d">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="029-860-2984" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FYU-4B-h0d">
                                 <rect key="frame" x="16" y="387" width="144" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3JN-xc-x2Z"/>
@@ -1102,8 +992,8 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
                                 <state key="normal">
                                     <string key="title" base64-UTF8="YES">
-CPCfk57pm7voqbEo5pyJ5paZKQ
-</string>
+                                        CPCfk57pm7voqbEo5pyJ5paZKQ
+                                    </string>
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1136,7 +1026,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="自宅前" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-FO-vL3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="集積所" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-FO-vL3">
                                 <rect key="frame" x="206" y="463" width="93" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bOM-0i-dsE"/>
@@ -1145,7 +1035,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="種類検索" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="imK-vP-Abn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="種類検索" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imK-vP-Abn">
                                 <rect key="frame" x="16" y="20" width="200" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="vRU-Mm-tb5"/>
@@ -1163,7 +1053,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1247,11 +1137,11 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <outlet property="btnJumpPhoneCall" destination="GwU-mF-Afh" id="nsi-oy-E5b"/>
                         <outlet property="btnJumpTypeSearch" destination="zby-2W-xRp" id="uSX-wT-cCV"/>
                         <outlet property="imgCan" destination="Pbr-Wx-dVt" id="tei-RX-apu"/>
-                        <outlet property="imgFunen" destination="3DM-jt-r2p" id="lDc-fg-zN8"/>
+                        <outlet property="imgDiscard" destination="tYr-HQ-86B" id="htV-X7-kmX"/>
+                        <outlet property="imgFunen" destination="NIV-Yh-tzg" id="kkg-OS-WTI"/>
+                        <outlet property="imgGlass" destination="3DM-jt-r2p" id="LUv-27-iaU"/>
                         <outlet property="imgKanen" destination="WCe-ys-v6q" id="jWz-0V-FRn"/>
-                        <outlet property="imgOther" destination="tYr-HQ-86B" id="Ekb-L0-MjK"/>
                         <outlet property="imgPet" destination="aZU-Os-XNi" id="Vcw-Wv-Vb4"/>
-                        <outlet property="imgPlastic" destination="NIV-Yh-tzg" id="Agv-1e-tGI"/>
                         <outlet property="imgWordType" destination="g1D-Lh-qy6" id="dbc-hU-0Ej"/>
                         <outlet property="lblBlknum" destination="Wqt-pK-Whr" id="gkv-ly-e9c"/>
                         <outlet property="lblNextDate" destination="LxF-Ic-JFO" id="taS-9z-nRd"/>
@@ -1289,14 +1179,14 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rainbow-enoshima_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mZj-9z-dlJ">
                                 <rect key="frame" x="0.0" y="18" width="320" height="501"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-TJ-aJ5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmJ-TJ-aJ5">
                                 <rect key="frame" x="234" y="22" width="70" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="62V-Qw-kb9"/>
                                     <constraint firstAttribute="width" constant="70" id="VlT-cu-SDp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1313,9 +1203,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Dx-qsd">
                                 <rect key="frame" x="165" y="232.5" width="139" height="54"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="６ブロック">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1323,7 +1214,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1335,9 +1226,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-5c-As7">
                                 <rect key="frame" x="165" y="289.5" width="139" height="54"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="７ブロック">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1345,7 +1237,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1357,9 +1249,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Tp-Kpa">
                                 <rect key="frame" x="165" y="403.5" width="139" height="53.5"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="９ブロック">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1367,7 +1260,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1379,9 +1272,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Yg-lF6">
                                 <rect key="frame" x="165" y="346.5" width="139" height="54"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="８ブロック">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1389,7 +1283,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1403,7 +1297,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <rect key="frame" x="16" y="289.5" width="139" height="54"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="２ブロック">
+                                <state key="normal" title="南地区">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1411,7 +1305,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1425,7 +1319,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <rect key="frame" x="16" y="346.5" width="139" height="54"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="３ブロック">
+                                <state key="normal" title="東地区">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1433,7 +1327,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1447,7 +1341,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <rect key="frame" x="16" y="403.5" width="139" height="53.5"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="４ブロック">
+                                <state key="normal" title="西地区">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1455,7 +1349,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1467,9 +1361,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-Vb-xCY">
                                 <rect key="frame" x="16" y="460" width="139" height="54"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="５ブロック">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1477,7 +1372,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1489,9 +1384,10 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-5b-fwr">
                                 <rect key="frame" x="165" y="460" width="139" height="54"/>
-                                <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="１０ブロック">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1499,7 +1395,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1513,7 +1409,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <rect key="frame" x="16" y="232.5" width="139" height="54"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
-                                <state key="normal" title="１ブロック">
+                                <state key="normal" title="北地区">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1521,7 +1417,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.40000000000000002"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
                                         <integer key="value" value="1"/>
@@ -1532,13 +1428,13 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNL-Ys-iYB">
-                                <rect key="frame" x="16" y="56" width="288" height="40"/>
+                                <rect key="frame" x="16" y="57" width="288" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yvZ-37-IaL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="22"/>
-                                <state key="normal" title="自宅ブロックの検索はこちら">
+                                <state key="normal" title="自宅 所属地区検索はこちら">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1557,14 +1453,14 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <segue destination="lXW-45-t5O" kind="modal" id="1jt-8W-21l"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※自宅の所属ブロックが分かる方はブロックを選択。分からない方は上ボタンの藤沢市HPで住所からブロックを調べてください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="igr-9k-SFW">
-                                <rect key="frame" x="10" y="96" width="300" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="※自宅の所属地区が分かる方は地区を選択。分からない方は上ボタンのつくば市HPで住所から地区を調べてください。" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" highlighted="YES" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="igr-9k-SFW">
+                                <rect key="frame" x="10" y="97" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="YQH-Op-sQX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                                 <userDefinedRuntimeAttributes>
@@ -1579,13 +1475,13 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="     住所設定" lineBreakMode="tailTruncation" minimumFontSize="18" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-GT-rkE">
-                                <rect key="frame" x="16" y="22" width="288" height="32"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="     住所設定" lineBreakMode="tailTruncation" minimumFontSize="18" highlighted="YES" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="JrT-GT-rkE">
+                                <rect key="frame" x="16" y="22" width="288" height="33"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="shadowOffset" width="1" height="0.0"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
                                         <size key="value" width="0.0" height="0.0"/>
@@ -1650,6 +1546,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="UmJ-TJ-aJ5" secondAttribute="trailing" id="lPv-3p-WsA"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="width" secondItem="mHK-Vb-xCY" secondAttribute="width" id="lb6-Y6-gUg"/>
                             <constraint firstItem="gpI-Hs-aup" firstAttribute="leading" secondItem="Ape-fN-ezQ" secondAttribute="leading" id="oDw-d2-da9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ape-fN-ezQ" secondAttribute="trailing" id="oUq-f4-oaI"/>
                             <constraint firstItem="62S-5b-fwr" firstAttribute="top" secondItem="dZl-Tp-Kpa" secondAttribute="bottom" constant="3" id="oXT-Lh-4yL"/>
                             <constraint firstItem="62S-5b-fwr" firstAttribute="trailing" secondItem="2Ty-Dx-qsd" secondAttribute="trailing" id="ptg-0L-7Rh"/>
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="width" secondItem="62S-5b-fwr" secondAttribute="width" id="q97-As-Qwi"/>
@@ -1732,8 +1629,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="34"/>
                                 <state key="normal">
                                     <string key="title" base64-UTF8="YES">
-5LuK5pel44GuCOOBlOOBvw
-</string>
+                                        5LuK5pel44GuCOOBlOOBvw
+                                    </string>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1745,14 +1642,14 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <action selector="reset2today:" destination="ZfS-Qq-a3W" eventType="touchDown" id="jfM-Gd-Uf3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブロック" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-RW-JMh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-RW-JMh">
                                 <rect key="frame" x="244" y="20" width="60" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fhh-bL-uuv"/>
                                     <constraint firstAttribute="width" constant="60" id="pAK-xB-wWP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1769,13 +1666,13 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" text="01月18日(日)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-u8-FeY">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" text="01月18日(日)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-u8-FeY">
                                 <rect key="frame" x="16" y="114" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="G3J-O2-H5D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
@@ -1787,7 +1684,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -1805,7 +1702,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="読上げ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-Zh-UvM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="読上げ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-Zh-UvM">
                                 <rect key="frame" x="252" y="459" width="52" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dBM-nh-Chd"/>
@@ -1862,7 +1759,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="30" id="89r-mf-GXM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-7l-2dR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-7l-2dR">
                                 <rect key="frame" x="-2" y="359" width="60" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aA9-Ut-gED"/>
@@ -1885,7 +1782,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌々々日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-w2-Pzg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌々々日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgg-w2-Pzg">
                                 <rect key="frame" x="25" y="479" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="I5D-b1-Ux0"/>
@@ -1908,7 +1805,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌々日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8S-TT-lcJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="翌々日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8S-TT-lcJ">
                                 <rect key="frame" x="25" y="434" width="80" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="aSM-hq-lzz"/>
@@ -1931,14 +1828,14 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="自宅前" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="32H-Lf-LMP">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" text="集積所" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="32H-Lf-LMP">
                                 <rect key="frame" x="16" y="149" width="288" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OdD-Gt-JWe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
-                                <color key="textColor" red="1" green="0.19289090719999999" blue="0.27557419820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-ey-V4f">
@@ -1947,7 +1844,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="90" id="VfL-vZ-hch"/>
                                 </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="plastic.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-XA-KOc">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="petbottle.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI4-XA-KOc">
                                 <rect key="frame" x="110" y="429" width="100" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4R8-xw-gOc"/>
@@ -2053,6 +1950,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <outlet property="imgNext3" destination="5m2-xw-uaT" id="bUv-Qe-l23"/>
                         <outlet property="lblBlknum" destination="D9O-SO-UO2" id="vwk-Fj-Onh"/>
                         <outlet property="lblCurrent" destination="k7e-u8-FeY" id="Hr9-6v-TqL"/>
+                        <outlet property="lblDbPit" destination="32H-Lf-LMP" id="bZY-aq-Mn6"/>
                         <outlet property="swSpeech" destination="Bft-aG-Vks" id="2hs-bd-NvV"/>
                     </connections>
                 </viewController>
@@ -2097,14 +1995,14 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7c-nk-ogc">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="80" width="320" height="488"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </webView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-Ae-we6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="YIN-mx-Xxe">
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="dlR-RU-mQt">
@@ -2115,35 +2013,45 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="          " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7q-m0-iNp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="          " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt9-jl-3YM">
                                 <rect key="frame" x="36" y="0.0" width="284" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-FC-YgE">
-                                <rect key="frame" x="0.0" y="30" width="320" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-hR-Akv">
+                                <rect key="frame" x="0.0" y="30" width="276" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">上にスクロールで
-検索欄が現われます</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgX-zr-Bh2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJ0-aO-JWg">
                                 <rect key="frame" x="0.0" y="25" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">↑
-戻る</string>
+                                    戻る</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="種類別のごみの分け方・出し方はスクロールして調べて下さい" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K8-Cg-zX4">
+                                <rect key="frame" x="50" y="30" width="270" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="kt9-jl-3YM" firstAttribute="trailing" secondItem="zs3-nW-5dN" secondAttribute="trailingMargin" constant="16" id="FmN-zn-unK"/>
+                            <constraint firstItem="kt9-jl-3YM" firstAttribute="leading" secondItem="zs3-nW-5dN" secondAttribute="leadingMargin" constant="20" id="IbH-Ef-Muo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2eQ-DN-MDE"/>
                     <connections>
@@ -2167,9 +2075,23 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c06-S2-wlG">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="44"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4o-pE-UaZ">
+                                <rect key="frame" x="0.0" y="80" width="320" height="488"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="          " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fER-cg-GVK">
+                                <rect key="frame" x="36" y="0.0" width="284" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c06-S2-wlG">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="5b5-Uo-4ru">
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="7vl-98-uFK">
@@ -2180,19 +2102,35 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="←戻る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-Fp-RM8">
-                                <rect key="frame" x="35" y="0.0" width="60" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyW-9Z-Rou">
+                                <rect key="frame" x="0.0" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhv-Le-5sr">
+                                <rect key="frame" x="0.0" y="25" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">↑
+                                    戻る</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4o-pE-UaZ">
-                                <rect key="frame" x="0.0" y="39" width="320" height="529"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSy-YL-ak6">
+                                <rect key="frame" x="50" y="30" width="270" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                            </webView>
+                                <color key="backgroundColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">各地区の住所は
+                                    スクロールして確認できます</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                     </view>
                     <connections>
@@ -2202,31 +2140,19 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-1N-Kma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dKR-cx-5sf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="-95"/>
+            <point key="canvasLocation" x="1379" y="-96"/>
         </scene>
     </scenes>
     <resources>
-        <image name="2blk-2019-03.png" width="800" height="453"/>
+        <image name="1blk-2018-11.png" width="800" height="453"/>
         <image name="back2today.png" width="256" height="223"/>
         <image name="bg_rainbow-enoshima_s.jpg" width="992" height="1150"/>
         <image name="can.png" width="147" height="120"/>
+        <image name="discard_article.png" width="148" height="127"/>
         <image name="funen.png" width="148" height="127"/>
-        <image name="h29p15.png" width="800" height="566"/>
-        <image name="h29p16.png" width="800" height="566"/>
-        <image name="h29p17.png" width="800" height="566"/>
-        <image name="h29p18.png" width="800" height="566"/>
-        <image name="h29p19.png" width="800" height="566"/>
-        <image name="h29p2.png" width="800" height="566"/>
-        <image name="h29p20.png" width="800" height="566"/>
-        <image name="h29p21.png" width="800" height="566"/>
-        <image name="h29p22.png" width="800" height="566"/>
-        <image name="h29p23.png" width="800" height="566"/>
+        <image name="glass-splay.png" width="146" height="126"/>
         <image name="kanen.png" width="146" height="126"/>
-        <image name="no-treat-list2.png" width="1074" height="1644"/>
         <image name="petbottle.png" width="148" height="126"/>
-        <image name="plastic.png" width="400" height="200"/>
-        <image name="shigen.png" width="400" height="200"/>
-        <image name="shisetsu-list.png" width="491" height="750"/>
         <image name="tab_month.png" width="30" height="30"/>
         <image name="tab_search.png" width="30" height="30"/>
         <image name="tab_setting.png" width="30" height="30"/>
