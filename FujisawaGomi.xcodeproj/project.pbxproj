@@ -230,6 +230,7 @@
 		CA858E3D1A6B95D9005FA2B2 /* word_shigen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DEA1A6B95D9005FA2B2 /* word_shigen.png */; };
 		CAACC0EF21731519006B3B85 /* pit_jitaku.png in Resources */ = {isa = PBXBuildFile; fileRef = CAACC0ED21731517006B3B85 /* pit_jitaku.png */; };
 		CAACC0F021731519006B3B85 /* pit_syuusekijp.png in Resources */ = {isa = PBXBuildFile; fileRef = CAACC0EE21731517006B3B85 /* pit_syuusekijp.png */; };
+		CAACC0F22173847A006B3B85 /* pit_non.png in Resources */ = {isa = PBXBuildFile; fileRef = CAACC0F121738479006B3B85 /* pit_non.png */; };
 		CACE2D551E23FC10002A2ECC /* date_shigen.png in Resources */ = {isa = PBXBuildFile; fileRef = CACE2D541E23FC10002A2ECC /* date_shigen.png */; };
 		CACEEFDC205D11F1005A3995 /* funen1B.png in Resources */ = {isa = PBXBuildFile; fileRef = CACEEFDB205D11F1005A3995 /* funen1B.png */; };
 		CACEEFDE205D11FC005A3995 /* shigen1B.png in Resources */ = {isa = PBXBuildFile; fileRef = CACEEFDD205D11FC005A3995 /* shigen1B.png */; };
@@ -520,6 +521,7 @@
 		CA858DEA1A6B95D9005FA2B2 /* word_shigen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = word_shigen.png; sourceTree = "<group>"; };
 		CAACC0ED21731517006B3B85 /* pit_jitaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pit_jitaku.png; sourceTree = "<group>"; };
 		CAACC0EE21731517006B3B85 /* pit_syuusekijp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pit_syuusekijp.png; sourceTree = "<group>"; };
+		CAACC0F121738479006B3B85 /* pit_non.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pit_non.png; sourceTree = "<group>"; };
 		CACE2D541E23FC10002A2ECC /* date_shigen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_shigen.png; sourceTree = "<group>"; };
 		CACEEFDB205D11F1005A3995 /* funen1B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funen1B.png; sourceTree = "<group>"; };
 		CACEEFDD205D11FC005A3995 /* shigen1B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shigen1B.png; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 				B0F2A1311AB3C89200C5170E /* oogata-list.png */,
 				B0F2A1321AB3C89200C5170E /* petbottle.png */,
 				CAACC0ED21731517006B3B85 /* pit_jitaku.png */,
+				CAACC0F121738479006B3B85 /* pit_non.png */,
 				CAACC0EE21731517006B3B85 /* pit_syuusekijp.png */,
 				B0F2A1331AB3C89200C5170E /* plastic-list.png */,
 				B0F2A1341AB3C89200C5170E /* plastic.png */,
@@ -1075,6 +1078,7 @@
 				CACEEFEC205D1F19005A3995 /* word_shigen1B.png in Resources */,
 				CA24B09A20DE1F8700D4AAEC /* 10blk-2018-11.png in Resources */,
 				CA24B03D20DE1F8700D4AAEC /* 10blk-2018-08.png in Resources */,
+				CAACC0F22173847A006B3B85 /* pit_non.png in Resources */,
 				CA24B07B20DE1F8700D4AAEC /* 7blk-2018-02.png in Resources */,
 				CA24B03420DE1F8700D4AAEC /* 6blk-2018-11.png in Resources */,
 				CA794F4719FB44EE00C96F85 /* InfoPlist.strings in Resources */,
