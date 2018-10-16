@@ -16,6 +16,7 @@
 + (UIImage*)getWordIconImage:(NSString*)iconsStr;
 + (UIImage*)getDateIconImage:(NSString*)iconsStr;
 + (UIImage*)getIconImageFromDate:(NSDate*)date;
++ (UIImage*)getBlock:(NSDate*)iconsStr;// 20181016 blk名
 + (NSString*)getPitStr:(NSString*)iconsStr;
 + (NSString*)getSpeechStr:(NSString*)iconsStr;
 + (UIImage*)getMonthImage:(NSDate*)date;

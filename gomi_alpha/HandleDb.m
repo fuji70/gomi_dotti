@@ -22,6 +22,7 @@ NSString *FILE_DB = @"db2018.json";
     NSDictionary *_dbIcon;
     NSDictionary *_dbPit;
     NSDictionary *_dbSpeech;
+    NSDictionary *_dbBlock;// 20181016 blk名
 }
 @end
 
@@ -82,6 +83,16 @@ NSString *FILE_DB = @"db2018.json";
               nil];
 }
 
+- (void)initDbBlock {// 20181016 blk名
+    _dbBlock = [NSDictionary dictionaryWithObjectsAndKeys:
+              // Block, keyStr 2016
+              @"北" ,@"blk-1",
+              @"南" ,@"blk-2",
+              @"東" ,@"blk-3",
+              @"西" ,@"blk-4",
+              nil];
+}
+
 
 - (id)init {
     if (self = [super init]) {
@@ -90,6 +101,7 @@ NSString *FILE_DB = @"db2018.json";
         [self initDbIcon];
         [self initDbPit];
         [self initDbSpeech];
+        [self initDbBlock];// 20181016 blk名
     }
     return self;
 }
@@ -154,12 +166,15 @@ NSString *FILE_DB = @"db2018.json";
 
 - (NSString*)_getSpeechStr:(NSString*)iconsStr {
     NSString *ret = _dbSpeech[iconsStr];
-    
     return (ret ? ret : @"収拾無し");
 }
 
 + (NSString*)getSpeechStr:(NSString*)iconsStr {
     return [[HandleDb getInstance] _getSpeechStr:iconsStr];
+}
+
++ (UIImage*)getBlock:(NSString*)iconsStr {// 20181016 blk名
+    return [[HandleDb getInstance] _getBlock:iconsStr];
 }
 
 + (NSString*)getKeyDate: (NSDate*)date {
@@ -178,6 +193,12 @@ NSString *FILE_DB = @"db2018.json";
 }
 
 - (UIImage*)_getIconImage:(NSString*)iconsStr {
+    NSString * imgName = [_dbIcon objectForKey:iconsStr];
+    NSLog(@"icons: %@  ->  imgName: %@", iconsStr, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
+- (UIImage*)_getBlock:(NSString*)iconsStr {// 20181016 blk名
     NSString * imgName = [_dbIcon objectForKey:iconsStr];
     NSLog(@"icons: %@  ->  imgName: %@", iconsStr, imgName);
     return [UIImage imageNamed:imgName];
