@@ -992,8 +992,8 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
                                 <state key="normal">
                                     <string key="title" base64-UTF8="YES">
-                                        CPCfk57pm7voqbEo5pyJ5paZKQ
-                                    </string>
+CPCfk57pm7voqbEo5pyJ5paZKQ
+</string>
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1629,8 +1629,8 @@
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="34"/>
                                 <state key="normal">
                                     <string key="title" base64-UTF8="YES">
-                                        5LuK5pel44GuCOOBlOOBvw
-                                    </string>
+5LuK5pel44GuCOOBlOOBvw
+</string>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

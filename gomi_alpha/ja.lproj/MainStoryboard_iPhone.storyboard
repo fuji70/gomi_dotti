@@ -23,16 +23,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="その他資源・大型ごみ・特別大型ごみ" id="J5H-bP-b2x" userLabel="Tab Bar Item - 大型ごみ"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="J5H-bP-b2x" userLabel="ー"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vck-ZT-Bp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-295" y="1278"/>
         </scene>
-        <!--藤沢市からお知らせ、ごみ関連施設-->
+        <!--English-Guide to sorting and putting out garbage-->
         <scene sceneID="agG-rM-pCL">
             <objects>
-                <viewController title="藤沢市からお知らせ、ごみ関連施設" id="41v-KM-NLD" sceneMemberID="viewController">
+                <viewController title="English-Guide to sorting and putting out garbage" id="41v-KM-NLD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oon-KI-3OT"/>
                         <viewControllerLayoutGuide type="bottom" id="e7f-Md-Hsh"/>
@@ -40,18 +40,29 @@
                     <view key="view" contentMode="scaleToFill" id="NL9-xS-TEt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29gomiguideforeign-English.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Qy-ko-AM3">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Qy-ko-AM3" firstAttribute="top" secondItem="Oon-KI-3OT" secondAttribute="bottom" id="J7e-3W-dM9"/>
+                            <constraint firstItem="5Qy-ko-AM3" firstAttribute="leading" secondItem="NL9-xS-TEt" secondAttribute="leading" id="LMJ-w0-Y64"/>
+                            <constraint firstAttribute="bottom" secondItem="5Qy-ko-AM3" secondAttribute="bottom" id="NC1-re-QjX"/>
+                            <constraint firstAttribute="trailing" secondItem="5Qy-ko-AM3" secondAttribute="trailing" id="kDc-On-RRx"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="藤沢市からお知らせ、ごみ関連施設" id="tfg-TF-KgC"/>
+                    <tabBarItem key="tabBarItem" title="English-Guide to sorting and putting out garbage" id="tfg-TF-KgC" userLabel="English-Guide to sorting and putting out garbage"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uur-zs-0of" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-295" y="615"/>
         </scene>
-        <!--個別収集について、その他資源収集について、有料指定収集袋-->
+        <!--Chinese,Korean,Arabic-Guide to sorting and putting out garbage-->
         <scene sceneID="hRE-wn-l8N">
             <objects>
-                <viewController title="個別収集について、その他資源収集について、有料指定収集袋" id="6NO-GF-GJO" sceneMemberID="viewController">
+                <viewController title="Chinese,Korean,Arabic-Guide to sorting and putting out garbage" id="6NO-GF-GJO" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qsh-5K-IBB"/>
                         <viewControllerLayoutGuide type="bottom" id="FQA-hX-GY2"/>
@@ -59,18 +70,29 @@
                     <view key="view" contentMode="scaleToFill" id="sJm-xM-oSB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29gomiguideforeign-others.png" translatesAutoresizingMaskIntoConstraints="NO" id="q0n-Ee-qIS">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q0n-Ee-qIS" firstAttribute="top" secondItem="qsh-5K-IBB" secondAttribute="bottom" id="bdp-dx-qNP"/>
+                            <constraint firstAttribute="trailing" secondItem="q0n-Ee-qIS" secondAttribute="trailing" id="fRH-au-idn"/>
+                            <constraint firstItem="FQA-hX-GY2" firstAttribute="top" secondItem="q0n-Ee-qIS" secondAttribute="bottom" id="myC-kD-Avm"/>
+                            <constraint firstItem="q0n-Ee-qIS" firstAttribute="leading" secondItem="sJm-xM-oSB" secondAttribute="leading" id="w8X-CL-GhS"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="個別収集について、その他資源収集について、有料指定収集袋" id="kDi-sf-lZK"/>
+                    <tabBarItem key="tabBarItem" title="Chinese,Korean,Arabic-Guide to sorting and putting out garbage" id="kDi-sf-lZK" userLabel="Chinese,Korean,Arabic-Guide to sorting and putting out garbage"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u17-bm-HNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="56" y="615"/>
         </scene>
-        <!--可燃ごみ・ビン-->
+        <!--雑がみって何？-->
         <scene sceneID="2QD-3M-lA8">
             <objects>
-                <viewController title="可燃ごみ・ビン" id="orH-rj-gEf" sceneMemberID="viewController">
+                <viewController title="雑がみって何？" id="orH-rj-gEf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HK2-yG-oh7"/>
                         <viewControllerLayoutGuide type="bottom" id="qdg-NY-mSt"/>
@@ -78,18 +100,29 @@
                     <view key="view" contentMode="scaleToFill" id="x7Q-pj-2dE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zatugamikeihatutirasi-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-74-XAz">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RK4-74-XAz" firstAttribute="leading" secondItem="x7Q-pj-2dE" secondAttribute="leading" id="AeE-J2-HEB"/>
+                            <constraint firstItem="qdg-NY-mSt" firstAttribute="top" secondItem="RK4-74-XAz" secondAttribute="bottom" id="enH-cG-Vqt"/>
+                            <constraint firstItem="RK4-74-XAz" firstAttribute="top" secondItem="HK2-yG-oh7" secondAttribute="bottom" id="fMh-A0-Voi"/>
+                            <constraint firstAttribute="trailing" secondItem="RK4-74-XAz" secondAttribute="trailing" id="wjS-Ia-Yw7"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="可燃ごみ・ビン" id="Ahc-r4-U4a"/>
+                    <tabBarItem key="tabBarItem" title="雑がみって何？" id="Ahc-r4-U4a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZO-Nz-lQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="410" y="615"/>
         </scene>
-        <!--不燃ごみ・商品プラ・本・雑がみ-->
+        <!--雑がみ出し方のコツ-->
         <scene sceneID="eUS-3I-udW">
             <objects>
-                <viewController title="不燃ごみ・商品プラ・本・雑がみ" id="vIX-cI-w01" sceneMemberID="viewController">
+                <viewController title="雑がみ出し方のコツ" id="vIX-cI-w01" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="47E-ib-Sbh"/>
                         <viewControllerLayoutGuide type="bottom" id="Rt9-NG-L8T"/>
@@ -97,18 +130,29 @@
                     <view key="view" contentMode="scaleToFill" id="vlQ-x6-9LX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zatugamikeihatutirasi-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gvc-LY-Xxo">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gvc-LY-Xxo" firstAttribute="leading" secondItem="vlQ-x6-9LX" secondAttribute="leading" id="26J-GQ-xP5"/>
+                            <constraint firstItem="Gvc-LY-Xxo" firstAttribute="top" secondItem="47E-ib-Sbh" secondAttribute="bottom" id="GLd-NP-8oO"/>
+                            <constraint firstItem="Rt9-NG-L8T" firstAttribute="top" secondItem="Gvc-LY-Xxo" secondAttribute="bottom" id="POK-GM-ODD"/>
+                            <constraint firstAttribute="trailing" secondItem="Gvc-LY-Xxo" secondAttribute="trailing" id="RYF-1H-5fl"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="不燃ごみ・商品プラ・本・雑がみ" id="Waw-rE-cZf"/>
+                    <tabBarItem key="tabBarItem" title="雑がみ出し方のコツ" id="Waw-rE-cZf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P7-vi-ILY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="761" y="615"/>
         </scene>
-        <!--プラスチック容器・廃食用油・特定品目-->
+        <!--ー-->
         <scene sceneID="Xuw-QW-ljs">
             <objects>
-                <viewController title="プラスチック容器・廃食用油・特定品目" id="vQy-RL-D1Z" sceneMemberID="viewController">
+                <viewController title="ー" id="vQy-RL-D1Z" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ygr-XS-TjG"/>
                         <viewControllerLayoutGuide type="bottom" id="RrC-oK-Zef"/>
@@ -118,16 +162,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="プラスチック容器・廃食用油・特定品目" id="L1H-bX-xnd"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="L1H-bX-xnd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvS-tm-Z7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1097" y="615"/>
         </scene>
-        <!--剪定枝・小型家電リサイクル・市で収集処理できないもの-->
+        <!--ー-->
         <scene sceneID="fu2-Vm-wF0">
             <objects>
-                <viewController title="剪定枝・小型家電リサイクル・市で収集処理できないもの" id="uN5-FE-ur4" sceneMemberID="viewController">
+                <viewController title="ー" id="uN5-FE-ur4" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GEc-me-Tj6"/>
                         <viewControllerLayoutGuide type="bottom" id="Bg5-iA-9Bw"/>
@@ -137,16 +181,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="剪定枝・小型家電リサイクル・市で収集処理できないもの" id="sx1-Go-4AA"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="sx1-Go-4AA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enp-mp-Fqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="54" y="1278"/>
         </scene>
-        <!--家電リサイクル対象品目、危険物・処理困難、パソコン、産廃-->
+        <!--ー-->
         <scene sceneID="1Ek-ge-3Gj">
             <objects>
-                <viewController title="家電リサイクル対象品目、危険物・処理困難、パソコン、産廃" id="kAF-tq-g7P" sceneMemberID="viewController">
+                <viewController title="ー" id="kAF-tq-g7P" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bAX-vn-hS2"/>
                         <viewControllerLayoutGuide type="bottom" id="Cu4-qY-y9Z"/>
@@ -156,16 +200,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="家電リサイクル対象品目、危険物・処理困難、パソコン、産廃" id="rFd-8J-ua6"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="rFd-8J-ua6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W8-2G-l6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="402" y="1278"/>
         </scene>
-        <!--カン・なべ類、ペットボトル、その他資源-->
+        <!--ー-->
         <scene sceneID="g3V-Zb-cZN">
             <objects>
-                <viewController title="カン・なべ類、ペットボトル、その他資源" id="VoL-cH-XHe" sceneMemberID="viewController">
+                <viewController title="ー" id="VoL-cH-XHe" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oYb-fm-ObG"/>
                         <viewControllerLayoutGuide type="bottom" id="uaj-Nj-n4r"/>
@@ -175,16 +219,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="カン・なべ類、ペットボトル、その他資源" id="bhS-eN-Pld"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="bhS-eN-Pld"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hrf-hR-7Sg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="615"/>
         </scene>
-        <!--その他、不法投棄、ボランティア清掃、一声ふれあい収集-->
+        <!--ー-->
         <scene sceneID="Vfx-Zz-gfa">
             <objects>
-                <viewController title="その他、不法投棄、ボランティア清掃、一声ふれあい収集" id="fcF-3I-NZR" sceneMemberID="viewController">
+                <viewController title="ー" id="fcF-3I-NZR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W6P-ns-ejw"/>
                         <viewControllerLayoutGuide type="bottom" id="CqN-l6-qqD"/>
@@ -194,16 +238,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="その他、不法投棄、ボランティア清掃、一声ふれあい収集" id="sUC-04-1Zw"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="sUC-04-1Zw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="190-AI-C0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759" y="1278"/>
         </scene>
-        <!--ごみ関連施設のご案内-->
+        <!--ー-->
         <scene sceneID="dxu-F9-Fn5">
             <objects>
-                <viewController id="eas-vT-qMS" sceneMemberID="viewController">
+                <viewController title="ー" id="eas-vT-qMS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ayf-72-Foh"/>
                         <viewControllerLayoutGuide type="bottom" id="8tv-mV-mPx"/>
@@ -213,16 +257,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ごみ関連施設のご案内" id="afT-u1-GBr"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="afT-u1-GBr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqt-IQ-hOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="1278"/>
         </scene>
-        <!--市で収集、処理できないもの2-->
+        <!--ー-->
         <scene sceneID="fl1-3u-H76">
             <objects>
-                <viewController id="5El-TC-yw5" sceneMemberID="viewController">
+                <viewController title="ー" id="5El-TC-yw5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yjc-gF-ZZS"/>
                         <viewControllerLayoutGuide type="bottom" id="4o0-vo-z8A"/>
@@ -232,7 +276,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="市で収集、処理できないもの2" id="0N3-RS-5hn"/>
+                    <tabBarItem key="tabBarItem" title="ー" id="0N3-RS-5hn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIM-v1-UTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -774,7 +818,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-295" y="-95"/>
+            <point key="canvasLocation" x="-295" y="-96"/>
         </scene>
         <!--種類検索-->
         <scene sceneID="rlM-OR-rBn">
@@ -2145,6 +2189,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
     </scenes>
     <resources>
         <image name="1blk-2018-11.png" width="800" height="453"/>
+        <image name="29gomiguideforeign-English.png" width="1389" height="1886"/>
+        <image name="29gomiguideforeign-others.png" width="1389" height="1886"/>
         <image name="back2today.png" width="256" height="223"/>
         <image name="bg_rainbow-enoshima_s.jpg" width="992" height="1150"/>
         <image name="can.png" width="147" height="120"/>
@@ -2159,5 +2205,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         <image name="tab_today.png" width="30" height="30"/>
         <image name="tab_week.png" width="30" height="30"/>
         <image name="word_kanen.png" width="400" height="90"/>
+        <image name="zatugamikeihatutirasi-1.png" width="1654" height="2339"/>
+        <image name="zatugamikeihatutirasi-2.png" width="1654" height="2339"/>
     </resources>
 </document>
