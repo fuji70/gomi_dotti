@@ -180,7 +180,7 @@ NSString *FILE_DB = @"db2018.json";
     return [[HandleDb getInstance] _getIconImage:iconsStr];
 }
 
-+ (UIImage*)getPitIconImage:(NSString*)iconsStr {//20181021 収集場所表示
++ (UIImage*)getPitIconImage:(NSString*)PiticonsStr {//20181021 収集場所表示
     return [[HandleDb getInstance] _getPitIconImage:PiticonsStr];
 }
 
@@ -192,8 +192,8 @@ NSString *FILE_DB = @"db2018.json";
     return [[HandleDb getInstance] _getDateIconImage:iconsStr];
 }
 
-+ (UIImage*)getDatepitIconImage:(NSString*)iconsStr {//20181021 収集場所表示
-    return [[HandleDb getInstance] _getDatePitIconImage:piticonsStr];
++ (UIImage*)getDatepitIconImage:(NSString*)PiticonsStr {//20181021 収集場所表示
+    return [[HandleDb getInstance] _getDatePitIconImage:PiticonsStr];
 }
 
 - (NSString*)_getPitStr:(NSString*)iconsStr {

@@ -19,7 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
-@property (weak, nonatomic) IBOutlet UIImageView *imgCurrentPit;//20181021 収集場所
+@property (weak, nonatomic) IBOutlet UIImageView *imgCurrentPit;//20181021 収集場所表示
 @property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext1;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;
@@ -77,11 +77,6 @@
     NSLog(@"Refresh to date= [%@]", strCurDate);
     _lblCurrent.text = strCurDate;
 
-/* ゴミ捨て場の表示切替
-    NSString *strDbPit = [DbPit];
-    _lblDbPit.text = strDbPit;
-*/
-    
     [self viewCurrentIcons];
     [self say_today];
 }
@@ -99,6 +94,7 @@
 - (void)viewCurrentIcons {
     NSDate *now = _curDate;
     int oneday = 60*60*24;
+    _imgCurrentPit.image = [HandleDb getPitIconImageFromDate:now];//20181021 収集場所表示
     _imgCurrent.image = [HandleDb getIconImageFromDate:now];
     _imgNext1.image = [HandleDb getIconImageFromDate:
                        [now initWithTimeInterval:oneday*1 sinceDate:now]];

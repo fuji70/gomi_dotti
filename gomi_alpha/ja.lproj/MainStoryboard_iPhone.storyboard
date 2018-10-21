@@ -1872,16 +1872,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" text="集積所" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="10" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="32H-Lf-LMP">
-                                <rect key="frame" x="16" y="149" width="288" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OdD-Gt-JWe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="40"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-ey-V4f">
                                 <rect key="frame" x="60" y="334" width="200" height="90"/>
                                 <constraints>
@@ -1918,7 +1908,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hDn-Zh-UvM" secondAttribute="trailing" id="2fy-Dr-sXo"/>
-                            <constraint firstItem="32H-Lf-LMP" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="3Gs-Wl-qSv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Cs-l5-wEZ" secondAttribute="trailing" constant="114" id="3k7-EV-NQf"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="top" secondItem="Tin-ey-V4f" secondAttribute="bottom" constant="5" id="41L-1y-AVW"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="rM5-K8-Ptt" secondAttribute="bottom" id="43K-jX-cgK"/>
@@ -1934,7 +1923,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="top" secondItem="Tin-ey-V4f" secondAttribute="top" id="CeN-eX-3hE"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Clx-aa-88J"/>
                             <constraint firstItem="D9O-SO-UO2" firstAttribute="leading" secondItem="FzR-dD-FQK" secondAttribute="trailing" constant="3" id="DpC-Dk-SWQ"/>
-                            <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="32H-Lf-LMP" secondAttribute="bottom" id="Fbm-1o-FQv"/>
                             <constraint firstItem="frV-QW-HJA" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Gah-Kr-YvL"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="Hvu-9J-Xc3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3UJ-am-cfU" secondAttribute="trailing" constant="94" id="I0Z-S6-QdQ"/>
@@ -1945,7 +1933,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="FzR-dD-FQK" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="KXh-7e-Ng9"/>
                             <constraint firstItem="MhE-7P-zAn" firstAttribute="top" secondItem="ToW-0N-PeX" secondAttribute="top" constant="18" id="Key-cS-fTY"/>
                             <constraint firstItem="gUu-FT-akQ" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="bottom" constant="5" id="LWs-nV-xGF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="32H-Lf-LMP" secondAttribute="trailing" id="LXa-GI-XtF"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="centerY" secondItem="Rgg-w2-Pzg" secondAttribute="centerY" id="Lku-ZB-lBn"/>
                             <constraint firstItem="Cdd-FF-4VB" firstAttribute="top" secondItem="ToW-0N-PeX" secondAttribute="topMargin" constant="1" id="MAz-9j-quC"/>
                             <constraint firstItem="NGs-DF-Sma" firstAttribute="trailing" secondItem="ToW-0N-PeX" secondAttribute="trailingMargin" id="MpN-7G-Z8g"/>
@@ -1959,7 +1946,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="top" id="Tz3-CH-Khc"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="frV-QW-HJA" secondAttribute="top" id="Unj-ZT-6jd"/>
                             <constraint firstItem="Bft-aG-Vks" firstAttribute="top" secondItem="ZxN-ba-Iby" secondAttribute="top" id="W3P-P0-rhW"/>
-                            <constraint firstItem="32H-Lf-LMP" firstAttribute="top" secondItem="k7e-u8-FeY" secondAttribute="bottom" constant="5" id="WE3-tw-8zu"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="leading" secondItem="Rgg-w2-Pzg" secondAttribute="trailing" constant="5" id="Wa8-oc-68O"/>
                             <constraint firstItem="Cdd-FF-4VB" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="WbJ-b7-RJ3"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="top" secondItem="s3g-bP-ijs" secondAttribute="top" id="Wr4-5L-2SR"/>
@@ -2014,7 +2000,6 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                         <outlet property="imgNext3" destination="5m2-xw-uaT" id="bUv-Qe-l23"/>
                         <outlet property="lblBlknum" destination="D9O-SO-UO2" id="vwk-Fj-Onh"/>
                         <outlet property="lblCurrent" destination="k7e-u8-FeY" id="Hr9-6v-TqL"/>
-                        <outlet property="lblDbPit" destination="32H-Lf-LMP" id="bZY-aq-Mn6"/>
                         <outlet property="swSpeech" destination="Bft-aG-Vks" id="2hs-bd-NvV"/>
                     </connections>
                 </viewController>
