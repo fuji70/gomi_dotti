@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgCan;
 @property (weak, nonatomic) IBOutlet UIImageView *imgGlass;
 @property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
+@property (weak, nonatomic) IBOutlet UIImageView *imgPaperCloth;
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
