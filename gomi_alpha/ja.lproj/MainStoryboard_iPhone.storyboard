@@ -873,7 +873,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView tag="6" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
+                            <imageView tag="7" contentMode="scaleToFill" image="funen.png" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-Yh-tzg">
                                 <rect key="frame" x="162.5" y="228" width="141.5" height="79"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
@@ -888,7 +888,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/20(火)" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LxF-Ic-JFO">
-                                <rect key="frame" x="26" y="469" width="278" height="50"/>
+                                <rect key="frame" x="20" y="469" width="284" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="SNw-5M-aNz"/>
                                 </constraints>
@@ -896,7 +896,7 @@
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView tag="4" contentMode="scaleToFill" image="glass-splay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt" userLabel="Img Glass">
+                            <imageView tag="5" contentMode="scaleToFill" image="glass-splay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Wx-dVt" userLabel="Img Glass">
                                 <rect key="frame" x="162.5" y="60" width="141.5" height="79"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
@@ -957,13 +957,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="次の" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-RB-h4o">
-                                <rect key="frame" x="21" y="430" width="73" height="33"/>
+                                <rect key="frame" x="21" y="430" width="73" height="44"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.95936678450000001" blue="0.23297656459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="word_kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1D-Lh-qy6">
-                                <rect key="frame" x="99" y="430" width="200" height="37"/>
+                                <rect key="frame" x="99" y="430" width="200" height="39"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-2W-xRp">
                                 <rect key="frame" x="16" y="311" width="288" height="36"/>
@@ -1053,7 +1053,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="集積所" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-FO-vL3">
-                                <rect key="frame" x="201" y="469" width="93" height="50"/>
+                                <rect key="frame" x="207" y="469" width="93" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bOM-0i-dsE"/>
                                 </constraints>
@@ -1083,10 +1083,21 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discard_article.png" translatesAutoresizingMaskIntoConstraints="NO" id="L3b-Qe-SFp" userLabel="Img Discard">
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discard_article.png" translatesAutoresizingMaskIntoConstraints="NO" id="L3b-Qe-SFp" userLabel="Img Discard">
                                 <rect key="frame" x="16" y="248.5" width="141.5" height="58.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView tag="5" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p" userLabel="Img Kanen">
+                            <imageView tag="6" contentMode="scaleToFill" image="kanen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DM-jt-r2p" userLabel="Img Kanen">
                                 <rect key="frame" x="162.5" y="143" width="141.5" height="79"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
@@ -1127,14 +1138,14 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="Pbr-Wx-dVt" firstAttribute="height" secondItem="NIV-Yh-tzg" secondAttribute="height" id="Gvm-zH-1f6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SK9-NK-bHs" secondAttribute="trailing" id="Jb1-yw-mER"/>
                             <constraint firstItem="L3b-Qe-SFp" firstAttribute="top" secondItem="WCe-ys-v6q" secondAttribute="bottom" constant="4" id="Kgb-qk-b0Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Lw3-FO-vL3" secondAttribute="trailing" constant="10" id="Lva-YD-JKO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lw3-FO-vL3" secondAttribute="trailing" constant="4" id="Lva-YD-JKO"/>
                             <constraint firstItem="aZU-Os-XNi" firstAttribute="top" secondItem="imK-vP-Abn" secondAttribute="bottom" constant="2" id="MDH-o6-xQf"/>
                             <constraint firstItem="tYr-HQ-86B" firstAttribute="leading" secondItem="WCe-ys-v6q" secondAttribute="leading" id="OWs-qQ-O4r"/>
                             <constraint firstItem="L3b-Qe-SFp" firstAttribute="width" secondItem="aZU-Os-XNi" secondAttribute="width" id="PNW-5W-jCA"/>
                             <constraint firstItem="Wqt-pK-Whr" firstAttribute="top" secondItem="GaC-VG-uaV" secondAttribute="bottom" id="PNw-rH-Gtp"/>
-                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="leading" secondItem="3Er-xN-W7g" secondAttribute="leadingMargin" constant="10" id="QFd-YY-7Cm"/>
+                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="leading" secondItem="3Er-xN-W7g" secondAttribute="leadingMargin" constant="4" id="QFd-YY-7Cm"/>
                             <constraint firstItem="NIV-Yh-tzg" firstAttribute="leading" secondItem="WCe-ys-v6q" secondAttribute="trailing" constant="5" id="QVk-Nr-OeU"/>
-                            <constraint firstItem="Lw3-FO-vL3" firstAttribute="top" secondItem="g1D-Lh-qy6" secondAttribute="bottom" constant="2" id="Sou-Xh-18u"/>
+                            <constraint firstItem="Lw3-FO-vL3" firstAttribute="top" secondItem="g1D-Lh-qy6" secondAttribute="bottom" id="Sou-Xh-18u"/>
                             <constraint firstItem="NIV-Yh-tzg" firstAttribute="bottom" secondItem="L3b-Qe-SFp" secondAttribute="bottom" id="T7l-fW-Iqt"/>
                             <constraint firstItem="FYU-4B-h0d" firstAttribute="top" secondItem="BPi-JD-SP8" secondAttribute="bottom" constant="5" id="TEA-7u-q4U"/>
                             <constraint firstItem="zby-2W-xRp" firstAttribute="leading" secondItem="3Er-xN-W7g" secondAttribute="leadingMargin" id="U6g-FB-sXN"/>
@@ -1167,7 +1178,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="j9t-at-FM4" secondAttribute="trailing" id="nWA-BK-Kib"/>
                             <constraint firstItem="imK-vP-Abn" firstAttribute="leading" secondItem="3Er-xN-W7g" secondAttribute="leadingMargin" id="neE-QX-1TX"/>
                             <constraint firstItem="3DM-jt-r2p" firstAttribute="width" secondItem="aZU-Os-XNi" secondAttribute="width" id="noc-KE-7d0"/>
-                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="kg2-RB-h4o" secondAttribute="bottom" constant="6" id="r6B-no-Qn6"/>
+                            <constraint firstItem="LxF-Ic-JFO" firstAttribute="top" secondItem="kg2-RB-h4o" secondAttribute="bottom" constant="-5" id="r6B-no-Qn6"/>
                             <constraint firstAttribute="trailing" secondItem="WGH-xo-tDb" secondAttribute="trailing" id="s0N-MR-q8x"/>
                             <constraint firstItem="zby-2W-xRp" firstAttribute="top" secondItem="L3b-Qe-SFp" secondAttribute="bottom" constant="4" id="sDr-Ve-Pvh"/>
                             <constraint firstItem="Pbr-Wx-dVt" firstAttribute="height" secondItem="3DM-jt-r2p" secondAttribute="height" id="sH9-KF-w0W"/>

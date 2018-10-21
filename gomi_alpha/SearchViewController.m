@@ -18,12 +18,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnJumpTypeSearch;
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UIImageView *imgPet;
-@property (weak, nonatomic) IBOutlet UIImageView *imgDiscard;
+@property (weak, nonatomic) IBOutlet UIImageView *imgDiscard;//20181021 つくば向け種類検索
 @property (weak, nonatomic) IBOutlet UIImageView *imgKanen;
 @property (weak, nonatomic) IBOutlet UIImageView *imgCan;
-@property (weak, nonatomic) IBOutlet UIImageView *imgGlass;
+@property (weak, nonatomic) IBOutlet UIImageView *imgGlass;//20181021 つくば向け種類検索
 @property (weak, nonatomic) IBOutlet UIImageView *imgFunen;
-@property (weak, nonatomic) IBOutlet UIImageView *imgPaperCloth;
+@property (weak, nonatomic) IBOutlet UIImageView *imgPaperCloth;//20181021 つくば向け種類検索
 @property (weak, nonatomic) IBOutlet UILabel *lblNextDate;
 @property (weak, nonatomic) IBOutlet UILabel *lblPit;
 @property (weak, nonatomic) IBOutlet UIImageView *imgWordType;
@@ -63,16 +63,16 @@
 }
 */
 
-- (void)initTblBtn {
+- (void)initTblBtn {//20181021 つくば向け種類検索で修正
     _tblBtn = [NSDictionary dictionaryWithObjectsAndKeys:
                // iconStr,  keyBtnTag 2016
                @"ペット", @1,
-               @"粗大", @2,
-               @"燃やせる", @3,
-               @"かん", @4,
+               @"かん", @2,
+               @"紙・布", @3,
+               @"粗大", @4,
                @"ビン・スプレー", @5,
-               @"燃やせない", @6,
-               @"紙・布", @7,
+               @"燃やせる", @6,
+               @"燃やせない", @7,
                nil];
 }
 
