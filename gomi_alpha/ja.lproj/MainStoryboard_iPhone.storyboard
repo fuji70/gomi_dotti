@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="IUk-Ic-rlg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="IUk-Ic-rlg">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vck-ZT-Bp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="1278"/>
+            <point key="canvasLocation" x="-3341" y="-352"/>
         </scene>
         <!--English-Guide to sorting and putting out garbage-->
         <scene sceneID="agG-rM-pCL">
@@ -57,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uur-zs-0of" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="615"/>
+            <point key="canvasLocation" x="-3343" y="-950"/>
         </scene>
         <!--Chinese,Korean,Arabic-Guide to sorting and putting out garbage-->
         <scene sceneID="hRE-wn-l8N">
@@ -87,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u17-bm-HNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="615"/>
+            <point key="canvasLocation" x="-2781" y="-949"/>
         </scene>
         <!--雑がみって何？-->
         <scene sceneID="2QD-3M-lA8">
@@ -117,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZO-Nz-lQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="615"/>
+            <point key="canvasLocation" x="-2214" y="-949"/>
         </scene>
         <!--雑がみ出し方のコツ-->
         <scene sceneID="eUS-3I-udW">
@@ -147,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P7-vi-ILY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="615"/>
+            <point key="canvasLocation" x="-1652" y="-949"/>
         </scene>
         <!--ー-->
         <scene sceneID="Xuw-QW-ljs">
@@ -166,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvS-tm-Z7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="615"/>
+            <point key="canvasLocation" x="-1114" y="-949"/>
         </scene>
         <!--ー-->
         <scene sceneID="fu2-Vm-wF0">
@@ -185,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enp-mp-Fqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54" y="1278"/>
+            <point key="canvasLocation" x="-2783" y="-352"/>
         </scene>
         <!--ー-->
         <scene sceneID="1Ek-ge-3Gj">
@@ -204,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2W8-2G-l6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="1278"/>
+            <point key="canvasLocation" x="-2226" y="-352"/>
         </scene>
         <!--ー-->
         <scene sceneID="g3V-Zb-cZN">
@@ -223,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hrf-hR-7Sg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="615"/>
+            <point key="canvasLocation" x="-557" y="-949"/>
         </scene>
         <!--ー-->
         <scene sceneID="Vfx-Zz-gfa">
@@ -242,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="190-AI-C0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="1278"/>
+            <point key="canvasLocation" x="-1656" y="-352"/>
         </scene>
         <!--ー-->
         <scene sceneID="dxu-F9-Fn5">
@@ -261,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqt-IQ-hOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="1278"/>
+            <point key="canvasLocation" x="-557" y="-352"/>
         </scene>
         <!--ー-->
         <scene sceneID="fl1-3u-H76">
@@ -280,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIM-v1-UTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="1278"/>
+            <point key="canvasLocation" x="-1103" y="-352"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="9Hf-8W-cMj">
@@ -315,7 +314,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6g-aL-yAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="-773"/>
+            <point key="canvasLocation" x="-3341" y="-2197"/>
         </scene>
         <!--week-->
         <scene sceneID="vne-DP-f3E">
@@ -681,7 +680,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="543" y="-773"/>
+            <point key="canvasLocation" x="-2001" y="-2197"/>
         </scene>
         <!--month-->
         <scene sceneID="dhV-Yj-mEZ">
@@ -818,7 +817,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-295" y="-96"/>
+            <point key="canvasLocation" x="-3341" y="-1588"/>
         </scene>
         <!--種類検索-->
         <scene sceneID="rlM-OR-rBn">
@@ -1206,7 +1205,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="142" y="-95"/>
+            <point key="canvasLocation" x="-2642" y="-1587"/>
         </scene>
         <!--自宅設定-->
         <scene sceneID="vTt-KK-Vqz">
@@ -1246,7 +1245,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-Dx-qsd">
-                                <rect key="frame" x="165" y="232.5" width="139" height="54"/>
+                                <rect key="frame" x="314" y="232.5" width="288" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="６ブロック">
@@ -1269,7 +1268,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-5c-As7">
-                                <rect key="frame" x="165" y="289.5" width="139" height="54"/>
+                                <rect key="frame" x="314" y="289.5" width="288" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="７ブロック">
@@ -1292,7 +1291,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZl-Tp-Kpa">
-                                <rect key="frame" x="165" y="403.5" width="139" height="53.5"/>
+                                <rect key="frame" x="314" y="403" width="288" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="９ブロック">
@@ -1315,7 +1314,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dss-Yg-lF6">
-                                <rect key="frame" x="165" y="346.5" width="139" height="54"/>
+                                <rect key="frame" x="314" y="346.5" width="288" height="53.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="８ブロック">
@@ -1338,7 +1337,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB1-qn-Kua">
-                                <rect key="frame" x="16" y="289.5" width="139" height="54"/>
+                                <rect key="frame" x="16" y="289.5" width="288" height="54"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="南地区">
@@ -1360,7 +1359,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-XK-yNv">
-                                <rect key="frame" x="16" y="346.5" width="139" height="54"/>
+                                <rect key="frame" x="16" y="346.5" width="288" height="53.5"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="東地区">
@@ -1382,7 +1381,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-Hs-aup">
-                                <rect key="frame" x="16" y="403.5" width="139" height="53.5"/>
+                                <rect key="frame" x="16" y="403" width="288" height="54"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="西地区">
@@ -1404,7 +1403,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHK-Vb-xCY">
-                                <rect key="frame" x="16" y="460" width="139" height="54"/>
+                                <rect key="frame" x="16" y="460" width="288" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="５ブロック">
@@ -1427,7 +1426,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-5b-fwr">
-                                <rect key="frame" x="165" y="460" width="139" height="54"/>
+                                <rect key="frame" x="314" y="460" width="288" height="54"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="１０ブロック">
@@ -1450,7 +1449,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-fN-ezQ">
-                                <rect key="frame" x="16" y="232.5" width="139" height="54"/>
+                                <rect key="frame" x="16" y="232.5" width="288" height="54"/>
                                 <color key="backgroundColor" red="0.93700396829999999" green="0.93700396829999999" blue="0.93700396829999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="20"/>
                                 <state key="normal" title="北地区">
@@ -1596,6 +1595,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="9ql-XK-yNv" firstAttribute="width" secondItem="62S-5b-fwr" secondAttribute="width" id="q97-As-Qwi"/>
                             <constraint firstAttribute="centerY" secondItem="2Ty-Dx-qsd" secondAttribute="centerY" id="rGJ-hU-RWg"/>
                             <constraint firstItem="gpI-Hs-aup" firstAttribute="top" secondItem="9ql-XK-yNv" secondAttribute="bottom" constant="3" id="tBc-dL-me3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ape-fN-ezQ" secondAttribute="trailing" id="uHE-Fy-bLV"/>
                             <constraint firstItem="mZj-9z-dlJ" firstAttribute="leading" secondItem="GqS-Cx-Dym" secondAttribute="leading" id="vFI-hP-xEB"/>
                             <constraint firstItem="62S-5b-fwr" firstAttribute="trailing" secondItem="mV0-5c-As7" secondAttribute="trailing" id="vPw-VA-UfV"/>
                             <constraint firstItem="dZl-Tp-Kpa" firstAttribute="top" secondItem="dss-Yg-lF6" secondAttribute="bottom" constant="3" id="vYQ-oK-ljp"/>
@@ -1620,7 +1620,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="942" y="-95"/>
+            <point key="canvasLocation" x="-1363" y="-1587"/>
         </scene>
         <!--today-->
         <scene sceneID="7n7-Ky-ZFl">
@@ -1901,6 +1901,18 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="44" id="PVp-hA-Xqj"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pit_non.png" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-K8-Ptt">
+                                <rect key="frame" x="16" y="149" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4MX-pi-PXf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pit_syuusekijp.png" translatesAutoresizingMaskIntoConstraints="NO" id="NGs-DF-Sma">
+                                <rect key="frame" x="16" y="149" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="THY-0u-mvN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -1909,6 +1921,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="32H-Lf-LMP" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="3Gs-Wl-qSv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Cs-l5-wEZ" secondAttribute="trailing" constant="114" id="3k7-EV-NQf"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="top" secondItem="Tin-ey-V4f" secondAttribute="bottom" constant="5" id="41L-1y-AVW"/>
+                            <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="rM5-K8-Ptt" secondAttribute="bottom" id="43K-jX-cgK"/>
                             <constraint firstItem="zkx-9V-hdd" firstAttribute="bottom" secondItem="frV-QW-HJA" secondAttribute="bottom" id="5DY-Q9-6kQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aI4-XA-KOc" secondAttribute="trailing" constant="94" id="5Tg-Qs-hQB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k7e-u8-FeY" secondAttribute="trailing" id="5yn-XC-VIa"/>
@@ -1926,6 +1939,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="Hvu-9J-Xc3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3UJ-am-cfU" secondAttribute="trailing" constant="94" id="I0Z-S6-QdQ"/>
                             <constraint firstAttribute="trailing" secondItem="MhE-7P-zAn" secondAttribute="trailing" id="IaH-vp-zWU"/>
+                            <constraint firstItem="rM5-K8-Ptt" firstAttribute="trailing" secondItem="ToW-0N-PeX" secondAttribute="trailingMargin" id="JYy-GU-hd3"/>
                             <constraint firstItem="aI4-XA-KOc" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="94" id="JaS-EB-6Sn"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="bottom" secondItem="4Cs-l5-wEZ" secondAttribute="bottom" id="KCC-yS-hvP"/>
                             <constraint firstItem="FzR-dD-FQK" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="KXh-7e-Ng9"/>
@@ -1934,9 +1948,12 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="32H-Lf-LMP" secondAttribute="trailing" id="LXa-GI-XtF"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="centerY" secondItem="Rgg-w2-Pzg" secondAttribute="centerY" id="Lku-ZB-lBn"/>
                             <constraint firstItem="Cdd-FF-4VB" firstAttribute="top" secondItem="ToW-0N-PeX" secondAttribute="topMargin" constant="1" id="MAz-9j-quC"/>
+                            <constraint firstItem="NGs-DF-Sma" firstAttribute="trailing" secondItem="ToW-0N-PeX" secondAttribute="trailingMargin" id="MpN-7G-Z8g"/>
+                            <constraint firstItem="NGs-DF-Sma" firstAttribute="top" secondItem="k7e-u8-FeY" secondAttribute="bottom" constant="5" id="PRz-0k-Ky5"/>
                             <constraint firstItem="k7e-u8-FeY" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="Qyv-z4-4cG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5m2-xw-uaT" secondAttribute="trailing" constant="114" id="RgM-KF-XgX"/>
                             <constraint firstItem="pff-7l-2dR" firstAttribute="centerY" secondItem="Tin-ey-V4f" secondAttribute="centerY" id="Rlf-3t-vN1"/>
+                            <constraint firstItem="NGs-DF-Sma" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="S4f-5W-NIj"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="top" secondItem="aI4-XA-KOc" secondAttribute="bottom" constant="5" id="TXc-1M-fTY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tin-ey-V4f" secondAttribute="trailing" constant="44" id="Tc0-5l-DGx"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="top" id="Tz3-CH-Khc"/>
@@ -1962,6 +1979,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="Tin-ey-V4f" firstAttribute="top" secondItem="zkx-9V-hdd" secondAttribute="bottom" constant="5" id="i0I-j1-whe"/>
                             <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="ikd-ec-7uh"/>
                             <constraint firstItem="s3g-bP-ijs" firstAttribute="leading" secondItem="pff-7l-2dR" secondAttribute="trailing" constant="2" id="irr-wz-5FS"/>
+                            <constraint firstItem="rM5-K8-Ptt" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="lKB-Dy-5g5"/>
                             <constraint firstItem="Tin-ey-V4f" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="44" id="lpA-wU-xzC"/>
                             <constraint firstItem="3UJ-am-cfU" firstAttribute="bottom" secondItem="aI4-XA-KOc" secondAttribute="bottom" id="nnM-50-2jJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dte-Dz-fia" secondAttribute="trailing" constant="44" id="ohg-vy-M5r"/>
@@ -1972,6 +1990,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="4Cs-l5-wEZ" secondAttribute="top" id="tns-mo-yEr"/>
                             <constraint firstItem="z8S-TT-lcJ" firstAttribute="centerY" secondItem="aI4-XA-KOc" secondAttribute="centerY" id="vDX-k3-97T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s3g-bP-ijs" secondAttribute="trailing" constant="44" id="vDd-9H-Pmn"/>
+                            <constraint firstItem="zkx-9V-hdd" firstAttribute="top" secondItem="NGs-DF-Sma" secondAttribute="bottom" id="xaM-PO-SDI"/>
                             <constraint firstItem="y1c-RW-JMh" firstAttribute="leading" secondItem="D9O-SO-UO2" secondAttribute="trailing" constant="-1" id="xk0-8c-95W"/>
                             <constraint firstItem="Bft-aG-Vks" firstAttribute="top" secondItem="hDn-Zh-UvM" secondAttribute="bottom" constant="4" id="yKZ-VG-NtG"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="114" id="yeo-ze-lxr"/>
@@ -1989,6 +2008,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                     <navigationItem key="navigationItem" id="JGN-FS-h1h"/>
                     <connections>
                         <outlet property="imgCurrent" destination="zkx-9V-hdd" id="Vsd-t4-fXd"/>
+                        <outlet property="imgCurrentPit" destination="NGs-DF-Sma" id="bmL-bQ-ZlJ"/>
                         <outlet property="imgNext1" destination="Tin-ey-V4f" id="cZb-KX-PWd"/>
                         <outlet property="imgNext2" destination="aI4-XA-KOc" id="1vZ-Xt-A95"/>
                         <outlet property="imgNext3" destination="5m2-xw-uaT" id="bUv-Qe-l23"/>
@@ -2024,7 +2044,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="142" y="-773"/>
+            <point key="canvasLocation" x="-2643.75" y="-2197.1830985915494"/>
         </scene>
         <!--WebTypeSearch-->
         <scene sceneID="QMT-Yp-3Vg">
@@ -2105,7 +2125,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olL-hX-4Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="WS4-Yi-43y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="542" y="-96"/>
+            <point key="canvasLocation" x="-2003" y="-1588"/>
         </scene>
         <!--WebAddressSearch-->
         <scene sceneID="5Aq-67-sNk">
@@ -2184,7 +2204,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMB-1N-Kma" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dKR-cx-5sf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1379" y="-96"/>
+            <point key="canvasLocation" x="-664" y="-1588"/>
         </scene>
     </scenes>
     <resources>
@@ -2199,6 +2219,8 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         <image name="glass-splay.png" width="146" height="126"/>
         <image name="kanen.png" width="146" height="126"/>
         <image name="petbottle.png" width="148" height="126"/>
+        <image name="pit_non.png" width="399" height="38"/>
+        <image name="pit_syuusekijp.png" width="390" height="38"/>
         <image name="tab_month.png" width="30" height="30"/>
         <image name="tab_search.png" width="30" height="30"/>
         <image name="tab_setting.png" width="30" height="30"/>

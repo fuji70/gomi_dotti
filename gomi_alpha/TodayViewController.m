@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblBlknum;
 @property (weak, nonatomic) IBOutlet UILabel *lblCurrent;
+@property (weak, nonatomic) IBOutlet UIImageView *imgCurrentPit;//20181021 収集場所
 @property (weak, nonatomic) IBOutlet UIImageView *imgCurrent;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext1;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNext2;

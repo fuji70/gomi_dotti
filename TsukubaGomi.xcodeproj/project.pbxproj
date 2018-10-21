@@ -96,6 +96,9 @@
 		CA153869217793D8008D1D09 /* zatugamikeihatutirasi-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CA153867217793D8008D1D09 /* zatugamikeihatutirasi-2.png */; };
 		CA15386C217796DC008D1D09 /* 29gomiguideforeign-others.png in Resources */ = {isa = PBXBuildFile; fileRef = CA15386A217796DB008D1D09 /* 29gomiguideforeign-others.png */; };
 		CA15386D217796DC008D1D09 /* 29gomiguideforeign-English.png in Resources */ = {isa = PBXBuildFile; fileRef = CA15386B217796DC008D1D09 /* 29gomiguideforeign-English.png */; };
+		CA4656BE217C6BDE0006EA44 /* pit_non.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4656BB217C6BDE0006EA44 /* pit_non.png */; };
+		CA4656BF217C6BDE0006EA44 /* pit_syuusekijp.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4656BC217C6BDE0006EA44 /* pit_syuusekijp.png */; };
+		CA4656C0217C6BDE0006EA44 /* pit_jitaku.png in Resources */ = {isa = PBXBuildFile; fileRef = CA4656BD217C6BDE0006EA44 /* pit_jitaku.png */; };
 		CA7025A11A45EBCF0017A98F /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7025A01A45EBCF0017A98F /* image.xcassets */; };
 		CA7558251BA53D9C0079C419 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7558241BA53D9C0079C419 /* QuartzCore.framework */; };
 		CA794F3D19FB44EE00C96F85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA794F3C19FB44EE00C96F85 /* UIKit.framework */; };
@@ -212,6 +215,9 @@
 		CA153867217793D8008D1D09 /* zatugamikeihatutirasi-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zatugamikeihatutirasi-2.png"; path = "gomi_alpha/image4app/zatugamikeihatutirasi-2.png"; sourceTree = SOURCE_ROOT; };
 		CA15386A217796DB008D1D09 /* 29gomiguideforeign-others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "29gomiguideforeign-others.png"; path = "gomi_alpha/image4app/29gomiguideforeign-others.png"; sourceTree = SOURCE_ROOT; };
 		CA15386B217796DC008D1D09 /* 29gomiguideforeign-English.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "29gomiguideforeign-English.png"; path = "gomi_alpha/image4app/29gomiguideforeign-English.png"; sourceTree = SOURCE_ROOT; };
+		CA4656BB217C6BDE0006EA44 /* pit_non.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pit_non.png; path = gomi_alpha/image4app/pit_non.png; sourceTree = SOURCE_ROOT; };
+		CA4656BC217C6BDE0006EA44 /* pit_syuusekijp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pit_syuusekijp.png; path = gomi_alpha/image4app/pit_syuusekijp.png; sourceTree = SOURCE_ROOT; };
+		CA4656BD217C6BDE0006EA44 /* pit_jitaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pit_jitaku.png; path = gomi_alpha/image4app/pit_jitaku.png; sourceTree = SOURCE_ROOT; };
 		CA7025A01A45EBCF0017A98F /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		CA7558241BA53D9C0079C419 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CA794F3919FB44EE00C96F85 /* TsukubaGomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TsukubaGomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +272,9 @@
 				CA153867217793D8008D1D09 /* zatugamikeihatutirasi-2.png */,
 				CA15386B217796DC008D1D09 /* 29gomiguideforeign-English.png */,
 				CA15386A217796DB008D1D09 /* 29gomiguideforeign-others.png */,
+				CA4656BD217C6BDE0006EA44 /* pit_jitaku.png */,
+				CA4656BB217C6BDE0006EA44 /* pit_non.png */,
+				CA4656BC217C6BDE0006EA44 /* pit_syuusekijp.png */,
 				CA15371421778E3C008D1D09 /* can.png */,
 				CA15372E21778E3C008D1D09 /* discard_article.png */,
 				CA15373621778E3C008D1D09 /* funen.png */,
@@ -520,6 +529,7 @@
 				CA1537E521778E3D008D1D09 /* word_kanen.png in Resources */,
 				CA794F5119FB44EE00C96F85 /* Default@2x.png in Resources */,
 				CA1537E021778E3D008D1D09 /* tab_search.png in Resources */,
+				CA4656C0217C6BDE0006EA44 /* pit_jitaku.png in Resources */,
 				CA1537F421778E3D008D1D09 /* tab_setting@2x.png in Resources */,
 				CA1537F621778E3D008D1D09 /* date_can.png in Resources */,
 				CA15385C21779001008D1D09 /* 1blk-2018-12.png in Resources */,
@@ -528,6 +538,7 @@
 				CA15385921779001008D1D09 /* 3blk-2018-09.png in Resources */,
 				CA1537EB21778E3D008D1D09 /* glass-splay.png in Resources */,
 				CA1537FD21778E3D008D1D09 /* date_petbottle.png in Resources */,
+				CA4656BE217C6BDE0006EA44 /* pit_non.png in Resources */,
 				CA15380B21778E3D008D1D09 /* tab_week@2x.png in Resources */,
 				CA15385D21779001008D1D09 /* 2blk-2018-11.png in Resources */,
 				CA15384421779001008D1D09 /* 4blk-2019-02.png in Resources */,
@@ -575,6 +586,7 @@
 				CA1537DA21778E3D008D1D09 /* kanen.png in Resources */,
 				CA15385A21779001008D1D09 /* 1blk-2018-09.png in Resources */,
 				CA15384E21779001008D1D09 /* 4blk-2018-09.png in Resources */,
+				CA4656BF217C6BDE0006EA44 /* pit_syuusekijp.png in Resources */,
 				CA1537EC21778E3D008D1D09 /* date_glass-splay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
