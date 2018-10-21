@@ -20,6 +20,7 @@ NSString *FILE_DB = @"db2018.json";
     NSDate       *_curDate;
     NSDictionary *_dbCalendar;
     NSDictionary *_dbIcon;
+    NSDictionary *_dbPitIcon;//20181021 収集場所表示
     NSDictionary *_dbPit;
     NSDictionary *_dbSpeech;
     NSDictionary *_dbBlock;// 20181016 blk名
@@ -55,6 +56,19 @@ NSString *FILE_DB = @"db2018.json";
                @"paper-cloth.png"     ,@"紙・布",
 
                nil];
+}
+
+- (void)initDbPitIcon {//20181021 収集場所表示
+    _dbPitIcon = [NSDictionary dictionaryWithObjectsAndKeys:
+                  // filename       ,keyStr 2016
+                  @"pit_syuusekijp.png"     ,@"燃やせる",
+                  @"pit_syuusekijp.png"     ,@"かん",
+                  @"pit_syuusekijp.png"     ,@"ビン・スプレー",
+                  @"pit_syuusekijp.png"     ,@"燃やせない",
+                  @"pit_syuusekijp.png"     ,@"ペット",
+                  @"pit_jitaku.png"         ,@"粗大",
+                  @"pit_syuusekijp.png"     ,@"紙・布",
+                  nil];
 }
 
 - (void)initDbPit {
@@ -99,6 +113,7 @@ NSString *FILE_DB = @"db2018.json";
         _curDate = [NSDate date];
         _dbCalendar = [self loadJsonDb:FILE_DB];
         [self initDbIcon];
+        [self initDbPitIcon];//20181021 収集場所表示
         [self initDbPit];
         [self initDbSpeech];
         [self initDbBlock];// 20181016 blk名
@@ -110,12 +125,25 @@ NSString *FILE_DB = @"db2018.json";
     return [[HandleDb getInstance] _getIconsStr:date];
 }
 
++ (NSString*)getPitIconsStr:(NSDate*)date {//20181021 収集場所表示
+    return [[HandleDb getInstance] _getPitIconsStr:date];
+}
+
 - (NSString*)_getIconsStr:(NSDate*)date {
     NSString *keyBlk = [HandleDb getKeyBlk];
     NSString *keyDate = [HandleDb getKeyDate:date];
     NSString *keyPath = [NSString stringWithFormat:@"%@.%@", keyBlk, keyDate];
     NSString *value = [_dbCalendar valueForKeyPath:keyPath];
     NSLog(@"getIconsStr:[%@] %@", keyPath, value);
+    return value;
+}
+
+- (NSString*)_getPitIconsStr:(NSDate*)date {//20181021 収集場所表示
+    NSString *keyBlk = [HandleDb getKeyBlk];
+    NSString *keyDate = [HandleDb getKeyDate:date];
+    NSString *keyPath = [NSString stringWithFormat:@"%@.%@", keyBlk, keyDate];
+    NSString *value = [_dbCalendar valueForKeyPath:keyPath];
+    NSLog(@"getPitIconsStr:[%@] %@", keyPath, value);
     return value;
 }
 
@@ -144,8 +172,16 @@ NSString *FILE_DB = @"db2018.json";
     return [[HandleDb getInstance] _getIconImage:[HandleDb getIconsStr:date]];
 }
 
++ (UIImage*)getPitIconImageFromDate:(NSDate*)date {//20181021 収集場所表示
+    return [[HandleDb getInstance] _getPitIconImage:[HandleDb getPitIconsStr:date]];
+}
+
 + (UIImage*)getIconImage:(NSString*)iconsStr {
     return [[HandleDb getInstance] _getIconImage:iconsStr];
+}
+
++ (UIImage*)getPitIconImage:(NSString*)iconsStr {//20181021 収集場所表示
+    return [[HandleDb getInstance] _getPitIconImage:PiticonsStr];
 }
 
 + (UIImage*)getWordIconImage:(NSString*)iconsStr {
@@ -154,6 +190,10 @@ NSString *FILE_DB = @"db2018.json";
 
 + (UIImage*)getDateIconImage:(NSString*)iconsStr {
     return [[HandleDb getInstance] _getDateIconImage:iconsStr];
+}
+
++ (UIImage*)getDatepitIconImage:(NSString*)iconsStr {//20181021 収集場所表示
+    return [[HandleDb getInstance] _getDatePitIconImage:piticonsStr];
 }
 
 - (NSString*)_getPitStr:(NSString*)iconsStr {
@@ -198,6 +238,12 @@ NSString *FILE_DB = @"db2018.json";
     return [UIImage imageNamed:imgName];
 }
 
+- (UIImage*)_getPitIconImage:(NSString*)PiticonsStr {//20181021 収集場所表示
+    NSString * imgName = [_dbPitIcon objectForKey:PiticonsStr];
+    NSLog(@"icons: %@  ->  imgName: %@", PiticonsStr, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
 - (UIImage*)_getBlock:(NSString*)iconsStr {// 20181016 blk名
     NSString * imgName = [_dbIcon objectForKey:iconsStr];
     NSLog(@"icons: %@  ->  imgName: %@", iconsStr, imgName);
@@ -215,6 +261,14 @@ NSString *FILE_DB = @"db2018.json";
     if (!baseName) { baseName = @"non.png"; }
     NSString * imgName = [NSString stringWithFormat:@"date_%@", baseName];
     NSLog(@"dateicons: %@  ->  imgName: %@", iconsStr, imgName);
+    return [UIImage imageNamed:imgName];
+}
+
+- (UIImage*)_getDatePitIconImage:(NSString*)PiticonsStr {//20181021 収集場所表示
+    NSString * baseName = [_dbPitIcon objectForKey:PiticonsStr];
+    if (!baseName) { baseName = @"non.png"; }
+    NSString * imgName = [NSString stringWithFormat:@"date_%@", baseName];
+    NSLog(@"dateicons: %@  ->  imgName: %@", PiticonsStr, imgName);
     return [UIImage imageNamed:imgName];
 }
 
