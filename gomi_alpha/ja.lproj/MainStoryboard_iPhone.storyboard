@@ -1925,6 +1925,13 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                                     <constraint firstAttribute="height" constant="30" id="THY-0u-mvN"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blk_north.png" translatesAutoresizingMaskIntoConstraints="NO" id="eOj-z1-SEO">
+                                <rect key="frame" x="219" y="20" width="26" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jjq-QV-y0P"/>
+                                    <constraint firstAttribute="width" constant="30" id="tRe-8N-gL1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -1963,6 +1970,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="5m2-xw-uaT" secondAttribute="trailing" constant="114" id="RgM-KF-XgX"/>
                             <constraint firstItem="pff-7l-2dR" firstAttribute="centerY" secondItem="Tin-ey-V4f" secondAttribute="centerY" id="Rlf-3t-vN1"/>
                             <constraint firstItem="NGs-DF-Sma" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="S4f-5W-NIj"/>
+                            <constraint firstItem="y1c-RW-JMh" firstAttribute="leading" secondItem="FzR-dD-FQK" secondAttribute="trailing" constant="28" id="SCf-1s-12V"/>
                             <constraint firstItem="5m2-xw-uaT" firstAttribute="top" secondItem="aI4-XA-KOc" secondAttribute="bottom" constant="5" id="TXc-1M-fTY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Tin-ey-V4f" secondAttribute="trailing" constant="44" id="Tc0-5l-DGx"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="5m2-xw-uaT" secondAttribute="top" id="Tz3-CH-Khc"/>
@@ -1971,10 +1979,12 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="leading" secondItem="Rgg-w2-Pzg" secondAttribute="trailing" constant="5" id="Wa8-oc-68O"/>
                             <constraint firstItem="Cdd-FF-4VB" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" id="WbJ-b7-RJ3"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="top" secondItem="s3g-bP-ijs" secondAttribute="top" id="Wr4-5L-2SR"/>
+                            <constraint firstItem="eOj-z1-SEO" firstAttribute="leading" secondItem="FzR-dD-FQK" secondAttribute="trailing" constant="3" id="XIm-Ys-aIW"/>
                             <constraint firstItem="Bft-aG-Vks" firstAttribute="leading" secondItem="hDn-Zh-UvM" secondAttribute="leading" id="ZhW-Mb-nba"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="114" id="bEB-4i-Ekg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="frV-QW-HJA" secondAttribute="trailing" id="cgx-CN-5Ga"/>
                             <constraint firstItem="K6T-U9-2YT" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leadingMargin" constant="94" id="cqe-7t-g8L"/>
+                            <constraint firstItem="eOj-z1-SEO" firstAttribute="top" secondItem="541-dx-PpN" secondAttribute="bottom" id="dUB-Td-u77"/>
                             <constraint firstItem="D9O-SO-UO2" firstAttribute="top" secondItem="541-dx-PpN" secondAttribute="bottom" id="eOH-G8-L5M"/>
                             <constraint firstItem="Dte-Dz-fia" firstAttribute="bottom" secondItem="Tin-ey-V4f" secondAttribute="bottom" id="evI-N9-4XR"/>
                             <constraint firstItem="3UJ-am-cfU" firstAttribute="top" secondItem="K6T-U9-2YT" secondAttribute="top" id="fIA-Wm-jyq"/>
@@ -1995,6 +2005,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                             <constraint firstAttribute="trailingMargin" secondItem="ZxN-ba-Iby" secondAttribute="trailing" constant="114" id="q0u-ZA-vHm"/>
                             <constraint firstItem="MhE-7P-zAn" firstAttribute="leading" secondItem="ToW-0N-PeX" secondAttribute="leading" id="qtB-Qw-5BY"/>
                             <constraint firstItem="K6T-U9-2YT" firstAttribute="leading" secondItem="z8S-TT-lcJ" secondAttribute="trailing" constant="5" id="sNS-H3-DbT"/>
+                            <constraint firstItem="y1c-RW-JMh" firstAttribute="leading" secondItem="eOj-z1-SEO" secondAttribute="trailing" constant="-1" id="t4H-2Q-vp5"/>
                             <constraint firstItem="ZxN-ba-Iby" firstAttribute="top" secondItem="4Cs-l5-wEZ" secondAttribute="top" id="tns-mo-yEr"/>
                             <constraint firstItem="z8S-TT-lcJ" firstAttribute="centerY" secondItem="aI4-XA-KOc" secondAttribute="centerY" id="vDX-k3-97T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="s3g-bP-ijs" secondAttribute="trailing" constant="44" id="vDd-9H-Pmn"/>
@@ -2015,6 +2026,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="JGN-FS-h1h"/>
                     <connections>
+                        <outlet property="imgBlkIcon" destination="eOj-z1-SEO" id="5Yn-en-zIw"/>
                         <outlet property="imgCurrent" destination="zkx-9V-hdd" id="Vsd-t4-fXd"/>
                         <outlet property="imgCurrentPit" destination="NGs-DF-Sma" id="bmL-bQ-ZlJ"/>
                         <outlet property="imgNext1" destination="Tin-ey-V4f" id="cZb-KX-PWd"/>
@@ -2220,6 +2232,7 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
         <image name="29gomiguideforeign-others.png" width="1389" height="1886"/>
         <image name="back2today.png" width="256" height="223"/>
         <image name="bg_rainbow-enoshima_s.jpg" width="992" height="1150"/>
+        <image name="blk_north.png" width="72" height="72"/>
         <image name="can.png" width="147" height="120"/>
         <image name="discard_article.png" width="148" height="127"/>
         <image name="funen.png" width="148" height="127"/>

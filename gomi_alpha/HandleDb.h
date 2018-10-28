@@ -14,6 +14,7 @@
 + (NSString*)getPitIconsStr:(NSDate*)date;//20181021 収集場所表示
 + (NSDate*)getNextDate:(NSString*)iconsStr startDate:(NSDate*)startDate;
 + (UIImage*)getIconImage:(NSString*)iconsStr;
++ (UIImage*)getBlkIconImage:(NSString*)BlkiconsStr;//20181028 地区名表示
 + (UIImage*)getPitIconImage:(NSString*)PiticonsStr;//20181021 収集場所表示
 + (UIImage*)getWordIconImage:(NSString*)iconsStr;
 + (UIImage*)getDateIconImage:(NSString*)iconsStr;

@@ -20,10 +20,10 @@ NSString *FILE_DB = @"db2018.json";
     NSDate       *_curDate;
     NSDictionary *_dbCalendar;
     NSDictionary *_dbIcon;
+    NSDictionary *_dbBlkIcon;//20181028 地区名表示
     NSDictionary *_dbPitIcon;//20181021 収集場所表示
     NSDictionary *_dbPit;
     NSDictionary *_dbSpeech;
-    NSDictionary *_dbBlock;// 20181016 blk名
 }
 @end
 
@@ -97,13 +97,13 @@ NSString *FILE_DB = @"db2018.json";
               nil];
 }
 
-- (void)initDbBlock {// 20181016 blk名
-    _dbBlock = [NSDictionary dictionaryWithObjectsAndKeys:
+- (void)initDbBlkIcon {//20181028 地区名表示
+    _dbBlkIcon = [NSDictionary dictionaryWithObjectsAndKeys:
               // Block, keyStr 2016
-              @"北" ,@"blk-1",
-              @"南" ,@"blk-2",
-              @"東" ,@"blk-3",
-              @"西" ,@"blk-4",
+            @"blk_north.png"   ,@"blk-1",
+            @"blk_south.png"   ,@"blk-2",
+            @"blk_east.png"    ,@"blk-3",
+            @"blk_west.png"    ,@"blk-4",
               nil];
 }
 
@@ -113,10 +113,10 @@ NSString *FILE_DB = @"db2018.json";
         _curDate = [NSDate date];
         _dbCalendar = [self loadJsonDb:FILE_DB];
         [self initDbIcon];
+        [self initDbBlkIcon];//20181028 地区名表示
         [self initDbPitIcon];//20181021 収集場所表示
         [self initDbPit];
         [self initDbSpeech];
-        [self initDbBlock];// 20181016 blk名
     }
     return self;
 }
