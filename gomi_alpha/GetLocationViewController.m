@@ -125,7 +125,7 @@
                                for (int i = 0; i < lines.count; i++) {
                                    line = [line stringByAppendingFormat:@"%@ ", [lines objectAtIndex:i]];
                                }
-                               _lblLocation.text = [NSString stringWithFormat:@"%@",line];
+                               self->_lblLocation.text = [NSString stringWithFormat:@"%@",line];
                            }
                        }
                    }];

@@ -72,7 +72,6 @@
 		CA858E141A6B95D9005FA2B2 /* date_can.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC11A6B95D9005FA2B2 /* date_can.png */; };
 		CA858E171A6B95D9005FA2B2 /* date_non.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC41A6B95D9005FA2B2 /* date_non.png */; };
 		CA858E181A6B95D9005FA2B2 /* date_petbottle.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC51A6B95D9005FA2B2 /* date_petbottle.png */; };
-		CA858E1A1A6B95D9005FA2B2 /* date_shigen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC71A6B95D9005FA2B2 /* date_shigen.png */; };
 		CA858E1C1A6B95D9005FA2B2 /* funen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DC91A6B95D9005FA2B2 /* funen-list.png */; };
 		CA858E1E1A6B95D9005FA2B2 /* kanen-list.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DCB1A6B95D9005FA2B2 /* kanen-list.png */; };
 		CA858E1F1A6B95D9005FA2B2 /* kanen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA858DCC1A6B95D9005FA2B2 /* kanen.png */; };
@@ -231,7 +230,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B0016A3C1A733A4900455DF0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B0016A411A7341C400455DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B079467A1A32DEF500C7B5E1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B079467B1A32DEF500C7B5E1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
@@ -310,6 +308,7 @@
 		CA3480F21E7DB03F00822188 /* h29p21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h29p21.png; sourceTree = "<group>"; };
 		CA3480F31E7DB03F00822188 /* h29p22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h29p22.png; sourceTree = "<group>"; };
 		CA3480F41E7DB03F00822188 /* h29p23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h29p23.png; sourceTree = "<group>"; };
+		CA359BE9235850A7000B40D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CA373036235423AE00BD6A69 /* db2019.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = db2019.json; sourceTree = "<group>"; };
 		CA5556C81E2217C80079031B /* date_kanen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date_kanen.png; sourceTree = "<group>"; };
 		CA7025A01A45EBCF0017A98F /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
@@ -901,7 +900,7 @@
 		CA794F3119FB44EE00C96F85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "vida-comoda";
 				TargetAttributes = {
 					CA794F3819FB44EE00C96F85 = {
@@ -911,12 +910,12 @@
 			};
 			buildConfigurationList = CA794F3419FB44EE00C96F85 /* Build configuration list for PBXProject "FujisawaGomi" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				ja,
+				Base,
 			);
 			mainGroup = CA794F3019FB44EE00C96F85;
 			productRefGroup = CA794F3A19FB44EE00C96F85 /* Products */;
@@ -1053,7 +1052,6 @@
 				CADFBFE022434EF800A4A94F /* 4blk-2019-06.png in Resources */,
 				CADFBF8F22434EF800A4A94F /* 8blk-2019-12.png in Resources */,
 				CADFBF7F22434EF800A4A94F /* 2blk-2019-10.png in Resources */,
-				CA858E1A1A6B95D9005FA2B2 /* date_shigen.png in Resources */,
 				CADFBFEC22434EF800A4A94F /* 2blk-2019-08.png in Resources */,
 				CADFBF7822434EF800A4A94F /* 6blk-2019-10.png in Resources */,
 				CADFBF9822434EF800A4A94F /* 1blk-2019-04.png in Resources */,
@@ -1165,8 +1163,8 @@
 		B0016A3B1A733A4900455DF0 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B0016A3C1A733A4900455DF0 /* ja */,
 				B0016A411A7341C400455DF0 /* en */,
+				CA359BE9235850A7000B40D9 /* Base */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -1191,12 +1189,20 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1235,12 +1241,20 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1272,13 +1286,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.4.3;
+				CURRENT_PROJECT_VERSION = 2.4.4;
 				DEVELOPMENT_TEAM = TNZAR8Q963;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MARKETING_VERSION = 2.4.3;
+				MARKETING_VERSION = 2.4.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vida-comoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
@@ -1294,13 +1308,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.4.3;
+				CURRENT_PROJECT_VERSION = 2.4.4;
 				DEVELOPMENT_TEAM = TNZAR8Q963;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MARKETING_VERSION = 2.4.3;
+				MARKETING_VERSION = 2.4.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vida-comoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
