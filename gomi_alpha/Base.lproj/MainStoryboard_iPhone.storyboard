@@ -1685,18 +1685,9 @@ CPCfk57pm7voqbEo5pyJ5paZKQ
                     </tabBarItem>
                     <connections>
                         <outlet property="lblBlknum" destination="ZyN-If-Uge" id="z6D-Vq-Mus"/>
-                        <outlet property="searchDisplayController" destination="2f4-P7-vv7" id="hdO-6Q-fdL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ7-BK-kJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="2f4-P7-vv7">
-                    <connections>
-                        <outlet property="delegate" destination="UFz-DU-91U" id="qOR-VJ-UVT"/>
-                        <outlet property="searchContentsController" destination="UFz-DU-91U" id="grq-Cq-8y8"/>
-                        <outlet property="searchResultsDataSource" destination="UFz-DU-91U" id="B9Y-c5-uM4"/>
-                        <outlet property="searchResultsDelegate" destination="UFz-DU-91U" id="0dd-Pk-NWR"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1365.217391304348" y="-63.616071428571423"/>
         </scene>
