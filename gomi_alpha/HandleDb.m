@@ -8,7 +8,7 @@
 
 #import "HandleDb.h"
 
-NSString *FILE_DB = @"db2019.json";
+NSString *FILE_DB = @"db2020.json";
 
 @interface HandleDb ()
 {
