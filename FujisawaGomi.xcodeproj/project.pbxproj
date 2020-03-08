@@ -14,7 +14,6 @@
 		B0E1F3181A59D98700F67676 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F3171A59D98700F67676 /* MyTabBarController.m */; };
 		B0E1F31A1A5A187400F67676 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F3191A5A187400F67676 /* MapKit.framework */; };
 		B0E1F31C1A5A188300F67676 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1F31B1A5A188300F67676 /* CoreLocation.framework */; };
-		B0E1F31F1A5A1A4700F67676 /* GetLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */; };
 		B0EAD8A51ABE5C05009520E0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0EAD8A41ABE5C05009520E0 /* iAd.framework */; };
 		B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */; };
 		B0EE71021A33ED0E00E21D98 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EE71011A33ED0E00E21D98 /* MonthViewController.m */; };
@@ -250,8 +249,6 @@
 		B0E1F3171A59D98700F67676 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 		B0E1F3191A5A187400F67676 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B0E1F31B1A5A188300F67676 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		B0E1F31D1A5A1A4700F67676 /* GetLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocationViewController.h; sourceTree = "<group>"; };
-		B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocationViewController.m; sourceTree = "<group>"; };
 		B0EAD8A41ABE5C05009520E0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
@@ -615,8 +612,6 @@
 				B094637B1A37555500BD776D /* WebTypeSearchViewController.m */,
 				B0EE70FD1A33ECE400E21D98 /* WeekViewController.h */,
 				B0EE70FE1A33ECE400E21D98 /* WeekViewController.m */,
-				B0E1F31D1A5A1A4700F67676 /* GetLocationViewController.h */,
-				B0E1F31E1A5A1A4700F67676 /* GetLocationViewController.m */,
 			);
 			name = FujisawaGomi;
 			path = gomi_alpha;
@@ -1184,7 +1179,6 @@
 			files = (
 				B0F769271A2AEB1900858A02 /* TodayViewController.m in Sources */,
 				B0FC81881A38A11900382855 /* WebAddressSearchViewController.m in Sources */,
-				B0E1F31F1A5A1A4700F67676 /* GetLocationViewController.m in Sources */,
 				CA794F4919FB44EE00C96F85 /* main.m in Sources */,
 				B0EE70FF1A33ECE400E21D98 /* WeekViewController.m in Sources */,
 				CA794F4D19FB44EE00C96F85 /* AppDelegate.m in Sources */,
@@ -1326,13 +1320,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.4.9;
+				CURRENT_PROJECT_VERSION = 2.4.10;
 				DEVELOPMENT_TEAM = TNZAR8Q963;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MARKETING_VERSION = 2.4.9;
+				MARKETING_VERSION = 2.4.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vida-comoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
@@ -1348,13 +1342,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.4.9;
+				CURRENT_PROJECT_VERSION = 2.4.10;
 				DEVELOPMENT_TEAM = TNZAR8Q963;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gomi_alpha/FujisawaGomi-Prefix.pch";
 				INFOPLIST_FILE = "gomi_alpha/FujisawaGomi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MARKETING_VERSION = 2.4.9;
+				MARKETING_VERSION = 2.4.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vida-comoda.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FujisawaGomi;
 				PROVISIONING_PROFILE = "";
